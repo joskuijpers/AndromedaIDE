@@ -7,6 +7,19 @@
 //
 
 #import "JSXProject.h"
+#import "NSString+Hashing.h"
+#import "JSXFileMetaData.h"
+
+NSString * const kJSXMetaDataProjectFormatVersionKey = @"ProjectFormatVersion";
+
+@interface JSXProject()
+{
+	NSMutableDictionary *_resourceSets;
+}
+
+@property (strong) NSFileWrapper *documentFileWrapper;
+
+@end
 
 @implementation JSXProject
 
@@ -14,15 +27,14 @@
 {
     self = [super init];
     if (self) {
-		// Add your subclass-specific initialization here.
+		_metaData = [[JSXFileMetaData alloc] init];
+		_resourceSets = [@{} mutableCopy];
     }
     return self;
 }
 
 - (NSString *)windowNibName
 {
-	// Override returning the nib file name of the document
-	// If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
 	return @"JSXProject";
 }
 
@@ -37,22 +49,99 @@
     return YES;
 }
 
-- (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
+- (BOOL)canAsynchronouslyWriteToURL:(NSURL *)url ofType:(NSString *)typeName forSaveOperation:(NSSaveOperationType)saveOperation
 {
-	// Insert code here to write your document to data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning nil.
-	// You can also choose to override -fileWrapperOfType:error:, -writeToURL:ofType:error:, or -writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
-	NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
-	@throw exception;
-	return nil;
+	return YES;
 }
 
-- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
+#pragma mark - Package support
+
+- (NSFileWrapper *)fileWrapperOfType:(NSString *)typeName error:(NSError *__autoreleasing *)outError
 {
-	// Insert code here to read your document from the given data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning NO.
-	// You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.
-	// If you override either of these, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.
-	NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
-	@throw exception;
+	NSDictionary *rootContents;
+	NSFileWrapper *metaDataWrapper;
+	
+	if(self.documentFileWrapper == nil) {
+		NSLog(@"File wrapper must exist: project is saved before loading");
+		
+		return nil;
+	}
+
+	rootContents = [self.documentFileWrapper fileWrappers];
+	
+	metaDataWrapper = rootContents[@"MetaData.plist"];
+	if(metaDataWrapper)
+		[self.documentFileWrapper removeFileWrapper:metaDataWrapper];
+	
+	metaDataWrapper = [[NSFileWrapper alloc] initRegularFileWithContents:[_metaData fileData]];
+	metaDataWrapper.preferredFilename = @"MetaData.plist";
+	[self.documentFileWrapper addFileWrapper:metaDataWrapper];
+	
+	return self.documentFileWrapper;
+}
+
+- (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper
+					 ofType:(NSString *)typeName
+					  error:(NSError *__autoreleasing *)outError
+{
+	NSDictionary *rootContents;
+	NSFileWrapper *resourcesWrapper, *metaDataWrapper;
+	
+	rootContents = [fileWrapper fileWrappers];
+	
+	metaDataWrapper = rootContents[@"MetaData.plist"];
+	if(metaDataWrapper != nil) {
+		NSData *data = [metaDataWrapper regularFileContents];
+		_metaData = [[JSXFileMetaData alloc] initWithFileData:data];
+	} else {
+		// TODO: Corrupted notification
+		return NO;
+	}
+	
+	resourcesWrapper = rootContents[@"Resources"];
+	if(resourcesWrapper != nil) {
+		NSDictionary *resourcesContents = [resourcesWrapper fileWrappers];
+
+		[resourcesContents enumerateKeysAndObjectsUsingBlock:^(NSString *name, NSFileWrapper *wrapper, BOOL *stop) {
+			if(![wrapper isDirectory])
+				return;
+
+			if([self readResourceSetFromFileWrapper:wrapper
+											  error:outError] == NO) {
+				*stop = YES;
+				return;
+			}
+		}];
+		if(*outError != NULL)
+			return NO;
+		
+	} else {
+		// TODO: Corrupted notification
+		return NO;
+	}
+	
+	self.documentFileWrapper = fileWrapper;
+	
+	return YES;
+}
+
+- (BOOL)readResourceSetFromFileWrapper:(NSFileWrapper *)fileWrapper
+								 error:(NSError *__autoreleasing *)outError
+{
+	NSDictionary *wrapperContents;
+	NSMutableArray *files = [@[] mutableCopy];
+	
+	wrapperContents = [fileWrapper fileWrappers];
+	[wrapperContents enumerateKeysAndObjectsUsingBlock:^(NSString *name, NSFileWrapper *file, BOOL *stop) {
+		NSString *path = [@"Resources" stringByAppendingPathComponent:fileWrapper.filename];
+		path = [path stringByAppendingPathComponent:file.filename];
+		
+		NSString *hash = [path stringByHashingWithMethod:JSXStringSHA1Hash];
+		[files addObject:@{@"FileName":file.filename,@"Path":path,@"Hash":hash}];
+	}];
+	
+	_resourceSets[fileWrapper.filename] = files;
+	
 	return YES;
 }
 

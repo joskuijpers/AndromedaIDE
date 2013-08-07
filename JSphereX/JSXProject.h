@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class JSXFileMetaData;
+
 @interface JSXProject : NSDocument
+
+@property (strong,readonly) JSXFileMetaData *metaData;
 
 @end
