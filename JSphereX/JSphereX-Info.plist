@@ -12,17 +12,23 @@
 				<string>sphereproj</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string></string>
+			<string>ProjectIcon</string>
 			<key>CFBundleTypeName</key>
-			<string>DocumentType</string>
+			<string>Sphere Project</string>
 			<key>CFBundleTypeOSTypes</key>
 			<array>
 				<string>????</string>
 			</array>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>nl.jarvix.jspherex.project</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<true/>
 			<key>NSDocumentClass</key>
-			<string>JSXDocument</string>
+			<string>JSXProject</string>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
@@ -53,5 +59,94 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>LSTypeIsPackage</key>
+			<true/>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.package</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Sphere Project</string>
+			<key>UTTypeIconFile</key>
+			<string>ProjectIcon</string>
+			<key>UTTypeIdentifier</key>
+			<string>nl.jarvix.jspherex.project</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>sphereproj</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Sphere Font</string>
+			<key>UTTypeIdentifier</key>
+			<string>nl.jarvix.jspherex.font</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>rfn</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Sphere Map</string>
+			<key>UTTypeIdentifier</key>
+			<string>nl.jarvix.jspherex.map</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>rmp</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Sphere SpriteSet</string>
+			<key>UTTypeIdentifier</key>
+			<string>nl.jarvix.jspherex.spriteset</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>rss</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Sphere Window Style</string>
+			<key>UTTypeIdentifier</key>
+			<string>nl.jarvix.jspherex.windowstyle</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>rws</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Sphere Game</string>
+			<key>UTTypeIdentifier</key>
+			<string>nl.jarvix.jspherex.game</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>sgm</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface JSXDocument : NSDocument
+@interface JSXProject : NSDocument
 
 @end

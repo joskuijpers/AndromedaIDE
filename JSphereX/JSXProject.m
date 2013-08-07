@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "JSXDocument.h"
+#import "JSXProject.h"
 
-@implementation JSXDocument
+@implementation JSXProject
 
 - (id)init
 {
@@ -23,7 +23,7 @@
 {
 	// Override returning the nib file name of the document
 	// If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
-	return @"JSXDocument";
+	return @"JSXProject";
 }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController

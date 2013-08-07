@@ -11,8 +11,8 @@
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
 		808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 808058F717B1B6C0004D1D41 /* Credits.rtf */; };
-		808058FC17B1B6C0004D1D41 /* JSXDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058FB17B1B6C0004D1D41 /* JSXDocument.m */; };
-		808058FF17B1B6C0004D1D41 /* JSXDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808058FD17B1B6C0004D1D41 /* JSXDocument.xib */; };
+		808058FC17B1B6C0004D1D41 /* JSXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058FB17B1B6C0004D1D41 /* JSXProject.m */; };
+		808058FF17B1B6C0004D1D41 /* JSXProject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808058FD17B1B6C0004D1D41 /* JSXProject.xib */; };
 		8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8080590017B1B6C0004D1D41 /* MainMenu.xib */; };
 		8080590417B1B6C0004D1D41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8080590317B1B6C0004D1D41 /* Images.xcassets */; };
 		8080590B17B1B6C0004D1D41 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080590A17B1B6C0004D1D41 /* XCTest.framework */; };
@@ -42,9 +42,9 @@
 		808058F417B1B6BF004D1D41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		808058F617B1B6C0004D1D41 /* JSphereX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSphereX-Prefix.pch"; sourceTree = "<group>"; };
 		808058F817B1B6C0004D1D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		808058FA17B1B6C0004D1D41 /* JSXDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSXDocument.h; sourceTree = "<group>"; };
-		808058FB17B1B6C0004D1D41 /* JSXDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSXDocument.m; sourceTree = "<group>"; };
-		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JSXDocument.xib; sourceTree = "<group>"; };
+		808058FA17B1B6C0004D1D41 /* JSXProject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSXProject.h; sourceTree = "<group>"; };
+		808058FB17B1B6C0004D1D41 /* JSXProject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSXProject.m; sourceTree = "<group>"; };
+		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JSXProject.xib; sourceTree = "<group>"; };
 		8080590117B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8080590317B1B6C0004D1D41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8080590917B1B6C0004D1D41 /* JSphereXTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = JSphereXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,11 +117,11 @@
 		808058EE17B1B6BF004D1D41 /* JSphereX */ = {
 			isa = PBXGroup;
 			children = (
-				808058FA17B1B6C0004D1D41 /* JSXDocument.h */,
-				808058FB17B1B6C0004D1D41 /* JSXDocument.m */,
-				808058FD17B1B6C0004D1D41 /* JSXDocument.xib */,
-				8080590017B1B6C0004D1D41 /* MainMenu.xib */,
-				8080590317B1B6C0004D1D41 /* Images.xcassets */,
+				8080592417B1B9AA004D1D41 /* PluginSystem */,
+				8080592217B1B98E004D1D41 /* Controllers */,
+				8080592117B1B988004D1D41 /* Documents */,
+				8080592017B1B980004D1D41 /* Views */,
+				8080591F17B1B97A004D1D41 /* Assets */,
 				808058EF17B1B6BF004D1D41 /* Supporting Files */,
 			);
 			path = JSphereX;
@@ -155,6 +155,46 @@
 				8080591217B1B6C0004D1D41 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8080591F17B1B97A004D1D41 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8080590317B1B6C0004D1D41 /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		8080592017B1B980004D1D41 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				808058FD17B1B6C0004D1D41 /* JSXProject.xib */,
+				8080590017B1B6C0004D1D41 /* MainMenu.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8080592117B1B988004D1D41 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				808058FA17B1B6C0004D1D41 /* JSXProject.h */,
+				808058FB17B1B6C0004D1D41 /* JSXProject.m */,
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
+		8080592217B1B98E004D1D41 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8080592417B1B9AA004D1D41 /* PluginSystem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PluginSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808058FF17B1B6C0004D1D41 /* JSXDocument.xib in Resources */,
+				808058FF17B1B6C0004D1D41 /* JSXProject.xib in Resources */,
 				8080590417B1B6C0004D1D41 /* Images.xcassets in Resources */,
 				808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */,
 				808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */,
@@ -257,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808058FC17B1B6C0004D1D41 /* JSXDocument.m in Sources */,
+				808058FC17B1B6C0004D1D41 /* JSXProject.m in Sources */,
 				808058F517B1B6C0004D1D41 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,12 +337,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		808058FD17B1B6C0004D1D41 /* JSXDocument.xib */ = {
+		808058FD17B1B6C0004D1D41 /* JSXProject.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				808058FE17B1B6C0004D1D41 /* Base */,
 			);
-			name = JSXDocument.xib;
+			name = JSXProject.xib;
 			sourceTree = "<group>";
 		};
 		8080590017B1B6C0004D1D41 /* MainMenu.xib */ = {
