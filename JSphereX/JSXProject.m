@@ -93,32 +93,24 @@ NSString * const kJSXMetaDataProjectFormatVersionKey = @"ProjectFormatVersion";
 	if(metaDataWrapper != nil) {
 		NSData *data = [metaDataWrapper regularFileContents];
 		_metaData = [[JSXFileMetaData alloc] initWithFileData:data];
-	} else {
-		// TODO: Corrupted notification
+	} else
 		return NO;
-	}
 	
 	resourcesWrapper = rootContents[@"Resources"];
 	if(resourcesWrapper != nil) {
 		NSDictionary *resourcesContents = [resourcesWrapper fileWrappers];
 
-		[resourcesContents enumerateKeysAndObjectsUsingBlock:^(NSString *name, NSFileWrapper *wrapper, BOOL *stop) {
+		for(NSFileWrapper *wrapper in [resourcesContents allValues]) {
 			if(![wrapper isDirectory])
-				return;
-
+				continue;
+			
 			if([self readResourceSetFromFileWrapper:wrapper
-											  error:outError] == NO) {
-				*stop = YES;
-				return;
-			}
-		}];
-		if(*outError != NULL)
-			return NO;
+											  error:outError] == NO)
+				return NO;
+		}
 		
-	} else {
-		// TODO: Corrupted notification
+	} else
 		return NO;
-	}
 	
 	self.documentFileWrapper = fileWrapper;
 	
@@ -132,13 +124,13 @@ NSString * const kJSXMetaDataProjectFormatVersionKey = @"ProjectFormatVersion";
 	NSMutableArray *files = [@[] mutableCopy];
 	
 	wrapperContents = [fileWrapper fileWrappers];
-	[wrapperContents enumerateKeysAndObjectsUsingBlock:^(NSString *name, NSFileWrapper *file, BOOL *stop) {
+	for(NSFileWrapper *file in [wrapperContents allValues]) {
 		NSString *path = [@"Resources" stringByAppendingPathComponent:fileWrapper.filename];
 		path = [path stringByAppendingPathComponent:file.filename];
 		
 		NSString *hash = [path stringByHashingWithMethod:JSXStringSHA1Hash];
 		[files addObject:@{@"FileName":file.filename,@"Path":path,@"Hash":hash}];
-	}];
+	};
 	
 	_resourceSets[fileWrapper.filename] = files;
 	
