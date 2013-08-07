@@ -137,8 +137,9 @@
 		808058EE17B1B6BF004D1D41 /* JSphereX */ = {
 			isa = PBXGroup;
 			children = (
+				8080593917B27661004D1D41 /* Editors */,
 				8080592917B1E5AB004D1D41 /* Categories */,
-				8080592517B1D27B004D1D41 /* Model */,
+				8080592517B1D27B004D1D41 /* Models */,
 				8080592417B1B9AA004D1D41 /* PluginSystem */,
 				8080592217B1B98E004D1D41 /* Controllers */,
 				8080592117B1B988004D1D41 /* Documents */,
@@ -219,17 +220,12 @@
 			name = PluginSystem;
 			sourceTree = "<group>";
 		};
-		8080592517B1D27B004D1D41 /* Model */ = {
+		8080592517B1D27B004D1D41 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8080592617B1D2CC004D1D41 /* JSXFileSGM.h */,
-				8080592717B1D2CC004D1D41 /* JSXFileSGM.m */,
-				8080593317B26520004D1D41 /* JSXFile.h */,
-				8080593417B26520004D1D41 /* JSXFile.m */,
-				8080593617B265FC004D1D41 /* JSXFileMetaData.h */,
-				8080593717B265FC004D1D41 /* JSXFileMetaData.m */,
+				8080593A17B2766C004D1D41 /* Files */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		8080592917B1E5AB004D1D41 /* Categories */ = {
@@ -239,6 +235,26 @@
 				8080592B17B1E5C9004D1D41 /* NSString+Hashing.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		8080593917B27661004D1D41 /* Editors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Editors;
+			sourceTree = "<group>";
+		};
+		8080593A17B2766C004D1D41 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				8080592617B1D2CC004D1D41 /* JSXFileSGM.h */,
+				8080592717B1D2CC004D1D41 /* JSXFileSGM.m */,
+				8080593317B26520004D1D41 /* JSXFile.h */,
+				8080593417B26520004D1D41 /* JSXFile.m */,
+				8080593617B265FC004D1D41 /* JSXFileMetaData.h */,
+				8080593717B265FC004D1D41 /* JSXFileMetaData.m */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
