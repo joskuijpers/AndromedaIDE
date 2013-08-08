@@ -24,28 +24,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="520" height="419"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <splitView dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdM-4n-ebS" customClass="AGNSSplitView">
+                    <splitView dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdM-4n-ebS" customClass="AGNSSplitView">
                         <rect key="frame" x="0.0" y="0.0" width="520" height="419"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
-                            <customView fixedFrame="YES" id="ldM-Jp-I1p">
-                                <rect key="frame" x="0.0" y="0.0" width="126" height="419"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <customView fixedFrame="YES" id="kxZ-OA-Zyd">
+                                <rect key="frame" x="0.0" y="0.0" width="295" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </customView>
-                            <customView fixedFrame="YES" id="gcg-zH-rck">
-                                <rect key="frame" x="136" y="0.0" width="255" height="419"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </customView>
-                            <customView fixedFrame="YES" id="tx7-QN-Rn9">
-                                <rect key="frame" x="401" y="0.0" width="119" height="419"/>
+                            <customView fixedFrame="YES" id="dkm-ai-BwL">
+                                <rect key="frame" x="296" y="0.0" width="224" height="419"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </customView>
                         </subviews>
                         <holdingPriorities>
                             <real value="470"/>
                             <real value="250"/>
-                            <real value="482"/>
                         </holdingPriorities>
+                        <connections>
+                            <outlet property="delegate" destination="zwp-Re-tSV" id="Iyp-hD-xIz"/>
+                        </connections>
                     </splitView>
                 </subviews>
                 <constraints>
@@ -94,5 +92,58 @@
                 <outlet property="splitView" destination="CdM-4n-ebS" id="Tjy-nX-j3u"/>
             </connections>
         </customObject>
+        <button verticalHuggingPriority="750" id="YZM-77-pNT">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eHp-8p-wzL">
+                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                <font key="font" metaFont="system"/>
+            </buttonCell>
+        </button>
     </objects>
+    <classes>
+        <class className="AGNSSplitView" superclassName="NSSplitView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGNSSplitView.h"/>
+        </class>
+        <class className="AGNSSplitViewDelegate" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGNSSplitViewDelegate.h"/>
+            <relationships>
+                <relationship kind="outlet" name="splitView" candidateClass="NSSplitView"/>
+            </relationships>
+        </class>
+        <class className="JSXProject" superclassName="NSDocument">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JSXProject.h"/>
+            <relationships>
+                <relationship kind="outlet" name="splitViewController" candidateClass="JSXProjectSplitViewController"/>
+            </relationships>
+        </class>
+        <class className="JSXProjectSplitViewController" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JSXProjectSplitViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="splitView" candidateClass="AGNSSplitView"/>
+            </relationships>
+        </class>
+        <class className="NSDocument">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSDocument.h"/>
+            <relationships>
+                <relationship kind="action" name="browseDocumentVersions:"/>
+                <relationship kind="action" name="duplicateDocument:"/>
+                <relationship kind="action" name="lockDocument:"/>
+                <relationship kind="action" name="moveDocument:"/>
+                <relationship kind="action" name="moveDocumentToUbiquityContainer:"/>
+                <relationship kind="action" name="printDocument:"/>
+                <relationship kind="action" name="renameDocument:"/>
+                <relationship kind="action" name="revertDocumentToSaved:"/>
+                <relationship kind="action" name="runPageLayout:"/>
+                <relationship kind="action" name="saveDocument:"/>
+                <relationship kind="action" name="saveDocumentAs:"/>
+                <relationship kind="action" name="saveDocumentTo:"/>
+                <relationship kind="action" name="saveDocumentToPDF:"/>
+                <relationship kind="action" name="unlockDocument:"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
 </document>
