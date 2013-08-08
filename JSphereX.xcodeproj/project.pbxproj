@@ -17,6 +17,8 @@
 		802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39B817B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m */; };
 		802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39BB17B3CBCB005B70C4 /* CNSplitView.m */; };
 		802F39C417B3D242005B70C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802F39C317B3D242005B70C4 /* QuartzCore.framework */; };
+		802F39CB17B3DF17005B70C4 /* JSXProjectNavigatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39CA17B3DF17005B70C4 /* JSXProjectNavigatorItem.m */; };
+		802F39CC17B3E492005B70C4 /* JSXProjectNavigatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39C617B3DDAE005B70C4 /* JSXProjectNavigatorController.m */; };
 		808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
@@ -68,6 +70,10 @@
 		802F39BB17B3CBCB005B70C4 /* CNSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNSplitView.m; path = CNSplitView/CNSplitView/CNSplitView.m; sourceTree = SOURCE_ROOT; };
 		802F39BC17B3CBCB005B70C4 /* CNSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNSplitView.h; path = CNSplitView/CNSplitView/CNSplitView.h; sourceTree = SOURCE_ROOT; };
 		802F39C317B3D242005B70C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		802F39C517B3DDAE005B70C4 /* JSXProjectNavigatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorController.h; sourceTree = "<group>"; };
+		802F39C617B3DDAE005B70C4 /* JSXProjectNavigatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorController.m; sourceTree = "<group>"; };
+		802F39C917B3DF17005B70C4 /* JSXProjectNavigatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorItem.h; sourceTree = "<group>"; };
+		802F39CA17B3DF17005B70C4 /* JSXProjectNavigatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorItem.m; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* JSphereX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSphereX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -163,6 +169,25 @@
 				802F39BC17B3CBCB005B70C4 /* CNSplitView.h */,
 			);
 			name = CNSplitView;
+			sourceTree = "<group>";
+		};
+		802F39C717B3DEF7005B70C4 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				802F39C817B3DEFD005B70C4 /* Project */,
+			);
+			name = Navigator;
+			sourceTree = "<group>";
+		};
+		802F39C817B3DEFD005B70C4 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				802F39C517B3DDAE005B70C4 /* JSXProjectNavigatorController.h */,
+				802F39C617B3DDAE005B70C4 /* JSXProjectNavigatorController.m */,
+				802F39C917B3DF17005B70C4 /* JSXProjectNavigatorItem.h */,
+				802F39CA17B3DF17005B70C4 /* JSXProjectNavigatorItem.m */,
+			);
+			name = Project;
 			sourceTree = "<group>";
 		};
 		808058DC17B1B6BF004D1D41 = {
@@ -286,6 +311,7 @@
 			children = (
 				802F39A917B3A3C7005B70C4 /* JSXProjectSplitViewController.h */,
 				802F39AA17B3A3C7005B70C4 /* JSXProjectSplitViewController.m */,
+				802F39C717B3DEF7005B70C4 /* Navigator */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -434,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802F39CC17B3E492005B70C4 /* JSXProjectNavigatorController.m in Sources */,
 				8080592817B1D2CC004D1D41 /* JSXFileSGM.m in Sources */,
 				802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */,
 				8080593517B26520004D1D41 /* JSXFile.m in Sources */,
@@ -444,6 +471,7 @@
 				808058FC17B1B6C0004D1D41 /* JSXProject.m in Sources */,
 				802F39BE17B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m in Sources */,
 				8080592C17B1E5C9004D1D41 /* NSString+Hashing.m in Sources */,
+				802F39CB17B3DF17005B70C4 /* JSXProjectNavigatorItem.m in Sources */,
 				8080593817B265FC004D1D41 /* JSXFileMetaData.m in Sources */,
 				808058F517B1B6C0004D1D41 /* main.m in Sources */,
 				802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */,

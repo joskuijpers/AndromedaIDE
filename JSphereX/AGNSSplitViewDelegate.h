@@ -41,7 +41,7 @@ typedef NSRect (^AGNSSplitViewAdditionalEffectiveRectHandler)(NSInteger dividerI
 	AGNSSplitViewAdditionalEffectiveRectHandler mAdditionalEffectiveRectHandler;
 }
 
-@property (nonatomic, readwrite, retain) IBOutlet NSSplitView * splitView;
+@property (nonatomic, readwrite, retain) NSSplitView * splitView;
 @property (nonatomic, readwrite, assign) AGNSSplitViewResizingStyle resizingStyle;
 @property (nonatomic, readwrite, copy) NSArray * priorityIndexes;
 @property (nonatomic, readwrite, copy) AGNSSplitViewEffectiveRectHandler effectiveRectHandler;
