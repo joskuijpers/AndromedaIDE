@@ -8,10 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class JSXFileMetaData;
+@class JSXFileMetaData, JSXProjectSplitViewController;
 
 @interface JSXProject : NSDocument
 
+@property (assign, nonatomic) IBOutlet JSXProjectSplitViewController *splitViewController;
 @property (strong,readonly) JSXFileMetaData *metaData;
 
 @end

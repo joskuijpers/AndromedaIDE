@@ -9,6 +9,7 @@
 #import "JSXProject.h"
 #import "NSString+Hashing.h"
 #import "JSXFileMetaData.h"
+#import "JSXProjectSplitViewController.h"
 
 NSString * const kJSXMetaDataProjectFormatVersionKey = @"ProjectFormatVersion";
 
@@ -41,7 +42,6 @@ NSString * const kJSXMetaDataProjectFormatVersionKey = @"ProjectFormatVersion";
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
 	[super windowControllerDidLoadNib:aController];
-	// Add any code here that needs to be executed once the windowController has loaded the document's window.
 }
 
 + (BOOL)autosavesInPlace

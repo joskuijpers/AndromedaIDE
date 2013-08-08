@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A317B2BF25005B70C4 /* AGNSSplitView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		802F39AB17B3A3C7005B70C4 /* JSXProjectSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39AA17B3A3C7005B70C4 /* JSXProjectSplitViewController.m */; };
 		808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNSSplitViewDelegate.m; sourceTree = "<group>"; };
+		802F39A217B2BF25005B70C4 /* AGNSSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNSSplitViewDelegate.h; sourceTree = "<group>"; };
+		802F39A317B2BF25005B70C4 /* AGNSSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNSSplitView.m; sourceTree = "<group>"; };
+		802F39A417B2BF25005B70C4 /* AGNSSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNSSplitView.h; sourceTree = "<group>"; };
+		802F39A917B3A3C7005B70C4 /* JSXProjectSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectSplitViewController.h; sourceTree = "<group>"; };
+		802F39AA17B3A3C7005B70C4 /* JSXProjectSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectSplitViewController.m; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* JSphereX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSphereX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -92,6 +101,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		802F39A717B2BF2A005B70C4 /* AGNSplitView */ = {
+			isa = PBXGroup;
+			children = (
+				802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */,
+				802F39A217B2BF25005B70C4 /* AGNSSplitViewDelegate.h */,
+				802F39A317B2BF25005B70C4 /* AGNSSplitView.m */,
+				802F39A417B2BF25005B70C4 /* AGNSSplitView.h */,
+			);
+			name = AGNSplitView;
+			sourceTree = "<group>";
+		};
+		802F39A817B2BF32005B70C4 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				802F39A717B2BF2A005B70C4 /* AGNSplitView */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
 		808058DC17B1B6BF004D1D41 = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +165,9 @@
 		808058EE17B1B6BF004D1D41 /* JSphereX */ = {
 			isa = PBXGroup;
 			children = (
-				8080593917B27661004D1D41 /* Editors */,
+				802F39A817B2BF32005B70C4 /* ThirdParty */,
 				8080592917B1E5AB004D1D41 /* Categories */,
+				8080593917B27661004D1D41 /* Editors */,
 				8080592517B1D27B004D1D41 /* Models */,
 				8080592417B1B9AA004D1D41 /* PluginSystem */,
 				8080592217B1B98E004D1D41 /* Controllers */,
@@ -209,6 +238,8 @@
 		8080592217B1B98E004D1D41 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				802F39A917B3A3C7005B70C4 /* JSXProjectSplitViewController.h */,
+				802F39AA17B3A3C7005B70C4 /* JSXProjectSplitViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -359,10 +390,13 @@
 			files = (
 				8080592817B1D2CC004D1D41 /* JSXFileSGM.m in Sources */,
 				8080593517B26520004D1D41 /* JSXFile.m in Sources */,
+				802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */,
+				802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */,
 				808058FC17B1B6C0004D1D41 /* JSXProject.m in Sources */,
 				8080592C17B1E5C9004D1D41 /* NSString+Hashing.m in Sources */,
 				8080593817B265FC004D1D41 /* JSXFileMetaData.m in Sources */,
 				808058F517B1B6C0004D1D41 /* main.m in Sources */,
+				802F39AB17B3A3C7005B70C4 /* JSXProjectSplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +625,7 @@
 				8080591B17B1B6C0004D1D41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8080591C17B1B6C0004D1D41 /* Build configuration list for PBXNativeTarget "JSphereXTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +634,7 @@
 				8080591E17B1B6C0004D1D41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
