@@ -19,17 +19,14 @@
 
 - (id)init
 {
-	self = [super initWithWindowNibName:@"JSXProjectWindow"];
-	if(self) {
-		_mainSplitViewController = [[JSXMainSplitViewController alloc] init];
-	}
-	return self;
+	return [super initWithWindowNibName:@"JSXProjectWindow"];
 }
 
 - (void)windowDidLoad
 {
     [super windowDidLoad];
 
+	_mainSplitViewController = [[JSXMainSplitViewController alloc] init];
 	self.window.contentView = _mainSplitViewController.view;
 }
 
