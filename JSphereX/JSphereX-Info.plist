@@ -15,20 +15,106 @@
 			<string>ProjectIcon</string>
 			<key>CFBundleTypeName</key>
 			<string>Sphere Project</string>
-			<key>CFBundleTypeOSTypes</key>
-			<array>
-				<string>????</string>
-			</array>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>nl.jarvix.jspherex.project</string>
+				<string>nl.jarvix.sphere.project</string>
 			</array>
 			<key>LSTypeIsPackage</key>
 			<true/>
 			<key>NSDocumentClass</key>
-			<string>JSXProject</string>
+			<string>JSXProjectDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>sgm</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Sphere Game</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>nl.jarvix.sphere.game</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rfn</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Sphere Font</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>nl.jarvix.sphere.font</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rmp</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Sphere Map</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>nl.jarvix.sphere.map</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rss</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Sphere SpriteSet</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>nl.jarvix.sphere.spriteset</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rws</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Sphere Window Style</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>nl.jarvix.sphere.windowstyle</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
@@ -73,7 +159,7 @@
 			<key>UTTypeIconFile</key>
 			<string>ProjectIcon</string>
 			<key>UTTypeIdentifier</key>
-			<string>nl.jarvix.jspherex.project</string>
+			<string>nl.jarvix.sphere.project</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -86,7 +172,7 @@
 			<key>UTTypeDescription</key>
 			<string>Sphere Font</string>
 			<key>UTTypeIdentifier</key>
-			<string>nl.jarvix.jspherex.font</string>
+			<string>nl.jarvix.sphere.font</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -99,7 +185,7 @@
 			<key>UTTypeDescription</key>
 			<string>Sphere Map</string>
 			<key>UTTypeIdentifier</key>
-			<string>nl.jarvix.jspherex.map</string>
+			<string>nl.jarvix.sphere.map</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -112,7 +198,7 @@
 			<key>UTTypeDescription</key>
 			<string>Sphere SpriteSet</string>
 			<key>UTTypeIdentifier</key>
-			<string>nl.jarvix.jspherex.spriteset</string>
+			<string>nl.jarvix.sphere.spriteset</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -125,7 +211,7 @@
 			<key>UTTypeDescription</key>
 			<string>Sphere Window Style</string>
 			<key>UTTypeIdentifier</key>
-			<string>nl.jarvix.jspherex.windowstyle</string>
+			<string>nl.jarvix.sphere.windowstyle</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -138,7 +224,7 @@
 			<key>UTTypeDescription</key>
 			<string>Sphere Game</string>
 			<key>UTTypeIdentifier</key>
-			<string>nl.jarvix.jspherex.game</string>
+			<string>nl.jarvix.sphere.game</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>

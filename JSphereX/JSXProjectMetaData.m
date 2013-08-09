@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "JSXFileMetaData.h"
+#import "JSXProjectMetaData.h"
 
 NSString * const kJSXMetaDataFormatVersion = @"FormatVersion";
 NSString * const kJSXMetaDataGameName = @"GameName";
@@ -16,13 +16,13 @@ NSString * const kJSXMetaDataGameScreenWidth = @"ScreenWidth";
 NSString * const kJSXMetaDataGameScreenHeight = @"ScreenHeight";
 NSString * const kJSXMetaDataMainScript = @"MainScript";
 
-@interface JSXFileMetaData()
+@interface JSXProjectMetaData()
 {
 	NSMutableDictionary *_data;
 }
 @end
 
-@implementation JSXFileMetaData
+@implementation JSXProjectMetaData
 
 - (id)initWithFileData:(NSData *)fileData
 {

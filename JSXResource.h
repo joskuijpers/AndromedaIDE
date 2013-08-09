@@ -1,13 +1,15 @@
 //
-//  JSXFileProject.m
+//  JSXResource.h
 //  JSphereX
 //
 //  Created by Jos Kuijpers on 8/9/13.
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "JSXProject.h"
+#import <Foundation/Foundation.h>
 
-@implementation JSXProject
+@interface JSXResource : NSObject
+
+@property (copy) NSString *name;
 
 @end

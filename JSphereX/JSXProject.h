@@ -1,18 +1,18 @@
 //
-//  JSXDocument.h
+//  JSXFileProject.h
 //  JSphereX
 //
-//  Created by Jos Kuijpers on 8/7/13.
+//  Created by Jos Kuijpers on 8/9/13.
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "JSXFile.h"
 
-@class JSXFileMetaData, JSXProjectSplitViewController;
+@class JSXProjectMetaData;
 
-@interface JSXProject : NSDocument
+@interface JSXProject : JSXFile
 
-@property (assign, nonatomic) IBOutlet JSXProjectSplitViewController *splitViewController;
-@property (strong,readonly) JSXFileMetaData *metaData;
+@property (strong) JSXProjectMetaData *metaData;
+@property (strong) NSMutableArray *resourceSets;
 
 @end

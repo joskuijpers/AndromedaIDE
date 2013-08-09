@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "JSXFile.h"
 
-@interface JSXFileMetaData : JSXFile
+@interface JSXProjectMetaData : JSXFile
 
 @property (copy) NSNumber *formatVersion;
 @property (copy) NSString *gameName;
