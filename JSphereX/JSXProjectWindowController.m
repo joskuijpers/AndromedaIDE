@@ -7,27 +7,30 @@
 //
 
 #import "JSXProjectWindowController.h"
+#import "JSXMainSplitViewController.h"
 
 @interface JSXProjectWindowController ()
-
+{
+	JSXMainSplitViewController *_mainSplitViewController;
+}
 @end
 
 @implementation JSXProjectWindowController
 
 - (id)init
 {
-    self = [super initWithWindowNibName:@"JSXProjectDocument"];
-    if (self) {
-    }
-    
-    return self;
+	self = [super initWithWindowNibName:@"JSXProjectWindow"];
+	if(self) {
+		_mainSplitViewController = [[JSXMainSplitViewController alloc] init];
+	}
+	return self;
 }
 
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-    
-	NSLog(@"WindowDidLoad");
+
+	self.window.contentView = _mainSplitViewController.view;
 }
 
 @end

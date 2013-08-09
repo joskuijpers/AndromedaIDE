@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		802A640D17B4758A00597DB6 /* JSXDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A640B17B4758A00597DB6 /* JSXDocument.m */; };
+		802A641317B47D0E00597DB6 /* JSXMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* JSXMainSplitViewController.m */; };
+		802A641417B47D0E00597DB6 /* JSXMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* JSXMainSplitView.xib */; };
 		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A317B2BF25005B70C4 /* AGNSSplitView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		802F39BD17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39AF17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m */; };
@@ -26,7 +28,7 @@
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
 		808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 808058F717B1B6C0004D1D41 /* Credits.rtf */; };
 		808058FC17B1B6C0004D1D41 /* JSXProjectDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */; };
-		808058FF17B1B6C0004D1D41 /* JSXProjectDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808058FD17B1B6C0004D1D41 /* JSXProjectDocument.xib */; };
+		808058FF17B1B6C0004D1D41 /* JSXProjectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808058FD17B1B6C0004D1D41 /* JSXProjectWindow.xib */; };
 		8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8080590017B1B6C0004D1D41 /* MainMenu.xib */; };
 		8080590417B1B6C0004D1D41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8080590317B1B6C0004D1D41 /* Images.xcassets */; };
 		8080590B17B1B6C0004D1D41 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080590A17B1B6C0004D1D41 /* XCTest.framework */; };
@@ -53,6 +55,9 @@
 /* Begin PBXFileReference section */
 		802A640A17B4758A00597DB6 /* JSXDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXDocument.h; sourceTree = "<group>"; };
 		802A640B17B4758A00597DB6 /* JSXDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXDocument.m; sourceTree = "<group>"; };
+		802A641017B47D0E00597DB6 /* JSXMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXMainSplitViewController.h; sourceTree = "<group>"; };
+		802A641117B47D0E00597DB6 /* JSXMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXMainSplitViewController.m; sourceTree = "<group>"; };
+		802A641217B47D0E00597DB6 /* JSXMainSplitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSXMainSplitView.xib; sourceTree = "<group>"; };
 		802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNSSplitViewDelegate.m; sourceTree = "<group>"; };
 		802F39A217B2BF25005B70C4 /* AGNSSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNSSplitViewDelegate.h; sourceTree = "<group>"; };
 		802F39A317B2BF25005B70C4 /* AGNSSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNSSplitView.m; sourceTree = "<group>"; };
@@ -92,7 +97,7 @@
 		808058F817B1B6C0004D1D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		808058FA17B1B6C0004D1D41 /* JSXProjectDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSXProjectDocument.h; sourceTree = "<group>"; };
 		808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSXProjectDocument.m; sourceTree = "<group>"; };
-		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JSXProjectDocument.xib; sourceTree = "<group>"; };
+		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JSXProjectWindow.xib; sourceTree = "<group>"; };
 		8080590117B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8080590317B1B6C0004D1D41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8080590917B1B6C0004D1D41 /* JSphereXTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = JSphereXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +141,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		802A640F17B47CF700597DB6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				802A641017B47D0E00597DB6 /* JSXMainSplitViewController.h */,
+				802A641117B47D0E00597DB6 /* JSXMainSplitViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		802F39A717B2BF2A005B70C4 /* AGNSplitView */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,10 +209,10 @@
 		802F39D617B46994005B70C4 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				8080593617B265FC004D1D41 /* JSXProjectMetaData.h */,
-				8080593717B265FC004D1D41 /* JSXProjectMetaData.m */,
 				802F39CD17B46927005B70C4 /* JSXProject.h */,
 				802F39CE17B46927005B70C4 /* JSXProject.m */,
+				8080593617B265FC004D1D41 /* JSXProjectMetaData.h */,
+				8080593717B265FC004D1D41 /* JSXProjectMetaData.m */,
 				802F39D317B46982005B70C4 /* JSXResource.h */,
 				802F39D417B46982005B70C4 /* JSXResource.m */,
 				802F39D017B46968005B70C4 /* JSXResourceSet.h */,
@@ -326,8 +340,9 @@
 		8080592017B1B980004D1D41 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				808058FD17B1B6C0004D1D41 /* JSXProjectDocument.xib */,
 				8080590017B1B6C0004D1D41 /* MainMenu.xib */,
+				808058FD17B1B6C0004D1D41 /* JSXProjectWindow.xib */,
+				802A641217B47D0E00597DB6 /* JSXMainSplitView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -335,10 +350,10 @@
 		8080592117B1B988004D1D41 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				808058FA17B1B6C0004D1D41 /* JSXProjectDocument.h */,
-				808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */,
 				802A640A17B4758A00597DB6 /* JSXDocument.h */,
 				802A640B17B4758A00597DB6 /* JSXDocument.m */,
+				808058FA17B1B6C0004D1D41 /* JSXProjectDocument.h */,
+				808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */,
 			);
 			name = Documents;
 			sourceTree = "<group>";
@@ -346,6 +361,7 @@
 		8080592217B1B98E004D1D41 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				802A640F17B47CF700597DB6 /* Main */,
 				802F39C717B3DEF7005B70C4 /* Navigator */,
 			);
 			name = ViewControllers;
@@ -385,10 +401,10 @@
 		8080593A17B2766C004D1D41 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				8080592617B1D2CC004D1D41 /* JSXFileSGM.h */,
-				8080592717B1D2CC004D1D41 /* JSXFileSGM.m */,
 				8080593317B26520004D1D41 /* JSXFile.h */,
 				8080593417B26520004D1D41 /* JSXFile.m */,
+				8080592617B1D2CC004D1D41 /* JSXFileSGM.h */,
+				8080592717B1D2CC004D1D41 /* JSXFileSGM.m */,
 				802F39D617B46994005B70C4 /* Project */,
 			);
 			name = Files;
@@ -471,10 +487,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808058FF17B1B6C0004D1D41 /* JSXProjectDocument.xib in Resources */,
+				808058FF17B1B6C0004D1D41 /* JSXProjectWindow.xib in Resources */,
 				8080590417B1B6C0004D1D41 /* Images.xcassets in Resources */,
 				808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */,
 				808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */,
+				802A641417B47D0E00597DB6 /* JSXMainSplitView.xib in Resources */,
 				8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +527,7 @@
 				8080593817B265FC004D1D41 /* JSXProjectMetaData.m in Sources */,
 				802F39DB17B46E26005B70C4 /* JSXProjectWindowController.m in Sources */,
 				808058F517B1B6C0004D1D41 /* main.m in Sources */,
+				802A641317B47D0E00597DB6 /* JSXMainSplitViewController.m in Sources */,
 				802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */,
 				802F39C017B3CBCB005B70C4 /* CNSplitViewToolbar.m in Sources */,
 				802F39D217B46968005B70C4 /* JSXResourceSet.m in Sources */,
@@ -551,12 +569,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		808058FD17B1B6C0004D1D41 /* JSXProjectDocument.xib */ = {
+		808058FD17B1B6C0004D1D41 /* JSXProjectWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				808058FE17B1B6C0004D1D41 /* Base */,
 			);
-			name = JSXProjectDocument.xib;
+			name = JSXProjectWindow.xib;
 			sourceTree = "<group>";
 		};
 		8080590017B1B6C0004D1D41 /* MainMenu.xib */ = {

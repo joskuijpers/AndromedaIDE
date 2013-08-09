@@ -17,7 +17,7 @@
 
 @interface JSXProjectDocument()
 {
-	NSFileWrapper *_documentFileWrapper;
+	NSFileWrapper *_documentFileWrapper; // To model
 	JSXProjectWindowController *_windowController;
 }
 @end
@@ -27,14 +27,8 @@
 - (void)makeWindowControllers
 {
 	_windowController = [[JSXProjectWindowController alloc] init];
-	[self addWindowController:_windowController];
-}
-
-- (void)windowControllerDidLoadNib:(NSWindowController *)aController
-{
-	[super windowControllerDidLoadNib:aController];
 	
-	NSLog(@"%@",NSStringFromSelector(_cmd));
+	[self addWindowController:_windowController];
 }
 
 #pragma mark - Package support
@@ -42,6 +36,7 @@
 - (NSFileWrapper *)fileWrapperOfType:(NSString *)typeName
 							   error:(NSError *__autoreleasing *)outError
 {
+	// All code to model
 	NSDictionary *rootContents;
 	NSFileWrapper *metaDataWrapper;
 	

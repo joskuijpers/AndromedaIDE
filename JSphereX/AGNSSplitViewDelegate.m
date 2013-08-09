@@ -362,10 +362,8 @@
 	BOOL * resizable = calloc(sizeof(BOOL) * splitView.subviews.count, 1);
 	CGFloat * sizes = calloc(sizeof(CGFloat) * splitView.subviews.count, 1);
 	
-	
 	[self _getSubviewsSizes:sizes];
 	[self _getSubviewsResizable:resizable count:&numberOfSubviewsThatCanBeResized totalWidth:&oldWidthOfAllResizableViews delta:delta];
-	
 	
 	// Get proportions to use for resizing
 	CGFloat * proportionsForResizableViews = calloc(sizeof(CGFloat) * splitView.subviews.count, 1);
@@ -384,7 +382,6 @@
 		__block CGFloat deltaRemaining = delta;
 		
 		[mSubviewInfos enumerateObjectsUsingBlock:^(AGNSSplitViewDelegateSubviewInfo * info, NSUInteger viewIndex, BOOL *stop) {
-			
 			BOOL canNoLongerResize = NO;
 			CGFloat oldSize = sizes[viewIndex];
 			CGFloat newSize = oldSize;
@@ -440,6 +437,9 @@
 				if (fabs(deltaRemaining) <= 0.5) *stop = YES;
 			}
 		}];
+		
+		if(delta == deltaRemaining)
+			break;
 		
 		delta = deltaRemaining;
 	}
