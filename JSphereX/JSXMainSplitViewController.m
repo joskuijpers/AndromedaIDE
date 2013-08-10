@@ -9,11 +9,13 @@
 #import "JSXMainSplitViewController.h"
 #import "AGNSSplitViewDelegate.h"
 
+#import "JSXProjectNavigatorViewController.h"
+
 @interface JSXMainSplitViewController ()
 {
-	NSView *_navigatorView;
-	NSView *_editorView;
-	NSView *_utilitiesView;
+	NSViewController *_navigatorViewController;
+	NSViewController *_editorViewController;
+	NSViewController *_utilitiesViewController;
 	
 	AGNSSplitViewDelegate *_delegate;
 }
@@ -43,6 +45,10 @@
 	[_delegate setCanCollapse:YES subviewAtIndex:2];
 	
 	_splitView.delegate = _delegate;
+	
+	
+	_navigatorViewController = [[JSXProjectNavigatorViewController alloc] init];
+	[_splitView replaceSubview:_splitView.subviews[0] with:_navigatorViewController.view];
 }
 
 @end

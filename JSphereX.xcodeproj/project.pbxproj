@@ -23,6 +23,10 @@
 		802F39D217B46968005B70C4 /* JSXResourceSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39D117B46968005B70C4 /* JSXResourceSet.m */; };
 		802F39D517B46982005B70C4 /* JSXResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39D417B46982005B70C4 /* JSXResource.m */; };
 		802F39DB17B46E26005B70C4 /* JSXProjectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39DA17B46E26005B70C4 /* JSXProjectWindowController.m */; };
+		80345A4917B5B63D00170EFD /* JSXProjectNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4717B5B63D00170EFD /* JSXProjectNavigatorViewController.m */; };
+		80345A4A17B5B63D00170EFD /* JSXProjectNavigatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80345A4817B5B63D00170EFD /* JSXProjectNavigatorView.xib */; };
+		80345A4D17B5BCE700170EFD /* JSXProjectNavigatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */; };
+		80345A5017B67C6F00170EFD /* JSXProjectNavigatorRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */; };
 		808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
@@ -85,6 +89,13 @@
 		802F39D417B46982005B70C4 /* JSXResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSXResource.m; path = ../JSXResource.m; sourceTree = "<group>"; };
 		802F39D917B46E26005B70C4 /* JSXProjectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectWindowController.h; sourceTree = "<group>"; };
 		802F39DA17B46E26005B70C4 /* JSXProjectWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectWindowController.m; sourceTree = "<group>"; };
+		80345A4617B5B63D00170EFD /* JSXProjectNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorViewController.h; sourceTree = "<group>"; };
+		80345A4717B5B63D00170EFD /* JSXProjectNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorViewController.m; sourceTree = "<group>"; };
+		80345A4817B5B63D00170EFD /* JSXProjectNavigatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSXProjectNavigatorView.xib; sourceTree = "<group>"; };
+		80345A4B17B5BCE700170EFD /* JSXProjectNavigatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorItem.h; sourceTree = "<group>"; };
+		80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorItem.m; sourceTree = "<group>"; };
+		80345A4E17B67C6F00170EFD /* JSXProjectNavigatorRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorRowView.h; sourceTree = "<group>"; };
+		80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorRowView.m; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* JSphereX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSphereX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -202,6 +213,12 @@
 		802F39C817B3DEFD005B70C4 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				80345A4617B5B63D00170EFD /* JSXProjectNavigatorViewController.h */,
+				80345A4717B5B63D00170EFD /* JSXProjectNavigatorViewController.m */,
+				80345A4B17B5BCE700170EFD /* JSXProjectNavigatorItem.h */,
+				80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */,
+				80345A4E17B67C6F00170EFD /* JSXProjectNavigatorRowView.h */,
+				80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -233,8 +250,8 @@
 		802F39D817B46DBF005B70C4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8080592117B1B988004D1D41 /* Documents */,
 				802F39D717B46DB5005B70C4 /* WindowControllers */,
+				8080592117B1B988004D1D41 /* Documents */,
 				8080592217B1B98E004D1D41 /* ViewControllers */,
 			);
 			name = Controllers;
@@ -343,6 +360,7 @@
 				8080590017B1B6C0004D1D41 /* MainMenu.xib */,
 				808058FD17B1B6C0004D1D41 /* JSXProjectWindow.xib */,
 				802A641217B47D0E00597DB6 /* JSXMainSplitView.xib */,
+				80345A4817B5B63D00170EFD /* JSXProjectNavigatorView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -490,6 +508,7 @@
 				808058FF17B1B6C0004D1D41 /* JSXProjectWindow.xib in Resources */,
 				8080590417B1B6C0004D1D41 /* Images.xcassets in Resources */,
 				808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */,
+				80345A4A17B5B63D00170EFD /* JSXProjectNavigatorView.xib in Resources */,
 				808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */,
 				802A641417B47D0E00597DB6 /* JSXMainSplitView.xib in Resources */,
 				8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */,
@@ -518,6 +537,9 @@
 				802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */,
 				802F39D517B46982005B70C4 /* JSXResource.m in Sources */,
 				802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */,
+				80345A5017B67C6F00170EFD /* JSXProjectNavigatorRowView.m in Sources */,
+				80345A4917B5B63D00170EFD /* JSXProjectNavigatorViewController.m in Sources */,
+				80345A4D17B5BCE700170EFD /* JSXProjectNavigatorItem.m in Sources */,
 				802F39BF17B3CBCB005B70C4 /* CNSplitViewToolbarButton.m in Sources */,
 				802F39CF17B46927005B70C4 /* JSXProject.m in Sources */,
 				802F39BD17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m in Sources */,

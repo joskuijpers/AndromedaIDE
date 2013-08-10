@@ -1,0 +1,227 @@
+//
+//  JSXProjectNavigatorViewController.m
+//  JSphereX
+//
+//  Created by Jos Kuijpers on 8/10/13.
+//  Copyright (c) 2013 Jarvix. All rights reserved.
+//
+
+#import "JSXProjectNavigatorViewController.h"
+#import "JSXProjectNavigatorItem.h"
+#import "JSXProjectNavigatorRowView.h"
+
+@interface JSXProjectNavigatorViewController ()
+{
+	JSXProjectNavigatorItem *_rootItem;
+	NSArray *_itemsBeingDragged;
+}
+@end
+
+@implementation JSXProjectNavigatorViewController
+
+- (id)init
+{
+	self = [super initWithNibName:@"JSXProjectNavigatorView" bundle:nil];
+	if(self) {
+		_rootItem = [[JSXProjectNavigatorItem alloc] init];
+		_rootItem.title = @"Project";
+		_rootItem.type = JSXProjectNavigatorItemProject;
+		
+		JSXProjectNavigatorItem *item;
+		for(int i = 0; i < 5; i++) {
+			item = [[JSXProjectNavigatorItem alloc] init];
+			item.title = [NSString stringWithFormat:@"Item%d",i];
+			item.type = JSXProjectNavigatorItemFile;
+			item.url = [NSURL URLWithString:[NSString stringWithFormat:@"mypr://%@",item.title]];
+			
+			[_rootItem.children addObject:item];
+		}
+		
+		for(int i = 0; i < 2; i++) {
+			item = [[JSXProjectNavigatorItem alloc] init];
+			item.title = [NSString stringWithFormat:@"Group%d",i];
+			item.type = JSXProjectNavigatorItemGroup;
+			item.url = [NSURL URLWithString:[NSString stringWithFormat:@"mypr://%@",item.title]];
+			
+			[_rootItem.children addObject:item];
+		}
+	}
+	return self;
+}
+
+- (void)loadView
+{
+	[super loadView];
+	
+	_outlineView.dataSource = self;
+	_outlineView.delegate = self;
+	
+	[_outlineView registerForDraggedTypes:@[(id)kUTTypeURL]];
+	[_outlineView setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
+}
+
+#pragma mark - Data Source
+
+- (NSInteger)outlineView:(NSOutlineView *)outlineView
+  numberOfChildrenOfItem:(JSXProjectNavigatorItem *)item
+{
+	return (item == nil) ? 1 : item.children.count;
+}
+
+- (BOOL)outlineView:(NSOutlineView *)outlineView
+   isItemExpandable:(JSXProjectNavigatorItem *)item
+{
+	return (item == nil) ? YES : ![item isLeaf];
+}
+
+- (id)outlineView:(NSOutlineView *)outlineView
+			child:(NSInteger)index
+		   ofItem:(JSXProjectNavigatorItem *)item
+{
+	return (item == nil) ? _rootItem : item.children[index];
+}
+
+- (id)outlineView:(NSOutlineView *)outlineView
+objectValueForTableColumn:(NSTableColumn *)tableColumn
+		   byItem:(JSXProjectNavigatorItem *)item
+{
+	return item;
+}
+
+- (NSView *)outlineView:(NSOutlineView *)outlineView
+	 viewForTableColumn:(NSTableColumn *)tableColumn
+				   item:(JSXProjectNavigatorItem *)item
+{
+	if(item.isProject)
+		return [outlineView makeViewWithIdentifier:@"ProjectCell"
+											 owner:self];
+	return [outlineView makeViewWithIdentifier:@"ItemCell"
+								  owner:self];
+}
+
+#pragma mark - OutlineView Delegate
+
+// RM
+- (void)outlineView:(NSOutlineView *)outlineView
+	  didAddRowView:(NSTableRowView *)rowView
+			 forRow:(NSInteger)row
+{
+//	NSLog(@"%@",NSStringFromSelector(_cmd));
+	
+//	rowView.backgroundColor = [NSColor redColor];
+}
+
+// TODO: get rid of this
+- (CGFloat)outlineView:(NSOutlineView *)outlineView
+	 heightOfRowByItem:(JSXProjectNavigatorItem *)item
+{
+	if(item.isProject)
+		return 32.0f;
+	return 18.0f;
+}
+
+#pragma mark - Drag and Drop
+
+- (id<NSPasteboardWriting>)outlineView:(NSOutlineView *)outlineView
+			   pasteboardWriterForItem:(JSXProjectNavigatorItem *)item
+{
+	if(item.isProject)
+		return nil;
+	return item;
+}
+
+- (NSDragOperation)outlineView:(NSOutlineView *)outlineView
+				  validateDrop:(id<NSDraggingInfo>)info
+				  proposedItem:(JSXProjectNavigatorItem *)item
+			proposedChildIndex:(NSInteger)index
+{
+	if(index == -1 || item == nil)
+		return NSDragOperationNone;
+
+	info.animatesToDestination = YES;
+	
+	return NSDragOperationMove;
+}
+
+- (void)outlineView:(NSOutlineView *)outlineView
+	draggingSession:(NSDraggingSession *)session
+   willBeginAtPoint:(NSPoint)screenPoint
+		   forItems:(NSArray *)draggedItems
+{
+	_itemsBeingDragged = draggedItems;
+}
+
+- (BOOL)outlineView:(NSOutlineView *)outlineView
+		 acceptDrop:(id<NSDraggingInfo>)info
+			   item:(JSXProjectNavigatorItem *)intoItem
+		 childIndex:(NSInteger)atIndex
+{
+	NSArray *classes = @[[JSXProjectNavigatorItem class]];
+	__block NSInteger insertionIndex = atIndex;
+	[info enumerateDraggingItemsWithOptions:0
+									forView:outlineView
+									classes:classes
+							  searchOptions:nil
+								 usingBlock:^(NSDraggingItem *draggingItem, NSInteger idx, BOOL *stop) {
+									 
+									 JSXProjectNavigatorItem *sourceItem = _itemsBeingDragged[idx];
+									 JSXProjectNavigatorItem *fromItem = [outlineView parentForItem:sourceItem];
+									 NSInteger fromIndex = [fromItem.children indexOfObject:sourceItem];
+									 
+									 NSLog(@"idx %ld, intoItem %@, root %@ atIndex %ld",(long)idx,intoItem,_rootItem,(long)atIndex);
+									 NSLog(@".item %@, ..title %@",draggingItem.item,[draggingItem.item title]);
+									 NSLog(@"source item %@, fromItem %@, fromIndex %lu",sourceItem,fromItem,fromIndex);
+
+									 NSLog(@"From index: %ld to index %ld",(long)fromIndex,(long)insertionIndex);
+									 
+									 NSInteger toIndex = insertionIndex;
+									 if(fromItem == intoItem) {
+										 if(fromIndex < insertionIndex)
+											 toIndex--;
+										 
+										 if(fromIndex == toIndex)
+											 return;
+									 }
+									 
+									 NSLog(@"From index: %ld to index %ld",(long)fromIndex,(long)toIndex);
+									 
+									 if(intoItem == fromItem) {
+										 NSLog(@"Before Remove: %@",fromItem.children);
+										 [fromItem.children removeObject:sourceItem];
+										 NSLog(@"After Remove: %@",fromItem.children);
+										 
+										 NSLog(@"Before Insert: %@",intoItem.children);
+										 [intoItem.children insertObject:sourceItem
+																 atIndex:toIndex];
+										 NSLog(@"After Insert: %@",intoItem.children);
+									 }
+									 else {
+										 NSLog(@"Before Insert: %@",intoItem.children);
+										 [intoItem.children insertObject:sourceItem
+																 atIndex:toIndex];
+										 NSLog(@"After Insert: %@",intoItem.children);
+										 
+										 NSLog(@"Before Remove: %@",fromItem.children);
+										 [fromItem.children removeObject:sourceItem];
+										 NSLog(@"After Remove: %@",fromItem.children);
+									 }
+									 
+									 [outlineView moveItemAtIndex:fromIndex
+														 inParent:fromItem
+														  toIndex:toIndex
+														 inParent:intoItem];
+								 }];
+	
+	return YES;
+}
+//
+//- (BOOL)outlineView:(NSOutlineView *)outlineView
+//		 writeItems:(NSArray *)items
+//	   toPasteboard:(NSPasteboard *)pasteboard
+//{
+//	NSLog(@"%@",NSStringFromSelector(_cmd));
+//	
+//	return NO;
+//}
+
+@end
