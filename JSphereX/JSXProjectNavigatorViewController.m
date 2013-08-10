@@ -151,77 +151,60 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 	_itemsBeingDragged = draggedItems;
 }
 
+- (void)_performDragReorderWithDragInfo:(id<NSDraggingInfo>)info
+							 sourceItem:(JSXProjectNavigatorItem *)sourceItem
+							   fromItem:(JSXProjectNavigatorItem *)fromItem
+							  fromIndex:(NSInteger)fromIndex
+								 toItem:(JSXProjectNavigatorItem *)toItem
+								toIndex:(NSInteger)toIndex
+{
+	if(fromItem == toItem) {
+		if(fromIndex < toIndex)
+			toIndex--;
+		
+		if(fromIndex == toIndex)
+			return;
+	}
+	
+	[fromItem.children removeObject:sourceItem
+							inRange:NSMakeRange(fromIndex, 1)];
+	
+	[toItem.children insertObject:sourceItem
+						  atIndex:toIndex];
+	
+	[_outlineView moveItemAtIndex:fromIndex
+						 inParent:fromItem
+						  toIndex:toIndex
+						 inParent:toItem];
+}
+
 - (BOOL)outlineView:(NSOutlineView *)outlineView
 		 acceptDrop:(id<NSDraggingInfo>)info
-			   item:(JSXProjectNavigatorItem *)intoItem
-		 childIndex:(NSInteger)atIndex
+			   item:(JSXProjectNavigatorItem *)toItem
+		 childIndex:(NSInteger)toIndex
 {
-	NSArray *classes = @[[JSXProjectNavigatorItem class]];
-	__block NSInteger insertionIndex = atIndex;
-	[info enumerateDraggingItemsWithOptions:0
-									forView:outlineView
-									classes:classes
-							  searchOptions:nil
-								 usingBlock:^(NSDraggingItem *draggingItem, NSInteger idx, BOOL *stop) {
-									 
-									 JSXProjectNavigatorItem *sourceItem = _itemsBeingDragged[idx];
-									 JSXProjectNavigatorItem *fromItem = [outlineView parentForItem:sourceItem];
-									 NSInteger fromIndex = [fromItem.children indexOfObject:sourceItem];
-									 
-									 NSLog(@"idx %ld, intoItem %@, root %@ atIndex %ld",(long)idx,intoItem,_rootItem,(long)atIndex);
-									 NSLog(@".item %@, ..title %@",draggingItem.item,[draggingItem.item title]);
-									 NSLog(@"source item %@, fromItem %@, fromIndex %lu",sourceItem,fromItem,fromIndex);
-
-									 NSLog(@"From index: %ld to index %ld",(long)fromIndex,(long)insertionIndex);
-									 
-									 NSInteger toIndex = insertionIndex;
-									 if(fromItem == intoItem) {
-										 if(fromIndex < insertionIndex)
-											 toIndex--;
-										 
-										 if(fromIndex == toIndex)
-											 return;
-									 }
-									 
-									 NSLog(@"From index: %ld to index %ld",(long)fromIndex,(long)toIndex);
-									 
-									 if(intoItem == fromItem) {
-										 NSLog(@"Before Remove: %@",fromItem.children);
-										 [fromItem.children removeObject:sourceItem];
-										 NSLog(@"After Remove: %@",fromItem.children);
-										 
-										 NSLog(@"Before Insert: %@",intoItem.children);
-										 [intoItem.children insertObject:sourceItem
-																 atIndex:toIndex];
-										 NSLog(@"After Insert: %@",intoItem.children);
-									 }
-									 else {
-										 NSLog(@"Before Insert: %@",intoItem.children);
-										 [intoItem.children insertObject:sourceItem
-																 atIndex:toIndex];
-										 NSLog(@"After Insert: %@",intoItem.children);
-										 
-										 NSLog(@"Before Remove: %@",fromItem.children);
-										 [fromItem.children removeObject:sourceItem];
-										 NSLog(@"After Remove: %@",fromItem.children);
-									 }
-									 
-									 [outlineView moveItemAtIndex:fromIndex
-														 inParent:fromItem
-														  toIndex:toIndex
-														 inParent:intoItem];
-								 }];
+	__block NSInteger insertionIndex = toIndex;
+	[_itemsBeingDragged enumerateObjectsUsingBlock:^(JSXProjectNavigatorItem *sourceItem, NSUInteger idx, BOOL *stop) {
+		
+		JSXProjectNavigatorItem *fromItem = [_outlineView parentForItem:sourceItem];
+		NSInteger fromIndex = [fromItem.children indexOfObject:sourceItem];
+		
+		NSInteger actualIndex = insertionIndex;
+		if(toIndex > fromIndex && fromItem == toItem) {
+			actualIndex -= idx;
+		}
+		
+		[self _performDragReorderWithDragInfo:info
+								   sourceItem:sourceItem
+									 fromItem:fromItem
+									fromIndex:fromIndex
+									   toItem:toItem
+									  toIndex:actualIndex];
+		
+		insertionIndex++;
+	}];
 	
 	return YES;
 }
-//
-//- (BOOL)outlineView:(NSOutlineView *)outlineView
-//		 writeItems:(NSArray *)items
-//	   toPasteboard:(NSPasteboard *)pasteboard
-//{
-//	NSLog(@"%@",NSStringFromSelector(_cmd));
-//	
-//	return NO;
-//}
 
 @end
