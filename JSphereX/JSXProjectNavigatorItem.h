@@ -19,6 +19,7 @@ typedef enum {
 
 @property (strong) NSString *title;
 @property (strong) NSString *subTitle;
+@property (strong) NSImage *image;
 
 @property (assign) JSXProjectNavigatorItemType type;
 @property (strong) NSMutableArray *children;

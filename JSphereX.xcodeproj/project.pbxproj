@@ -27,6 +27,7 @@
 		80345A4A17B5B63D00170EFD /* JSXProjectNavigatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80345A4817B5B63D00170EFD /* JSXProjectNavigatorView.xib */; };
 		80345A4D17B5BCE700170EFD /* JSXProjectNavigatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */; };
 		80345A5017B67C6F00170EFD /* JSXProjectNavigatorRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */; };
+		80345A5417BA27D500170EFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80345A5317BA27D500170EFD /* Images.xcassets */; };
 		808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
@@ -34,7 +35,6 @@
 		808058FC17B1B6C0004D1D41 /* JSXProjectDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */; };
 		808058FF17B1B6C0004D1D41 /* JSXProjectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808058FD17B1B6C0004D1D41 /* JSXProjectWindow.xib */; };
 		8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8080590017B1B6C0004D1D41 /* MainMenu.xib */; };
-		8080590417B1B6C0004D1D41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8080590317B1B6C0004D1D41 /* Images.xcassets */; };
 		8080590B17B1B6C0004D1D41 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080590A17B1B6C0004D1D41 /* XCTest.framework */; };
 		8080590C17B1B6C0004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		8080591417B1B6C0004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8080591217B1B6C0004D1D41 /* InfoPlist.strings */; };
@@ -96,6 +96,7 @@
 		80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorItem.m; sourceTree = "<group>"; };
 		80345A4E17B67C6F00170EFD /* JSXProjectNavigatorRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorRowView.h; sourceTree = "<group>"; };
 		80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorRowView.m; sourceTree = "<group>"; };
+		80345A5317BA27D500170EFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* JSphereX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSphereX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -110,7 +111,6 @@
 		808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSXProjectDocument.m; sourceTree = "<group>"; };
 		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JSXProjectWindow.xib; sourceTree = "<group>"; };
 		8080590117B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		8080590317B1B6C0004D1D41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8080590917B1B6C0004D1D41 /* JSphereXTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = JSphereXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8080590A17B1B6C0004D1D41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8080591117B1B6C0004D1D41 /* JSphereXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSphereXTests-Info.plist"; sourceTree = "<group>"; };
@@ -349,7 +349,7 @@
 		8080591F17B1B97A004D1D41 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				8080590317B1B6C0004D1D41 /* Images.xcassets */,
+				80345A5317BA27D500170EFD /* Images.xcassets */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -506,8 +506,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				808058FF17B1B6C0004D1D41 /* JSXProjectWindow.xib in Resources */,
-				8080590417B1B6C0004D1D41 /* Images.xcassets in Resources */,
 				808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */,
+				80345A5417BA27D500170EFD /* Images.xcassets in Resources */,
 				80345A4A17B5B63D00170EFD /* JSXProjectNavigatorView.xib in Resources */,
 				808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */,
 				802A641417B47D0E00597DB6 /* JSXMainSplitView.xib in Resources */,

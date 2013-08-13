@@ -26,6 +26,7 @@
 		_rootItem = [[JSXProjectNavigatorItem alloc] init];
 		_rootItem.title = @"Project";
 		_rootItem.type = JSXProjectNavigatorItemProject;
+		_rootItem.image = [NSImage imageNamed:@"nl.jarvix.sphere.image.project"];
 		
 		JSXProjectNavigatorItem *item;
 		for(int i = 0; i < 5; i++) {
@@ -33,7 +34,9 @@
 			item.title = [NSString stringWithFormat:@"Item%d",i];
 			item.type = JSXProjectNavigatorItemFile;
 			item.url = [NSURL URLWithString:[NSString stringWithFormat:@"mypr://%@",item.title]];
-			
+//			item.image = [NSImage imageNamed:@"nl.jarvix.sphere.image.file"];
+			item.image = [[NSWorkspace sharedWorkspace] iconForFile:@"/Users/jos/Documents/Jarvix/Production/SplitViewProblemCase.zip"];
+
 			[_rootItem.children addObject:item];
 		}
 		
@@ -42,6 +45,7 @@
 			item.title = [NSString stringWithFormat:@"Group%d",i];
 			item.type = JSXProjectNavigatorItemGroup;
 			item.url = [NSURL URLWithString:[NSString stringWithFormat:@"mypr://%@",item.title]];
+			item.image = [NSImage imageNamed:@"nl.jarvix.sphere.image.navgroup"];
 			
 			[_rootItem.children addObject:item];
 		}
