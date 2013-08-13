@@ -8,6 +8,7 @@
 
 #import "JSXProjectNavigatorViewController.h"
 #import "JSXProjectNavigatorItem.h"
+#import "JSXProjectNavigatorFileItem.h"
 #import "JSXProjectNavigatorRowView.h"
 
 @interface JSXProjectNavigatorViewController ()
@@ -30,12 +31,8 @@
 		
 		JSXProjectNavigatorItem *item;
 		for(int i = 0; i < 5; i++) {
-			item = [[JSXProjectNavigatorItem alloc] init];
-			item.title = [NSString stringWithFormat:@"Item%d",i];
-			item.type = JSXProjectNavigatorItemFile;
-			item.url = [NSURL URLWithString:[NSString stringWithFormat:@"mypr://%@",item.title]];
-//			item.image = [NSImage imageNamed:@"nl.jarvix.sphere.image.file"];
-			item.image = [[NSWorkspace sharedWorkspace] iconForFile:@"/Users/jos/Documents/Jarvix/Production/SplitViewProblemCase.zip"];
+			item = [[JSXProjectNavigatorFileItem alloc] init];
+			item.url = [NSURL URLWithString:@"file:///Users/jos/Documents/Jarvix/Production/SplitViewProblemCase.zip"];
 
 			[_rootItem.children addObject:item];
 		}
@@ -105,16 +102,6 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 
 #pragma mark - OutlineView Delegate
 
-// RM
-- (void)outlineView:(NSOutlineView *)outlineView
-	  didAddRowView:(NSTableRowView *)rowView
-			 forRow:(NSInteger)row
-{
-//	NSLog(@"%@",NSStringFromSelector(_cmd));
-	
-//	rowView.backgroundColor = [NSColor redColor];
-}
-
 // TODO: get rid of this
 - (CGFloat)outlineView:(NSOutlineView *)outlineView
 	 heightOfRowByItem:(JSXProjectNavigatorItem *)item
@@ -122,6 +109,16 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 	if(item.isProject)
 		return 32.0f;
 	return 18.0f;
+}
+
+- (void)outlineViewSelectionDidChange:(NSNotification *)notification
+{
+	if(_outlineView.selectedRowIndexes.count != 1)
+		return;
+
+	NSInteger row = _outlineView.selectedRow;
+	JSXProjectNavigatorItem *item = [_outlineView itemAtRow:row];
+	NSLog(@"Selected %@",item);
 }
 
 #pragma mark - Drag and Drop

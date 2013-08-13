@@ -17,14 +17,14 @@ typedef enum {
 
 @interface JSXProjectNavigatorItem : NSObject <NSPasteboardWriting,NSPasteboardReading>
 
+@property (strong) NSURL *url;
+
 @property (strong) NSString *title;
 @property (strong) NSString *subTitle;
 @property (strong) NSImage *image;
 
 @property (assign) JSXProjectNavigatorItemType type;
 @property (strong) NSMutableArray *children;
-
-@property (strong) NSURL *url;
 
 - (BOOL)isLeaf;
 - (BOOL)isProject;

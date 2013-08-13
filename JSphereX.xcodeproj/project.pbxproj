@@ -28,6 +28,7 @@
 		80345A4D17B5BCE700170EFD /* JSXProjectNavigatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */; };
 		80345A5017B67C6F00170EFD /* JSXProjectNavigatorRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */; };
 		80345A5417BA27D500170EFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80345A5317BA27D500170EFD /* Images.xcassets */; };
+		80345A5717BA46FE00170EFD /* JSXProjectNavigatorFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A5617BA46FE00170EFD /* JSXProjectNavigatorFileItem.m */; };
 		808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
@@ -97,6 +98,8 @@
 		80345A4E17B67C6F00170EFD /* JSXProjectNavigatorRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorRowView.h; sourceTree = "<group>"; };
 		80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorRowView.m; sourceTree = "<group>"; };
 		80345A5317BA27D500170EFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80345A5517BA46FE00170EFD /* JSXProjectNavigatorFileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorFileItem.h; sourceTree = "<group>"; };
+		80345A5617BA46FE00170EFD /* JSXProjectNavigatorFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorFileItem.m; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* JSphereX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSphereX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -215,10 +218,9 @@
 			children = (
 				80345A4617B5B63D00170EFD /* JSXProjectNavigatorViewController.h */,
 				80345A4717B5B63D00170EFD /* JSXProjectNavigatorViewController.m */,
-				80345A4B17B5BCE700170EFD /* JSXProjectNavigatorItem.h */,
-				80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */,
 				80345A4E17B67C6F00170EFD /* JSXProjectNavigatorRowView.h */,
 				80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */,
+				80345A5817BA470B00170EFD /* Model */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -255,6 +257,17 @@
 				8080592217B1B98E004D1D41 /* ViewControllers */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		80345A5817BA470B00170EFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80345A4B17B5BCE700170EFD /* JSXProjectNavigatorItem.h */,
+				80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */,
+				80345A5517BA46FE00170EFD /* JSXProjectNavigatorFileItem.h */,
+				80345A5617BA46FE00170EFD /* JSXProjectNavigatorFileItem.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		808058DC17B1B6BF004D1D41 = {
@@ -552,6 +565,7 @@
 				802A641317B47D0E00597DB6 /* JSXMainSplitViewController.m in Sources */,
 				802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */,
 				802F39C017B3CBCB005B70C4 /* CNSplitViewToolbar.m in Sources */,
+				80345A5717BA46FE00170EFD /* JSXProjectNavigatorFileItem.m in Sources */,
 				802F39D217B46968005B70C4 /* JSXResourceSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

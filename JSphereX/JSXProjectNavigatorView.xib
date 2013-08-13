@@ -57,10 +57,10 @@
                                                         </connections>
                                                     </imageView>
                                                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rai-8O-su3">
-                                                        <rect key="frame" x="20" y="15" width="183" height="17"/>
+                                                        <rect key="frame" x="20" y="12" width="183" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                         <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Project Name" id="mhO-LJ-7qs">
-                                                            <font key="font" metaFont="systemBold"/>
+                                                            <font key="font" size="11" name="LucidaGrande-Bold"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
@@ -69,7 +69,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RK6-E3-sLv">
-                                                        <rect key="frame" x="20" y="0.0" width="183" height="14"/>
+                                                        <rect key="frame" x="20" y="3" width="183" height="14"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                         <textFieldCell key="cell" controlSize="small" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Project Info" id="YDf-6F-8c7">
                                                             <font key="font" metaFont="smallSystem"/>
@@ -99,10 +99,10 @@
                                                         </connections>
                                                     </imageView>
                                                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gfq-1I-52t">
-                                                        <rect key="frame" x="20" y="1" width="183" height="17"/>
+                                                        <rect key="frame" x="20" y="0.0" width="183" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Item Name" id="SJJ-IM-v4z">
-                                                            <font key="font" metaFont="system"/>
+                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Item Name" usesSingleLineMode="YES" id="SJJ-IM-v4z">
+                                                            <font key="font" size="11" name="LucidaGrande"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
