@@ -1,5 +1,5 @@
 //
-//  IDEJSPluginDelegate.h
+//  JSXPlugin.h
 //  JSphereX
 //
 //  Created by Jos Kuijpers on 8/13/13.
@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <SphereKit/IDEPluginDelegate.h>
 
-@interface IDEJSPluginDelegate : NSObject <IDEPluginDelegate>
+@interface IDEPlugin : NSObject
 
 @end

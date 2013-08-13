@@ -24,7 +24,7 @@
 			<key>LSTypeIsPackage</key>
 			<true/>
 			<key>NSDocumentClass</key>
-			<string>JSXProjectDocument</string>
+			<string>IDEProjectDocument</string>
 		</dict>
 		<dict>
 			<key>CFBundleTypeExtensions</key>

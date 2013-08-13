@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		802A641317B47D0E00597DB6 /* JSXMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* JSXMainSplitViewController.m */; };
-		802A641417B47D0E00597DB6 /* JSXMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* JSXMainSplitView.xib */; };
+		802A641317B47D0E00597DB6 /* IDEMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* IDEMainSplitViewController.m */; };
+		802A641417B47D0E00597DB6 /* IDEMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* IDEMainSplitView.xib */; };
 		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A317B2BF25005B70C4 /* AGNSSplitView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		802F39BD17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39AF17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m */; };
@@ -18,16 +18,16 @@
 		802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39B817B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m */; };
 		802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39BB17B3CBCB005B70C4 /* CNSplitView.m */; };
 		802F39C417B3D242005B70C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802F39C317B3D242005B70C4 /* QuartzCore.framework */; };
-		802F39CF17B46927005B70C4 /* JSXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39CE17B46927005B70C4 /* JSXProject.m */; };
-		802F39D217B46968005B70C4 /* JSXResourceSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39D117B46968005B70C4 /* JSXResourceSet.m */; };
-		802F39D517B46982005B70C4 /* JSXResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39D417B46982005B70C4 /* JSXResource.m */; };
-		802F39DB17B46E26005B70C4 /* JSXMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39DA17B46E26005B70C4 /* JSXMainWindowController.m */; };
-		80345A4917B5B63D00170EFD /* JSXProjectNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4717B5B63D00170EFD /* JSXProjectNavigatorViewController.m */; };
-		80345A4A17B5B63D00170EFD /* JSXProjectNavigatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80345A4817B5B63D00170EFD /* JSXProjectNavigatorView.xib */; };
-		80345A4D17B5BCE700170EFD /* JSXProjectNavigatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */; };
-		80345A5017B67C6F00170EFD /* JSXProjectNavigatorRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */; };
+		802F39CF17B46927005B70C4 /* IDEProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39CE17B46927005B70C4 /* IDEProject.m */; };
+		802F39D217B46968005B70C4 /* IDEResourceSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39D117B46968005B70C4 /* IDEResourceSet.m */; };
+		802F39D517B46982005B70C4 /* IDEResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39D417B46982005B70C4 /* IDEResource.m */; };
+		802F39DB17B46E26005B70C4 /* IDEMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39DA17B46E26005B70C4 /* IDEMainWindowController.m */; };
+		80345A4917B5B63D00170EFD /* IDEProjectNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4717B5B63D00170EFD /* IDEProjectNavigatorViewController.m */; };
+		80345A4A17B5B63D00170EFD /* IDEProjectNavigatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80345A4817B5B63D00170EFD /* IDEProjectNavigatorView.xib */; };
+		80345A4D17B5BCE700170EFD /* IDEProjectNavigatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4C17B5BCE700170EFD /* IDEProjectNavigatorItem.m */; };
+		80345A5017B67C6F00170EFD /* IDEProjectNavigatorRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4F17B67C6F00170EFD /* IDEProjectNavigatorRowView.m */; };
 		80345A5417BA27D500170EFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80345A5317BA27D500170EFD /* Images.xcassets */; };
-		80345A5717BA46FE00170EFD /* JSXProjectNavigatorFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A5617BA46FE00170EFD /* JSXProjectNavigatorFileItem.m */; };
+		80345A5717BA46FE00170EFD /* IDEProjectNavigatorFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A5617BA46FE00170EFD /* IDEProjectNavigatorFileItem.m */; };
 		80345A5F17BA6B8800170EFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80345A6517BA6B8800170EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80345A6317BA6B8800170EFD /* InfoPlist.strings */; };
 		80345A6917BA6B8800170EFD /* SphereKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A6817BA6B8800170EFD /* SphereKit.m */; };
@@ -46,22 +46,22 @@
 		80345AAD17BA6DB400170EFD /* JSXQuickLookEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 80345A9C17BA6D2600170EFD /* JSXQuickLookEditor.ideplugin */; };
 		80345AB217BA6DE300170EFD /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
 		80345AB317BA6DE600170EFD /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
-		80345AB517BA6F4200170EFD /* JSXDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A640B17B4758A00597DB6 /* JSXDocument.m */; };
-		80345AB617BA6FE100170EFD /* JSXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080593417B26520004D1D41 /* JSXFile.m */; };
+		80345AB517BA6F4200170EFD /* IDEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A640B17B4758A00597DB6 /* IDEDocument.m */; };
+		80345AB617BA6FE100170EFD /* IDEFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080593417B26520004D1D41 /* IDEFile.m */; };
 		80345AB717BA6FEE00170EFD /* SphereKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345A6717BA6B8800170EFD /* SphereKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80345AB817BA6FEF00170EFD /* JSXDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 802A640A17B4758A00597DB6 /* JSXDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80345AB917BA6FF100170EFD /* JSXFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 8080593317B26520004D1D41 /* JSXFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80345ABB17BA709D00170EFD /* JSXFileSGM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080592717B1D2CC004D1D41 /* JSXFileSGM.m */; };
-		80345ABE17BA72A800170EFD /* JSXPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345ABC17BA72A800170EFD /* JSXPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80345ABF17BA72A800170EFD /* JSXPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* JSXPlugin.m */; };
+		80345AB817BA6FEF00170EFD /* IDEDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 802A640A17B4758A00597DB6 /* IDEDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345AB917BA6FF100170EFD /* IDEFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 8080593317B26520004D1D41 /* IDEFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345ABB17BA709D00170EFD /* IDEFileSGM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080592717B1D2CC004D1D41 /* IDEFileSGM.m */; };
+		80345ABE17BA72A800170EFD /* IDEPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345ABC17BA72A800170EFD /* IDEPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* IDEPlugin.m */; };
 		80345AC417BA742B00170EFD /* IDEJSPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJSPluginDelegate.m */; };
-		80345AC517BA745C00170EFD /* JSXPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* JSXPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* IDEPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
 		808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 808058F717B1B6C0004D1D41 /* Credits.rtf */; };
-		808058FC17B1B6C0004D1D41 /* JSXProjectDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */; };
-		808058FF17B1B6C0004D1D41 /* JSXProjectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808058FD17B1B6C0004D1D41 /* JSXProjectWindow.xib */; };
+		808058FC17B1B6C0004D1D41 /* IDEProjectDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058FB17B1B6C0004D1D41 /* IDEProjectDocument.m */; };
+		808058FF17B1B6C0004D1D41 /* IDEProjectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808058FD17B1B6C0004D1D41 /* IDEProjectWindow.xib */; };
 		8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8080590017B1B6C0004D1D41 /* MainMenu.xib */; };
 		8080590B17B1B6C0004D1D41 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080590A17B1B6C0004D1D41 /* XCTest.framework */; };
 		8080590C17B1B6C0004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
@@ -69,7 +69,7 @@
 		8080591617B1B6C0004D1D41 /* JSphereXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080591517B1B6C0004D1D41 /* JSphereXTests.m */; };
 		8080592C17B1E5C9004D1D41 /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080592B17B1E5C9004D1D41 /* NSString+Hashing.m */; };
 		8080593217B1EA23004D1D41 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080593117B1EA23004D1D41 /* libcrypto.dylib */; };
-		8080593817B265FC004D1D41 /* JSXProjectMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080593717B265FC004D1D41 /* JSXProjectMetaData.m */; };
+		8080593817B265FC004D1D41 /* IDEProjectMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080593717B265FC004D1D41 /* IDEProjectMetaData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,11 +151,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		802A640A17B4758A00597DB6 /* JSXDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSXDocument.h; path = ../JSphereX/JSXDocument.h; sourceTree = "<group>"; };
-		802A640B17B4758A00597DB6 /* JSXDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSXDocument.m; path = ../JSphereX/JSXDocument.m; sourceTree = "<group>"; };
-		802A641017B47D0E00597DB6 /* JSXMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXMainSplitViewController.h; sourceTree = "<group>"; };
-		802A641117B47D0E00597DB6 /* JSXMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXMainSplitViewController.m; sourceTree = "<group>"; };
-		802A641217B47D0E00597DB6 /* JSXMainSplitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSXMainSplitView.xib; sourceTree = "<group>"; };
+		802A640A17B4758A00597DB6 /* IDEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDEDocument.h; path = ../JSphereX/IDEDocument.h; sourceTree = "<group>"; };
+		802A640B17B4758A00597DB6 /* IDEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDEDocument.m; path = ../JSphereX/IDEDocument.m; sourceTree = "<group>"; };
+		802A641017B47D0E00597DB6 /* IDEMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEMainSplitViewController.h; sourceTree = "<group>"; };
+		802A641117B47D0E00597DB6 /* IDEMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEMainSplitViewController.m; sourceTree = "<group>"; };
+		802A641217B47D0E00597DB6 /* IDEMainSplitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDEMainSplitView.xib; sourceTree = "<group>"; };
 		802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNSSplitViewDelegate.m; sourceTree = "<group>"; };
 		802F39A217B2BF25005B70C4 /* AGNSSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNSSplitViewDelegate.h; sourceTree = "<group>"; };
 		802F39A317B2BF25005B70C4 /* AGNSSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNSSplitView.m; sourceTree = "<group>"; };
@@ -175,24 +175,24 @@
 		802F39BB17B3CBCB005B70C4 /* CNSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNSplitView.m; path = CNSplitView/CNSplitView/CNSplitView.m; sourceTree = SOURCE_ROOT; };
 		802F39BC17B3CBCB005B70C4 /* CNSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNSplitView.h; path = CNSplitView/CNSplitView/CNSplitView.h; sourceTree = SOURCE_ROOT; };
 		802F39C317B3D242005B70C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		802F39CD17B46927005B70C4 /* JSXProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProject.h; sourceTree = "<group>"; };
-		802F39CE17B46927005B70C4 /* JSXProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProject.m; sourceTree = "<group>"; };
-		802F39D017B46968005B70C4 /* JSXResourceSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXResourceSet.h; sourceTree = "<group>"; };
-		802F39D117B46968005B70C4 /* JSXResourceSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXResourceSet.m; sourceTree = "<group>"; };
-		802F39D317B46982005B70C4 /* JSXResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSXResource.h; path = ../JSXResource.h; sourceTree = "<group>"; };
-		802F39D417B46982005B70C4 /* JSXResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSXResource.m; path = ../JSXResource.m; sourceTree = "<group>"; };
-		802F39D917B46E26005B70C4 /* JSXMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXMainWindowController.h; sourceTree = "<group>"; };
-		802F39DA17B46E26005B70C4 /* JSXMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXMainWindowController.m; sourceTree = "<group>"; };
-		80345A4617B5B63D00170EFD /* JSXProjectNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorViewController.h; sourceTree = "<group>"; };
-		80345A4717B5B63D00170EFD /* JSXProjectNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorViewController.m; sourceTree = "<group>"; };
-		80345A4817B5B63D00170EFD /* JSXProjectNavigatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSXProjectNavigatorView.xib; sourceTree = "<group>"; };
-		80345A4B17B5BCE700170EFD /* JSXProjectNavigatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorItem.h; sourceTree = "<group>"; };
-		80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorItem.m; sourceTree = "<group>"; };
-		80345A4E17B67C6F00170EFD /* JSXProjectNavigatorRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorRowView.h; sourceTree = "<group>"; };
-		80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorRowView.m; sourceTree = "<group>"; };
+		802F39CD17B46927005B70C4 /* IDEProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEProject.h; sourceTree = "<group>"; };
+		802F39CE17B46927005B70C4 /* IDEProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEProject.m; sourceTree = "<group>"; };
+		802F39D017B46968005B70C4 /* IDEResourceSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEResourceSet.h; sourceTree = "<group>"; };
+		802F39D117B46968005B70C4 /* IDEResourceSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEResourceSet.m; sourceTree = "<group>"; };
+		802F39D317B46982005B70C4 /* IDEResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDEResource.h; path = ../IDEResource.h; sourceTree = "<group>"; };
+		802F39D417B46982005B70C4 /* IDEResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDEResource.m; path = ../IDEResource.m; sourceTree = "<group>"; };
+		802F39D917B46E26005B70C4 /* IDEMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEMainWindowController.h; sourceTree = "<group>"; };
+		802F39DA17B46E26005B70C4 /* IDEMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEMainWindowController.m; sourceTree = "<group>"; };
+		80345A4617B5B63D00170EFD /* IDEProjectNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEProjectNavigatorViewController.h; sourceTree = "<group>"; };
+		80345A4717B5B63D00170EFD /* IDEProjectNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEProjectNavigatorViewController.m; sourceTree = "<group>"; };
+		80345A4817B5B63D00170EFD /* IDEProjectNavigatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDEProjectNavigatorView.xib; sourceTree = "<group>"; };
+		80345A4B17B5BCE700170EFD /* IDEProjectNavigatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEProjectNavigatorItem.h; sourceTree = "<group>"; };
+		80345A4C17B5BCE700170EFD /* IDEProjectNavigatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEProjectNavigatorItem.m; sourceTree = "<group>"; };
+		80345A4E17B67C6F00170EFD /* IDEProjectNavigatorRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEProjectNavigatorRowView.h; sourceTree = "<group>"; };
+		80345A4F17B67C6F00170EFD /* IDEProjectNavigatorRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEProjectNavigatorRowView.m; sourceTree = "<group>"; };
 		80345A5317BA27D500170EFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		80345A5517BA46FE00170EFD /* JSXProjectNavigatorFileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorFileItem.h; sourceTree = "<group>"; };
-		80345A5617BA46FE00170EFD /* JSXProjectNavigatorFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorFileItem.m; sourceTree = "<group>"; };
+		80345A5517BA46FE00170EFD /* IDEProjectNavigatorFileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEProjectNavigatorFileItem.h; sourceTree = "<group>"; };
+		80345A5617BA46FE00170EFD /* IDEProjectNavigatorFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEProjectNavigatorFileItem.m; sourceTree = "<group>"; };
 		80345A5E17BA6B8800170EFD /* SphereKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SphereKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80345A6217BA6B8800170EFD /* SphereKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereKit-Info.plist"; sourceTree = "<group>"; };
 		80345A6417BA6B8800170EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -211,9 +211,9 @@
 		80345AA017BA6D2600170EFD /* JSXQuickLookEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSXQuickLookEditor-Info.plist"; sourceTree = "<group>"; };
 		80345AA217BA6D2600170EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80345AA417BA6D2600170EFD /* JSXQuickLookEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSXQuickLookEditor-Prefix.pch"; sourceTree = "<group>"; };
-		80345ABC17BA72A800170EFD /* JSXPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXPlugin.h; sourceTree = "<group>"; };
-		80345ABD17BA72A800170EFD /* JSXPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXPlugin.m; sourceTree = "<group>"; };
-		80345AC117BA73A600170EFD /* JSXPluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSXPluginDelegate.h; sourceTree = "<group>"; };
+		80345ABC17BA72A800170EFD /* IDEPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEPlugin.h; sourceTree = "<group>"; };
+		80345ABD17BA72A800170EFD /* IDEPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEPlugin.m; sourceTree = "<group>"; };
+		80345AC117BA73A600170EFD /* IDEPluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC217BA742B00170EFD /* IDEJSPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJSPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC317BA742B00170EFD /* IDEJSPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJSPluginDelegate.m; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* JSphereX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSphereX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,26 +226,26 @@
 		808058F417B1B6BF004D1D41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		808058F617B1B6C0004D1D41 /* JSphereX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSphereX-Prefix.pch"; sourceTree = "<group>"; };
 		808058F817B1B6C0004D1D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		808058FA17B1B6C0004D1D41 /* JSXProjectDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSXProjectDocument.h; sourceTree = "<group>"; };
-		808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSXProjectDocument.m; sourceTree = "<group>"; };
-		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JSXProjectWindow.xib; sourceTree = "<group>"; };
+		808058FA17B1B6C0004D1D41 /* IDEProjectDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEProjectDocument.h; sourceTree = "<group>"; };
+		808058FB17B1B6C0004D1D41 /* IDEProjectDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDEProjectDocument.m; sourceTree = "<group>"; };
+		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IDEProjectWindow.xib; sourceTree = "<group>"; };
 		8080590117B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8080590917B1B6C0004D1D41 /* JSphereXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSphereXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8080590A17B1B6C0004D1D41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8080591117B1B6C0004D1D41 /* JSphereXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSphereXTests-Info.plist"; sourceTree = "<group>"; };
 		8080591317B1B6C0004D1D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8080591517B1B6C0004D1D41 /* JSphereXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSphereXTests.m; sourceTree = "<group>"; };
-		8080592617B1D2CC004D1D41 /* JSXFileSGM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXFileSGM.h; sourceTree = "<group>"; };
-		8080592717B1D2CC004D1D41 /* JSXFileSGM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXFileSGM.m; sourceTree = "<group>"; };
+		8080592617B1D2CC004D1D41 /* IDEFileSGM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEFileSGM.h; sourceTree = "<group>"; };
+		8080592717B1D2CC004D1D41 /* IDEFileSGM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEFileSGM.m; sourceTree = "<group>"; };
 		8080592A17B1E5C9004D1D41 /* NSString+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashing.h"; sourceTree = "<group>"; };
 		8080592B17B1E5C9004D1D41 /* NSString+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashing.m"; sourceTree = "<group>"; };
 		8080592D17B1E877004D1D41 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8080592F17B1E8DD004D1D41 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		8080593117B1EA23004D1D41 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
-		8080593317B26520004D1D41 /* JSXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSXFile.h; path = ../JSphereX/JSXFile.h; sourceTree = "<group>"; };
-		8080593417B26520004D1D41 /* JSXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSXFile.m; path = ../JSphereX/JSXFile.m; sourceTree = "<group>"; };
-		8080593617B265FC004D1D41 /* JSXProjectMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectMetaData.h; sourceTree = "<group>"; };
-		8080593717B265FC004D1D41 /* JSXProjectMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectMetaData.m; sourceTree = "<group>"; };
+		8080593317B26520004D1D41 /* IDEFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDEFile.h; path = ../JSphereX/IDEFile.h; sourceTree = "<group>"; };
+		8080593417B26520004D1D41 /* IDEFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDEFile.m; path = ../JSphereX/IDEFile.m; sourceTree = "<group>"; };
+		8080593617B265FC004D1D41 /* IDEProjectMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEProjectMetaData.h; sourceTree = "<group>"; };
+		8080593717B265FC004D1D41 /* IDEProjectMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEProjectMetaData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,10 +311,10 @@
 		802A640F17B47CF700597DB6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				802F39D917B46E26005B70C4 /* JSXMainWindowController.h */,
-				802F39DA17B46E26005B70C4 /* JSXMainWindowController.m */,
-				802A641017B47D0E00597DB6 /* JSXMainSplitViewController.h */,
-				802A641117B47D0E00597DB6 /* JSXMainSplitViewController.m */,
+				802F39D917B46E26005B70C4 /* IDEMainWindowController.h */,
+				802F39DA17B46E26005B70C4 /* IDEMainWindowController.m */,
+				802A641017B47D0E00597DB6 /* IDEMainSplitViewController.h */,
+				802A641117B47D0E00597DB6 /* IDEMainSplitViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -371,10 +371,10 @@
 		802F39C817B3DEFD005B70C4 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				80345A4617B5B63D00170EFD /* JSXProjectNavigatorViewController.h */,
-				80345A4717B5B63D00170EFD /* JSXProjectNavigatorViewController.m */,
-				80345A4E17B67C6F00170EFD /* JSXProjectNavigatorRowView.h */,
-				80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */,
+				80345A4617B5B63D00170EFD /* IDEProjectNavigatorViewController.h */,
+				80345A4717B5B63D00170EFD /* IDEProjectNavigatorViewController.m */,
+				80345A4E17B67C6F00170EFD /* IDEProjectNavigatorRowView.h */,
+				80345A4F17B67C6F00170EFD /* IDEProjectNavigatorRowView.m */,
 				80345A5817BA470B00170EFD /* Model */,
 			);
 			name = Project;
@@ -392,10 +392,10 @@
 		80345A5817BA470B00170EFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				80345A4B17B5BCE700170EFD /* JSXProjectNavigatorItem.h */,
-				80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */,
-				80345A5517BA46FE00170EFD /* JSXProjectNavigatorFileItem.h */,
-				80345A5617BA46FE00170EFD /* JSXProjectNavigatorFileItem.m */,
+				80345A4B17B5BCE700170EFD /* IDEProjectNavigatorItem.h */,
+				80345A4C17B5BCE700170EFD /* IDEProjectNavigatorItem.m */,
+				80345A5517BA46FE00170EFD /* IDEProjectNavigatorFileItem.h */,
+				80345A5617BA46FE00170EFD /* IDEProjectNavigatorFileItem.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -404,10 +404,10 @@
 			isa = PBXGroup;
 			children = (
 				80345AC017BA72B100170EFD /* Plugin */,
-				8080593317B26520004D1D41 /* JSXFile.h */,
-				8080593417B26520004D1D41 /* JSXFile.m */,
-				802A640A17B4758A00597DB6 /* JSXDocument.h */,
-				802A640B17B4758A00597DB6 /* JSXDocument.m */,
+				8080593317B26520004D1D41 /* IDEFile.h */,
+				8080593417B26520004D1D41 /* IDEFile.m */,
+				802A640A17B4758A00597DB6 /* IDEDocument.h */,
+				802A640B17B4758A00597DB6 /* IDEDocument.m */,
 				80345ABA17BA6FFC00170EFD /* Main */,
 				80345A6117BA6B8800170EFD /* Supporting Files */,
 			);
@@ -482,14 +482,14 @@
 		80345AB417BA6E3900170EFD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				802F39CD17B46927005B70C4 /* JSXProject.h */,
-				802F39CE17B46927005B70C4 /* JSXProject.m */,
-				8080593617B265FC004D1D41 /* JSXProjectMetaData.h */,
-				8080593717B265FC004D1D41 /* JSXProjectMetaData.m */,
-				802F39D317B46982005B70C4 /* JSXResource.h */,
-				802F39D417B46982005B70C4 /* JSXResource.m */,
-				802F39D017B46968005B70C4 /* JSXResourceSet.h */,
-				802F39D117B46968005B70C4 /* JSXResourceSet.m */,
+				802F39CD17B46927005B70C4 /* IDEProject.h */,
+				802F39CE17B46927005B70C4 /* IDEProject.m */,
+				8080593617B265FC004D1D41 /* IDEProjectMetaData.h */,
+				8080593717B265FC004D1D41 /* IDEProjectMetaData.m */,
+				802F39D317B46982005B70C4 /* IDEResource.h */,
+				802F39D417B46982005B70C4 /* IDEResource.m */,
+				802F39D017B46968005B70C4 /* IDEResourceSet.h */,
+				802F39D117B46968005B70C4 /* IDEResourceSet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -506,9 +506,9 @@
 		80345AC017BA72B100170EFD /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
-				80345ABC17BA72A800170EFD /* JSXPlugin.h */,
-				80345ABD17BA72A800170EFD /* JSXPlugin.m */,
-				80345AC117BA73A600170EFD /* JSXPluginDelegate.h */,
+				80345ABC17BA72A800170EFD /* IDEPlugin.h */,
+				80345ABD17BA72A800170EFD /* IDEPlugin.m */,
+				80345AC117BA73A600170EFD /* IDEPluginDelegate.h */,
 			);
 			name = Plugin;
 			sourceTree = "<group>";
@@ -632,9 +632,9 @@
 			isa = PBXGroup;
 			children = (
 				8080590017B1B6C0004D1D41 /* MainMenu.xib */,
-				808058FD17B1B6C0004D1D41 /* JSXProjectWindow.xib */,
-				802A641217B47D0E00597DB6 /* JSXMainSplitView.xib */,
-				80345A4817B5B63D00170EFD /* JSXProjectNavigatorView.xib */,
+				808058FD17B1B6C0004D1D41 /* IDEProjectWindow.xib */,
+				802A641217B47D0E00597DB6 /* IDEMainSplitView.xib */,
+				80345A4817B5B63D00170EFD /* IDEProjectNavigatorView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -642,8 +642,8 @@
 		8080592117B1B988004D1D41 /* Document */ = {
 			isa = PBXGroup;
 			children = (
-				808058FA17B1B6C0004D1D41 /* JSXProjectDocument.h */,
-				808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */,
+				808058FA17B1B6C0004D1D41 /* IDEProjectDocument.h */,
+				808058FB17B1B6C0004D1D41 /* IDEProjectDocument.m */,
 			);
 			name = Document;
 			sourceTree = "<group>";
@@ -675,8 +675,8 @@
 		8080593A17B2766C004D1D41 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				8080592617B1D2CC004D1D41 /* JSXFileSGM.h */,
-				8080592717B1D2CC004D1D41 /* JSXFileSGM.m */,
+				8080592617B1D2CC004D1D41 /* IDEFileSGM.h */,
+				8080592717B1D2CC004D1D41 /* IDEFileSGM.m */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -689,10 +689,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				80345AB717BA6FEE00170EFD /* SphereKit.h in Headers */,
-				80345AB817BA6FEF00170EFD /* JSXDocument.h in Headers */,
-				80345ABE17BA72A800170EFD /* JSXPlugin.h in Headers */,
-				80345AB917BA6FF100170EFD /* JSXFile.h in Headers */,
-				80345AC517BA745C00170EFD /* JSXPluginDelegate.h in Headers */,
+				80345AB817BA6FEF00170EFD /* IDEDocument.h in Headers */,
+				80345ABE17BA72A800170EFD /* IDEPlugin.h in Headers */,
+				80345AB917BA6FF100170EFD /* IDEFile.h in Headers */,
+				80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,7 +817,7 @@
 		808058DD17B1B6BF004D1D41 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = JSX;
+				CLASSPREFIX = IDE;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Jarvix;
 				TargetAttributes = {
@@ -889,12 +889,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808058FF17B1B6C0004D1D41 /* JSXProjectWindow.xib in Resources */,
+				808058FF17B1B6C0004D1D41 /* IDEProjectWindow.xib in Resources */,
 				808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */,
 				80345A5417BA27D500170EFD /* Images.xcassets in Resources */,
-				80345A4A17B5B63D00170EFD /* JSXProjectNavigatorView.xib in Resources */,
+				80345A4A17B5B63D00170EFD /* IDEProjectNavigatorView.xib in Resources */,
 				808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */,
-				802A641417B47D0E00597DB6 /* JSXMainSplitView.xib in Resources */,
+				802A641417B47D0E00597DB6 /* IDEMainSplitView.xib in Resources */,
 				8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -915,9 +915,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80345A6917BA6B8800170EFD /* SphereKit.m in Sources */,
-				80345AB517BA6F4200170EFD /* JSXDocument.m in Sources */,
-				80345ABF17BA72A800170EFD /* JSXPlugin.m in Sources */,
-				80345AB617BA6FE100170EFD /* JSXFile.m in Sources */,
+				80345AB517BA6F4200170EFD /* IDEDocument.m in Sources */,
+				80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */,
+				80345AB617BA6FE100170EFD /* IDEFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -949,27 +949,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */,
-				80345ABB17BA709D00170EFD /* JSXFileSGM.m in Sources */,
+				80345ABB17BA709D00170EFD /* IDEFileSGM.m in Sources */,
 				802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */,
-				802F39D517B46982005B70C4 /* JSXResource.m in Sources */,
+				802F39D517B46982005B70C4 /* IDEResource.m in Sources */,
 				802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */,
-				80345A5017B67C6F00170EFD /* JSXProjectNavigatorRowView.m in Sources */,
-				80345A4917B5B63D00170EFD /* JSXProjectNavigatorViewController.m in Sources */,
-				80345A4D17B5BCE700170EFD /* JSXProjectNavigatorItem.m in Sources */,
+				80345A5017B67C6F00170EFD /* IDEProjectNavigatorRowView.m in Sources */,
+				80345A4917B5B63D00170EFD /* IDEProjectNavigatorViewController.m in Sources */,
+				80345A4D17B5BCE700170EFD /* IDEProjectNavigatorItem.m in Sources */,
 				802F39BF17B3CBCB005B70C4 /* CNSplitViewToolbarButton.m in Sources */,
-				802F39CF17B46927005B70C4 /* JSXProject.m in Sources */,
+				802F39CF17B46927005B70C4 /* IDEProject.m in Sources */,
 				802F39BD17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m in Sources */,
-				808058FC17B1B6C0004D1D41 /* JSXProjectDocument.m in Sources */,
+				808058FC17B1B6C0004D1D41 /* IDEProjectDocument.m in Sources */,
 				802F39BE17B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m in Sources */,
 				8080592C17B1E5C9004D1D41 /* NSString+Hashing.m in Sources */,
-				8080593817B265FC004D1D41 /* JSXProjectMetaData.m in Sources */,
-				802F39DB17B46E26005B70C4 /* JSXMainWindowController.m in Sources */,
+				8080593817B265FC004D1D41 /* IDEProjectMetaData.m in Sources */,
+				802F39DB17B46E26005B70C4 /* IDEMainWindowController.m in Sources */,
 				808058F517B1B6C0004D1D41 /* main.m in Sources */,
-				802A641317B47D0E00597DB6 /* JSXMainSplitViewController.m in Sources */,
+				802A641317B47D0E00597DB6 /* IDEMainSplitViewController.m in Sources */,
 				802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */,
 				802F39C017B3CBCB005B70C4 /* CNSplitViewToolbar.m in Sources */,
-				80345A5717BA46FE00170EFD /* JSXProjectNavigatorFileItem.m in Sources */,
-				802F39D217B46968005B70C4 /* JSXResourceSet.m in Sources */,
+				80345A5717BA46FE00170EFD /* IDEProjectNavigatorFileItem.m in Sources */,
+				802F39D217B46968005B70C4 /* IDEResourceSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,12 +1070,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		808058FD17B1B6C0004D1D41 /* JSXProjectWindow.xib */ = {
+		808058FD17B1B6C0004D1D41 /* IDEProjectWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				808058FE17B1B6C0004D1D41 /* Base */,
 			);
-			name = JSXProjectWindow.xib;
+			name = IDEProjectWindow.xib;
 			sourceTree = "<group>";
 		};
 		8080590017B1B6C0004D1D41 /* MainMenu.xib */ = {
@@ -1387,6 +1387,7 @@
 				80345A7E17BA6B8900170EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80345A7F17BA6B8900170EFD /* Build configuration list for PBXNativeTarget "SphereKitTests" */ = {
 			isa = XCConfigurationList;
@@ -1395,6 +1396,7 @@
 				80345A8117BA6B8900170EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80345A9517BA6D1600170EFD /* Build configuration list for PBXNativeTarget "JSXJavaScriptEditor" */ = {
 			isa = XCConfigurationList;
@@ -1403,6 +1405,7 @@
 				80345A9717BA6D1600170EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80345AA517BA6D2600170EFD /* Build configuration list for PBXNativeTarget "JSXQuickLookEditor" */ = {
 			isa = XCConfigurationList;
@@ -1411,6 +1414,7 @@
 				80345AA717BA6D2600170EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		808058E017B1B6BF004D1D41 /* Build configuration list for PBXProject "JSphereX" */ = {
 			isa = XCConfigurationList;
