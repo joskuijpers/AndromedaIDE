@@ -24,9 +24,24 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>SphereRuntimeKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8006D47717BA840400453468</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8006D48717BA840400453468</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>80345A5D17BA6B8700170EFD</key>
 		<dict>
 			<key>primary</key>

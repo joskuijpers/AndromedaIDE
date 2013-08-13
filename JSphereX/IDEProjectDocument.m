@@ -7,12 +7,7 @@
 //
 
 #import "IDEProjectDocument.h"
-
 #import "IDEMainWindowController.h"
-
-//#import "NSString+Hashing.h"
-
-#import "IDEProjectMetaData.h"
 #import "IDEProject.h"
 
 @interface IDEProjectDocument()
@@ -27,7 +22,7 @@
 - (void)makeWindowControllers
 {
 	_windowController = [[IDEMainWindowController alloc] init];
-	
+
 	[self addWindowController:_windowController];
 }
 
@@ -36,7 +31,7 @@
 - (NSFileWrapper *)fileWrapperOfType:(NSString *)typeName
 							   error:(NSError *__autoreleasing *)outError
 {
-	// All code to model
+/*	// All code to model
 	NSDictionary *rootContents;
 	NSFileWrapper *metaDataWrapper;
 	
@@ -55,15 +50,16 @@
 	metaDataWrapper = [[NSFileWrapper alloc] initRegularFileWithContents:[_project.metaData fileData]];
 	metaDataWrapper.preferredFilename = @"MetaData.plist";
 	[_documentFileWrapper addFileWrapper:metaDataWrapper];
-	
-	return _documentFileWrapper;
+
+	return _documentFileWrapper;*/
+	return nil;
 }
 
 - (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper
 					 ofType:(NSString *)typeName
 					  error:(NSError *__autoreleasing *)outError
 {
-	NSDictionary *rootContents;
+	/*NSDictionary *rootContents;
 	NSFileWrapper *resourcesWrapper, *metaDataWrapper;
 	
 	rootContents = [fileWrapper fileWrappers];
@@ -94,7 +90,7 @@
 		return NO;
 	
 	_documentFileWrapper = fileWrapper;
-	
+	*/
 	return YES;
 }
 
