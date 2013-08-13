@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "JSXProjectWindowController.h"
+#import "JSXMainWindowController.h"
 #import "JSXMainSplitViewController.h"
 
-@interface JSXProjectWindowController ()
+@interface JSXMainWindowController ()
 {
 	JSXMainSplitViewController *_mainSplitViewController;
 }
 @end
 
-@implementation JSXProjectWindowController
+@implementation JSXMainWindowController
 
 - (id)init
 {

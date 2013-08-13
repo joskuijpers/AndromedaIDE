@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		802A640D17B4758A00597DB6 /* JSXDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A640B17B4758A00597DB6 /* JSXDocument.m */; };
 		802A641317B47D0E00597DB6 /* JSXMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* JSXMainSplitViewController.m */; };
 		802A641417B47D0E00597DB6 /* JSXMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* JSXMainSplitView.xib */; };
 		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -22,13 +21,37 @@
 		802F39CF17B46927005B70C4 /* JSXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39CE17B46927005B70C4 /* JSXProject.m */; };
 		802F39D217B46968005B70C4 /* JSXResourceSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39D117B46968005B70C4 /* JSXResourceSet.m */; };
 		802F39D517B46982005B70C4 /* JSXResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39D417B46982005B70C4 /* JSXResource.m */; };
-		802F39DB17B46E26005B70C4 /* JSXProjectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39DA17B46E26005B70C4 /* JSXProjectWindowController.m */; };
+		802F39DB17B46E26005B70C4 /* JSXMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39DA17B46E26005B70C4 /* JSXMainWindowController.m */; };
 		80345A4917B5B63D00170EFD /* JSXProjectNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4717B5B63D00170EFD /* JSXProjectNavigatorViewController.m */; };
 		80345A4A17B5B63D00170EFD /* JSXProjectNavigatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80345A4817B5B63D00170EFD /* JSXProjectNavigatorView.xib */; };
 		80345A4D17B5BCE700170EFD /* JSXProjectNavigatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4C17B5BCE700170EFD /* JSXProjectNavigatorItem.m */; };
 		80345A5017B67C6F00170EFD /* JSXProjectNavigatorRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4F17B67C6F00170EFD /* JSXProjectNavigatorRowView.m */; };
 		80345A5417BA27D500170EFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80345A5317BA27D500170EFD /* Images.xcassets */; };
 		80345A5717BA46FE00170EFD /* JSXProjectNavigatorFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A5617BA46FE00170EFD /* JSXProjectNavigatorFileItem.m */; };
+		80345A5F17BA6B8800170EFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		80345A6517BA6B8800170EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80345A6317BA6B8800170EFD /* InfoPlist.strings */; };
+		80345A6917BA6B8800170EFD /* SphereKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A6817BA6B8800170EFD /* SphereKit.m */; };
+		80345A6F17BA6B8800170EFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080590A17B1B6C0004D1D41 /* XCTest.framework */; };
+		80345A7017BA6B8800170EFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		80345A7317BA6B8800170EFD /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
+		80345A7917BA6B8800170EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80345A7717BA6B8800170EFD /* InfoPlist.strings */; };
+		80345A7B17BA6B8800170EFD /* SphereKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A7A17BA6B8800170EFD /* SphereKitTests.m */; };
+		80345A8417BA6C0900170EFD /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
+		80345A8717BA6C3300170EFD /* SphereKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
+		80345A8D17BA6D1600170EFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		80345A9317BA6D1600170EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80345A9117BA6D1600170EFD /* InfoPlist.strings */; };
+		80345A9D17BA6D2600170EFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		80345AA317BA6D2600170EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80345AA117BA6D2600170EFD /* InfoPlist.strings */; };
+		80345AAC17BA6DB400170EFD /* JSXJavaScriptEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 80345A8C17BA6D1600170EFD /* JSXJavaScriptEditor.ideplugin */; };
+		80345AAD17BA6DB400170EFD /* JSXQuickLookEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 80345A9C17BA6D2600170EFD /* JSXQuickLookEditor.ideplugin */; };
+		80345AB217BA6DE300170EFD /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
+		80345AB317BA6DE600170EFD /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
+		80345AB517BA6F4200170EFD /* JSXDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A640B17B4758A00597DB6 /* JSXDocument.m */; };
+		80345AB617BA6FE100170EFD /* JSXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080593417B26520004D1D41 /* JSXFile.m */; };
+		80345AB717BA6FEE00170EFD /* SphereKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345A6717BA6B8800170EFD /* SphereKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345AB817BA6FEF00170EFD /* JSXDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 802A640A17B4758A00597DB6 /* JSXDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345AB917BA6FF100170EFD /* JSXFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 8080593317B26520004D1D41 /* JSXFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345ABB17BA709D00170EFD /* JSXFileSGM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080592717B1D2CC004D1D41 /* JSXFileSGM.m */; };
 		808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
@@ -40,14 +63,54 @@
 		8080590C17B1B6C0004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		8080591417B1B6C0004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8080591217B1B6C0004D1D41 /* InfoPlist.strings */; };
 		8080591617B1B6C0004D1D41 /* JSphereXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080591517B1B6C0004D1D41 /* JSphereXTests.m */; };
-		8080592817B1D2CC004D1D41 /* JSXFileSGM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080592717B1D2CC004D1D41 /* JSXFileSGM.m */; };
 		8080592C17B1E5C9004D1D41 /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080592B17B1E5C9004D1D41 /* NSString+Hashing.m */; };
 		8080593217B1EA23004D1D41 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080593117B1EA23004D1D41 /* libcrypto.dylib */; };
-		8080593517B26520004D1D41 /* JSXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080593417B26520004D1D41 /* JSXFile.m */; };
 		8080593817B265FC004D1D41 /* JSXProjectMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080593717B265FC004D1D41 /* JSXProjectMetaData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		80345A7117BA6B8800170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
+			remoteInfo = SphereKit;
+		};
+		80345A8517BA6C2400170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
+			remoteInfo = SphereKit;
+		};
+		80345AA817BA6D3D00170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A8B17BA6D1600170EFD;
+			remoteInfo = JSXJavaScriptEditor;
+		};
+		80345AAA17BA6D3D00170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A9B17BA6D2600170EFD;
+			remoteInfo = JSXQuickLookEditor;
+		};
+		80345AAE17BA6DDA00170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
+			remoteInfo = SphereKit;
+		};
+		80345AB017BA6DDD00170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
+			remoteInfo = SphereKit;
+		};
 		8080590D17B1B6C0004D1D41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
@@ -57,9 +120,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		80345A8217BA6BDB00170EFD /* Copy Private Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				80345A8717BA6C3300170EFD /* SphereKit.framework in Copy Private Frameworks */,
+			);
+			name = "Copy Private Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A8317BA6BDF00170EFD /* Copy PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				80345AAC17BA6DB400170EFD /* JSXJavaScriptEditor.ideplugin in Copy PlugIns */,
+				80345AAD17BA6DB400170EFD /* JSXQuickLookEditor.ideplugin in Copy PlugIns */,
+			);
+			name = "Copy PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		802A640A17B4758A00597DB6 /* JSXDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXDocument.h; sourceTree = "<group>"; };
-		802A640B17B4758A00597DB6 /* JSXDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXDocument.m; sourceTree = "<group>"; };
+		802A640A17B4758A00597DB6 /* JSXDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSXDocument.h; path = ../JSphereX/JSXDocument.h; sourceTree = "<group>"; };
+		802A640B17B4758A00597DB6 /* JSXDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSXDocument.m; path = ../JSphereX/JSXDocument.m; sourceTree = "<group>"; };
 		802A641017B47D0E00597DB6 /* JSXMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXMainSplitViewController.h; sourceTree = "<group>"; };
 		802A641117B47D0E00597DB6 /* JSXMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXMainSplitViewController.m; sourceTree = "<group>"; };
 		802A641217B47D0E00597DB6 /* JSXMainSplitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSXMainSplitView.xib; sourceTree = "<group>"; };
@@ -88,8 +177,8 @@
 		802F39D117B46968005B70C4 /* JSXResourceSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXResourceSet.m; sourceTree = "<group>"; };
 		802F39D317B46982005B70C4 /* JSXResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSXResource.h; path = ../JSXResource.h; sourceTree = "<group>"; };
 		802F39D417B46982005B70C4 /* JSXResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSXResource.m; path = ../JSXResource.m; sourceTree = "<group>"; };
-		802F39D917B46E26005B70C4 /* JSXProjectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectWindowController.h; sourceTree = "<group>"; };
-		802F39DA17B46E26005B70C4 /* JSXProjectWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectWindowController.m; sourceTree = "<group>"; };
+		802F39D917B46E26005B70C4 /* JSXMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXMainWindowController.h; sourceTree = "<group>"; };
+		802F39DA17B46E26005B70C4 /* JSXMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXMainWindowController.m; sourceTree = "<group>"; };
 		80345A4617B5B63D00170EFD /* JSXProjectNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorViewController.h; sourceTree = "<group>"; };
 		80345A4717B5B63D00170EFD /* JSXProjectNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorViewController.m; sourceTree = "<group>"; };
 		80345A4817B5B63D00170EFD /* JSXProjectNavigatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSXProjectNavigatorView.xib; sourceTree = "<group>"; };
@@ -100,6 +189,24 @@
 		80345A5317BA27D500170EFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		80345A5517BA46FE00170EFD /* JSXProjectNavigatorFileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectNavigatorFileItem.h; sourceTree = "<group>"; };
 		80345A5617BA46FE00170EFD /* JSXProjectNavigatorFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectNavigatorFileItem.m; sourceTree = "<group>"; };
+		80345A5E17BA6B8800170EFD /* SphereKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SphereKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80345A6217BA6B8800170EFD /* SphereKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereKit-Info.plist"; sourceTree = "<group>"; };
+		80345A6417BA6B8800170EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80345A6617BA6B8800170EFD /* SphereKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SphereKit-Prefix.pch"; sourceTree = "<group>"; };
+		80345A6717BA6B8800170EFD /* SphereKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SphereKit.h; sourceTree = "<group>"; };
+		80345A6817BA6B8800170EFD /* SphereKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SphereKit.m; sourceTree = "<group>"; };
+		80345A6E17BA6B8800170EFD /* SphereKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SphereKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80345A7617BA6B8800170EFD /* SphereKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereKitTests-Info.plist"; sourceTree = "<group>"; };
+		80345A7817BA6B8800170EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80345A7A17BA6B8800170EFD /* SphereKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SphereKitTests.m; sourceTree = "<group>"; };
+		80345A8C17BA6D1600170EFD /* JSXJavaScriptEditor.ideplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSXJavaScriptEditor.ideplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		80345A9017BA6D1600170EFD /* JSXJavaScriptEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSXJavaScriptEditor-Info.plist"; sourceTree = "<group>"; };
+		80345A9217BA6D1600170EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80345A9417BA6D1600170EFD /* JSXJavaScriptEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSXJavaScriptEditor-Prefix.pch"; sourceTree = "<group>"; };
+		80345A9C17BA6D2600170EFD /* JSXQuickLookEditor.ideplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSXQuickLookEditor.ideplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		80345AA017BA6D2600170EFD /* JSXQuickLookEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSXQuickLookEditor-Info.plist"; sourceTree = "<group>"; };
+		80345AA217BA6D2600170EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80345AA417BA6D2600170EFD /* JSXQuickLookEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSXQuickLookEditor-Prefix.pch"; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* JSphereX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSphereX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -114,7 +221,7 @@
 		808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSXProjectDocument.m; sourceTree = "<group>"; };
 		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JSXProjectWindow.xib; sourceTree = "<group>"; };
 		8080590117B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		8080590917B1B6C0004D1D41 /* JSphereXTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = JSphereXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8080590917B1B6C0004D1D41 /* JSphereXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSphereXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8080590A17B1B6C0004D1D41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8080591117B1B6C0004D1D41 /* JSphereXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSphereXTests-Info.plist"; sourceTree = "<group>"; };
 		8080591317B1B6C0004D1D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -126,17 +233,54 @@
 		8080592D17B1E877004D1D41 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8080592F17B1E8DD004D1D41 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		8080593117B1EA23004D1D41 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
-		8080593317B26520004D1D41 /* JSXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXFile.h; sourceTree = "<group>"; };
-		8080593417B26520004D1D41 /* JSXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXFile.m; sourceTree = "<group>"; };
+		8080593317B26520004D1D41 /* JSXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSXFile.h; path = ../JSphereX/JSXFile.h; sourceTree = "<group>"; };
+		8080593417B26520004D1D41 /* JSXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSXFile.m; path = ../JSphereX/JSXFile.m; sourceTree = "<group>"; };
 		8080593617B265FC004D1D41 /* JSXProjectMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSXProjectMetaData.h; sourceTree = "<group>"; };
 		8080593717B265FC004D1D41 /* JSXProjectMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSXProjectMetaData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		80345A5A17BA6B8700170EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345A5F17BA6B8800170EFD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A6B17BA6B8800170EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345A7317BA6B8800170EFD /* SphereKit.framework in Frameworks */,
+				80345A7017BA6B8800170EFD /* Cocoa.framework in Frameworks */,
+				80345A6F17BA6B8800170EFD /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A8917BA6D1600170EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345AB317BA6DE600170EFD /* SphereKit.framework in Frameworks */,
+				80345A8D17BA6D1600170EFD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A9917BA6D2600170EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345AB217BA6DE300170EFD /* SphereKit.framework in Frameworks */,
+				80345A9D17BA6D2600170EFD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		808058E217B1B6BF004D1D41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80345A8417BA6C0900170EFD /* SphereKit.framework in Frameworks */,
 				802F39C417B3D242005B70C4 /* QuartzCore.framework in Frameworks */,
 				8080593217B1EA23004D1D41 /* libcrypto.dylib in Frameworks */,
 				808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */,
@@ -158,6 +302,8 @@
 		802A640F17B47CF700597DB6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				802F39D917B46E26005B70C4 /* JSXMainWindowController.h */,
+				802F39DA17B46E26005B70C4 /* JSXMainWindowController.m */,
 				802A641017B47D0E00597DB6 /* JSXMainSplitViewController.h */,
 				802A641117B47D0E00597DB6 /* JSXMainSplitViewController.m */,
 			);
@@ -228,35 +374,10 @@
 		802F39D617B46994005B70C4 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				802F39CD17B46927005B70C4 /* JSXProject.h */,
-				802F39CE17B46927005B70C4 /* JSXProject.m */,
-				8080593617B265FC004D1D41 /* JSXProjectMetaData.h */,
-				8080593717B265FC004D1D41 /* JSXProjectMetaData.m */,
-				802F39D317B46982005B70C4 /* JSXResource.h */,
-				802F39D417B46982005B70C4 /* JSXResource.m */,
-				802F39D017B46968005B70C4 /* JSXResourceSet.h */,
-				802F39D117B46968005B70C4 /* JSXResourceSet.m */,
+				8080592117B1B988004D1D41 /* Document */,
+				80345AB417BA6E3900170EFD /* Models */,
 			);
 			name = Project;
-			sourceTree = "<group>";
-		};
-		802F39D717B46DB5005B70C4 /* WindowControllers */ = {
-			isa = PBXGroup;
-			children = (
-				802F39D917B46E26005B70C4 /* JSXProjectWindowController.h */,
-				802F39DA17B46E26005B70C4 /* JSXProjectWindowController.m */,
-			);
-			name = WindowControllers;
-			sourceTree = "<group>";
-		};
-		802F39D817B46DBF005B70C4 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				802F39D717B46DB5005B70C4 /* WindowControllers */,
-				8080592117B1B988004D1D41 /* Documents */,
-				8080592217B1B98E004D1D41 /* ViewControllers */,
-			);
-			name = Controllers;
 			sourceTree = "<group>";
 		};
 		80345A5817BA470B00170EFD /* Model */ = {
@@ -270,11 +391,116 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		80345A6017BA6B8800170EFD /* SphereKit */ = {
+			isa = PBXGroup;
+			children = (
+				8080593317B26520004D1D41 /* JSXFile.h */,
+				8080593417B26520004D1D41 /* JSXFile.m */,
+				802A640A17B4758A00597DB6 /* JSXDocument.h */,
+				802A640B17B4758A00597DB6 /* JSXDocument.m */,
+				80345ABA17BA6FFC00170EFD /* Main */,
+				80345A6117BA6B8800170EFD /* Supporting Files */,
+			);
+			path = SphereKit;
+			sourceTree = "<group>";
+		};
+		80345A6117BA6B8800170EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80345A6217BA6B8800170EFD /* SphereKit-Info.plist */,
+				80345A6317BA6B8800170EFD /* InfoPlist.strings */,
+				80345A6617BA6B8800170EFD /* SphereKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80345A7417BA6B8800170EFD /* SphereKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				80345A7A17BA6B8800170EFD /* SphereKitTests.m */,
+				80345A7517BA6B8800170EFD /* Supporting Files */,
+			);
+			path = SphereKitTests;
+			sourceTree = "<group>";
+		};
+		80345A7517BA6B8800170EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80345A7617BA6B8800170EFD /* SphereKitTests-Info.plist */,
+				80345A7717BA6B8800170EFD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80345A8E17BA6D1600170EFD /* JSXJavaScriptEditor */ = {
+			isa = PBXGroup;
+			children = (
+				80345A8F17BA6D1600170EFD /* Supporting Files */,
+			);
+			path = JSXJavaScriptEditor;
+			sourceTree = "<group>";
+		};
+		80345A8F17BA6D1600170EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80345A9017BA6D1600170EFD /* JSXJavaScriptEditor-Info.plist */,
+				80345A9117BA6D1600170EFD /* InfoPlist.strings */,
+				80345A9417BA6D1600170EFD /* JSXJavaScriptEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80345A9E17BA6D2600170EFD /* JSXQuickLookEditor */ = {
+			isa = PBXGroup;
+			children = (
+				80345A9F17BA6D2600170EFD /* Supporting Files */,
+			);
+			path = JSXQuickLookEditor;
+			sourceTree = "<group>";
+		};
+		80345A9F17BA6D2600170EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80345AA017BA6D2600170EFD /* JSXQuickLookEditor-Info.plist */,
+				80345AA117BA6D2600170EFD /* InfoPlist.strings */,
+				80345AA417BA6D2600170EFD /* JSXQuickLookEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80345AB417BA6E3900170EFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				802F39CD17B46927005B70C4 /* JSXProject.h */,
+				802F39CE17B46927005B70C4 /* JSXProject.m */,
+				8080593617B265FC004D1D41 /* JSXProjectMetaData.h */,
+				8080593717B265FC004D1D41 /* JSXProjectMetaData.m */,
+				802F39D317B46982005B70C4 /* JSXResource.h */,
+				802F39D417B46982005B70C4 /* JSXResource.m */,
+				802F39D017B46968005B70C4 /* JSXResourceSet.h */,
+				802F39D117B46968005B70C4 /* JSXResourceSet.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		80345ABA17BA6FFC00170EFD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				80345A6717BA6B8800170EFD /* SphereKit.h */,
+				80345A6817BA6B8800170EFD /* SphereKit.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		808058DC17B1B6BF004D1D41 = {
 			isa = PBXGroup;
 			children = (
 				808058EE17B1B6BF004D1D41 /* JSphereX */,
 				8080590F17B1B6C0004D1D41 /* JSphereXTests */,
+				80345A6017BA6B8800170EFD /* SphereKit */,
+				80345A7417BA6B8800170EFD /* SphereKitTests */,
+				80345A8E17BA6D1600170EFD /* JSXJavaScriptEditor */,
+				80345A9E17BA6D2600170EFD /* JSXQuickLookEditor */,
 				808058E717B1B6BF004D1D41 /* Frameworks */,
 				808058E617B1B6BF004D1D41 /* Products */,
 			);
@@ -285,6 +511,10 @@
 			children = (
 				808058E517B1B6BF004D1D41 /* JSphereX.app */,
 				8080590917B1B6C0004D1D41 /* JSphereXTests.xctest */,
+				80345A5E17BA6B8800170EFD /* SphereKit.framework */,
+				80345A6E17BA6B8800170EFD /* SphereKitTests.xctest */,
+				80345A8C17BA6D1600170EFD /* JSXJavaScriptEditor.ideplugin */,
+				80345A9C17BA6D2600170EFD /* JSXQuickLookEditor.ideplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,9 +549,10 @@
 				802F39A817B2BF32005B70C4 /* ThirdParty */,
 				8080592917B1E5AB004D1D41 /* Categories */,
 				8080592417B1B9AA004D1D41 /* PluginSystem */,
-				8080593917B27661004D1D41 /* Editors */,
 				8080592517B1D27B004D1D41 /* Models */,
-				802F39D817B46DBF005B70C4 /* Controllers */,
+				802F39C717B3DEF7005B70C4 /* Navigator */,
+				802F39D617B46994005B70C4 /* Project */,
+				802A640F17B47CF700597DB6 /* Main */,
 				8080592017B1B980004D1D41 /* Views */,
 				8080591F17B1B97A004D1D41 /* Assets */,
 				808058EF17B1B6BF004D1D41 /* Supporting Files */,
@@ -378,24 +609,13 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		8080592117B1B988004D1D41 /* Documents */ = {
+		8080592117B1B988004D1D41 /* Document */ = {
 			isa = PBXGroup;
 			children = (
-				802A640A17B4758A00597DB6 /* JSXDocument.h */,
-				802A640B17B4758A00597DB6 /* JSXDocument.m */,
 				808058FA17B1B6C0004D1D41 /* JSXProjectDocument.h */,
 				808058FB17B1B6C0004D1D41 /* JSXProjectDocument.m */,
 			);
-			name = Documents;
-			sourceTree = "<group>";
-		};
-		8080592217B1B98E004D1D41 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				802A640F17B47CF700597DB6 /* Main */,
-				802F39C717B3DEF7005B70C4 /* Navigator */,
-			);
-			name = ViewControllers;
+			name = Document;
 			sourceTree = "<group>";
 		};
 		8080592417B1B9AA004D1D41 /* PluginSystem */ = {
@@ -422,28 +642,103 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		8080593917B27661004D1D41 /* Editors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Editors;
-			sourceTree = "<group>";
-		};
 		8080593A17B2766C004D1D41 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				8080593317B26520004D1D41 /* JSXFile.h */,
-				8080593417B26520004D1D41 /* JSXFile.m */,
 				8080592617B1D2CC004D1D41 /* JSXFileSGM.h */,
 				8080592717B1D2CC004D1D41 /* JSXFileSGM.m */,
-				802F39D617B46994005B70C4 /* Project */,
 			);
 			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		80345A5B17BA6B8700170EFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345AB717BA6FEE00170EFD /* SphereKit.h in Headers */,
+				80345AB817BA6FEF00170EFD /* JSXDocument.h in Headers */,
+				80345AB917BA6FF100170EFD /* JSXFile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		80345A5D17BA6B8700170EFD /* SphereKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80345A7C17BA6B8900170EFD /* Build configuration list for PBXNativeTarget "SphereKit" */;
+			buildPhases = (
+				80345A5917BA6B8700170EFD /* Sources */,
+				80345A5A17BA6B8700170EFD /* Frameworks */,
+				80345A5B17BA6B8700170EFD /* Headers */,
+				80345A5C17BA6B8700170EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SphereKit;
+			productName = SphereKit;
+			productReference = 80345A5E17BA6B8800170EFD /* SphereKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80345A6D17BA6B8800170EFD /* SphereKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80345A7F17BA6B8900170EFD /* Build configuration list for PBXNativeTarget "SphereKitTests" */;
+			buildPhases = (
+				80345A6A17BA6B8800170EFD /* Sources */,
+				80345A6B17BA6B8800170EFD /* Frameworks */,
+				80345A6C17BA6B8800170EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80345A7217BA6B8800170EFD /* PBXTargetDependency */,
+			);
+			name = SphereKitTests;
+			productName = SphereKitTests;
+			productReference = 80345A6E17BA6B8800170EFD /* SphereKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80345A8B17BA6D1600170EFD /* JSXJavaScriptEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80345A9517BA6D1600170EFD /* Build configuration list for PBXNativeTarget "JSXJavaScriptEditor" */;
+			buildPhases = (
+				80345A8817BA6D1600170EFD /* Sources */,
+				80345A8917BA6D1600170EFD /* Frameworks */,
+				80345A8A17BA6D1600170EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80345AAF17BA6DDA00170EFD /* PBXTargetDependency */,
+			);
+			name = JSXJavaScriptEditor;
+			productName = JSXJavaScriptEditor;
+			productReference = 80345A8C17BA6D1600170EFD /* JSXJavaScriptEditor.ideplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		80345A9B17BA6D2600170EFD /* JSXQuickLookEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80345AA517BA6D2600170EFD /* Build configuration list for PBXNativeTarget "JSXQuickLookEditor" */;
+			buildPhases = (
+				80345A9817BA6D2600170EFD /* Sources */,
+				80345A9917BA6D2600170EFD /* Frameworks */,
+				80345A9A17BA6D2600170EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80345AB117BA6DDD00170EFD /* PBXTargetDependency */,
+			);
+			name = JSXQuickLookEditor;
+			productName = JSXQuickLookEditor;
+			productReference = 80345A9C17BA6D2600170EFD /* JSXQuickLookEditor.ideplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
 		808058E417B1B6BF004D1D41 /* JSphereX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8080591917B1B6C0004D1D41 /* Build configuration list for PBXNativeTarget "JSphereX" */;
@@ -451,10 +746,15 @@
 				808058E117B1B6BF004D1D41 /* Sources */,
 				808058E217B1B6BF004D1D41 /* Frameworks */,
 				808058E317B1B6BF004D1D41 /* Resources */,
+				80345A8217BA6BDB00170EFD /* Copy Private Frameworks */,
+				80345A8317BA6BDF00170EFD /* Copy PlugIns */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				80345AA917BA6D3D00170EFD /* PBXTargetDependency */,
+				80345AAB17BA6D3D00170EFD /* PBXTargetDependency */,
+				80345A8617BA6C2400170EFD /* PBXTargetDependency */,
 			);
 			name = JSphereX;
 			productName = JSphereX;
@@ -489,6 +789,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Jarvix;
 				TargetAttributes = {
+					80345A6D17BA6B8800170EFD = {
+						TestTargetID = 808058E417B1B6BF004D1D41;
+					};
 					8080590817B1B6C0004D1D41 = {
 						TestTargetID = 808058E417B1B6BF004D1D41;
 					};
@@ -508,12 +811,48 @@
 			projectRoot = "";
 			targets = (
 				808058E417B1B6BF004D1D41 /* JSphereX */,
+				80345A5D17BA6B8700170EFD /* SphereKit */,
 				8080590817B1B6C0004D1D41 /* JSphereXTests */,
+				80345A6D17BA6B8800170EFD /* SphereKitTests */,
+				80345A8B17BA6D1600170EFD /* JSXJavaScriptEditor */,
+				80345A9B17BA6D2600170EFD /* JSXQuickLookEditor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		80345A5C17BA6B8700170EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345A6517BA6B8800170EFD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A6C17BA6B8800170EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345A7917BA6B8800170EFD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A8A17BA6D1600170EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345A9317BA6D1600170EFD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A9A17BA6D2600170EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345AA317BA6D2600170EFD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		808058E317B1B6BF004D1D41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,14 +878,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		80345A5917BA6B8700170EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345A6917BA6B8800170EFD /* SphereKit.m in Sources */,
+				80345AB517BA6F4200170EFD /* JSXDocument.m in Sources */,
+				80345AB617BA6FE100170EFD /* JSXFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A6A17BA6B8800170EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345A7B17BA6B8800170EFD /* SphereKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A8817BA6D1600170EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A9817BA6D2600170EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		808058E117B1B6BF004D1D41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8080592817B1D2CC004D1D41 /* JSXFileSGM.m in Sources */,
 				802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */,
-				8080593517B26520004D1D41 /* JSXFile.m in Sources */,
-				802A640D17B4758A00597DB6 /* JSXDocument.m in Sources */,
+				80345ABB17BA709D00170EFD /* JSXFileSGM.m in Sources */,
 				802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */,
 				802F39D517B46982005B70C4 /* JSXResource.m in Sources */,
 				802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */,
@@ -560,7 +929,7 @@
 				802F39BE17B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m in Sources */,
 				8080592C17B1E5C9004D1D41 /* NSString+Hashing.m in Sources */,
 				8080593817B265FC004D1D41 /* JSXProjectMetaData.m in Sources */,
-				802F39DB17B46E26005B70C4 /* JSXProjectWindowController.m in Sources */,
+				802F39DB17B46E26005B70C4 /* JSXMainWindowController.m in Sources */,
 				808058F517B1B6C0004D1D41 /* main.m in Sources */,
 				802A641317B47D0E00597DB6 /* JSXMainSplitViewController.m in Sources */,
 				802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */,
@@ -581,6 +950,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		80345A7217BA6B8800170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
+			targetProxy = 80345A7117BA6B8800170EFD /* PBXContainerItemProxy */;
+		};
+		80345A8617BA6C2400170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
+			targetProxy = 80345A8517BA6C2400170EFD /* PBXContainerItemProxy */;
+		};
+		80345AA917BA6D3D00170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A8B17BA6D1600170EFD /* JSXJavaScriptEditor */;
+			targetProxy = 80345AA817BA6D3D00170EFD /* PBXContainerItemProxy */;
+		};
+		80345AAB17BA6D3D00170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A9B17BA6D2600170EFD /* JSXQuickLookEditor */;
+			targetProxy = 80345AAA17BA6D3D00170EFD /* PBXContainerItemProxy */;
+		};
+		80345AAF17BA6DDA00170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
+			targetProxy = 80345AAE17BA6DDA00170EFD /* PBXContainerItemProxy */;
+		};
+		80345AB117BA6DDD00170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
+			targetProxy = 80345AB017BA6DDD00170EFD /* PBXContainerItemProxy */;
+		};
 		8080590E17B1B6C0004D1D41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 808058E417B1B6BF004D1D41 /* JSphereX */;
@@ -589,6 +988,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		80345A6317BA6B8800170EFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80345A6417BA6B8800170EFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80345A7717BA6B8800170EFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80345A7817BA6B8800170EFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80345A9117BA6D1600170EFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80345A9217BA6D1600170EFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80345AA117BA6D2600170EFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80345AA217BA6D2600170EFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		808058F117B1B6BF004D1D41 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -632,6 +1063,142 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		80345A7D17BA6B8900170EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SphereKit/SphereKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SphereKit/SphereKit-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		80345A7E17BA6B8900170EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SphereKit/SphereKit-Prefix.pch";
+				INFOPLIST_FILE = "SphereKit/SphereKit-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		80345A8017BA6B8900170EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JSphereX.app/Contents/MacOS/JSphereX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SphereKit/SphereKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SphereKitTests/SphereKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		80345A8117BA6B8900170EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JSphereX.app/Contents/MacOS/JSphereX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SphereKit/SphereKit-Prefix.pch";
+				INFOPLIST_FILE = "SphereKitTests/SphereKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		80345A9617BA6D1600170EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSXJavaScriptEditor/JSXJavaScriptEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JSXJavaScriptEditor/JSXJavaScriptEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Debug;
+		};
+		80345A9717BA6D1600170EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSXJavaScriptEditor/JSXJavaScriptEditor-Prefix.pch";
+				INFOPLIST_FILE = "JSXJavaScriptEditor/JSXJavaScriptEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Release;
+		};
+		80345AA617BA6D2600170EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSXQuickLookEditor/JSXQuickLookEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JSXQuickLookEditor/JSXQuickLookEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Debug;
+		};
+		80345AA717BA6D2600170EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSXQuickLookEditor/JSXQuickLookEditor-Prefix.pch";
+				INFOPLIST_FILE = "JSXQuickLookEditor/JSXQuickLookEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Release;
+		};
 		8080591717B1B6C0004D1D41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -779,6 +1346,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		80345A7C17BA6B8900170EFD /* Build configuration list for PBXNativeTarget "SphereKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80345A7D17BA6B8900170EFD /* Debug */,
+				80345A7E17BA6B8900170EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80345A7F17BA6B8900170EFD /* Build configuration list for PBXNativeTarget "SphereKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80345A8017BA6B8900170EFD /* Debug */,
+				80345A8117BA6B8900170EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80345A9517BA6D1600170EFD /* Build configuration list for PBXNativeTarget "JSXJavaScriptEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80345A9617BA6D1600170EFD /* Debug */,
+				80345A9717BA6D1600170EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80345AA517BA6D2600170EFD /* Build configuration list for PBXNativeTarget "JSXQuickLookEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80345AA617BA6D2600170EFD /* Debug */,
+				80345AA717BA6D2600170EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		808058E017B1B6BF004D1D41 /* Build configuration list for PBXProject "JSphereX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

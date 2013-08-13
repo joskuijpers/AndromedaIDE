@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface JSXProjectWindowController : NSWindowController
+@interface JSXMainWindowController : NSWindowController
 
 @end

@@ -38,6 +38,16 @@
                ReferencedContainer = "container:JSphereX.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "80345A6D17BA6B8800170EFD"
+               BuildableName = "SphereKitTests.xctest"
+               BlueprintName = "SphereKitTests"
+               ReferencedContainer = "container:JSphereX.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

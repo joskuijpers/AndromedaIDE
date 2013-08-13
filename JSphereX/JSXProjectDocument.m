@@ -8,7 +8,7 @@
 
 #import "JSXProjectDocument.h"
 
-#import "JSXProjectWindowController.h"
+#import "JSXMainWindowController.h"
 
 //#import "NSString+Hashing.h"
 
@@ -18,7 +18,7 @@
 @interface JSXProjectDocument()
 {
 	NSFileWrapper *_documentFileWrapper; // To model
-	JSXProjectWindowController *_windowController;
+	JSXMainWindowController *_windowController;
 }
 @end
 
@@ -26,7 +26,7 @@
 
 - (void)makeWindowControllers
 {
-	_windowController = [[JSXProjectWindowController alloc] init];
+	_windowController = [[JSXMainWindowController alloc] init];
 	
 	[self addWindowController:_windowController];
 }
