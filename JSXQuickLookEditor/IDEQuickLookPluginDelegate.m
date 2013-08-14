@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "IDEQuickLookDelegate.h"
+#import "IDEQuickLookPluginDelegate.h"
 
-@implementation IDEQuickLookDelegate
+@implementation IDEQuickLookPluginDelegate
 
 @end

@@ -8,6 +8,6 @@
 
 #import <SphereKit/SphereKit.h>
 
-@interface IDEJSPluginDelegate : NSObject <IDEPluginDelegate>
+@interface IDEJavaScriptPluginDelegate : NSObject <IDEPluginDelegate>
 
 @end

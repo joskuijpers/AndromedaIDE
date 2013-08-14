@@ -8,6 +8,6 @@
 
 #import <SphereKit/SphereKit.h>
 
-@interface IDEQuickLookDelegate : NSObject <IDEPluginDelegate>
+@interface IDEQuickLookPluginDelegate : NSObject <IDEPluginDelegate>
 
 @end

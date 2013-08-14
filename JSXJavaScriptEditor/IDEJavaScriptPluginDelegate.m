@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "IDEJSPluginDelegate.h"
+#import "IDEJavaScriptPluginDelegate.h"
 
-@implementation IDEJSPluginDelegate
+@implementation IDEJavaScriptPluginDelegate
 
 @end

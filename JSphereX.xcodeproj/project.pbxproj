@@ -33,7 +33,7 @@
 		8006D4BB17BA88DB00453468 /* SPHPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4BA17BA88DB00453468 /* SPHPluginManager.m */; };
 		8006D4BE17BA897900453468 /* SPHApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4BD17BA897900453468 /* SPHApplicationDelegate.m */; };
 		8006D4C117BBCF5800453468 /* SPHPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4C017BBCF5800453468 /* SPHPlugin.m */; };
-		8006D4C417BBD57900453468 /* IDEQuickLookDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4C317BBD57900453468 /* IDEQuickLookDelegate.m */; };
+		8006D4C617BBD5FE00453468 /* IDEQuickLookPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4C317BBD57900453468 /* IDEQuickLookPluginDelegate.m */; };
 		802A641317B47D0E00597DB6 /* IDEMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* IDEMainSplitViewController.m */; };
 		802A641417B47D0E00597DB6 /* IDEMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* IDEMainSplitView.xib */; };
 		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -72,7 +72,7 @@
 		80345ABB17BA709D00170EFD /* IDEFileSGM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080592717B1D2CC004D1D41 /* IDEFileSGM.m */; };
 		80345ABE17BA72A800170EFD /* IDEPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345ABC17BA72A800170EFD /* IDEPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* IDEPlugin.m */; };
-		80345AC417BA742B00170EFD /* IDEJSPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJSPluginDelegate.m */; };
+		80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */; };
 		80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* IDEPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
@@ -194,8 +194,8 @@
 		8006D4BD17BA897900453468 /* SPHApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHApplicationDelegate.m; sourceTree = "<group>"; };
 		8006D4BF17BBCF5800453468 /* SPHPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHPlugin.h; sourceTree = "<group>"; };
 		8006D4C017BBCF5800453468 /* SPHPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHPlugin.m; sourceTree = "<group>"; };
-		8006D4C217BBD57900453468 /* IDEQuickLookDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEQuickLookDelegate.h; sourceTree = "<group>"; };
-		8006D4C317BBD57900453468 /* IDEQuickLookDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEQuickLookDelegate.m; sourceTree = "<group>"; };
+		8006D4C217BBD57900453468 /* IDEQuickLookPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEQuickLookPluginDelegate.h; sourceTree = "<group>"; };
+		8006D4C317BBD57900453468 /* IDEQuickLookPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEQuickLookPluginDelegate.m; sourceTree = "<group>"; };
 		802A640A17B4758A00597DB6 /* IDEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDEDocument.h; path = ../JSphereX/IDEDocument.h; sourceTree = "<group>"; };
 		802A640B17B4758A00597DB6 /* IDEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDEDocument.m; path = ../JSphereX/IDEDocument.m; sourceTree = "<group>"; };
 		802A641017B47D0E00597DB6 /* IDEMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEMainSplitViewController.h; sourceTree = "<group>"; };
@@ -248,8 +248,8 @@
 		80345ABC17BA72A800170EFD /* IDEPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEPlugin.h; sourceTree = "<group>"; };
 		80345ABD17BA72A800170EFD /* IDEPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEPlugin.m; sourceTree = "<group>"; };
 		80345AC117BA73A600170EFD /* IDEPluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEPluginDelegate.h; sourceTree = "<group>"; };
-		80345AC217BA742B00170EFD /* IDEJSPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJSPluginDelegate.h; sourceTree = "<group>"; };
-		80345AC317BA742B00170EFD /* IDEJSPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJSPluginDelegate.m; sourceTree = "<group>"; };
+		80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJavaScriptPluginDelegate.h; sourceTree = "<group>"; };
+		80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJavaScriptPluginDelegate.m; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* JSphereX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSphereX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -415,8 +415,8 @@
 		8006D4C517BBD57C00453468 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				8006D4C217BBD57900453468 /* IDEQuickLookDelegate.h */,
-				8006D4C317BBD57900453468 /* IDEQuickLookDelegate.m */,
+				8006D4C217BBD57900453468 /* IDEQuickLookPluginDelegate.h */,
+				8006D4C317BBD57900453468 /* IDEQuickLookPluginDelegate.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -620,8 +620,8 @@
 		80345AC617BA747B00170EFD /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				80345AC217BA742B00170EFD /* IDEJSPluginDelegate.h */,
-				80345AC317BA742B00170EFD /* IDEJSPluginDelegate.m */,
+				80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */,
+				80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -1005,7 +1005,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80345AC417BA742B00170EFD /* IDEJSPluginDelegate.m in Sources */,
+				80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,6 +1013,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8006D4C617BBD5FE00453468 /* IDEQuickLookPluginDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,7 +1034,6 @@
 				802F39BF17B3CBCB005B70C4 /* CNSplitViewToolbarButton.m in Sources */,
 				802F39BD17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m in Sources */,
 				808058FC17B1B6C0004D1D41 /* IDEProjectDocument.m in Sources */,
-				8006D4C417BBD57900453468 /* IDEQuickLookDelegate.m in Sources */,
 				8006D46B17BA7EA800453468 /* SPXSourcesBuildPhase.m in Sources */,
 				802F39BE17B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m in Sources */,
 				8006D4BE17BA897900453468 /* SPHApplicationDelegate.m in Sources */,
