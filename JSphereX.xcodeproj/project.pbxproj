@@ -26,14 +26,26 @@
 		8006D4A917BA880A00453468 /* IDEEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4A717BA880A00453468 /* IDEEditor.m */; };
 		8006D4AC17BA881300453468 /* IDEEditorMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4AA17BA881300453468 /* IDEEditorMenu.h */; };
 		8006D4AD17BA881300453468 /* IDEEditorMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4AB17BA881300453468 /* IDEEditorMenu.m */; };
-		8006D4B117BA885900453468 /* IDEInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4AF17BA885900453468 /* IDEInspector.h */; };
-		8006D4B217BA885900453468 /* IDEInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4B017BA885900453468 /* IDEInspector.m */; };
+		8006D4B117BA885900453468 /* IDEUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4AF17BA885900453468 /* IDEUtilities.h */; };
+		8006D4B217BA885900453468 /* IDEUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4B017BA885900453468 /* IDEUtilities.m */; };
 		8006D4B517BA886A00453468 /* IDENavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4B317BA886A00453468 /* IDENavigator.h */; };
 		8006D4B617BA886A00453468 /* IDENavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4B417BA886A00453468 /* IDENavigator.m */; };
 		8006D4BB17BA88DB00453468 /* SPHPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4BA17BA88DB00453468 /* SPHPluginManager.m */; };
 		8006D4BE17BA897900453468 /* SPHApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4BD17BA897900453468 /* SPHApplicationDelegate.m */; };
 		8006D4C117BBCF5800453468 /* SPHPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4C017BBCF5800453468 /* SPHPlugin.m */; };
 		8006D4C617BBD5FE00453468 /* IDEQuickLookPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4C317BBD57900453468 /* IDEQuickLookPluginDelegate.m */; };
+		8006D4C917BBD77700453468 /* IDENavigatorTab.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4C717BBD77700453468 /* IDENavigatorTab.h */; };
+		8006D4CA17BBD77700453468 /* IDENavigatorTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4C817BBD77700453468 /* IDENavigatorTab.m */; };
+		8006D4CD17BBD78200453468 /* IDEUtilitiesTab.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4CB17BBD78200453468 /* IDEUtilitiesTab.h */; };
+		8006D4CE17BBD78200453468 /* IDEUtilitiesTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4CC17BBD78200453468 /* IDEUtilitiesTab.m */; };
+		8006D4D117BBDE2500453468 /* IDEFileInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4CF17BBDE2500453468 /* IDEFileInspector.h */; };
+		8006D4D217BBDE2500453468 /* IDEFileInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4D017BBDE2500453468 /* IDEFileInspector.m */; };
+		8006D4D917BBE69C00453468 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		8006D4DF17BBE69C00453468 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8006D4DD17BBE69C00453468 /* InfoPlist.strings */; };
+		8006D4E617BBE6AA00453468 /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
+		8006D4EA17BBE6F600453468 /* IDESourceCodeEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */; };
+		8006D4ED17BBE72800453468 /* IDESourceCodeEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */; };
+		8006D4F017BBE73400453468 /* IDESourceCodePluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */; };
 		802A641317B47D0E00597DB6 /* IDEMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* IDEMainSplitViewController.m */; };
 		802A641417B47D0E00597DB6 /* IDEMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* IDEMainSplitView.xib */; };
 		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -93,6 +105,20 @@
 			remoteGlobalIDString = 8006D47717BA840400453468;
 			remoteInfo = SphereRuntimeKit;
 		};
+		8006D4E417BBE6A300453468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
+			remoteInfo = SphereKit;
+		};
+		8006D4E717BBE6B200453468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8006D4D717BBE69C00453468;
+			remoteInfo = IDESourceCodeEditor;
+		};
 		80345A8517BA6C2400170EFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
@@ -149,6 +175,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				8006D4EA17BBE6F600453468 /* IDESourceCodeEditor.ideplugin in Copy PlugIns */,
 				80345AAC17BA6DB400170EFD /* IDEJavaScriptEditor.ideplugin in Copy PlugIns */,
 				80345AAD17BA6DB400170EFD /* IDEQuickLookEditor.ideplugin in Copy PlugIns */,
 			);
@@ -184,8 +211,8 @@
 		8006D4A717BA880A00453468 /* IDEEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEEditor.m; sourceTree = "<group>"; };
 		8006D4AA17BA881300453468 /* IDEEditorMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditorMenu.h; sourceTree = "<group>"; };
 		8006D4AB17BA881300453468 /* IDEEditorMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEEditorMenu.m; sourceTree = "<group>"; };
-		8006D4AF17BA885900453468 /* IDEInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEInspector.h; sourceTree = "<group>"; };
-		8006D4B017BA885900453468 /* IDEInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEInspector.m; sourceTree = "<group>"; };
+		8006D4AF17BA885900453468 /* IDEUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEUtilities.h; sourceTree = "<group>"; };
+		8006D4B017BA885900453468 /* IDEUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEUtilities.m; sourceTree = "<group>"; };
 		8006D4B317BA886A00453468 /* IDENavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDENavigator.h; sourceTree = "<group>"; };
 		8006D4B417BA886A00453468 /* IDENavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDENavigator.m; sourceTree = "<group>"; };
 		8006D4B917BA88DB00453468 /* SPHPluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHPluginManager.h; sourceTree = "<group>"; };
@@ -196,6 +223,20 @@
 		8006D4C017BBCF5800453468 /* SPHPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHPlugin.m; sourceTree = "<group>"; };
 		8006D4C217BBD57900453468 /* IDEQuickLookPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEQuickLookPluginDelegate.h; sourceTree = "<group>"; };
 		8006D4C317BBD57900453468 /* IDEQuickLookPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEQuickLookPluginDelegate.m; sourceTree = "<group>"; };
+		8006D4C717BBD77700453468 /* IDENavigatorTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDENavigatorTab.h; sourceTree = "<group>"; };
+		8006D4C817BBD77700453468 /* IDENavigatorTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDENavigatorTab.m; sourceTree = "<group>"; };
+		8006D4CB17BBD78200453468 /* IDEUtilitiesTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEUtilitiesTab.h; sourceTree = "<group>"; };
+		8006D4CC17BBD78200453468 /* IDEUtilitiesTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEUtilitiesTab.m; sourceTree = "<group>"; };
+		8006D4CF17BBDE2500453468 /* IDEFileInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEFileInspector.h; sourceTree = "<group>"; };
+		8006D4D017BBDE2500453468 /* IDEFileInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEFileInspector.m; sourceTree = "<group>"; };
+		8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDESourceCodeEditor.ideplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8006D4DC17BBE69C00453468 /* IDESourceCodeEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDESourceCodeEditor-Info.plist"; sourceTree = "<group>"; };
+		8006D4DE17BBE69C00453468 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8006D4E017BBE69C00453468 /* IDESourceCodeEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDESourceCodeEditor-Prefix.pch"; sourceTree = "<group>"; };
+		8006D4EB17BBE72800453468 /* IDESourceCodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeEditor.h; sourceTree = "<group>"; };
+		8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESourceCodeEditor.m; sourceTree = "<group>"; };
+		8006D4EE17BBE73400453468 /* IDESourceCodePluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodePluginDelegate.h; sourceTree = "<group>"; };
+		8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESourceCodePluginDelegate.m; sourceTree = "<group>"; };
 		802A640A17B4758A00597DB6 /* IDEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDEDocument.h; path = ../JSphereX/IDEDocument.h; sourceTree = "<group>"; };
 		802A640B17B4758A00597DB6 /* IDEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDEDocument.m; path = ../JSphereX/IDEDocument.m; sourceTree = "<group>"; };
 		802A641017B47D0E00597DB6 /* IDEMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEMainSplitViewController.h; sourceTree = "<group>"; };
@@ -282,6 +323,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8006D47917BA840400453468 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8006D4D517BBE69C00453468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8006D4E617BBE6AA00453468 /* SphereKit.framework in Frameworks */,
+				8006D4D917BBE69C00453468 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,17 +449,22 @@
 			children = (
 				8006D4B317BA886A00453468 /* IDENavigator.h */,
 				8006D4B417BA886A00453468 /* IDENavigator.m */,
+				8006D4C717BBD77700453468 /* IDENavigatorTab.h */,
+				8006D4C817BBD77700453468 /* IDENavigatorTab.m */,
 			);
 			name = Navigator;
 			sourceTree = "<group>";
 		};
-		8006D4B817BA887300453468 /* Inspector */ = {
+		8006D4B817BA887300453468 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				8006D4AF17BA885900453468 /* IDEInspector.h */,
-				8006D4B017BA885900453468 /* IDEInspector.m */,
+				8006D4AF17BA885900453468 /* IDEUtilities.h */,
+				8006D4B017BA885900453468 /* IDEUtilities.m */,
+				8006D4CB17BBD78200453468 /* IDEUtilitiesTab.h */,
+				8006D4CC17BBD78200453468 /* IDEUtilitiesTab.m */,
+				8006D4D317BBDE2B00453468 /* FileInspector */,
 			);
-			name = Inspector;
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		8006D4C517BBD57C00453468 /* Main */ = {
@@ -419,6 +474,53 @@
 				8006D4C317BBD57900453468 /* IDEQuickLookPluginDelegate.m */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		8006D4D317BBDE2B00453468 /* FileInspector */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4CF17BBDE2500453468 /* IDEFileInspector.h */,
+				8006D4D017BBDE2500453468 /* IDEFileInspector.m */,
+			);
+			name = FileInspector;
+			sourceTree = "<group>";
+		};
+		8006D4DA17BBE69C00453468 /* IDESourceCodeEditor */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4F217BBE73D00453468 /* Editor */,
+				8006D4F117BBE73700453468 /* Main */,
+				8006D4DB17BBE69C00453468 /* Supporting Files */,
+			);
+			path = IDESourceCodeEditor;
+			sourceTree = "<group>";
+		};
+		8006D4DB17BBE69C00453468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4DC17BBE69C00453468 /* IDESourceCodeEditor-Info.plist */,
+				8006D4DD17BBE69C00453468 /* InfoPlist.strings */,
+				8006D4E017BBE69C00453468 /* IDESourceCodeEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8006D4F117BBE73700453468 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4EE17BBE73400453468 /* IDESourceCodePluginDelegate.h */,
+				8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8006D4F217BBE73D00453468 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4EB17BBE72800453468 /* IDESourceCodeEditor.h */,
+				8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */,
+			);
+			name = Editor;
 			sourceTree = "<group>";
 		};
 		802A640F17B47CF700597DB6 /* Main */ = {
@@ -524,7 +626,7 @@
 				802A640A17B4758A00597DB6 /* IDEDocument.h */,
 				802A640B17B4758A00597DB6 /* IDEDocument.m */,
 				8006D4AE17BA881700453468 /* Editor */,
-				8006D4B817BA887300453468 /* Inspector */,
+				8006D4B817BA887300453468 /* Utilities */,
 				8006D4B717BA886C00453468 /* Navigator */,
 				80345ABA17BA6FFC00170EFD /* Main */,
 				80345A6117BA6B8800170EFD /* Supporting Files */,
@@ -634,6 +736,7 @@
 				8006D47A17BA840400453468 /* SphereRuntimeKit */,
 				80345A8E17BA6D1600170EFD /* IDEJavaScriptEditor */,
 				80345A9E17BA6D2600170EFD /* IDEQuickLookEditor */,
+				8006D4DA17BBE69C00453468 /* IDESourceCodeEditor */,
 				808058E717B1B6BF004D1D41 /* Frameworks */,
 				808058E617B1B6BF004D1D41 /* Products */,
 			);
@@ -647,6 +750,7 @@
 				80345A8C17BA6D1600170EFD /* IDEJavaScriptEditor.ideplugin */,
 				80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */,
 				8006D47817BA840400453468 /* SphereRuntimeKit.framework */,
+				8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -789,10 +893,13 @@
 				8006D4A817BA880A00453468 /* IDEEditor.h in Headers */,
 				80345AB717BA6FEE00170EFD /* SphereKit.h in Headers */,
 				80345AB817BA6FEF00170EFD /* IDEDocument.h in Headers */,
+				8006D4C917BBD77700453468 /* IDENavigatorTab.h in Headers */,
 				80345ABE17BA72A800170EFD /* IDEPlugin.h in Headers */,
 				80345AB917BA6FF100170EFD /* IDEFile.h in Headers */,
+				8006D4CD17BBD78200453468 /* IDEUtilitiesTab.h in Headers */,
 				8006D4B517BA886A00453468 /* IDENavigator.h in Headers */,
-				8006D4B117BA885900453468 /* IDEInspector.h in Headers */,
+				8006D4B117BA885900453468 /* IDEUtilities.h in Headers */,
+				8006D4D117BBDE2500453468 /* IDEFileInspector.h in Headers */,
 				80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */,
 				8006D4AC17BA881300453468 /* IDEEditorMenu.h in Headers */,
 			);
@@ -818,6 +925,24 @@
 			productName = SphereRuntimeKit;
 			productReference = 8006D47817BA840400453468 /* SphereRuntimeKit.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		8006D4D717BBE69C00453468 /* IDESourceCodeEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8006D4E117BBE69C00453468 /* Build configuration list for PBXNativeTarget "IDESourceCodeEditor" */;
+			buildPhases = (
+				8006D4D417BBE69C00453468 /* Sources */,
+				8006D4D517BBE69C00453468 /* Frameworks */,
+				8006D4D617BBE69C00453468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8006D4E517BBE6A300453468 /* PBXTargetDependency */,
+			);
+			name = IDESourceCodeEditor;
+			productName = IDESourceCodeEditor;
+			productReference = 8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */;
+			productType = "com.apple.product-type.bundle";
 		};
 		80345A5D17BA6B8700170EFD /* SphereKit */ = {
 			isa = PBXNativeTarget;
@@ -886,6 +1011,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8006D4E817BBE6B200453468 /* PBXTargetDependency */,
 				8006D49D17BA843200453468 /* PBXTargetDependency */,
 				80345AA917BA6D3D00170EFD /* PBXTargetDependency */,
 				80345AAB17BA6D3D00170EFD /* PBXTargetDependency */,
@@ -924,6 +1050,7 @@
 				8006D47717BA840400453468 /* SphereRuntimeKit */,
 				80345A8B17BA6D1600170EFD /* IDEJavaScriptEditor */,
 				80345A9B17BA6D2600170EFD /* IDEQuickLookEditor */,
+				8006D4D717BBE69C00453468 /* IDESourceCodeEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -934,6 +1061,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8006D47F17BA840400453468 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8006D4D617BBE69C00453468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8006D4DF17BBE69C00453468 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,13 +1122,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8006D4D417BBE69C00453468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8006D4F017BBE73400453468 /* IDESourceCodePluginDelegate.m in Sources */,
+				8006D4ED17BBE72800453468 /* IDESourceCodeEditor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80345A5917BA6B8700170EFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8006D4B217BA885900453468 /* IDEInspector.m in Sources */,
+				8006D4D217BBDE2500453468 /* IDEFileInspector.m in Sources */,
+				8006D4CA17BBD77700453468 /* IDENavigatorTab.m in Sources */,
+				8006D4B217BA885900453468 /* IDEUtilities.m in Sources */,
 				8006D4A917BA880A00453468 /* IDEEditor.m in Sources */,
 				8006D4AD17BA881300453468 /* IDEEditorMenu.m in Sources */,
+				8006D4CE17BBD78200453468 /* IDEUtilitiesTab.m in Sources */,
 				80345AB517BA6F4200170EFD /* IDEDocument.m in Sources */,
 				80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */,
 				8006D4B617BA886A00453468 /* IDENavigator.m in Sources */,
@@ -1060,6 +1207,16 @@
 			target = 8006D47717BA840400453468 /* SphereRuntimeKit */;
 			targetProxy = 8006D49C17BA843200453468 /* PBXContainerItemProxy */;
 		};
+		8006D4E517BBE6A300453468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
+			targetProxy = 8006D4E417BBE6A300453468 /* PBXContainerItemProxy */;
+		};
+		8006D4E817BBE6B200453468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8006D4D717BBE69C00453468 /* IDESourceCodeEditor */;
+			targetProxy = 8006D4E717BBE6B200453468 /* PBXContainerItemProxy */;
+		};
 		80345A8617BA6C2400170EFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
@@ -1092,6 +1249,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				8006D47E17BA840400453468 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8006D4DD17BBE69C00453468 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8006D4DE17BBE69C00453468 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1188,6 +1353,36 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		8006D4E217BBE69C00453468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDESourceCodeEditor/IDESourceCodeEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IDESourceCodeEditor/IDESourceCodeEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Debug;
+		};
+		8006D4E317BBE69C00453468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDESourceCodeEditor/IDESourceCodeEditor-Prefix.pch";
+				INFOPLIST_FILE = "IDESourceCodeEditor/IDESourceCodeEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
 			};
 			name = Release;
 		};
@@ -1399,6 +1594,14 @@
 			buildConfigurations = (
 				8006D49717BA840400453468 /* Debug */,
 				8006D49817BA840400453468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8006D4E117BBE69C00453468 /* Build configuration list for PBXNativeTarget "IDESourceCodeEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8006D4E217BBE69C00453468 /* Debug */,
+				8006D4E317BBE69C00453468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

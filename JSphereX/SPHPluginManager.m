@@ -93,6 +93,12 @@
 
 - (BOOL)isPrincipalClassValid:(Class)principalClass
 {
+	if(![principalClass conformsToProtocol:@protocol(IDEPluginDelegate)])
+		return NO;
+
+	if(![principalClass instancesRespondToSelector:@selector(extensions)])
+		return NO;
+
 	return YES;
 }
 

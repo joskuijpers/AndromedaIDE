@@ -10,4 +10,22 @@
 
 @implementation IDEJavaScriptPluginDelegate
 
+- (NSDictionary *)extensions
+{
+	return @{
+			 @"Sphere.SphereKit.EditorDocument.JavaScriptEditor" : @{
+					 @"editorClass" : @"IDEJavaScriptEditor",
+					 @"name" : @"JavaScript Document",
+					 @"documentClass" : @"IDEJavaScriptDocument",
+					 @"point" : @"Sphere.IDE.EditorDocument",
+					 @"supportedFileType" : @[
+							 @{ @"typeUTI" : @"com.netscape.javascript-source" },
+							 ]
+					 },
+			 @"IDEQuickLookEditor.EditorMenu" : @{
+					 @"point" : @"Sphere.IDE.EditorMenu"
+					 }
+			 };
+}
+
 @end

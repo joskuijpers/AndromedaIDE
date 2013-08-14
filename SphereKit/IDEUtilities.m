@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "IDEInspector.h"
+#import "IDEUtilities.h"
 
-@implementation IDEInspector
+@implementation IDEUtilities
 
 @end

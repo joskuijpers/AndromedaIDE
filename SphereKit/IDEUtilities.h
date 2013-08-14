@@ -1,5 +1,5 @@
 //
-//  JSXPluginDelegate.h
+//  IDEInspector.h
 //  JSphereX
 //
 //  Created by Jos Kuijpers on 8/13/13.
@@ -8,12 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol IDEPluginDelegate <NSObject>
-
-@required
-- (NSDictionary *)extensions;
-
-@optional
-- (void)pluginDidFinishLoading;
+@interface IDEUtilities : NSObject
 
 @end
