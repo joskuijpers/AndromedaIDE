@@ -1,5 +1,5 @@
 //
-//  JSXPlugin.h
+//  IDEEditor.h
 //  JSphereX
 //
 //  Created by Jos Kuijpers on 8/13/13.
@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface IDEPlugin : NSObject
-
-- (NSString *)name;
-- (NSBundle *)bundle;
+@interface IDEEditor : NSObject
 
 @end

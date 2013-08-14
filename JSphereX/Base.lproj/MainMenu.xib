@@ -5,7 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4488.2"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="KSj-xA-PSK" id="llu-1M-m1a"/>
+            </connections>
+        </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
@@ -733,5 +737,6 @@ CA
             </items>
         </menu>
         <customObject id="419" customClass="NSFontManager"/>
+        <customObject id="KSj-xA-PSK" customClass="SPHApplicationDelegate"/>
     </objects>
 </document>

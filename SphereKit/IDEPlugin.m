@@ -10,4 +10,14 @@
 
 @implementation IDEPlugin
 
+- (NSString *)name
+{
+	return nil;
+}
+
+- (NSBundle *)bundle
+{
+	return nil;
+}
+
 @end

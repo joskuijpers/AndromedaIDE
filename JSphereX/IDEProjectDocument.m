@@ -8,7 +8,6 @@
 
 #import "IDEProjectDocument.h"
 #import "IDEMainWindowController.h"
-#import "IDEProject.h"
 
 @interface IDEProjectDocument()
 {

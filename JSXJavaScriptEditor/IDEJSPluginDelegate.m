@@ -10,9 +10,4 @@
 
 @implementation IDEJSPluginDelegate
 
-- (NSString *)name
-{
-	return @"IDEJavaScriptEditor";
-}
-
 @end

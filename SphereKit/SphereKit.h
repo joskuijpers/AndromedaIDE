@@ -6,8 +6,10 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface SphereKit : NSObject
-
-@end
+#import "IDEEditor.h"
+#import "IDEEditorMenu.h"
+#import "IDEFile.h"
+#import "IDEInspector.h"
+#import "IDENavigator.h"
+#import "IDEPlugin.h"
+#import "IDEPluginDelegate.h"

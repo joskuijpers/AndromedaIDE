@@ -1,13 +1,13 @@
 //
-//  IDEJSPluginDelegate.h
+//  IDEEditor.m
 //  JSphereX
 //
 //  Created by Jos Kuijpers on 8/13/13.
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <SphereKit/SphereKit.h>
+#import "IDEEditor.h"
 
-@interface IDEJSPluginDelegate : NSObject <IDEPluginDelegate>
+@implementation IDEEditor
 
 @end

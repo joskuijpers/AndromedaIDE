@@ -1,13 +1,13 @@
 //
-//  IDEJSPluginDelegate.h
+//  IDENavigator.m
 //  JSphereX
 //
 //  Created by Jos Kuijpers on 8/13/13.
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <SphereKit/SphereKit.h>
+#import "IDENavigator.h"
 
-@interface IDEJSPluginDelegate : NSObject <IDEPluginDelegate>
+@implementation IDENavigator
 
 @end

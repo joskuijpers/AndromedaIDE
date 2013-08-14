@@ -10,7 +10,4 @@
 
 @protocol IDEPluginDelegate <NSObject>
 
-@required
-- (NSString *)name;
-
 @end
