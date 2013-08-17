@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4488.2"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="IDEMainWindowController">
+        <customObject id="-2" userLabel="File's Owner" customClass="SPHMainWindowController">
             <connections>
                 <outlet property="window" destination="5" id="18"/>
             </connections>

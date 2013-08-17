@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface IDEMainWindowController : NSWindowController
+@interface SPHMainWindowController : NSWindowController
 
 @end

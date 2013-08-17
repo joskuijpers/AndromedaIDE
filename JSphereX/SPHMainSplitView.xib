@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4488.2"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="IDEMainSplitViewController">
+        <customObject id="-2" userLabel="File's Owner" customClass="SPHMainSplitViewController">
             <connections>
                 <outlet property="splitView" destination="Gov-vb-NXb" id="dbm-eq-dnF"/>
                 <outlet property="view" destination="yHi-88-Vjh" id="D6T-sW-Flm"/>

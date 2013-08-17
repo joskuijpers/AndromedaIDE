@@ -7,12 +7,12 @@
 //
 
 #import "IDEProjectDocument.h"
-#import "IDEMainWindowController.h"
+#import "SPHMainWindowController.h"
 
 @interface IDEProjectDocument()
 {
 	NSFileWrapper *_documentFileWrapper; // To model
-	IDEMainWindowController *_windowController;
+	SPHMainWindowController *_windowController;
 }
 @end
 
@@ -20,7 +20,7 @@
 
 - (void)makeWindowControllers
 {
-	_windowController = [[IDEMainWindowController alloc] init];
+	_windowController = [[SPHMainWindowController alloc] init];
 
 	[self addWindowController:_windowController];
 }

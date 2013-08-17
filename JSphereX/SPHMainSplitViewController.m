@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "IDEMainSplitViewController.h"
+#import "SPHMainSplitViewController.h"
 #import "AGNSSplitViewDelegate.h"
 
 #import "IDEProjectNavigatorViewController.h"
 
-@interface IDEMainSplitViewController ()
+@interface SPHMainSplitViewController ()
 {
 	NSViewController *_navigatorViewController;
 	NSViewController *_editorViewController;
@@ -21,11 +21,11 @@
 }
 @end
 
-@implementation IDEMainSplitViewController
+@implementation SPHMainSplitViewController
 
 - (id)init
 {
-    return [super initWithNibName:@"IDEMainSplitView" bundle:nil];
+    return [super initWithNibName:@"SPHMainSplitView" bundle:nil];
 }
 
 - (void)loadView

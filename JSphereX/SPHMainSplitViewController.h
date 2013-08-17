@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface IDEMainSplitViewController : NSViewController
+@interface SPHMainSplitViewController : NSViewController
 
 @property (weak,nonatomic) IBOutlet NSSplitView *splitView;
 
