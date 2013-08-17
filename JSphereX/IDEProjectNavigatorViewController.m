@@ -102,7 +102,6 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 
 #pragma mark - OutlineView Delegate
 
-// TODO: get rid of this
 - (CGFloat)outlineView:(NSOutlineView *)outlineView
 	 heightOfRowByItem:(IDEProjectNavigatorItem *)item
 {

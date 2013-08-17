@@ -14,4 +14,7 @@
 
 @property (strong,readonly) SPHPluginManager *pluginManager;
 
+- (IBAction)showWelcomeWindow:(id)sender;
+- (void)closeWelcomeWindow;
+
 @end

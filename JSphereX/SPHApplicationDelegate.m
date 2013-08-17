@@ -8,20 +8,34 @@
 
 #import "SPHApplicationDelegate.h"
 #import "SPHPluginManager.h"
-#import "SPHPlugin.h"
+#import "SPHWelcomeWindowController.h"
+
+@interface SPHApplicationDelegate()
+{
+	SPHWelcomeWindowController *_welcomeController;
+}
+@end
 
 @implementation SPHApplicationDelegate
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification
 {
-	_pluginManager = [[SPHPluginManager alloc] init];
-	[_pluginManager loadAllPlugins];
-//
-//	NSLog(@"%@",[_pluginManager loadedPlugins]);
-//
-//	for(SPHPlugin *plugin in [_pluginManager loadedPlugins]) {
-//		NSLog(@"%@",[plugin extensionDictionary]);
-//	}
+//	_pluginManager = [[SPHPluginManager alloc] init];
+//	[_pluginManager loadAllPlugins];
+}
+
+- (IBAction)showWelcomeWindow:(id)sender
+{
+	if(!_welcomeController) {
+		_welcomeController = [[SPHWelcomeWindowController alloc] init];
+	}
+
+	[_welcomeController.window makeKeyAndOrderFront:nil];
+}
+
+- (void)closeWelcomeWindow
+{
+	_welcomeController = nil;
 }
 
 @end

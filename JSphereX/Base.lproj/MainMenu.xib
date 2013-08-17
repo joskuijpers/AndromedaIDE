@@ -709,6 +709,9 @@ CA
                             </menuItem>
                             <menuItem title="Welcome to JSphereX" keyEquivalent="1" id="gn8-sF-voG">
                                 <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showWelcomeWindow:" target="KSj-xA-PSK" id="GZk-xu-A9Q"/>
+                                </connections>
                             </menuItem>
                             <menuItem title="Organizer" keyEquivalent="2" id="K60-CI-a1H">
                                 <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
