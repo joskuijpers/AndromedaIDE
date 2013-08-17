@@ -8,10 +8,12 @@
 
 #import "SPHPluginManager.h"
 #import "SPHPlugin.h"
+#import "SPHApplicationDelegate.h"
 
 @interface SPHPluginManager()
 {
 	NSMutableArray *_loadedPlugins;
+	NSMutableArray *_discoveredExtensions;
 }
 @end
 
@@ -22,8 +24,16 @@
 	self = [super init];
 	if(self) {
 		_loadedPlugins = [NSMutableArray array];
+		_discoveredExtensions = [NSMutableArray array];
 	}
 	return self;
+}
+
++ (instancetype)sharedPluginManager
+{
+	SPHApplicationDelegate *delegate;
+	delegate = [[NSApplication sharedApplication] delegate];
+	return delegate.pluginManager;
 }
 
 - (void)loadAllPlugins
@@ -32,6 +42,12 @@
 
 	for(NSString *bundle in bundles) {
 		[self loadPluginAtPath:bundle];
+	}
+
+	// TODO: start-order?
+
+	for(SPHPlugin *plugin in _loadedPlugins) {
+		[self startPlugin:plugin];
 	}
 }
 
@@ -53,12 +69,19 @@
 	return nil;
 }
 
-- (NSArray *)loadedPluginsNames
+- (NSArray *)loadedPlugins
 {
-	NSMutableArray *names = [NSMutableArray array];
-	for(SPHPlugin *plugin in _loadedPlugins)
-		[names addObject:plugin.name];
-	return names;
+	return _loadedPlugins;
+}
+
+- (NSArray *)extensions
+{
+	return nil;
+}
+
+- (NSArray *)extensionPoints
+{
+	return nil;
 }
 
 #pragma mark - Private methods
@@ -66,7 +89,7 @@
 - (void)loadPluginAtPath:(NSString *)path
 {
 	NSBundle *bundle;
-	id instance;
+	NSObject<IDEPluginDelegate> *instance;
 	Class principalClass;
 	SPHPlugin *plugin;
 
@@ -89,6 +112,18 @@
 									  instance:instance];
 
 	[_loadedPlugins addObject:plugin];
+}
+
+- (void)startPlugin:(SPHPlugin *)plugin
+{
+	NSArray *extensions;
+
+	extensions = [plugin discoverExtensions];
+	if(extensions)
+		[_discoveredExtensions addObjectsFromArray:extensions];
+
+	if([plugin.instance respondsToSelector:@selector(pluginDidFinishLoading)])
+		[plugin.instance pluginDidFinishLoading];
 }
 
 - (BOOL)isPrincipalClassValid:(Class)principalClass

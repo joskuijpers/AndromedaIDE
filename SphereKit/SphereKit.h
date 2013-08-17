@@ -7,8 +7,6 @@
 //
 
 #import "IDEEditor.h"
-#import "IDEEditorMenu.h"
-#import "IDEFile.h"
 #import "IDENavigator.h"
 #import "IDENavigatorTab.h"
 #import "IDEPlugin.h"

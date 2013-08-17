@@ -14,6 +14,7 @@
 {
 	return @{
 			 @"IDEQuickLookEditor.Editor" : @{
+					 @"id" : @"IDEQuickLookEditor.Editor",
 					 @"editorClass" : @"IDEJavaScriptEditor",
 					 @"name" : @"Preview",
 					 @"documentClass" : @"IDEJavaScriptDocument",
@@ -26,6 +27,7 @@
 							 ]
 					 },
 			 @"IDEQuickLookEditor.PDFInspector" : @{
+					 @"id" : @"IDEQuickLookEditor.PDFInspector",
 					 @"inspectorTitle" : @"PDF Properties",
 					 @"fileDataType" : @"com.adobe.pdf",
 					 @"sliceFile" : @"IDEQuickLookPDF", // TODO
@@ -33,6 +35,7 @@
 					 @"point" : @"Sphere.IDE.FileInspector"
 					 },
 			 @"IDEQuickLookEditor.ImageInspector" : @{
+					 @"id" : @"IDEQuickLookEditor.ImageInspector",
 					 @"inspectorTitle" : @"Image Properties",
 					 @"fileDataType" : @"public.image",
 					 @"sliceFile" : @"IDEQuickLookImage", // TODO
@@ -40,6 +43,7 @@
 					 @"point" : @"Sphere.IDE.FileInspector"
 					 },
 			 @"IDEQuickLookEditor.MenuDefinition.Editor" : @{
+					 @"id" : @"IDEQuickLookEditor.MenuDefinition.Editor",
 					 @"point" : @"Sphere.IDE.MenuDefinition",
 					 @"name" : @"Editor",
 					 @"menuItem" : @[
@@ -69,6 +73,7 @@
 							 ]
 					 },
 			 @"IDEQuickLook.MenuDefinition.SubTest" : @{
+					 @"id" : @"IDEQuickLook.MenuDefinition.SubTest",
 					 @"point" : @"Sphere.IDE.MenuDefinition",
 					 @"name" : @"Subtest",
 					 @"menuItem" : @[
@@ -79,6 +84,7 @@
 							 ]
 					 },
 			 @"IDEQuickLook.Command.Test" : @{
+					 @"id" : @"IDEQuickLook.Command.Test",
 					 @"point" : @"Sphere.IDE.Command",
 					 @"name" : @"Test",
 					 @"action" : @"test:"

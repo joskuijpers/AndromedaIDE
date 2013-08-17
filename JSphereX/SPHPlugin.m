@@ -11,13 +11,14 @@
 @interface SPHPlugin()
 {
 	NSBundle *_bundle;
-	id _instance;
+	NSObject<IDEPluginDelegate> *_instance;
+	NSMutableArray *_extensions;
 }
 @end
 
 @implementation SPHPlugin
 
-- (id)initWithBundle:(NSBundle *)bundle instance:(id)instance
+- (id)initWithBundle:(NSBundle *)bundle instance:(NSObject<IDEPluginDelegate> *)instance
 {
 	self = [super init];
 	if(self) {
@@ -25,6 +26,12 @@
 		_instance = instance;
 	}
 	return self;
+}
+
+- (NSArray *)discoverExtensions
+{
+	NSLog(@"Discover extensions of %@ with %@",self.name,self.extensionDictionary);
+	return nil;
 }
 
 - (NSString *)name
@@ -37,9 +44,19 @@
 	return _bundle;
 }
 
-- (id)instance
+- (NSObject<IDEPluginDelegate> *)instance
 {
 	return _instance;
+}
+
+- (NSDictionary *)extensionDictionary
+{
+	return [_instance extensions];
+}
+
+- (NSArray *)extensions
+{
+	return _extensions;
 }
 
 @end

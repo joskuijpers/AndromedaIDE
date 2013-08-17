@@ -8,6 +8,7 @@
 
 #import "SPHApplicationDelegate.h"
 #import "SPHPluginManager.h"
+#import "SPHPlugin.h"
 
 @implementation SPHApplicationDelegate
 
@@ -15,8 +16,12 @@
 {
 	_pluginManager = [[SPHPluginManager alloc] init];
 	[_pluginManager loadAllPlugins];
-
-	NSLog(@"%@",[_pluginManager loadedPluginsNames]);
+//
+//	NSLog(@"%@",[_pluginManager loadedPlugins]);
+//
+//	for(SPHPlugin *plugin in [_pluginManager loadedPlugins]) {
+//		NSLog(@"%@",[plugin extensionDictionary]);
+//	}
 }
 
 @end

@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface IDEDocument : NSDocument
+@interface IDEDocument : NSObject
 
 @end

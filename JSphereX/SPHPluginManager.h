@@ -8,14 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-@class IDEPlugin;
+@class SPHPlugin;
 
 @interface SPHPluginManager : NSObject
 
++ (instancetype)sharedPluginManager;
+
 - (void)loadAllPlugins;
 
-- (NSArray *)loadedPluginsNames;
-- (IDEPlugin *)pluginWithName:(NSString *)name;
-- (IDEPlugin *)pluginWithIdentifier:(NSString *)identifier;
+- (NSArray *)loadedPlugins;
+- (SPHPlugin *)pluginWithName:(NSString *)name;
+- (SPHPlugin *)pluginWithIdentifier:(NSString *)identifier;
+
+- (NSArray *)extensions;
+- (NSArray *)extensionPoints;
 
 @end
+
+// Sphere.IDE.EditorDocument
+// Sphere.IDE.Command
+// Sphere.IDE.MenuDefinition
+// Sphere.IDE.FileInspector

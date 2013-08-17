@@ -14,6 +14,8 @@
 - (NSDictionary *)extensions;
 
 @optional
+- (NSArray *)loadRules;
+
 - (void)pluginDidFinishLoading;
 
 @end

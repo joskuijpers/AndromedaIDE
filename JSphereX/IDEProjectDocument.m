@@ -25,6 +25,16 @@
 	[self addWindowController:_windowController];
 }
 
++ (BOOL)autosavesInPlace
+{
+    return YES;
+}
+
+- (BOOL)canAsynchronouslyWriteToURL:(NSURL *)url ofType:(NSString *)typeName forSaveOperation:(NSSaveOperationType)saveOperation
+{
+	return YES;
+}
+
 #pragma mark - Package support
 
 - (NSFileWrapper *)fileWrapperOfType:(NSString *)typeName

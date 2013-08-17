@@ -24,8 +24,6 @@
 		8006D4A417BA84CD00453468 /* SphereRuntimeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D48117BA840400453468 /* SphereRuntimeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8006D4A817BA880A00453468 /* IDEEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4A617BA880A00453468 /* IDEEditor.h */; };
 		8006D4A917BA880A00453468 /* IDEEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4A717BA880A00453468 /* IDEEditor.m */; };
-		8006D4AC17BA881300453468 /* IDEEditorMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4AA17BA881300453468 /* IDEEditorMenu.h */; };
-		8006D4AD17BA881300453468 /* IDEEditorMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4AB17BA881300453468 /* IDEEditorMenu.m */; };
 		8006D4B117BA885900453468 /* IDEUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4AF17BA885900453468 /* IDEUtilities.h */; };
 		8006D4B217BA885900453468 /* IDEUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4B017BA885900453468 /* IDEUtilities.m */; };
 		8006D4B517BA886A00453468 /* IDENavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4B317BA886A00453468 /* IDENavigator.h */; };
@@ -46,6 +44,9 @@
 		8006D4EA17BBE6F600453468 /* IDESourceCodeEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */; };
 		8006D4ED17BBE72800453468 /* IDESourceCodeEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */; };
 		8006D4F017BBE73400453468 /* IDESourceCodePluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */; };
+		8006D4F617BBEB9A00453468 /* SPHPluginExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4F517BBEB9A00453468 /* SPHPluginExtension.m */; };
+		8006D4F917BBEBA900453468 /* SPHPluginExtensionPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4F817BBEBA900453468 /* SPHPluginExtensionPoint.m */; };
+		8006D4FC17BBF1A800453468 /* SPHPluginLoadRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4FB17BBF1A800453468 /* SPHPluginLoadRule.m */; };
 		802A641317B47D0E00597DB6 /* IDEMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* IDEMainSplitViewController.m */; };
 		802A641417B47D0E00597DB6 /* IDEMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* IDEMainSplitView.xib */; };
 		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -77,11 +78,8 @@
 		80345AB217BA6DE300170EFD /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
 		80345AB317BA6DE600170EFD /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
 		80345AB517BA6F4200170EFD /* IDEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A640B17B4758A00597DB6 /* IDEDocument.m */; };
-		80345AB617BA6FE100170EFD /* IDEFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080593417B26520004D1D41 /* IDEFile.m */; };
 		80345AB717BA6FEE00170EFD /* SphereKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345A6717BA6B8800170EFD /* SphereKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80345AB817BA6FEF00170EFD /* IDEDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 802A640A17B4758A00597DB6 /* IDEDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80345AB917BA6FF100170EFD /* IDEFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 8080593317B26520004D1D41 /* IDEFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80345ABB17BA709D00170EFD /* IDEFileSGM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080592717B1D2CC004D1D41 /* IDEFileSGM.m */; };
 		80345ABE17BA72A800170EFD /* IDEPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345ABC17BA72A800170EFD /* IDEPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* IDEPlugin.m */; };
 		80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */; };
@@ -209,8 +207,6 @@
 		8006D48217BA840400453468 /* SphereRuntimeKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SphereRuntimeKit.m; sourceTree = "<group>"; };
 		8006D4A617BA880A00453468 /* IDEEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditor.h; sourceTree = "<group>"; };
 		8006D4A717BA880A00453468 /* IDEEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEEditor.m; sourceTree = "<group>"; };
-		8006D4AA17BA881300453468 /* IDEEditorMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditorMenu.h; sourceTree = "<group>"; };
-		8006D4AB17BA881300453468 /* IDEEditorMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEEditorMenu.m; sourceTree = "<group>"; };
 		8006D4AF17BA885900453468 /* IDEUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEUtilities.h; sourceTree = "<group>"; };
 		8006D4B017BA885900453468 /* IDEUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEUtilities.m; sourceTree = "<group>"; };
 		8006D4B317BA886A00453468 /* IDENavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDENavigator.h; sourceTree = "<group>"; };
@@ -237,6 +233,12 @@
 		8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESourceCodeEditor.m; sourceTree = "<group>"; };
 		8006D4EE17BBE73400453468 /* IDESourceCodePluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodePluginDelegate.h; sourceTree = "<group>"; };
 		8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESourceCodePluginDelegate.m; sourceTree = "<group>"; };
+		8006D4F417BBEB9A00453468 /* SPHPluginExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHPluginExtension.h; sourceTree = "<group>"; };
+		8006D4F517BBEB9A00453468 /* SPHPluginExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHPluginExtension.m; sourceTree = "<group>"; };
+		8006D4F717BBEBA900453468 /* SPHPluginExtensionPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHPluginExtensionPoint.h; sourceTree = "<group>"; };
+		8006D4F817BBEBA900453468 /* SPHPluginExtensionPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHPluginExtensionPoint.m; sourceTree = "<group>"; };
+		8006D4FA17BBF1A800453468 /* SPHPluginLoadRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHPluginLoadRule.h; sourceTree = "<group>"; };
+		8006D4FB17BBF1A800453468 /* SPHPluginLoadRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHPluginLoadRule.m; sourceTree = "<group>"; };
 		802A640A17B4758A00597DB6 /* IDEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDEDocument.h; path = ../JSphereX/IDEDocument.h; sourceTree = "<group>"; };
 		802A640B17B4758A00597DB6 /* IDEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDEDocument.m; path = ../JSphereX/IDEDocument.m; sourceTree = "<group>"; };
 		802A641017B47D0E00597DB6 /* IDEMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEMainSplitViewController.h; sourceTree = "<group>"; };
@@ -306,15 +308,11 @@
 		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IDEProjectWindow.xib; sourceTree = "<group>"; };
 		8080590117B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8080590A17B1B6C0004D1D41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8080592617B1D2CC004D1D41 /* IDEFileSGM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEFileSGM.h; sourceTree = "<group>"; };
-		8080592717B1D2CC004D1D41 /* IDEFileSGM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEFileSGM.m; sourceTree = "<group>"; };
 		8080592A17B1E5C9004D1D41 /* NSString+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashing.h"; sourceTree = "<group>"; };
 		8080592B17B1E5C9004D1D41 /* NSString+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashing.m"; sourceTree = "<group>"; };
 		8080592D17B1E877004D1D41 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8080592F17B1E8DD004D1D41 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		8080593117B1EA23004D1D41 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
-		8080593317B26520004D1D41 /* IDEFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDEFile.h; path = ../JSphereX/IDEFile.h; sourceTree = "<group>"; };
-		8080593417B26520004D1D41 /* IDEFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDEFile.m; path = ../JSphereX/IDEFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,8 +436,6 @@
 			children = (
 				8006D4A617BA880A00453468 /* IDEEditor.h */,
 				8006D4A717BA880A00453468 /* IDEEditor.m */,
-				8006D4AA17BA881300453468 /* IDEEditorMenu.h */,
-				8006D4AB17BA881300453468 /* IDEEditorMenu.m */,
 			);
 			name = Editor;
 			sourceTree = "<group>";
@@ -621,8 +617,6 @@
 			isa = PBXGroup;
 			children = (
 				80345AC017BA72B100170EFD /* Plugin */,
-				8080593317B26520004D1D41 /* IDEFile.h */,
-				8080593417B26520004D1D41 /* IDEFile.m */,
 				802A640A17B4758A00597DB6 /* IDEDocument.h */,
 				802A640B17B4758A00597DB6 /* IDEDocument.m */,
 				8006D4AE17BA881700453468 /* Editor */,
@@ -785,7 +779,6 @@
 				802F39A817B2BF32005B70C4 /* ThirdParty */,
 				8080592917B1E5AB004D1D41 /* Categories */,
 				8080592417B1B9AA004D1D41 /* PluginSystem */,
-				8080592517B1D27B004D1D41 /* Models */,
 				802F39C717B3DEF7005B70C4 /* Navigator */,
 				8006D46F17BA80AE00453468 /* Build */,
 				802F39D617B46994005B70C4 /* Project */,
@@ -844,16 +837,14 @@
 				8006D4BA17BA88DB00453468 /* SPHPluginManager.m */,
 				8006D4BF17BBCF5800453468 /* SPHPlugin.h */,
 				8006D4C017BBCF5800453468 /* SPHPlugin.m */,
+				8006D4F417BBEB9A00453468 /* SPHPluginExtension.h */,
+				8006D4F517BBEB9A00453468 /* SPHPluginExtension.m */,
+				8006D4F717BBEBA900453468 /* SPHPluginExtensionPoint.h */,
+				8006D4F817BBEBA900453468 /* SPHPluginExtensionPoint.m */,
+				8006D4FA17BBF1A800453468 /* SPHPluginLoadRule.h */,
+				8006D4FB17BBF1A800453468 /* SPHPluginLoadRule.m */,
 			);
 			name = PluginSystem;
-			sourceTree = "<group>";
-		};
-		8080592517B1D27B004D1D41 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8080593A17B2766C004D1D41 /* Files */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		8080592917B1E5AB004D1D41 /* Categories */ = {
@@ -863,15 +854,6 @@
 				8080592B17B1E5C9004D1D41 /* NSString+Hashing.m */,
 			);
 			name = Categories;
-			sourceTree = "<group>";
-		};
-		8080593A17B2766C004D1D41 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				8080592617B1D2CC004D1D41 /* IDEFileSGM.h */,
-				8080592717B1D2CC004D1D41 /* IDEFileSGM.m */,
-			);
-			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -895,13 +877,11 @@
 				80345AB817BA6FEF00170EFD /* IDEDocument.h in Headers */,
 				8006D4C917BBD77700453468 /* IDENavigatorTab.h in Headers */,
 				80345ABE17BA72A800170EFD /* IDEPlugin.h in Headers */,
-				80345AB917BA6FF100170EFD /* IDEFile.h in Headers */,
 				8006D4CD17BBD78200453468 /* IDEUtilitiesTab.h in Headers */,
 				8006D4B517BA886A00453468 /* IDENavigator.h in Headers */,
 				8006D4B117BA885900453468 /* IDEUtilities.h in Headers */,
 				8006D4D117BBDE2500453468 /* IDEFileInspector.h in Headers */,
 				80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */,
-				8006D4AC17BA881300453468 /* IDEEditorMenu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1139,12 +1119,10 @@
 				8006D4CA17BBD77700453468 /* IDENavigatorTab.m in Sources */,
 				8006D4B217BA885900453468 /* IDEUtilities.m in Sources */,
 				8006D4A917BA880A00453468 /* IDEEditor.m in Sources */,
-				8006D4AD17BA881300453468 /* IDEEditorMenu.m in Sources */,
 				8006D4CE17BBD78200453468 /* IDEUtilitiesTab.m in Sources */,
 				80345AB517BA6F4200170EFD /* IDEDocument.m in Sources */,
 				80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */,
 				8006D4B617BA886A00453468 /* IDENavigator.m in Sources */,
-				80345AB617BA6FE100170EFD /* IDEFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1169,8 +1147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */,
-				80345ABB17BA709D00170EFD /* IDEFileSGM.m in Sources */,
 				802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */,
+				8006D4F617BBEB9A00453468 /* SPHPluginExtension.m in Sources */,
 				802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */,
 				8006D46E17BA7EDA00453468 /* SPXCopyFilesBuildPhase.m in Sources */,
 				80345A5017B67C6F00170EFD /* IDEProjectNavigatorRowView.m in Sources */,
@@ -1182,6 +1160,7 @@
 				802F39BD17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m in Sources */,
 				808058FC17B1B6C0004D1D41 /* IDEProjectDocument.m in Sources */,
 				8006D46B17BA7EA800453468 /* SPXSourcesBuildPhase.m in Sources */,
+				8006D4FC17BBF1A800453468 /* SPHPluginLoadRule.m in Sources */,
 				802F39BE17B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m in Sources */,
 				8006D4BE17BA897900453468 /* SPHApplicationDelegate.m in Sources */,
 				8080592C17B1E5C9004D1D41 /* NSString+Hashing.m in Sources */,
@@ -1194,6 +1173,7 @@
 				8006D45817BA797F00453468 /* SPXGroup.m in Sources */,
 				802F39C017B3CBCB005B70C4 /* CNSplitViewToolbar.m in Sources */,
 				8006D46217BA7D7300453468 /* SPHBuildConfiguration.m in Sources */,
+				8006D4F917BBEBA900453468 /* SPHPluginExtensionPoint.m in Sources */,
 				8006D4BB17BA88DB00453468 /* SPHPluginManager.m in Sources */,
 				80345A5717BA46FE00170EFD /* IDEProjectNavigatorFileItem.m in Sources */,
 			);

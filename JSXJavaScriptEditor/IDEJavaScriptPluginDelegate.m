@@ -10,20 +10,28 @@
 
 @implementation IDEJavaScriptPluginDelegate
 
+- (NSArray *)loadRules
+{
+	return @[
+			 @{
+				 @"kind" : @"plugin",
+				 @"id" : @"nl.jarvix.sphere.ide.IDESourceCodeEditor"
+				 }
+			 ];
+}
+
 - (NSDictionary *)extensions
 {
 	return @{
-			 @"Sphere.SphereKit.EditorDocument.JavaScriptEditor" : @{
-					 @"editorClass" : @"IDEJavaScriptEditor",
+			 @"IDEJavaScriptEditor.Editor" : @{
+					 @"id" : @"IDEJavaScriptEditor.Editor",
+					 @"editorClass" : @"IDESourceCodeEditor",//@"IDEJavaScriptEditor",
 					 @"name" : @"JavaScript Document",
 					 @"documentClass" : @"IDEJavaScriptDocument",
 					 @"point" : @"Sphere.IDE.EditorDocument",
 					 @"supportedFileType" : @[
 							 @{ @"typeUTI" : @"com.netscape.javascript-source" },
 							 ]
-					 },
-			 @"IDEQuickLookEditor.EditorMenu" : @{
-					 @"point" : @"Sphere.IDE.EditorMenu"
 					 }
 			 };
 }

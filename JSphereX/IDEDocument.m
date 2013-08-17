@@ -10,14 +10,4 @@
 
 @implementation IDEDocument
 
-+ (BOOL)autosavesInPlace
-{
-    return YES;
-}
-
-- (BOOL)canAsynchronouslyWriteToURL:(NSURL *)url ofType:(NSString *)typeName forSaveOperation:(NSSaveOperationType)saveOperation
-{
-	return YES;
-}
-
 @end

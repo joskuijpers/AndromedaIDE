@@ -7,11 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "IDEDocument.h"
 
 @class IDEProject;
 
-@interface IDEProjectDocument : IDEDocument
+@interface IDEProjectDocument : NSDocument
 
 @property (strong) IDEProject *project;
 

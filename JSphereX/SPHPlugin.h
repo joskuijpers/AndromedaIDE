@@ -10,8 +10,17 @@
 
 @interface SPHPlugin : IDEPlugin
 
-- (instancetype)initWithBundle:(NSBundle *)bundle instance:(id)instance;
+- (instancetype)initWithBundle:(NSBundle *)bundle
+					  instance:(NSObject<IDEPluginDelegate> *)instance;
 
-- (id)instance;
+- (NSArray *)discoverExtensions;
+
+- (NSObject<IDEPluginDelegate> *)instance;
+
+- (NSDictionary *)extensionDictionary;
+
+- (NSArray *)rules; // SPHPluginLoadRule
+- (NSArray *)extensions; // SPHPluginExtension
+// - (NSArray *)extensionPoints; // SPHPluginExtensionPoint
 
 @end

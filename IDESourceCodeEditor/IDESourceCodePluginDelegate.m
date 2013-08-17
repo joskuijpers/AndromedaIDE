@@ -13,7 +13,8 @@
 - (NSDictionary *)extensions
 {
 	return @{
-			 @"Sphere.IDE.EditorDocument.SourceCode" : @{
+			 @"IDESourceCodeEditor.Editor" : @{
+					 @"id" : @"IDEJavaScriptEditor.Editor",
 					 @"editorClass" : @"IDESourceCodeEditor",
 					 @"point" : @"Sphere.IDE.EditorDocument",
 					 @"documentClass" : @"IDESourceCodeDocument",
