@@ -17,4 +17,6 @@
 - (IBAction)showWelcomeWindow:(id)sender;
 - (void)closeWelcomeWindow;
 
+- (IBAction)newProject:(id)sender;
+
 @end

@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SPHMainWindowController : NSWindowController
+@interface SPHMainWindowController : NSWindowController <NSWindowDelegate>
+
+- (IBAction)newFile:(id)sender;
 
 @end

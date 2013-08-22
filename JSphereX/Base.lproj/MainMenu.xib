@@ -72,10 +72,14 @@
                                     <items>
                                         <menuItem title="File..." keyEquivalent="n" id="82">
                                             <connections>
-                                                <action selector="newDocument:" target="-1" id="371"/>
+                                                <action selector="newFile:" target="-1" id="CHt-re-Wht"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Project..." keyEquivalent="N" id="zVv-IH-mKA"/>
+                                        <menuItem title="Project..." keyEquivalent="N" id="zVv-IH-mKA">
+                                            <connections>
+                                                <action selector="newProject:" target="-1" id="huN-YH-vbg"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
