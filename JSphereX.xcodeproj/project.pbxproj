@@ -102,16 +102,12 @@
 		8098F96317BFE7A10070BC58 /* IDEHoverButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8098F96117BFE7A10070BC58 /* IDEHoverButton.h */; };
 		8098F96417BFE7A10070BC58 /* IDEHoverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F96217BFE7A10070BC58 /* IDEHoverButton.m */; };
 		8098F96717C01B450070BC58 /* SPHWelcomeListRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F96617C01B450070BC58 /* SPHWelcomeListRowView.m */; };
-		80AC291E17C64686005D4D54 /* SPHNewFileWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC291C17C64686005D4D54 /* SPHNewFileWindowController.m */; };
 		80AC291F17C64686005D4D54 /* SPHNewObjectWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC291D17C64686005D4D54 /* SPHNewObjectWindow.xib */; };
-		80AC292417C646C3005D4D54 /* SPHNewProjectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC292217C646C3005D4D54 /* SPHNewProjectWindowController.m */; };
-		80AC292A17C64C06005D4D54 /* SPHTemplateChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC292817C64C06005D4D54 /* SPHTemplateChooserViewController.m */; };
 		80AC292B17C64C06005D4D54 /* SPHTemplateChooserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC292917C64C06005D4D54 /* SPHTemplateChooserView.xib */; };
-		80AC292E17C64E33005D4D54 /* SPHNewObjectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC292D17C64E33005D4D54 /* SPHNewObjectWindowController.m */; };
 		80AC293317C651F7005D4D54 /* IDEDisabledSplitViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AC293117C651F7005D4D54 /* IDEDisabledSplitViewDelegate.h */; };
 		80AC293417C651F7005D4D54 /* IDEDisabledSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC293217C651F7005D4D54 /* IDEDisabledSplitViewDelegate.m */; };
-		80AC298717C6BCEA005D4D54 /* SPHTemplateChooserTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC298617C6BCEA005D4D54 /* SPHTemplateChooserTemplate.m */; };
 		80AC298A17C6CC63005D4D54 /* SPHTemplateChooserTemplateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC298917C6CC08005D4D54 /* SPHTemplateChooserTemplateView.xib */; };
+		80AC298D17C6D818005D4D54 /* SPHDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC298C17C6D818005D4D54 /* SPHDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,21 +340,13 @@
 		8098F96217BFE7A10070BC58 /* IDEHoverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEHoverButton.m; sourceTree = "<group>"; };
 		8098F96517C01B450070BC58 /* SPHWelcomeListRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHWelcomeListRowView.h; sourceTree = "<group>"; };
 		8098F96617C01B450070BC58 /* SPHWelcomeListRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHWelcomeListRowView.m; sourceTree = "<group>"; };
-		80AC291B17C64686005D4D54 /* SPHNewFileWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHNewFileWindowController.h; sourceTree = "<group>"; };
-		80AC291C17C64686005D4D54 /* SPHNewFileWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHNewFileWindowController.m; sourceTree = "<group>"; };
 		80AC291D17C64686005D4D54 /* SPHNewObjectWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPHNewObjectWindow.xib; sourceTree = "<group>"; };
-		80AC292117C646C3005D4D54 /* SPHNewProjectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHNewProjectWindowController.h; sourceTree = "<group>"; };
-		80AC292217C646C3005D4D54 /* SPHNewProjectWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHNewProjectWindowController.m; sourceTree = "<group>"; };
-		80AC292717C64C06005D4D54 /* SPHTemplateChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHTemplateChooserViewController.h; sourceTree = "<group>"; };
-		80AC292817C64C06005D4D54 /* SPHTemplateChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHTemplateChooserViewController.m; sourceTree = "<group>"; };
 		80AC292917C64C06005D4D54 /* SPHTemplateChooserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPHTemplateChooserView.xib; sourceTree = "<group>"; };
-		80AC292C17C64E33005D4D54 /* SPHNewObjectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHNewObjectWindowController.h; sourceTree = "<group>"; };
-		80AC292D17C64E33005D4D54 /* SPHNewObjectWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHNewObjectWindowController.m; sourceTree = "<group>"; };
 		80AC293117C651F7005D4D54 /* IDEDisabledSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEDisabledSplitViewDelegate.h; sourceTree = "<group>"; };
 		80AC293217C651F7005D4D54 /* IDEDisabledSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEDisabledSplitViewDelegate.m; sourceTree = "<group>"; };
-		80AC298517C6BCEA005D4D54 /* SPHTemplateChooserTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHTemplateChooserTemplate.h; sourceTree = "<group>"; };
-		80AC298617C6BCEA005D4D54 /* SPHTemplateChooserTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHTemplateChooserTemplate.m; sourceTree = "<group>"; };
 		80AC298917C6CC08005D4D54 /* SPHTemplateChooserTemplateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPHTemplateChooserTemplateView.xib; sourceTree = "<group>"; };
+		80AC298B17C6D818005D4D54 /* SPHDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHDocumentController.h; sourceTree = "<group>"; };
+		80AC298C17C6D818005D4D54 /* SPHDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,12 +408,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8006D46F17BA80AE00453468 /* Build */ = {
+		8006D46F17BA80AE00453468 /* Build_ */ = {
 			isa = PBXGroup;
 			children = (
 				8006D4A517BA879300453468 /* Models */,
 			);
-			name = Build;
+			name = Build_;
 			sourceTree = "<group>";
 		};
 		8006D47A17BA840400453468 /* SphereRuntimeKit */ = {
@@ -570,12 +558,10 @@
 			children = (
 				802F39D917B46E26005B70C4 /* SPHMainWindowController.h */,
 				802F39DA17B46E26005B70C4 /* SPHMainWindowController.m */,
-				808058FD17B1B6C0004D1D41 /* SPHWorkspaceWindow.xib */,
 				802A641017B47D0E00597DB6 /* SPHMainSplitViewController.h */,
 				802A641117B47D0E00597DB6 /* SPHMainSplitViewController.m */,
-				8006D4BC17BA897900453468 /* SPHApplicationDelegate.h */,
-				8006D4BD17BA897900453468 /* SPHApplicationDelegate.m */,
-				802A641217B47D0E00597DB6 /* SPHMainSplitView.xib */,
+				80AC298B17C6D818005D4D54 /* SPHDocumentController.h */,
+				80AC298C17C6D818005D4D54 /* SPHDocumentController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -828,11 +814,12 @@
 				802F39A817B2BF32005B70C4 /* ThirdParty */,
 				8080592417B1B9AA004D1D41 /* PluginSystem */,
 				802F39C717B3DEF7005B70C4 /* Navigator */,
-				8006D46F17BA80AE00453468 /* Build */,
+				8006D46F17BA80AE00453468 /* Build_ */,
 				802F39D617B46994005B70C4 /* Project */,
 				802A640F17B47CF700597DB6 /* Main */,
-				8098F90517BFB5930070BC58 /* Welcome */,
-				80AC291A17C644C4005D4D54 /* NewDialog */,
+				8098F90517BFB5930070BC58 /* WelcomeWindow */,
+				80AC291A17C644C4005D4D54 /* NewObjectDialog */,
+				80AC298E17C6D81D005D4D54 /* App */,
 				8080592017B1B980004D1D41 /* Resources */,
 				8080591F17B1B97A004D1D41 /* Assets */,
 				808058EF17B1B6BF004D1D41 /* Supporting Files */,
@@ -864,6 +851,12 @@
 		8080592017B1B980004D1D41 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8098F90017BFB5740070BC58 /* SPHWelcomeWindow.xib */,
+				80AC292917C64C06005D4D54 /* SPHTemplateChooserView.xib */,
+				80AC298917C6CC08005D4D54 /* SPHTemplateChooserTemplateView.xib */,
+				80AC291D17C64686005D4D54 /* SPHNewObjectWindow.xib */,
+				808058FD17B1B6C0004D1D41 /* SPHWorkspaceWindow.xib */,
+				802A641217B47D0E00597DB6 /* SPHMainSplitView.xib */,
 				8080590017B1B6C0004D1D41 /* MainMenu.xib */,
 				80345A4817B5B63D00170EFD /* IDEProjectNavigatorView.xib */,
 			);
@@ -896,7 +889,7 @@
 			name = PluginSystem;
 			sourceTree = "<group>";
 		};
-		8098F90517BFB5930070BC58 /* Welcome */ = {
+		8098F90517BFB5930070BC58 /* WelcomeWindow */ = {
 			isa = PBXGroup;
 			children = (
 				8098F90217BFB58E0070BC58 /* SPHWelcomeWindowController.h */,
@@ -907,9 +900,8 @@
 				8098F95817BFCC990070BC58 /* SPHWelcomeMainView.m */,
 				8098F96517C01B450070BC58 /* SPHWelcomeListRowView.h */,
 				8098F96617C01B450070BC58 /* SPHWelcomeListRowView.m */,
-				8098F90017BFB5740070BC58 /* SPHWelcomeWindow.xib */,
 			);
-			name = Welcome;
+			name = WelcomeWindow;
 			sourceTree = "<group>";
 		};
 		8098F96017BFE1740070BC58 /* WelcomeWindow */ = {
@@ -922,48 +914,11 @@
 			name = WelcomeWindow;
 			sourceTree = "<group>";
 		};
-		80AC291A17C644C4005D4D54 /* NewDialog */ = {
+		80AC291A17C644C4005D4D54 /* NewObjectDialog */ = {
 			isa = PBXGroup;
 			children = (
-				80AC292017C646A9005D4D54 /* File */,
-				80AC292617C646DB005D4D54 /* Project */,
-				80AC292F17C64FB3005D4D54 /* TemplateChooser */,
-				80AC292C17C64E33005D4D54 /* SPHNewObjectWindowController.h */,
-				80AC292D17C64E33005D4D54 /* SPHNewObjectWindowController.m */,
-				80AC291D17C64686005D4D54 /* SPHNewObjectWindow.xib */,
 			);
-			name = NewDialog;
-			sourceTree = "<group>";
-		};
-		80AC292017C646A9005D4D54 /* File */ = {
-			isa = PBXGroup;
-			children = (
-				80AC291B17C64686005D4D54 /* SPHNewFileWindowController.h */,
-				80AC291C17C64686005D4D54 /* SPHNewFileWindowController.m */,
-			);
-			name = File;
-			sourceTree = "<group>";
-		};
-		80AC292617C646DB005D4D54 /* Project */ = {
-			isa = PBXGroup;
-			children = (
-				80AC292117C646C3005D4D54 /* SPHNewProjectWindowController.h */,
-				80AC292217C646C3005D4D54 /* SPHNewProjectWindowController.m */,
-			);
-			name = Project;
-			sourceTree = "<group>";
-		};
-		80AC292F17C64FB3005D4D54 /* TemplateChooser */ = {
-			isa = PBXGroup;
-			children = (
-				80AC292717C64C06005D4D54 /* SPHTemplateChooserViewController.h */,
-				80AC292817C64C06005D4D54 /* SPHTemplateChooserViewController.m */,
-				80AC292917C64C06005D4D54 /* SPHTemplateChooserView.xib */,
-				80AC298517C6BCEA005D4D54 /* SPHTemplateChooserTemplate.h */,
-				80AC298617C6BCEA005D4D54 /* SPHTemplateChooserTemplate.m */,
-				80AC298917C6CC08005D4D54 /* SPHTemplateChooserTemplateView.xib */,
-			);
-			name = TemplateChooser;
+			name = NewObjectDialog;
 			sourceTree = "<group>";
 		};
 		80AC293017C651D7005D4D54 /* UI */ = {
@@ -975,6 +930,15 @@
 				80AC293217C651F7005D4D54 /* IDEDisabledSplitViewDelegate.m */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		80AC298E17C6D81D005D4D54 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4BC17BA897900453468 /* SPHApplicationDelegate.h */,
+				8006D4BD17BA897900453468 /* SPHApplicationDelegate.m */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1279,13 +1243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */,
-				80AC292417C646C3005D4D54 /* SPHNewProjectWindowController.m in Sources */,
 				802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */,
 				8098F90417BFB58E0070BC58 /* SPHWelcomeWindowController.m in Sources */,
 				8098F95917BFCC990070BC58 /* SPHWelcomeMainView.m in Sources */,
 				8006D4F617BBEB9A00453468 /* SPHPluginExtension.m in Sources */,
-				80AC292E17C64E33005D4D54 /* SPHNewObjectWindowController.m in Sources */,
-				80AC292A17C64C06005D4D54 /* SPHTemplateChooserViewController.m in Sources */,
 				802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */,
 				8006D46E17BA7EDA00453468 /* SPXCopyFilesBuildPhase.m in Sources */,
 				80345A5017B67C6F00170EFD /* IDEProjectNavigatorRowView.m in Sources */,
@@ -1301,9 +1262,9 @@
 				802F39BE17B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m in Sources */,
 				8098F96717C01B450070BC58 /* SPHWelcomeListRowView.m in Sources */,
 				8006D4BE17BA897900453468 /* SPHApplicationDelegate.m in Sources */,
-				80AC291E17C64686005D4D54 /* SPHNewFileWindowController.m in Sources */,
 				8006D45F17BA79FA00453468 /* SPXProject.m in Sources */,
 				8006D45B17BA799E00453468 /* SPXFileReference.m in Sources */,
+				80AC298D17C6D818005D4D54 /* SPHDocumentController.m in Sources */,
 				802F39DB17B46E26005B70C4 /* SPHMainWindowController.m in Sources */,
 				808058F517B1B6C0004D1D41 /* main.m in Sources */,
 				802A641317B47D0E00597DB6 /* SPHMainSplitViewController.m in Sources */,
@@ -1313,7 +1274,6 @@
 				8006D46217BA7D7300453468 /* SPHBuildConfiguration.m in Sources */,
 				8098F95617BFCA950070BC58 /* SPHWelcomeWindow.m in Sources */,
 				8006D4F917BBEBA900453468 /* SPHPluginExtensionPoint.m in Sources */,
-				80AC298717C6BCEA005D4D54 /* SPHTemplateChooserTemplate.m in Sources */,
 				8006D4BB17BA88DB00453468 /* SPHPluginManager.m in Sources */,
 				80345A5717BA46FE00170EFD /* IDEProjectNavigatorFileItem.m in Sources */,
 			);

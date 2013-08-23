@@ -27,7 +27,7 @@
 
 + (BOOL)autosavesInPlace
 {
-    return YES;
+    return YES; // TODO: NO
 }
 
 - (BOOL)canAsynchronouslyWriteToURL:(NSURL *)url ofType:(NSString *)typeName forSaveOperation:(NSSaveOperationType)saveOperation

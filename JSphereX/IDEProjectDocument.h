@@ -8,10 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class IDEProject;
-
 @interface IDEProjectDocument : NSDocument
-
-@property (strong) IDEProject *project;
 
 @end
