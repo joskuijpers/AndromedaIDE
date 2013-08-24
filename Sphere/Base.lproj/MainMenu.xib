@@ -14,10 +14,10 @@
         <customObject id="-3" userLabel="Application"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
-                <menuItem title="JSphereX" id="56">
-                    <menu key="submenu" title="JSphereX" systemMenu="apple" id="57">
+                <menuItem title="Sphere" id="56">
+                    <menu key="submenu" title="Sphere" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About JSphereX" id="58">
+                            <menuItem title="About Sphere" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
@@ -36,7 +36,7 @@
                             <menuItem isSeparatorItem="YES" id="144">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Hide JSphereX" keyEquivalent="h" id="134">
+                            <menuItem title="Hide Sphere" keyEquivalent="h" id="134">
                                 <connections>
                                     <action selector="hide:" target="-1" id="367"/>
                                 </connections>
@@ -55,7 +55,7 @@
                             <menuItem isSeparatorItem="YES" id="149">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Quit JSphereX" keyEquivalent="q" id="136">
+                            <menuItem title="Quit Sphere" keyEquivalent="q" id="136">
                                 <connections>
                                     <action selector="terminate:" target="-3" id="448"/>
                                 </connections>
@@ -711,7 +711,7 @@ CA
                             <menuItem isSeparatorItem="YES" id="92">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Welcome to JSphereX" keyEquivalent="1" id="gn8-sF-voG">
+                            <menuItem title="Welcome to Sphere" keyEquivalent="1" id="gn8-sF-voG">
                                 <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                 <connections>
                                     <action selector="showWelcomeWindow:" target="KSj-xA-PSK" id="GZk-xu-A9Q"/>
@@ -733,7 +733,7 @@ CA
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="492">
                         <items>
-                            <menuItem title="JSphereX Help" keyEquivalent="?" id="493">
+                            <menuItem title="Sphere Help" keyEquivalent="?" id="493">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="494"/>
                                 </connections>

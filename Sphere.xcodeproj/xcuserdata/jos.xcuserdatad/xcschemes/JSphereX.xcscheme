@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "808058E417B1B6BF004D1D41"
-               BuildableName = "JSphereX.app"
-               BlueprintName = "JSphereX"
-               ReferencedContainer = "container:JSphereX.xcodeproj">
+               BuildableName = "Sphere.app"
+               BlueprintName = "Sphere"
+               ReferencedContainer = "container:Sphere.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "8080590817B1B6C0004D1D41"
                BuildableName = "JSphereXTests.xctest"
                BlueprintName = "JSphereXTests"
-               ReferencedContainer = "container:JSphereX.xcodeproj">
+               ReferencedContainer = "container:Sphere.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "80345A6D17BA6B8800170EFD"
                BuildableName = "SphereKitTests.xctest"
                BlueprintName = "SphereKitTests"
-               ReferencedContainer = "container:JSphereX.xcodeproj">
+               ReferencedContainer = "container:Sphere.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -55,7 +55,7 @@
                BlueprintIdentifier = "8006D48717BA840400453468"
                BuildableName = "SphereRuntimeKitTests.xctest"
                BlueprintName = "SphereRuntimeKitTests"
-               ReferencedContainer = "container:JSphereX.xcodeproj">
+               ReferencedContainer = "container:Sphere.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "808058E417B1B6BF004D1D41"
-            BuildableName = "JSphereX.app"
-            BlueprintName = "JSphereX"
-            ReferencedContainer = "container:JSphereX.xcodeproj">
+            BuildableName = "Sphere.app"
+            BlueprintName = "Sphere"
+            ReferencedContainer = "container:Sphere.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "808058E417B1B6BF004D1D41"
-            BuildableName = "JSphereX.app"
-            BlueprintName = "JSphereX"
-            ReferencedContainer = "container:JSphereX.xcodeproj">
+            BuildableName = "Sphere.app"
+            BlueprintName = "Sphere"
+            ReferencedContainer = "container:Sphere.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -100,9 +100,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "808058E417B1B6BF004D1D41"
-            BuildableName = "JSphereX.app"
-            BlueprintName = "JSphereX"
-            ReferencedContainer = "container:JSphereX.xcodeproj">
+            BuildableName = "Sphere.app"
+            BlueprintName = "Sphere"
+            ReferencedContainer = "container:Sphere.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

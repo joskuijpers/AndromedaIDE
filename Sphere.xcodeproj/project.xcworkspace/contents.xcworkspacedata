@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JSphereX.xcodeproj">
+      location = "self:Sphere.xcodeproj">
    </FileRef>
 </Workspace>
