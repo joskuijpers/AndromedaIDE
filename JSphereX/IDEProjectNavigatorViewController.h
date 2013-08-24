@@ -8,8 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class SPXGroup;
+
 @interface IDEProjectNavigatorViewController : NSViewController <NSOutlineViewDataSource, NSOutlineViewDelegate>
 
 @property (weak,nonatomic) IBOutlet NSOutlineView *outlineView;
+
+- (void)reload;
+- (void)reloadGroup:(SPXGroup *)group;
+- (SPXGroup *)selectedGroup;
 
 @end

@@ -10,4 +10,46 @@
 
 @implementation SPXGroup
 
+- (instancetype)initWithName:(NSString *)name
+{
+	self = [super init];
+	if(self) {
+		self.name = name;
+		_children = [NSMutableArray array];
+	}
+	return self;
+}
+
+- (instancetype)init
+{
+	self = [super init];
+	if(self) {
+		_children = [NSMutableArray array];
+	}
+	return self;
+}
+
++ (SPXGroup *)groupWithName:(NSString *)name
+{
+	return [[SPXGroup alloc] initWithName:name];
+}
+
+#pragma mark - Encoding
+
+- (id)initWithCoder:(NSCoder *)coder
+{
+	self = [super initWithCoder:coder];
+	if(self) {
+		_children = [coder decodeObjectForKey:@"children"];
+	}
+	return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+	[super encodeWithCoder:coder];
+
+	[coder encodeObject:_children forKey:@"children"];
+}
+
 @end

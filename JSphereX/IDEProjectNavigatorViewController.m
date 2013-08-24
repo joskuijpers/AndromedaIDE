@@ -8,8 +8,12 @@
 
 #import "IDEProjectNavigatorViewController.h"
 #import "IDEProjectNavigatorItem.h"
-#import "IDEProjectNavigatorFileItem.h"
 #import "IDEProjectNavigatorRowView.h"
+
+#import "IDEProjectDocument.h"
+#import "SPXProject.h"
+#import "SPXGroup.h"
+#import "SPXReference.h"
 
 @interface IDEProjectNavigatorViewController ()
 {
@@ -24,28 +28,6 @@
 {
 	self = [super initWithNibName:@"IDEProjectNavigatorView" bundle:nil];
 	if(self) {
-		_rootItem = [[IDEProjectNavigatorItem alloc] init];
-		_rootItem.title = @"Project";
-		_rootItem.type = JSXProjectNavigatorItemProject;
-		_rootItem.image = [NSImage imageNamed:@"nl.jarvix.sphere.image.project"];
-		
-		IDEProjectNavigatorItem *item;
-		for(int i = 0; i < 5; i++) {
-			item = [[IDEProjectNavigatorFileItem alloc] init];
-			item.url = [NSURL URLWithString:@"file:///Users/jos/Documents/Jarvix/Production/SplitViewProblemCase.zip"];
-
-			[_rootItem.children addObject:item];
-		}
-		
-		for(int i = 0; i < 2; i++) {
-			item = [[IDEProjectNavigatorItem alloc] init];
-			item.title = [NSString stringWithFormat:@"Group%d",i];
-			item.type = JSXProjectNavigatorItemGroup;
-			item.url = [NSURL URLWithString:[NSString stringWithFormat:@"mypr://%@",item.title]];
-			item.image = [NSImage imageNamed:@"nl.jarvix.sphere.image.navgroup"];
-			
-			[_rootItem.children addObject:item];
-		}
 	}
 	return self;
 }
@@ -53,7 +35,16 @@
 - (void)loadView
 {
 	[super loadView];
-	
+
+	dispatch_async(dispatch_get_main_queue(), ^{
+		IDEProjectDocument *document = [self.view.window.windowController document];
+		SPXProject *project = document.project;
+
+		_rootItem = [IDEProjectNavigatorItem itemWithProject:project];
+
+		[_outlineView reloadData];
+	});
+
 	_outlineView.dataSource = self;
 	_outlineView.delegate = self;
 	
@@ -72,7 +63,7 @@
 - (BOOL)outlineView:(NSOutlineView *)outlineView
    isItemExpandable:(IDEProjectNavigatorItem *)item
 {
-	return (item == nil) ? YES : ![item isLeaf];
+	return (item == nil) ? YES : (item.type != IDEProjectNavigatorItemFile);
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView
@@ -93,7 +84,7 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 	 viewForTableColumn:(NSTableColumn *)tableColumn
 				   item:(IDEProjectNavigatorItem *)item
 {
-	if(item.isProject)
+	if(item.type == IDEProjectNavigatorItemProject)
 		return [outlineView makeViewWithIdentifier:@"ProjectCell"
 											 owner:self];
 	return [outlineView makeViewWithIdentifier:@"ItemCell"
@@ -105,7 +96,7 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 - (CGFloat)outlineView:(NSOutlineView *)outlineView
 	 heightOfRowByItem:(IDEProjectNavigatorItem *)item
 {
-	if(item.isProject)
+	if(item.type == IDEProjectNavigatorItemProject)
 		return 32.0f;
 	return 18.0f;
 }
@@ -120,8 +111,25 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 	NSLog(@"Selected %@",item);
 }
 
-#pragma mark - Drag and Drop
+#pragma mark - Control
 
+- (void)reload
+{
+	NSLog(@"RELOAD");
+}
+
+- (void)reloadGroup:(SPXGroup *)group
+{
+	NSLog(@"RELOAD %@",group);
+}
+
+- (SPXGroup *)selectedGroup
+{
+	return _rootItem.reference;
+}
+
+#pragma mark - Drag and Drop
+/*
 - (id<NSPasteboardWriting>)outlineView:(NSOutlineView *)outlineView
 			   pasteboardWriterForItem:(IDEProjectNavigatorItem *)item
 {
@@ -205,6 +213,6 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 	}];
 	
 	return YES;
-}
+}*/
 
 @end

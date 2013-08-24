@@ -7,7 +7,66 @@
 //
 
 #import "SPXProject.h"
+#import "SPXGroup.h"
+
+NSString * const kSPXProjectAttributeProductName = @"productName";
+NSString * const kSPXProjectAttributeOrganizationName = @"organizationName";
 
 @implementation SPXProject
+
++ (SPXProject *)projectWithName:(NSString *)name
+{
+	SPXProject *project = [[SPXProject alloc] init];
+
+	project.name = name;
+	project.mainGroup = [SPXGroup groupWithName:@"root"];
+
+	[project.mainGroup.children addObject:[SPXGroup groupWithName:name]];
+	[project.mainGroup.children addObject:[SPXGroup groupWithName:@"Products"]];
+
+	return project;
+}
+
++ (SPXProject *)projectWithURL:(NSURL *)url
+{
+	SPXProject *project;
+
+	project = [NSKeyedUnarchiver unarchiveObjectWithFile:[url path]];
+	project.projectDirectory = [url URLByDeletingLastPathComponent];
+
+	return project;
+}
+
++ (BOOL)isProjectWrapperExtension:(NSString *)extension
+{
+	return [extension isEqualToString:@"sphereproj"];
+}
+
+- (BOOL)writeToFileSystem
+{
+	NSURL *spxpath = [_projectDirectory URLByAppendingPathComponent:@"project.spxproj"];
+	return [NSKeyedArchiver archiveRootObject:self
+									   toFile:spxpath.path];
+}
+
+#pragma mark - Encoding
+
+- (id)initWithCoder:(NSCoder *)coder
+{
+	self = [super init];
+	if(self) {
+		_name = [coder decodeObjectForKey:@"name"];
+		_attributes = [coder decodeObjectForKey:@"attributes"];
+		_mainGroup = [coder decodeObjectForKey:@"mainGroup"];
+	}
+	return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+	[coder encodeObject:_name forKey:@"name"];
+	[coder encodeObject:_attributes forKey:@"attributes"];
+	[coder encodeObject:_mainGroup forKey:@"mainGroup"];
+}
 
 @end

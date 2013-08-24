@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SPXReference.h"
 
-@interface SPXGroup : NSObject
+@interface SPXGroup : SPXReference
 
-@property (strong) NSString *name;
-@property (strong) NSString *sourceTree;
-@property (strong) NSArray *children; // SPXGroup,SPXFileReference
+@property (strong,readonly) NSMutableArray *children;
+
++ (SPXGroup *)groupWithName:(NSString *)name;
 
 @end

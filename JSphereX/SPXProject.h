@@ -10,14 +10,20 @@
 
 @class SPXGroup;
 
-@interface SPXProject : NSObject
+extern NSString * const kSPXProjectAttributeProductName;
+extern NSString * const kSPXProjectAttributeOrganizationName;
 
-// ORGANIZATIONNAME
-@property (strong) NSDictionary *attributes;
+@interface SPXProject : NSObject <NSCoding>
+
+@property (strong) NSURL *projectDirectory;
+@property (strong) NSString *name;
+@property (strong) NSMutableDictionary *attributes;
 @property (strong) SPXGroup *mainGroup;
 
-// Whatfor?
-@property (strong) NSString *projectDirPath;
-@property (strong) NSString *projectRoot;
++ (SPXProject *)projectWithName:(NSString *)name;
++ (SPXProject *)projectWithURL:(NSURL *)url;
++ (BOOL)isProjectWrapperExtension:(NSString *)extension;
+
+- (BOOL)writeToFileSystem;
 
 @end

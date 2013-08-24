@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class SPXProject;
+
 @interface IDEProjectDocument : NSDocument
+
+@property (strong) SPXProject *project;
 
 @end

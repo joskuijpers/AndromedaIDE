@@ -7,6 +7,9 @@
 //
 
 #import "IDEProjectNavigatorItem.h"
+#import "SPXGroup.h"
+#import "SPXFileReference.h"
+#import "SPXProject.h"
 
 @implementation IDEProjectNavigatorItem
 
@@ -15,6 +18,49 @@
 	self = [super init];
 	if(self) {
 		_children = [NSMutableArray array];
+	}
+	return self;
+}
+
+- (id)initWithReference:(SPXReference *)reference
+{
+	self = [super init];
+	if(self) {
+		_children = [NSMutableArray array];
+		_reference = reference;
+		_title = reference.name;
+
+		if([reference isKindOfClass:[SPXGroup class]]) {
+			_type = IDEProjectNavigatorItemGroup;
+			_image = [NSImage imageNamed:@"nl.jarvix.sphere.image.navgroup"];
+
+			for(SPXReference *child in [(SPXGroup *)reference children])
+				[_children addObject:[IDEProjectNavigatorItem itemWithReference:child]];
+
+		} else {
+			_type = IDEProjectNavigatorItemFile;
+			_url = [NSURL URLWithString:[(SPXFileReference *)reference path]
+						  relativeToURL:nil];
+			// TODO
+			_image = [[NSWorkspace sharedWorkspace] iconForFile:_url.path];
+		}
+	}
+	return self;
+}
+
+- (id)initWithProject:(SPXProject *)project
+{
+	self = [super init];
+	if(self) {
+		_children = [NSMutableArray array];
+		_reference = project.mainGroup;
+		_title = project.name;
+		_subTitle = @"SubTitle";
+		_type = IDEProjectNavigatorItemProject;
+		_image = [NSImage imageNamed:@"nl.jarvix.sphere.image.project"];
+
+		for(SPXReference *child in [project.mainGroup children])
+			[_children addObject:[IDEProjectNavigatorItem itemWithReference:child]];
 	}
 	return self;
 }
@@ -29,20 +75,20 @@
 										 errorDescription:NULL];
 		NSLog(@"%@ %@ %@",NSStringFromSelector(_cmd),o,[o className]);
 		_title = o;
-		_type = JSXProjectNavigatorItemFile;
+		_type = IDEProjectNavigatorItemFile;
 		_url = [NSURL URLWithString:_title];
 	}
 	return self;
 }
 
-- (BOOL)isLeaf
++ (IDEProjectNavigatorItem *)itemWithReference:(SPXReference *)reference;
 {
-	return _type == JSXProjectNavigatorItemFile;
+	return [[self alloc] initWithReference:reference];
 }
 
-- (BOOL)isProject
++ (IDEProjectNavigatorItem *)itemWithProject:(SPXProject *)project
 {
-	return _type == JSXProjectNavigatorItemProject;
+	return [[self alloc] initWithProject:project];
 }
 
 - (NSArray *)writableTypesForPasteboard:(NSPasteboard *)pasteboard

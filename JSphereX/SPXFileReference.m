@@ -10,4 +10,31 @@
 
 @implementation SPXFileReference
 
++ (SPXFileReference *)fileReferenceForPath:(NSString *)path
+{
+	SPXFileReference *ref = [[self alloc] init];
+	ref.path = path;
+	return ref;
+}
+
+#pragma mark - Encoding
+
+- (id)initWithCoder:(NSCoder *)coder
+{
+	self = [super initWithCoder:coder];
+	if(self) {
+		_path = [coder decodeObjectForKey:@"path"];
+		_lastKnownFileType = [coder decodeObjectForKey:@"lastKnownFileType"];
+	}
+	return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+	[super encodeWithCoder:coder];
+
+	[coder encodeObject:_path forKey:@"path"];
+	[coder encodeObject:_lastKnownFileType forKey:@"lastKnownFileType"];
+}
+
 @end

@@ -6,13 +6,14 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SPXReference.h"
 
-@interface SPXFileReference : NSObject
+@interface SPXFileReference : SPXReference
 
 @property (assign) NSStringEncoding fileEncoding;
 @property (strong) NSString *lastKnownFileType;
 @property (strong) NSString *path;
-@property (strong) NSString *sourceTree;
+
++ (SPXFileReference *)fileReferenceForPath:(NSString *)path;
 
 @end

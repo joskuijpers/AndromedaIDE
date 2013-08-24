@@ -9,7 +9,9 @@
 #import "SPHApplicationDelegate.h"
 #import "SPHDocumentController.h"
 #import "SPHPluginManager.h"
+
 #import "SPHWelcomeWindowController.h"
+#import "SPHNewProjectSheetController.h"
 
 @interface SPHApplicationDelegate()
 {
@@ -44,7 +46,7 @@
 	if(_currentSheetController != nil)
 		return;
 
-//	_currentSheetController = [[SPHNewProjectWindowController alloc] init];
+	_currentSheetController = [[SPHNewProjectSheetController alloc] init];
 	[NSApp beginSheet:_currentSheetController.window
 	   modalForWindow:nil
 		modalDelegate:self

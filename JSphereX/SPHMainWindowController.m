@@ -8,6 +8,7 @@
 
 #import "SPHMainWindowController.h"
 #import "SPHMainSplitViewController.h"
+#import "SPHNewFileSheetController.h"
 
 @interface SPHMainWindowController ()
 {
@@ -36,7 +37,8 @@
 	if(_currentSheetController != nil)
 		return;
 
-//	_currentSheetController = [[SPHNewFileWindowController alloc] init];
+	_currentSheetController = [[SPHNewFileSheetController alloc] init];
+	_currentSheetController.document = self.document;
 	[NSApp beginSheet:_currentSheetController.window
 	   modalForWindow:[self.document windowForSheet]
 		modalDelegate:self

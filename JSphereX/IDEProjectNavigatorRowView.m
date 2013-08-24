@@ -83,6 +83,9 @@ NSRange find_range(NSIndexSet *indexSet, NSInteger index) {
 - (void)drawSelectionInRect:(NSRect)dirtyRect
 {
 	NSOutlineView *outlineView = (NSOutlineView *)self.superview;
+	if(![outlineView isKindOfClass:[NSOutlineView class]])
+		return;
+
 	NSInteger ownRow = [outlineView rowForView:self];
 
 	NSRange selectionRange = find_range(outlineView.selectedRowIndexes, ownRow);

@@ -9,15 +9,18 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-	JSXProjectNavigatorItemProject,
-	JSXProjectNavigatorItemGroup,
-	JSXProjectNavigatorItemFolder,
-	JSXProjectNavigatorItemFile
+	IDEProjectNavigatorItemProject,
+	IDEProjectNavigatorItemGroup,
+	IDEProjectNavigatorItemFolder,
+	IDEProjectNavigatorItemFile
 } JSXProjectNavigatorItemType;
+
+@class SPXReference, SPXProject;
 
 @interface IDEProjectNavigatorItem : NSObject <NSPasteboardWriting,NSPasteboardReading>
 
 @property (strong) NSURL *url;
+@property (strong,readonly) SPXReference *reference;
 
 @property (strong) NSString *title;
 @property (strong) NSString *subTitle;
@@ -26,7 +29,7 @@ typedef enum {
 @property (assign) JSXProjectNavigatorItemType type;
 @property (strong) NSMutableArray *children;
 
-- (BOOL)isLeaf;
-- (BOOL)isProject;
++ (IDEProjectNavigatorItem *)itemWithProject:(SPXProject *)project;
++ (IDEProjectNavigatorItem *)itemWithReference:(SPXReference *)reference;
 
 @end

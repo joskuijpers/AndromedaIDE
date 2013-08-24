@@ -8,8 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class IDEProjectNavigatorViewController;
+
 @interface SPHMainSplitViewController : NSViewController
 
 @property (weak,nonatomic) IBOutlet NSSplitView *splitView;
+
+// - (IDEEditor *)currentEditor;
+// - (NSArray *)navigators;
+// TODO: make IDEProjectNavigator
+- (IDEProjectNavigatorViewController *)projectNavigator;
 
 @end
