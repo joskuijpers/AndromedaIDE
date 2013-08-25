@@ -147,14 +147,14 @@
 			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 80345A8B17BA6D1600170EFD;
-			remoteInfo = JSXJavaScriptEditor;
+			remoteInfo = IDEJavaScriptEditor;
 		};
 		80345AAA17BA6D3D00170EFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 80345A9B17BA6D2600170EFD;
-			remoteInfo = JSXQuickLookEditor;
+			remoteInfo = IDEQuickLookEditor;
 		};
 		80345AAE17BA6DDA00170EFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1055,7 +1055,7 @@
 				80345AAF17BA6DDA00170EFD /* PBXTargetDependency */,
 			);
 			name = IDEJavaScriptEditor;
-			productName = JSXJavaScriptEditor;
+			productName = IDEJavaScriptEditor;
 			productReference = 80345A8C17BA6D1600170EFD /* IDEJavaScriptEditor.ideplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
@@ -1073,7 +1073,7 @@
 				80345AB117BA6DDD00170EFD /* PBXTargetDependency */,
 			);
 			name = IDEQuickLookEditor;
-			productName = JSXQuickLookEditor;
+			productName = IDEQuickLookEditor;
 			productReference = 80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
@@ -1521,12 +1521,12 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JSXJavaScriptEditor/JSXJavaScriptEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "IDEJavaScriptEditor/IDEJavaScriptEditor-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "JSXJavaScriptEditor/JSXJavaScriptEditor-Info.plist";
+				INFOPLIST_FILE = "IDEJavaScriptEditor/IDEJavaScriptEditor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = ideplugin;
@@ -1538,8 +1538,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JSXJavaScriptEditor/JSXJavaScriptEditor-Prefix.pch";
-				INFOPLIST_FILE = "JSXJavaScriptEditor/JSXJavaScriptEditor-Info.plist";
+				GCC_PREFIX_HEADER = "IDEJavaScriptEditor/IDEJavaScriptEditor-Prefix.pch";
+				INFOPLIST_FILE = "IDEJavaScriptEditor/IDEJavaScriptEditor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = ideplugin;
@@ -1551,12 +1551,12 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JSXQuickLookEditor/JSXQuickLookEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "IDEQuickLookEditor/IDEQuickLookEditor-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "JSXQuickLookEditor/JSXQuickLookEditor-Info.plist";
+				INFOPLIST_FILE = "IDEQuickLookEditor/IDEQuickLookEditor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = ideplugin;
@@ -1568,8 +1568,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JSXQuickLookEditor/JSXQuickLookEditor-Prefix.pch";
-				INFOPLIST_FILE = "JSXQuickLookEditor/JSXQuickLookEditor-Info.plist";
+				GCC_PREFIX_HEADER = "IDEQuickLookEditor/IDEQuickLookEditor-Prefix.pch";
+				INFOPLIST_FILE = "IDEQuickLookEditor/IDEQuickLookEditor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = ideplugin;
