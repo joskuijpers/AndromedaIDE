@@ -14,7 +14,6 @@
 		8006D46517BA7DAF00453468 /* SPHConfigurationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46417BA7DAF00453468 /* SPHConfigurationList.m */; };
 		8006D46B17BA7EA800453468 /* SPXSourcesBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46A17BA7EA800453468 /* SPXSourcesBuildPhase.m */; };
 		8006D46E17BA7EDA00453468 /* SPXCopyFilesBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46D17BA7EDA00453468 /* SPXCopyFilesBuildPhase.m */; };
-		8006D47917BA840400453468 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		8006D47F17BA840400453468 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8006D47D17BA840400453468 /* InfoPlist.strings */; };
 		8006D48317BA840400453468 /* SphereRuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D48217BA840400453468 /* SphereRuntimeKit.m */; };
 		8006D49E17BA843800453468 /* SphereRuntimeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8006D47817BA840400453468 /* SphereRuntimeKit.framework */; };
@@ -38,7 +37,6 @@
 		8006D4CE17BBD78200453468 /* IDEUtilitiesTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4CC17BBD78200453468 /* IDEUtilitiesTab.m */; };
 		8006D4D117BBDE2500453468 /* IDEFileInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4CF17BBDE2500453468 /* IDEFileInspector.h */; };
 		8006D4D217BBDE2500453468 /* IDEFileInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4D017BBDE2500453468 /* IDEFileInspector.m */; };
-		8006D4D917BBE69C00453468 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		8006D4DF17BBE69C00453468 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8006D4DD17BBE69C00453468 /* InfoPlist.strings */; };
 		8006D4E617BBE6AA00453468 /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
 		8006D4EA17BBE6F600453468 /* IDESourceCodeEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */; };
@@ -57,20 +55,16 @@
 		802F39C017B3CBCB005B70C4 /* CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39B617B3CBCB005B70C4 /* CNSplitViewToolbar.m */; };
 		802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39B817B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m */; };
 		802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39BB17B3CBCB005B70C4 /* CNSplitView.m */; };
-		802F39C417B3D242005B70C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802F39C317B3D242005B70C4 /* QuartzCore.framework */; };
 		802F39DB17B46E26005B70C4 /* SPHMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39DA17B46E26005B70C4 /* SPHMainWindowController.m */; };
 		80345A4917B5B63D00170EFD /* IDEProjectNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4717B5B63D00170EFD /* IDEProjectNavigatorViewController.m */; };
 		80345A4A17B5B63D00170EFD /* IDEProjectNavigatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80345A4817B5B63D00170EFD /* IDEProjectNavigatorView.xib */; };
 		80345A4D17B5BCE700170EFD /* IDEProjectNavigatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4C17B5BCE700170EFD /* IDEProjectNavigatorItem.m */; };
 		80345A5017B67C6F00170EFD /* IDEProjectNavigatorRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4F17B67C6F00170EFD /* IDEProjectNavigatorRowView.m */; };
 		80345A5417BA27D500170EFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80345A5317BA27D500170EFD /* Images.xcassets */; };
-		80345A5F17BA6B8800170EFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80345A6517BA6B8800170EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80345A6317BA6B8800170EFD /* InfoPlist.strings */; };
 		80345A8417BA6C0900170EFD /* SphereKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
 		80345A8717BA6C3300170EFD /* SphereKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* SphereKit.framework */; };
-		80345A8D17BA6D1600170EFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80345A9317BA6D1600170EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80345A9117BA6D1600170EFD /* InfoPlist.strings */; };
-		80345A9D17BA6D2600170EFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80345AA317BA6D2600170EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80345AA117BA6D2600170EFD /* InfoPlist.strings */; };
 		80345AAC17BA6DB400170EFD /* IDEJavaScriptEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 80345A8C17BA6D1600170EFD /* IDEJavaScriptEditor.ideplugin */; };
 		80345AAD17BA6DB400170EFD /* IDEQuickLookEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */; };
@@ -83,7 +77,6 @@
 		80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* IDEPlugin.m */; };
 		80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */; };
 		80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* IDEPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
 		808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 808058F717B1B6C0004D1D41 /* Credits.rtf */; };
@@ -362,7 +355,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8006D47917BA840400453468 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8006D4E617BBE6AA00453468 /* SphereKit.framework in Frameworks */,
-				8006D4D917BBE69C00453468 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +370,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80345A5F17BA6B8800170EFD /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +378,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80345AB317BA6DE600170EFD /* SphereKit.framework in Frameworks */,
-				80345A8D17BA6D1600170EFD /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +386,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80345AB217BA6DE300170EFD /* SphereKit.framework in Frameworks */,
-				80345A9D17BA6D2600170EFD /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +395,7 @@
 			files = (
 				8006D49E17BA843800453468 /* SphereRuntimeKit.framework in Frameworks */,
 				80345A8417BA6C0900170EFD /* SphereKit.framework in Frameworks */,
-				802F39C417B3D242005B70C4 /* QuartzCore.framework in Frameworks */,
 				8080593217B1EA23004D1D41 /* libcrypto.dylib in Frameworks */,
-				808058E917B1B6BF004D1D41 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1610,6 +1596,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1641,7 +1628,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1658,6 +1647,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
+				LLVM_LTO = NO;
 				PRODUCT_NAME = Sphere;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1675,6 +1665,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
+				LLVM_LTO = YES;
 				PRODUCT_NAME = Sphere;
 				WRAPPER_EXTENSION = app;
 			};

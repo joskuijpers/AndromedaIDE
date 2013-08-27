@@ -154,7 +154,9 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 - (NSString *)extensionForType:(NSString *)type
 {
 	CFStringRef r = UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)type, kUTTagClassFilenameExtension);
-	return (__bridge NSString *)r;
+	NSString *ret = (__bridge NSString *)r;
+	CFRelease(r);
+	return ret;
 }
 
 @end
