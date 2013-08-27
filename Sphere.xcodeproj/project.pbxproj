@@ -111,8 +111,12 @@
 		80F07F3717CCE58A002E582E /* SPRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F3617CCE58A002E582E /* SPRAppDelegate.m */; };
 		80F07F3A17CCE58A002E582E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F3817CCE58A002E582E /* MainMenu.xib */; };
 		80F07F3C17CCE58A002E582E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F3B17CCE58A002E582E /* Images.xcassets */; };
-		80F07F5A17CCE864002E582E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80F07F6017CCE864002E582E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F5E17CCE864002E582E /* InfoPlist.strings */; };
+		80F07F8317CCEC20002E582E /* SphereToolsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F07F5917CCE864002E582E /* SphereToolsKit.framework */; };
+		80F07F8617CCEC7E002E582E /* STKBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F07F8417CCEC7E002E582E /* STKBuilder.h */; };
+		80F07F8717CCEC7E002E582E /* STKBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F8517CCEC7E002E582E /* STKBuilder.m */; };
+		80F07F8817CCECA1002E582E /* SphereToolsKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 80F07F5917CCE864002E582E /* SphereToolsKit.framework */; };
+		80F07F8A17CCECC2002E582E /* SphereRuntimeKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 8006D47817BA840400453468 /* SphereRuntimeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +176,13 @@
 			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
 			remoteInfo = SphereKit;
 		};
+		80F07F8117CCEC15002E582E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80F07F5817CCE864002E582E;
+			remoteInfo = SphereToolsKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -183,6 +194,7 @@
 			files = (
 				8006D49F17BA847E00453468 /* SphereRuntimeKit.framework in Copy Private Frameworks */,
 				80345A8717BA6C3300170EFD /* SphereKit.framework in Copy Private Frameworks */,
+				80F07F8817CCECA1002E582E /* SphereToolsKit.framework in Copy Private Frameworks */,
 			);
 			name = "Copy Private Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +210,17 @@
 				80345AAD17BA6DB400170EFD /* IDEQuickLookEditor.ideplugin in Copy PlugIns */,
 			);
 			name = "Copy PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F07F8917CCECAE002E582E /* Copy Private Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				80F07F8A17CCECC2002E582E /* SphereRuntimeKit.framework in Copy Private Frameworks */,
+			);
+			name = "Copy Private Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -372,6 +395,8 @@
 		80F07F5F17CCE864002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80F07F6117CCE864002E582E /* SphereToolsKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SphereToolsKit-Prefix.pch"; sourceTree = "<group>"; };
 		80F07F6217CCE864002E582E /* SphereToolsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SphereToolsKit.h; sourceTree = "<group>"; };
+		80F07F8417CCEC7E002E582E /* STKBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKBuilder.h; sourceTree = "<group>"; };
+		80F07F8517CCEC7E002E582E /* STKBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +442,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F07F8317CCEC20002E582E /* SphereToolsKit.framework in Frameworks */,
 				8006D49E17BA843800453468 /* SphereRuntimeKit.framework in Frameworks */,
 				80345A8417BA6C0900170EFD /* SphereKit.framework in Frameworks */,
 				8080593217B1EA23004D1D41 /* libcrypto.dylib in Frameworks */,
@@ -435,7 +461,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80F07F5A17CCE864002E582E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1008,6 +1033,8 @@
 			children = (
 				80F07F6217CCE864002E582E /* SphereToolsKit.h */,
 				80F07F5C17CCE864002E582E /* Supporting Files */,
+				80F07F8417CCEC7E002E582E /* STKBuilder.h */,
+				80F07F8517CCEC7E002E582E /* STKBuilder.m */,
 			);
 			path = SphereToolsKit;
 			sourceTree = "<group>";
@@ -1093,6 +1120,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F07F8617CCEC7E002E582E /* STKBuilder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1202,11 +1230,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				8006D4E817BBE6B200453468 /* PBXTargetDependency */,
+				80F07F8217CCEC15002E582E /* PBXTargetDependency */,
 				8006D49D17BA843200453468 /* PBXTargetDependency */,
+				80345A8617BA6C2400170EFD /* PBXTargetDependency */,
+				8006D4E817BBE6B200453468 /* PBXTargetDependency */,
 				80345AA917BA6D3D00170EFD /* PBXTargetDependency */,
 				80345AAB17BA6D3D00170EFD /* PBXTargetDependency */,
-				80345A8617BA6C2400170EFD /* PBXTargetDependency */,
 			);
 			name = Sphere;
 			productName = Sphere;
@@ -1220,6 +1249,7 @@
 				80F07F2317CCE58A002E582E /* Sources */,
 				80F07F2417CCE58A002E582E /* Frameworks */,
 				80F07F2517CCE58A002E582E /* Resources */,
+				80F07F8917CCECAE002E582E /* Copy Private Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1474,6 +1504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F07F8717CCEC7E002E582E /* STKBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1519,6 +1550,11 @@
 			isa = PBXTargetDependency;
 			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
 			targetProxy = 80345AB017BA6DDD00170EFD /* PBXContainerItemProxy */;
+		};
+		80F07F8217CCEC15002E582E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80F07F5817CCE864002E582E /* SphereToolsKit */;
+			targetProxy = 80F07F8117CCEC15002E582E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1945,6 +1981,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "SphereToolsKit/SphereToolsKit-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1960,6 +1997,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SphereToolsKit/SphereToolsKit-Prefix.pch";
 				INFOPLIST_FILE = "SphereToolsKit/SphereToolsKit-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
