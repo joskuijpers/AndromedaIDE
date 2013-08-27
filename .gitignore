@@ -1,5 +1,25 @@
+# OSX Finder
 .DS_Store
+
+# Xcode per-user config
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# Build products
 Build/
-.o
-.a
-xcuserdata/
+*.o
+*.a
+*.LinkFileList
+*.hmap
+
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep
