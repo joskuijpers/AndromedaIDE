@@ -104,6 +104,15 @@
 		80AC29E117C6DF50005D4D54 /* IDESheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AC29DF17C6DF50005D4D54 /* IDESheetController.h */; };
 		80AC29E217C6DF50005D4D54 /* IDESheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC29E017C6DF50005D4D54 /* IDESheetController.m */; };
 		80AC29E517C7E9AD005D4D54 /* SPXReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC29E417C7E9AD005D4D54 /* SPXReference.m */; };
+		80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		80F07F2E17CCE58A002E582E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F2C17CCE58A002E582E /* InfoPlist.strings */; };
+		80F07F3017CCE58A002E582E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F2F17CCE58A002E582E /* main.m */; };
+		80F07F3417CCE58A002E582E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F3217CCE58A002E582E /* Credits.rtf */; };
+		80F07F3717CCE58A002E582E /* SPRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F3617CCE58A002E582E /* SPRAppDelegate.m */; };
+		80F07F3A17CCE58A002E582E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F3817CCE58A002E582E /* MainMenu.xib */; };
+		80F07F3C17CCE58A002E582E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F3B17CCE58A002E582E /* Images.xcassets */; };
+		80F07F5A17CCE864002E582E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		80F07F6017CCE864002E582E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F5E17CCE864002E582E /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -348,6 +357,21 @@
 		80AC29E017C6DF50005D4D54 /* IDESheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESheetController.m; sourceTree = "<group>"; };
 		80AC29E317C7E9AD005D4D54 /* SPXReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXReference.h; sourceTree = "<group>"; };
 		80AC29E417C7E9AD005D4D54 /* SPXReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXReference.m; sourceTree = "<group>"; };
+		80F07F2717CCE58A002E582E /* SphereRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F07F2B17CCE58A002E582E /* SphereRuntime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereRuntime-Info.plist"; sourceTree = "<group>"; };
+		80F07F2D17CCE58A002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80F07F2F17CCE58A002E582E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80F07F3117CCE58A002E582E /* SphereRuntime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SphereRuntime-Prefix.pch"; sourceTree = "<group>"; };
+		80F07F3317CCE58A002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		80F07F3517CCE58A002E582E /* SPRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRAppDelegate.h; sourceTree = "<group>"; };
+		80F07F3617CCE58A002E582E /* SPRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRAppDelegate.m; sourceTree = "<group>"; };
+		80F07F3917CCE58A002E582E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		80F07F3B17CCE58A002E582E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80F07F5917CCE864002E582E /* SphereToolsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SphereToolsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F07F5D17CCE864002E582E /* SphereToolsKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereToolsKit-Info.plist"; sourceTree = "<group>"; };
+		80F07F5F17CCE864002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80F07F6117CCE864002E582E /* SphereToolsKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SphereToolsKit-Prefix.pch"; sourceTree = "<group>"; };
+		80F07F6217CCE864002E582E /* SphereToolsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SphereToolsKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +420,22 @@
 				8006D49E17BA843800453468 /* SphereRuntimeKit.framework in Frameworks */,
 				80345A8417BA6C0900170EFD /* SphereKit.framework in Frameworks */,
 				8080593217B1EA23004D1D41 /* libcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F07F2417CCE58A002E582E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F07F5517CCE864002E582E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F07F5A17CCE864002E582E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,9 +795,9 @@
 				808058EE17B1B6BF004D1D41 /* Sphere */,
 				80345A6017BA6B8800170EFD /* SphereKit */,
 				8006D47A17BA840400453468 /* SphereRuntimeKit */,
-				80345A8E17BA6D1600170EFD /* IDEJavaScriptEditor */,
-				80345A9E17BA6D2600170EFD /* IDEQuickLookEditor */,
-				8006D4DA17BBE69C00453468 /* IDESourceCodeEditor */,
+				80F07F2917CCE58A002E582E /* SphereRuntime */,
+				80F07F5B17CCE864002E582E /* SphereToolsKit */,
+				80F07F7D17CCE8B4002E582E /* Plugins */,
 				808058E717B1B6BF004D1D41 /* Frameworks */,
 				808058E617B1B6BF004D1D41 /* Products */,
 			);
@@ -772,6 +812,8 @@
 				80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */,
 				8006D47817BA840400453468 /* SphereRuntimeKit.framework */,
 				8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */,
+				80F07F2717CCE58A002E582E /* SphereRuntime.app */,
+				80F07F5917CCE864002E582E /* SphereToolsKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -938,6 +980,83 @@
 			name = App;
 			sourceTree = "<group>";
 		};
+		80F07F2917CCE58A002E582E /* SphereRuntime */ = {
+			isa = PBXGroup;
+			children = (
+				80F07F7F17CCE8D5002E582E /* App */,
+				80F07F8017CCE8E0002E582E /* Resources */,
+				80F07F7E17CCE8C5002E582E /* Assets */,
+				80F07F2A17CCE58A002E582E /* Supporting Files */,
+			);
+			path = SphereRuntime;
+			sourceTree = "<group>";
+		};
+		80F07F2A17CCE58A002E582E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80F07F2B17CCE58A002E582E /* SphereRuntime-Info.plist */,
+				80F07F2C17CCE58A002E582E /* InfoPlist.strings */,
+				80F07F2F17CCE58A002E582E /* main.m */,
+				80F07F3117CCE58A002E582E /* SphereRuntime-Prefix.pch */,
+				80F07F3217CCE58A002E582E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80F07F5B17CCE864002E582E /* SphereToolsKit */ = {
+			isa = PBXGroup;
+			children = (
+				80F07F6217CCE864002E582E /* SphereToolsKit.h */,
+				80F07F5C17CCE864002E582E /* Supporting Files */,
+			);
+			path = SphereToolsKit;
+			sourceTree = "<group>";
+		};
+		80F07F5C17CCE864002E582E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80F07F5D17CCE864002E582E /* SphereToolsKit-Info.plist */,
+				80F07F5E17CCE864002E582E /* InfoPlist.strings */,
+				80F07F6117CCE864002E582E /* SphereToolsKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80F07F7D17CCE8B4002E582E /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				80345A8E17BA6D1600170EFD /* IDEJavaScriptEditor */,
+				80345A9E17BA6D2600170EFD /* IDEQuickLookEditor */,
+				8006D4DA17BBE69C00453468 /* IDESourceCodeEditor */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		80F07F7E17CCE8C5002E582E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				80F07F3B17CCE58A002E582E /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		80F07F7F17CCE8D5002E582E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80F07F3517CCE58A002E582E /* SPRAppDelegate.h */,
+				80F07F3617CCE58A002E582E /* SPRAppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		80F07F8017CCE8E0002E582E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80F07F3817CCE58A002E582E /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -967,6 +1086,13 @@
 				8006D4B117BA885900453468 /* IDEUtilities.h in Headers */,
 				8006D4D117BBDE2500453468 /* IDEFileInspector.h in Headers */,
 				80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F07F5617CCE864002E582E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1087,6 +1213,41 @@
 			productReference = 808058E517B1B6BF004D1D41 /* Sphere.app */;
 			productType = "com.apple.product-type.application";
 		};
+		80F07F2617CCE58A002E582E /* SphereRuntime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F07F4E17CCE58A002E582E /* Build configuration list for PBXNativeTarget "SphereRuntime" */;
+			buildPhases = (
+				80F07F2317CCE58A002E582E /* Sources */,
+				80F07F2417CCE58A002E582E /* Frameworks */,
+				80F07F2517CCE58A002E582E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SphereRuntime;
+			productName = SphereRuntime;
+			productReference = 80F07F2717CCE58A002E582E /* SphereRuntime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80F07F5817CCE864002E582E /* SphereToolsKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F07F7717CCE865002E582E /* Build configuration list for PBXNativeTarget "SphereToolsKit" */;
+			buildPhases = (
+				80F07F5417CCE864002E582E /* Sources */,
+				80F07F5517CCE864002E582E /* Frameworks */,
+				80F07F5617CCE864002E582E /* Headers */,
+				80F07F5717CCE864002E582E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SphereToolsKit;
+			productName = SphereToolsKit;
+			productReference = 80F07F5917CCE864002E582E /* SphereToolsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1111,7 +1272,9 @@
 			projectRoot = "";
 			targets = (
 				808058E417B1B6BF004D1D41 /* Sphere */,
+				80F07F2617CCE58A002E582E /* SphereRuntime */,
 				80345A5D17BA6B8700170EFD /* SphereKit */,
+				80F07F5817CCE864002E582E /* SphereToolsKit */,
 				8006D47717BA840400453468 /* SphereRuntimeKit */,
 				80345A8B17BA6D1600170EFD /* IDEJavaScriptEditor */,
 				80345A9B17BA6D2600170EFD /* IDEQuickLookEditor */,
@@ -1178,6 +1341,25 @@
 				802A641417B47D0E00597DB6 /* SPHMainSplitView.xib in Resources */,
 				8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */,
 				8098F95F17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.pressed.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F07F2517CCE58A002E582E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F07F2E17CCE58A002E582E /* InfoPlist.strings in Resources */,
+				80F07F3C17CCE58A002E582E /* Images.xcassets in Resources */,
+				80F07F3417CCE58A002E582E /* Credits.rtf in Resources */,
+				80F07F3A17CCE58A002E582E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F07F5717CCE864002E582E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F07F6017CCE864002E582E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1276,6 +1458,22 @@
 				8098F95617BFCA950070BC58 /* SPHWelcomeWindow.m in Sources */,
 				8006D4F917BBEBA900453468 /* SPHPluginExtensionPoint.m in Sources */,
 				8006D4BB17BA88DB00453468 /* SPHPluginManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F07F2317CCE58A002E582E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F07F3717CCE58A002E582E /* SPRAppDelegate.m in Sources */,
+				80F07F3017CCE58A002E582E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F07F5417CCE864002E582E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1395,6 +1593,38 @@
 				8080590117B1B6C0004D1D41 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		80F07F2C17CCE58A002E582E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80F07F2D17CCE58A002E582E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80F07F3217CCE58A002E582E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80F07F3317CCE58A002E582E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		80F07F3817CCE58A002E582E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80F07F3917CCE58A002E582E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		80F07F5E17CCE864002E582E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80F07F5F17CCE864002E582E /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1671,6 +1901,70 @@
 			};
 			name = Release;
 		};
+		80F07F4F17CCE58A002E582E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SphereRuntime/SphereRuntime-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SphereRuntime/SphereRuntime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80F07F5017CCE58A002E582E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SphereRuntime/SphereRuntime-Prefix.pch";
+				INFOPLIST_FILE = "SphereRuntime/SphereRuntime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		80F07F7817CCE865002E582E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SphereToolsKit/SphereToolsKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SphereToolsKit/SphereToolsKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		80F07F7917CCE865002E582E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SphereToolsKit/SphereToolsKit-Prefix.pch";
+				INFOPLIST_FILE = "SphereToolsKit/SphereToolsKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1736,6 +2030,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		80F07F4E17CCE58A002E582E /* Build configuration list for PBXNativeTarget "SphereRuntime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F07F4F17CCE58A002E582E /* Debug */,
+				80F07F5017CCE58A002E582E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80F07F7717CCE865002E582E /* Build configuration list for PBXNativeTarget "SphereToolsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F07F7817CCE865002E582E /* Debug */,
+				80F07F7917CCE865002E582E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
