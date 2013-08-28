@@ -48,10 +48,7 @@
 
 - (NSString *)descriptionForUTI:(NSString *)UTI
 {
-	CFStringRef desc = UTTypeCopyDescription((__bridge CFStringRef)UTI);
-	NSString *ret = [NSString stringWithString:(__bridge NSString *)desc];
-	CFRelease(desc);
-	return ret;
+	return [[NSWorkspace sharedWorkspace] localizedDescriptionForType:UTI];
 }
 
 - (void)windowDidLoad
@@ -118,7 +115,7 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 										isDirectory:YES];
 	file = [root URLByAppendingPathComponent:_fileName
 								 isDirectory:NO];
-	file = [file URLByAppendingPathExtension:[self extensionForType:template[@"fileTypes"][0]]];
+	file = [file URLByAppendingPathExtension:[self extensionForUTI:template[@"fileTypes"][0]]];
 
 	if(![[NSFileManager defaultManager] createDirectoryAtURL:root
 								 withIntermediateDirectories:YES
@@ -151,12 +148,9 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 	[super dismiss:sender];
 }
 
-- (NSString *)extensionForType:(NSString *)type
+- (NSString *)extensionForUTI:(NSString *)UTI
 {
-	CFStringRef r = UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)type, kUTTagClassFilenameExtension);
-	NSString *ret = (__bridge NSString *)r;
-	CFRelease(r);
-	return ret;
+	return [[NSWorkspace sharedWorkspace] preferredFilenameExtensionForType:UTI];
 }
 
 @end
