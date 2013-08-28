@@ -1,21 +1,21 @@
 //
-//  SPXReference.m
-//  JSphereX
+//  SPXTargetDependency.m
+//  Sphere
 //
-//  Created by Jos Kuijpers on 8/23/13.
+//  Created by Jos Kuijpers on 8/28/13.
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "SPXReference.h"
+#import "SPXTargetDependency.h"
 
-@implementation SPXReference
+@implementation SPXTargetDependency
 
 - (id)initWithCoder:(NSCoder *)coder
 {
 	self = [super init];
 	if(self) {
 		_name = [coder decodeObjectForKey:@"name"];
-		_sourceTree = [coder decodeObjectForKey:@"sourceTree"];
+		_target = [coder decodeObjectForKey:@"target"];
 	}
 	return self;
 }
@@ -23,7 +23,7 @@
 - (void)encodeWithCoder:(NSCoder *)coder
 {
 	[coder encodeObject:_name forKey:@"name"];
-	[coder encodeObject:_sourceTree forKey:@"sourceTree"];
+	[coder encodeObject:_target forKey:@"target"];
 }
 
 @end

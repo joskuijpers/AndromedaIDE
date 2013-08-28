@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SPHConfigurationList : NSObject
+@interface SXConfigurationList : NSObject
 
 @property (strong) NSString *defaultConfigurationName;
-@property (strong) NSArray *buildConfigurations; // SPHBuildConfiguration
+@property (strong) NSArray *buildConfigurations; // SXBuildConfiguration
+
+- (void)applyDefaultConfiguration;
 
 @end

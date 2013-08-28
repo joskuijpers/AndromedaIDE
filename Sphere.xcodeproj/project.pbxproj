@@ -64,14 +64,32 @@
 		80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* IDEPlugin.m */; };
 		80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */; };
 		80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* IDEPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		807513FB17CE97F9009547A6 /* SPHBuildConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46117BA7D7300453468 /* SPHBuildConfiguration.m */; };
-		807513FD17CE97F9009547A6 /* SPHConfigurationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46417BA7DAF00453468 /* SPHConfigurationList.m */; };
+		807513FB17CE97F9009547A6 /* SXBuildConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46117BA7D7300453468 /* SXBuildConfiguration.m */; };
+		807513FD17CE97F9009547A6 /* SXConfigurationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46417BA7DAF00453468 /* SXConfigurationList.m */; };
 		807513FE17CE9807009547A6 /* SPXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D45E17BA79FA00453468 /* SPXProject.m */; };
 		807513FF17CE9807009547A6 /* SPXFileReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D45A17BA799E00453468 /* SPXFileReference.m */; };
 		8075140017CE9807009547A6 /* SPXGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D45717BA797F00453468 /* SPXGroup.m */; };
 		8075140117CE9807009547A6 /* SPXSourcesBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46A17BA7EA800453468 /* SPXSourcesBuildPhase.m */; };
 		8075140217CE9807009547A6 /* SPXCopyFilesBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46D17BA7EDA00453468 /* SPXCopyFilesBuildPhase.m */; };
 		8075140317CE9807009547A6 /* SPXReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC29E417C7E9AD005D4D54 /* SPXReference.m */; };
+		8075140617CE9F47009547A6 /* SPXBuildPhase.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075140417CE9F47009547A6 /* SPXBuildPhase.h */; };
+		8075140717CE9F47009547A6 /* SPXBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075140517CE9F47009547A6 /* SPXBuildPhase.m */; };
+		8075140A17CEA0F9009547A6 /* SPXTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075140817CEA0F9009547A6 /* SPXTarget.h */; };
+		8075140B17CEA0F9009547A6 /* SPXTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075140917CEA0F9009547A6 /* SPXTarget.m */; };
+		8075140E17CEA1A6009547A6 /* SPXTargetDependency.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075140C17CEA1A6009547A6 /* SPXTargetDependency.h */; };
+		8075140F17CEA1A6009547A6 /* SPXTargetDependency.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075140D17CEA1A6009547A6 /* SPXTargetDependency.m */; };
+		8075141217CEA1B4009547A6 /* SPXBuildRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075141017CEA1B4009547A6 /* SPXBuildRule.h */; };
+		8075141317CEA1B4009547A6 /* SPXBuildRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075141117CEA1B4009547A6 /* SPXBuildRule.m */; };
+		8075141617CEAF10009547A6 /* SPXShellScriptBuildPhase.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075141417CEAF10009547A6 /* SPXShellScriptBuildPhase.h */; };
+		8075141717CEAF10009547A6 /* SPXShellScriptBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075141517CEAF10009547A6 /* SPXShellScriptBuildPhase.m */; };
+		8075141A17CEB0CF009547A6 /* SXProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075141817CEB0CF009547A6 /* SXProject.h */; };
+		8075141B17CEB0CF009547A6 /* SXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075141917CEB0CF009547A6 /* SXProject.m */; };
+		8075141E17CEB339009547A6 /* SXGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075141C17CEB339009547A6 /* SXGroup.h */; };
+		8075141F17CEB339009547A6 /* SXGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075141D17CEB339009547A6 /* SXGroup.m */; };
+		8075142217CEB47D009547A6 /* SXFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075142017CEB47D009547A6 /* SXFile.h */; };
+		8075142317CEB47D009547A6 /* SXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075142117CEB47D009547A6 /* SXFile.m */; };
+		8075142617CEB48D009547A6 /* SXTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075142417CEB48D009547A6 /* SXTarget.h */; };
+		8075142717CEB48D009547A6 /* SXTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075142517CEB48D009547A6 /* SXTarget.m */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
 		808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 808058F717B1B6C0004D1D41 /* Credits.rtf */; };
@@ -226,10 +244,10 @@
 		8006D45A17BA799E00453468 /* SPXFileReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXFileReference.m; sourceTree = "<group>"; };
 		8006D45D17BA79FA00453468 /* SPXProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXProject.h; sourceTree = "<group>"; };
 		8006D45E17BA79FA00453468 /* SPXProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXProject.m; sourceTree = "<group>"; };
-		8006D46017BA7D7300453468 /* SPHBuildConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHBuildConfiguration.h; sourceTree = "<group>"; };
-		8006D46117BA7D7300453468 /* SPHBuildConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHBuildConfiguration.m; sourceTree = "<group>"; };
-		8006D46317BA7DAF00453468 /* SPHConfigurationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHConfigurationList.h; sourceTree = "<group>"; };
-		8006D46417BA7DAF00453468 /* SPHConfigurationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHConfigurationList.m; sourceTree = "<group>"; };
+		8006D46017BA7D7300453468 /* SXBuildConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXBuildConfiguration.h; sourceTree = "<group>"; };
+		8006D46117BA7D7300453468 /* SXBuildConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXBuildConfiguration.m; sourceTree = "<group>"; };
+		8006D46317BA7DAF00453468 /* SXConfigurationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXConfigurationList.h; sourceTree = "<group>"; };
+		8006D46417BA7DAF00453468 /* SXConfigurationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXConfigurationList.m; sourceTree = "<group>"; };
 		8006D46917BA7EA800453468 /* SPXSourcesBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXSourcesBuildPhase.h; sourceTree = "<group>"; };
 		8006D46A17BA7EA800453468 /* SPXSourcesBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXSourcesBuildPhase.m; sourceTree = "<group>"; };
 		8006D46C17BA7EDA00453468 /* SPXCopyFilesBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXCopyFilesBuildPhase.h; sourceTree = "<group>"; };
@@ -328,6 +346,24 @@
 		80345AC117BA73A600170EFD /* IDEPluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJavaScriptPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJavaScriptPluginDelegate.m; sourceTree = "<group>"; };
+		8075140417CE9F47009547A6 /* SPXBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXBuildPhase.h; sourceTree = "<group>"; };
+		8075140517CE9F47009547A6 /* SPXBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXBuildPhase.m; sourceTree = "<group>"; };
+		8075140817CEA0F9009547A6 /* SPXTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXTarget.h; sourceTree = "<group>"; };
+		8075140917CEA0F9009547A6 /* SPXTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXTarget.m; sourceTree = "<group>"; };
+		8075140C17CEA1A6009547A6 /* SPXTargetDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXTargetDependency.h; sourceTree = "<group>"; };
+		8075140D17CEA1A6009547A6 /* SPXTargetDependency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXTargetDependency.m; sourceTree = "<group>"; };
+		8075141017CEA1B4009547A6 /* SPXBuildRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXBuildRule.h; sourceTree = "<group>"; };
+		8075141117CEA1B4009547A6 /* SPXBuildRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXBuildRule.m; sourceTree = "<group>"; };
+		8075141417CEAF10009547A6 /* SPXShellScriptBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXShellScriptBuildPhase.h; sourceTree = "<group>"; };
+		8075141517CEAF10009547A6 /* SPXShellScriptBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXShellScriptBuildPhase.m; sourceTree = "<group>"; };
+		8075141817CEB0CF009547A6 /* SXProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXProject.h; sourceTree = "<group>"; };
+		8075141917CEB0CF009547A6 /* SXProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXProject.m; sourceTree = "<group>"; };
+		8075141C17CEB339009547A6 /* SXGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXGroup.h; sourceTree = "<group>"; };
+		8075141D17CEB339009547A6 /* SXGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXGroup.m; sourceTree = "<group>"; };
+		8075142017CEB47D009547A6 /* SXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXFile.h; sourceTree = "<group>"; };
+		8075142117CEB47D009547A6 /* SXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXFile.m; sourceTree = "<group>"; };
+		8075142417CEB48D009547A6 /* SXTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTarget.h; sourceTree = "<group>"; };
+		8075142517CEB48D009547A6 /* SXTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTarget.m; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* Sphere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sphere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -461,14 +497,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8006D46F17BA80AE00453468 /* Build_ */ = {
-			isa = PBXGroup;
-			children = (
-				8006D4A517BA879300453468 /* Models */,
-			);
-			name = Build_;
-			sourceTree = "<group>";
-		};
 		8006D47A17BA840400453468 /* SphereRuntimeKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,13 +533,6 @@
 				8006D47117BA835800453468 /* SPRGame.m */,
 			);
 			name = Game;
-			sourceTree = "<group>";
-		};
-		8006D4A517BA879300453468 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		8006D4AE17BA881700453468 /* Editor */ = {
@@ -680,7 +701,6 @@
 			isa = PBXGroup;
 			children = (
 				8080592117B1B988004D1D41 /* Document */,
-				80345AB417BA6E3900170EFD /* Models */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -758,13 +778,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		80345AB417BA6E3900170EFD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		80345ABA17BA6FFC00170EFD /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -797,16 +810,26 @@
 			children = (
 				8006D45D17BA79FA00453468 /* SPXProject.h */,
 				8006D45E17BA79FA00453468 /* SPXProject.m */,
+				80AC29E317C7E9AD005D4D54 /* SPXReference.h */,
+				80AC29E417C7E9AD005D4D54 /* SPXReference.m */,
 				8006D45917BA799E00453468 /* SPXFileReference.h */,
 				8006D45A17BA799E00453468 /* SPXFileReference.m */,
 				8006D45617BA797F00453468 /* SPXGroup.h */,
 				8006D45717BA797F00453468 /* SPXGroup.m */,
+				8075140417CE9F47009547A6 /* SPXBuildPhase.h */,
+				8075140517CE9F47009547A6 /* SPXBuildPhase.m */,
 				8006D46917BA7EA800453468 /* SPXSourcesBuildPhase.h */,
 				8006D46A17BA7EA800453468 /* SPXSourcesBuildPhase.m */,
 				8006D46C17BA7EDA00453468 /* SPXCopyFilesBuildPhase.h */,
 				8006D46D17BA7EDA00453468 /* SPXCopyFilesBuildPhase.m */,
-				80AC29E317C7E9AD005D4D54 /* SPXReference.h */,
-				80AC29E417C7E9AD005D4D54 /* SPXReference.m */,
+				8075141417CEAF10009547A6 /* SPXShellScriptBuildPhase.h */,
+				8075141517CEAF10009547A6 /* SPXShellScriptBuildPhase.m */,
+				8075140817CEA0F9009547A6 /* SPXTarget.h */,
+				8075140917CEA0F9009547A6 /* SPXTarget.m */,
+				8075140C17CEA1A6009547A6 /* SPXTargetDependency.h */,
+				8075140D17CEA1A6009547A6 /* SPXTargetDependency.m */,
+				8075141017CEA1B4009547A6 /* SPXBuildRule.h */,
+				8075141117CEA1B4009547A6 /* SPXBuildRule.m */,
 			);
 			name = spxproj;
 			sourceTree = "<group>";
@@ -814,11 +837,19 @@
 		807513F917CE9334009547A6 /* Sphere Workspace */ = {
 			isa = PBXGroup;
 			children = (
-				8006D46017BA7D7300453468 /* SPHBuildConfiguration.h */,
-				8006D46117BA7D7300453468 /* SPHBuildConfiguration.m */,
-				8006D46317BA7DAF00453468 /* SPHConfigurationList.h */,
-				8006D46417BA7DAF00453468 /* SPHConfigurationList.m */,
 				807513F817CE92C8009547A6 /* spxproj */,
+				8075141817CEB0CF009547A6 /* SXProject.h */,
+				8075141917CEB0CF009547A6 /* SXProject.m */,
+				8075141C17CEB339009547A6 /* SXGroup.h */,
+				8075141D17CEB339009547A6 /* SXGroup.m */,
+				8075142017CEB47D009547A6 /* SXFile.h */,
+				8075142117CEB47D009547A6 /* SXFile.m */,
+				8075142417CEB48D009547A6 /* SXTarget.h */,
+				8075142517CEB48D009547A6 /* SXTarget.m */,
+				8006D46017BA7D7300453468 /* SXBuildConfiguration.h */,
+				8006D46117BA7D7300453468 /* SXBuildConfiguration.m */,
+				8006D46317BA7DAF00453468 /* SXConfigurationList.h */,
+				8006D46417BA7DAF00453468 /* SXConfigurationList.m */,
 			);
 			name = "Sphere Workspace";
 			sourceTree = "<group>";
@@ -882,7 +913,6 @@
 				802F39A817B2BF32005B70C4 /* ThirdParty */,
 				8080592417B1B9AA004D1D41 /* PluginSystem */,
 				802F39C717B3DEF7005B70C4 /* Navigator */,
-				8006D46F17BA80AE00453468 /* Build_ */,
 				802F39D617B46994005B70C4 /* Project */,
 				802A640F17B47CF700597DB6 /* Main */,
 				8098F90517BFB5930070BC58 /* WelcomeWindow */,
@@ -1130,7 +1160,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8075140E17CEA1A6009547A6 /* SPXTargetDependency.h in Headers */,
+				8075141217CEA1B4009547A6 /* SPXBuildRule.h in Headers */,
+				8075142617CEB48D009547A6 /* SXTarget.h in Headers */,
 				80F07F8617CCEC7E002E582E /* STKBuilder.h in Headers */,
+				8075141617CEAF10009547A6 /* SPXShellScriptBuildPhase.h in Headers */,
+				8075141A17CEB0CF009547A6 /* SXProject.h in Headers */,
+				8075142217CEB47D009547A6 /* SXFile.h in Headers */,
+				8075140617CE9F47009547A6 /* SPXBuildPhase.h in Headers */,
+				8075140A17CEA0F9009547A6 /* SPXTarget.h in Headers */,
+				8075141E17CEB339009547A6 /* SXGroup.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1500,14 +1539,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8075141317CEA1B4009547A6 /* SPXBuildRule.m in Sources */,
 				80F07F8717CCEC7E002E582E /* STKBuilder.m in Sources */,
-				807513FB17CE97F9009547A6 /* SPHBuildConfiguration.m in Sources */,
-				807513FD17CE97F9009547A6 /* SPHConfigurationList.m in Sources */,
+				807513FB17CE97F9009547A6 /* SXBuildConfiguration.m in Sources */,
+				8075141B17CEB0CF009547A6 /* SXProject.m in Sources */,
+				807513FD17CE97F9009547A6 /* SXConfigurationList.m in Sources */,
+				8075142717CEB48D009547A6 /* SXTarget.m in Sources */,
 				807513FE17CE9807009547A6 /* SPXProject.m in Sources */,
 				807513FF17CE9807009547A6 /* SPXFileReference.m in Sources */,
+				8075141717CEAF10009547A6 /* SPXShellScriptBuildPhase.m in Sources */,
+				8075140F17CEA1A6009547A6 /* SPXTargetDependency.m in Sources */,
+				8075140B17CEA0F9009547A6 /* SPXTarget.m in Sources */,
 				8075140017CE9807009547A6 /* SPXGroup.m in Sources */,
 				8075140117CE9807009547A6 /* SPXSourcesBuildPhase.m in Sources */,
+				8075141F17CEB339009547A6 /* SXGroup.m in Sources */,
 				8075140217CE9807009547A6 /* SPXCopyFilesBuildPhase.m in Sources */,
+				8075142317CEB47D009547A6 /* SXFile.m in Sources */,
+				8075140717CE9F47009547A6 /* SPXBuildPhase.m in Sources */,
 				8075140317CE9807009547A6 /* SPXReference.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

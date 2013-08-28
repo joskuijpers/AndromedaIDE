@@ -13,7 +13,7 @@
 + (SPXFileReference *)fileReferenceForPath:(NSString *)path
 {
 	SPXFileReference *ref = [[self alloc] init];
-	ref.path = path;
+	ref.path = [path copy];
 	return ref;
 }
 

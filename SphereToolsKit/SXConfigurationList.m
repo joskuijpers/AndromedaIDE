@@ -6,8 +6,13 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "SPHConfigurationList.h"
+#import "SXConfigurationList.h"
 
-@implementation SPHConfigurationList
+@implementation SXConfigurationList
+
+- (void)applyDefaultConfiguration
+{
+	
+}
 
 @end

@@ -22,11 +22,7 @@
 
 - (instancetype)init
 {
-	self = [super init];
-	if(self) {
-		_children = [NSMutableArray array];
-	}
-	return self;
+	return [self initWithName:nil];
 }
 
 + (SPXGroup *)groupWithName:(NSString *)name

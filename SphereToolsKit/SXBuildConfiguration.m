@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import "SPHBuildConfiguration.h"
+#import "SXBuildConfiguration.h"
 
-@implementation SPHBuildConfiguration
+@implementation SXBuildConfiguration
 
 @end

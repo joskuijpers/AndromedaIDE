@@ -18,7 +18,7 @@ NSString * const kSPXProjectAttributeOrganizationName = @"organizationName";
 {
 	SPXProject *project = [[SPXProject alloc] init];
 
-	project.name = name;
+	project.name = [name copy];
 	project.mainGroup = [SPXGroup groupWithName:@"root"];
 
 	[project.mainGroup.children addObject:[SPXGroup groupWithName:name]];
@@ -58,6 +58,8 @@ NSString * const kSPXProjectAttributeOrganizationName = @"organizationName";
 		_name = [coder decodeObjectForKey:@"name"];
 		_attributes = [coder decodeObjectForKey:@"attributes"];
 		_mainGroup = [coder decodeObjectForKey:@"mainGroup"];
+		_productGroup = [coder decodeObjectForKey:@"productGroup"];
+		_targets = [coder decodeObjectForKey:@"targets"];
 	}
 	return self;
 }
@@ -67,6 +69,8 @@ NSString * const kSPXProjectAttributeOrganizationName = @"organizationName";
 	[coder encodeObject:_name forKey:@"name"];
 	[coder encodeObject:_attributes forKey:@"attributes"];
 	[coder encodeObject:_mainGroup forKey:@"mainGroup"];
+	[coder encodeObject:_productGroup forKey:@"productGroup"];
+	[coder encodeObject:_targets forKey:@"targets"];
 }
 
 @end

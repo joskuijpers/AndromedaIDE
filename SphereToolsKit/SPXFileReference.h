@@ -10,10 +10,12 @@
 
 @interface SPXFileReference : SPXReference
 
+@property (copy) NSString *path;
+@property (copy) NSString *lastKnownFileType;
 @property (assign) NSStringEncoding fileEncoding;
-@property (strong) NSString *lastKnownFileType;
-@property (strong) NSString *path;
 
 + (SPXFileReference *)fileReferenceForPath:(NSString *)path;
+
+// - (void)build;
 
 @end

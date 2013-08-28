@@ -6,11 +6,8 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SPXBuildPhase.h"
 
-@interface SPXSourcesBuildPhase : NSObject
-
-@property (strong) NSArray *files; // buildfile/fileref
-@property (assign) BOOL runOnlyForDesploymentPostprocessing;
+@interface SPXSourcesBuildPhase : SPXBuildPhase
 
 @end

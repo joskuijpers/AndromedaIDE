@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SPHBuildConfiguration : NSObject
+@interface SXBuildConfiguration : NSObject
 
 @property (strong) NSDictionary *buildSettings;
 @property (strong) NSString *name;

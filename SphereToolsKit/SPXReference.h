@@ -10,7 +10,7 @@
 
 @interface SPXReference : NSObject <NSCoding>
 
-@property (strong) NSString *name;
-@property (strong) NSString *sourceTree;
+@property (copy) NSString *name;
+@property (copy) NSString *sourceTree;
 
 @end

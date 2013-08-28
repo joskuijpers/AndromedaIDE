@@ -6,14 +6,11 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SPXBuildPhase.h"
 
-@interface SPXCopyFilesBuildPhase : NSObject
+@interface SPXCopyFilesBuildPhase : SPXBuildPhase
 
-@property (strong) NSString *name;
-@property (strong) NSString *destinationPath;
-@property (strong) NSArray *files; // buildfile/fileref
-@property (assign) BOOL runOnlyForDesploymentPostprocessing;
-@property (assign) NSUInteger destinationSubfolderSpecification;
+@property (copy) NSString *destinationPath;
+@property (assign) NSInteger destinationSubfolderSpecification;
 
 @end
