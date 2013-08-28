@@ -1909,10 +1909,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sphere/Sphere-Prefix.pch";
 				INFOPLIST_FILE = "Sphere/Sphere-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/system",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				LLVM_LTO = NO;
 				PRODUCT_NAME = Sphere;
 				WRAPPER_EXTENSION = app;
@@ -1927,10 +1924,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sphere/Sphere-Prefix.pch";
 				INFOPLIST_FILE = "Sphere/Sphere-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/system",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				LLVM_LTO = YES;
 				PRODUCT_NAME = Sphere;
 				WRAPPER_EXTENSION = app;
