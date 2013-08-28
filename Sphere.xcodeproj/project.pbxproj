@@ -90,6 +90,12 @@
 		8075142317CEB47D009547A6 /* SXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075142117CEB47D009547A6 /* SXFile.m */; };
 		8075142617CEB48D009547A6 /* SXTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075142417CEB48D009547A6 /* SXTarget.h */; };
 		8075142717CEB48D009547A6 /* SXTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075142517CEB48D009547A6 /* SXTarget.m */; };
+		8075142E17CEB9BF009547A6 /* STKAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075142C17CEB9BF009547A6 /* STKAnalyzer.h */; };
+		8075142F17CEB9BF009547A6 /* STKAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075142D17CEB9BF009547A6 /* STKAnalyzer.m */; };
+		8075143217CEB9CE009547A6 /* STKAnalyzerResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075143017CEB9CE009547A6 /* STKAnalyzerResult.h */; };
+		8075143317CEB9CE009547A6 /* STKAnalyzerResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075143117CEB9CE009547A6 /* STKAnalyzerResult.m */; };
+		8075143817CEBBE6009547A6 /* STKAnalyzerReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8075143617CEBBE6009547A6 /* STKAnalyzerReport.h */; };
+		8075143917CEBBE6009547A6 /* STKAnalyzerReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075143717CEBBE6009547A6 /* STKAnalyzerReport.m */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
 		808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 808058F717B1B6C0004D1D41 /* Credits.rtf */; };
@@ -364,6 +370,15 @@
 		8075142117CEB47D009547A6 /* SXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXFile.m; sourceTree = "<group>"; };
 		8075142417CEB48D009547A6 /* SXTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTarget.h; sourceTree = "<group>"; };
 		8075142517CEB48D009547A6 /* SXTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTarget.m; sourceTree = "<group>"; };
+		8075142C17CEB9BF009547A6 /* STKAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKAnalyzer.h; sourceTree = "<group>"; };
+		8075142D17CEB9BF009547A6 /* STKAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKAnalyzer.m; sourceTree = "<group>"; };
+		8075143017CEB9CE009547A6 /* STKAnalyzerResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKAnalyzerResult.h; sourceTree = "<group>"; };
+		8075143117CEB9CE009547A6 /* STKAnalyzerResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKAnalyzerResult.m; sourceTree = "<group>"; };
+		8075143417CEB9DA009547A6 /* STKAnalyzerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKAnalyzerDelegate.h; sourceTree = "<group>"; };
+		8075143517CEBB07009547A6 /* STKAnalyzerResult_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKAnalyzerResult_Private.h; sourceTree = "<group>"; };
+		8075143617CEBBE6009547A6 /* STKAnalyzerReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKAnalyzerReport.h; sourceTree = "<group>"; };
+		8075143717CEBBE6009547A6 /* STKAnalyzerReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKAnalyzerReport.m; sourceTree = "<group>"; };
+		8075144217CEBCA5009547A6 /* STKAnalyzerReport_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKAnalyzerReport_Private.h; sourceTree = "<group>"; };
 		808058E517B1B6BF004D1D41 /* Sphere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sphere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -854,6 +869,45 @@
 			name = "Sphere Workspace";
 			sourceTree = "<group>";
 		};
+		8075142817CEB96B009547A6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				80F07F8417CCEC7E002E582E /* STKBuilder.h */,
+				80F07F8517CCEC7E002E582E /* STKBuilder.m */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		8075142917CEB975009547A6 /* Indexer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Indexer;
+			sourceTree = "<group>";
+		};
+		8075142A17CEB97A009547A6 /* Optimizer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Optimizer;
+			sourceTree = "<group>";
+		};
+		8075142B17CEB981009547A6 /* Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				8075142C17CEB9BF009547A6 /* STKAnalyzer.h */,
+				8075142D17CEB9BF009547A6 /* STKAnalyzer.m */,
+				8075143017CEB9CE009547A6 /* STKAnalyzerResult.h */,
+				8075143117CEB9CE009547A6 /* STKAnalyzerResult.m */,
+				8075143517CEBB07009547A6 /* STKAnalyzerResult_Private.h */,
+				8075143417CEB9DA009547A6 /* STKAnalyzerDelegate.h */,
+				8075143617CEBBE6009547A6 /* STKAnalyzerReport.h */,
+				8075143717CEBBE6009547A6 /* STKAnalyzerReport.m */,
+				8075144217CEBCA5009547A6 /* STKAnalyzerReport_Private.h */,
+			);
+			name = Analyzer;
+			sourceTree = "<group>";
+		};
 		808058DC17B1B6BF004D1D41 = {
 			isa = PBXGroup;
 			children = (
@@ -1070,11 +1124,13 @@
 		80F07F5B17CCE864002E582E /* SphereToolsKit */ = {
 			isa = PBXGroup;
 			children = (
+				8075142B17CEB981009547A6 /* Analyzer */,
+				8075142817CEB96B009547A6 /* Builder */,
+				8075142917CEB975009547A6 /* Indexer */,
+				8075142A17CEB97A009547A6 /* Optimizer */,
 				807513F917CE9334009547A6 /* Sphere Workspace */,
 				80F07F6217CCE864002E582E /* SphereToolsKit.h */,
 				80F07F5C17CCE864002E582E /* Supporting Files */,
-				80F07F8417CCEC7E002E582E /* STKBuilder.h */,
-				80F07F8517CCEC7E002E582E /* STKBuilder.m */,
 			);
 			path = SphereToolsKit;
 			sourceTree = "<group>";
@@ -1160,14 +1216,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8075143217CEB9CE009547A6 /* STKAnalyzerResult.h in Headers */,
 				8075140E17CEA1A6009547A6 /* SPXTargetDependency.h in Headers */,
 				8075141217CEA1B4009547A6 /* SPXBuildRule.h in Headers */,
 				8075142617CEB48D009547A6 /* SXTarget.h in Headers */,
 				80F07F8617CCEC7E002E582E /* STKBuilder.h in Headers */,
 				8075141617CEAF10009547A6 /* SPXShellScriptBuildPhase.h in Headers */,
+				8075143817CEBBE6009547A6 /* STKAnalyzerReport.h in Headers */,
 				8075141A17CEB0CF009547A6 /* SXProject.h in Headers */,
 				8075142217CEB47D009547A6 /* SXFile.h in Headers */,
 				8075140617CE9F47009547A6 /* SPXBuildPhase.h in Headers */,
+				8075142E17CEB9BF009547A6 /* STKAnalyzer.h in Headers */,
 				8075140A17CEA0F9009547A6 /* SPXTarget.h in Headers */,
 				8075141E17CEB339009547A6 /* SXGroup.h in Headers */,
 			);
@@ -1541,6 +1600,7 @@
 			files = (
 				8075141317CEA1B4009547A6 /* SPXBuildRule.m in Sources */,
 				80F07F8717CCEC7E002E582E /* STKBuilder.m in Sources */,
+				8075142F17CEB9BF009547A6 /* STKAnalyzer.m in Sources */,
 				807513FB17CE97F9009547A6 /* SXBuildConfiguration.m in Sources */,
 				8075141B17CEB0CF009547A6 /* SXProject.m in Sources */,
 				807513FD17CE97F9009547A6 /* SXConfigurationList.m in Sources */,
@@ -1550,7 +1610,9 @@
 				8075141717CEAF10009547A6 /* SPXShellScriptBuildPhase.m in Sources */,
 				8075140F17CEA1A6009547A6 /* SPXTargetDependency.m in Sources */,
 				8075140B17CEA0F9009547A6 /* SPXTarget.m in Sources */,
+				8075143917CEBBE6009547A6 /* STKAnalyzerReport.m in Sources */,
 				8075140017CE9807009547A6 /* SPXGroup.m in Sources */,
+				8075143317CEB9CE009547A6 /* STKAnalyzerResult.m in Sources */,
 				8075140117CE9807009547A6 /* SPXSourcesBuildPhase.m in Sources */,
 				8075141F17CEB339009547A6 /* SXGroup.m in Sources */,
 				8075140217CE9807009547A6 /* SPXCopyFilesBuildPhase.m in Sources */,
