@@ -42,12 +42,6 @@
 		802A641417B47D0E00597DB6 /* SPHMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* SPHMainSplitView.xib */; };
 		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A317B2BF25005B70C4 /* AGNSSplitView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		802F39BD17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39AF17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m */; };
-		802F39BE17B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39B217B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m */; };
-		802F39BF17B3CBCB005B70C4 /* CNSplitViewToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39B417B3CBCB005B70C4 /* CNSplitViewToolbarButton.m */; };
-		802F39C017B3CBCB005B70C4 /* CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39B617B3CBCB005B70C4 /* CNSplitViewToolbar.m */; };
-		802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39B817B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m */; };
-		802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39BB17B3CBCB005B70C4 /* CNSplitView.m */; };
 		802F39DB17B46E26005B70C4 /* SPHMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39DA17B46E26005B70C4 /* SPHMainWindowController.m */; };
 		80345A4917B5B63D00170EFD /* IDEProjectNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4717B5B63D00170EFD /* IDEProjectNavigatorViewController.m */; };
 		80345A4A17B5B63D00170EFD /* IDEProjectNavigatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80345A4817B5B63D00170EFD /* IDEProjectNavigatorView.xib */; };
@@ -70,6 +64,14 @@
 		80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* IDEPlugin.m */; };
 		80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */; };
 		80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* IDEPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		807513FB17CE97F9009547A6 /* SPHBuildConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46117BA7D7300453468 /* SPHBuildConfiguration.m */; };
+		807513FD17CE97F9009547A6 /* SPHConfigurationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46417BA7DAF00453468 /* SPHConfigurationList.m */; };
+		807513FE17CE9807009547A6 /* SPXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D45E17BA79FA00453468 /* SPXProject.m */; };
+		807513FF17CE9807009547A6 /* SPXFileReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D45A17BA799E00453468 /* SPXFileReference.m */; };
+		8075140017CE9807009547A6 /* SPXGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D45717BA797F00453468 /* SPXGroup.m */; };
+		8075140117CE9807009547A6 /* SPXSourcesBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46A17BA7EA800453468 /* SPXSourcesBuildPhase.m */; };
+		8075140217CE9807009547A6 /* SPXCopyFilesBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46D17BA7EDA00453468 /* SPXCopyFilesBuildPhase.m */; };
+		8075140317CE9807009547A6 /* SPXReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC29E417C7E9AD005D4D54 /* SPXReference.m */; };
 		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
 		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
 		808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 808058F717B1B6C0004D1D41 /* Credits.rtf */; };
@@ -1460,7 +1462,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				802F39C217B3CBCB005B70C4 /* CNSplitView.m in Sources */,
 				802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */,
 				8098F90417BFB58E0070BC58 /* SPHWelcomeWindowController.m in Sources */,
 				8098F95917BFCC990070BC58 /* SPHWelcomeMainView.m in Sources */,
@@ -1471,19 +1472,14 @@
 				8006D4C117BBCF5800453468 /* SPHPlugin.m in Sources */,
 				80345A4D17B5BCE700170EFD /* IDEProjectNavigatorItem.m in Sources */,
 				80AC29DD17C6DEAF005D4D54 /* SPHNewFileSheetController.m in Sources */,
-				802F39BF17B3CBCB005B70C4 /* CNSplitViewToolbarButton.m in Sources */,
-				802F39BD17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m in Sources */,
 				808058FC17B1B6C0004D1D41 /* IDEProjectDocument.m in Sources */,
 				8006D4FC17BBF1A800453468 /* SPHPluginLoadRule.m in Sources */,
-				802F39BE17B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m in Sources */,
 				8098F96717C01B450070BC58 /* SPHWelcomeListRowView.m in Sources */,
 				8006D4BE17BA897900453468 /* SPHApplicationDelegate.m in Sources */,
 				80AC298D17C6D818005D4D54 /* SPHDocumentController.m in Sources */,
 				802F39DB17B46E26005B70C4 /* SPHMainWindowController.m in Sources */,
 				808058F517B1B6C0004D1D41 /* main.m in Sources */,
 				802A641317B47D0E00597DB6 /* SPHMainSplitViewController.m in Sources */,
-				802F39C117B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m in Sources */,
-				802F39C017B3CBCB005B70C4 /* CNSplitViewToolbar.m in Sources */,
 				80AC29D817C6DE9F005D4D54 /* SPHNewProjectSheetController.m in Sources */,
 				8098F95617BFCA950070BC58 /* SPHWelcomeWindow.m in Sources */,
 				8006D4F917BBEBA900453468 /* SPHPluginExtensionPoint.m in Sources */,
@@ -1505,6 +1501,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				80F07F8717CCEC7E002E582E /* STKBuilder.m in Sources */,
+				807513FB17CE97F9009547A6 /* SPHBuildConfiguration.m in Sources */,
+				807513FD17CE97F9009547A6 /* SPHConfigurationList.m in Sources */,
+				807513FE17CE9807009547A6 /* SPXProject.m in Sources */,
+				807513FF17CE9807009547A6 /* SPXFileReference.m in Sources */,
+				8075140017CE9807009547A6 /* SPXGroup.m in Sources */,
+				8075140117CE9807009547A6 /* SPXSourcesBuildPhase.m in Sources */,
+				8075140217CE9807009547A6 /* SPXCopyFilesBuildPhase.m in Sources */,
+				8075140317CE9807009547A6 /* SPXReference.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
