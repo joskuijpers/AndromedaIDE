@@ -12,6 +12,8 @@
 	<dict>
 		<key>1D9641CB-C706-4FA0-A306-545773B01000</key>
 		<string>ssh://github.com/Jarvix/JSphere.git</string>
+		<key>A1E47B95-0A3C-463A-8DB3-8F28E5123262</key>
+		<string>git://github.com/v8/v8.git</string>
 		<key>D7588BC1-0743-4F12-9A54-95AA731DE318</key>
 		<string>https://github.com/phranck/CNSplitView.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>1D9641CB-C706-4FA0-A306-545773B01000</key>
 		<string>../..</string>
+		<key>A1E47B95-0A3C-463A-8DB3-8F28E5123262</key>
+		<string>../../../v8</string>
 		<key>D7588BC1-0743-4F12-9A54-95AA731DE318</key>
 		<string>../../CNSplitView</string>
 	</dict>
@@ -47,6 +51,14 @@
 			<string>1D9641CB-C706-4FA0-A306-545773B01000</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Sphere</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A1E47B95-0A3C-463A-8DB3-8F28E5123262</string>
+			<key>IDESourceControlWCCName</key>
+			<string>v8</string>
 		</dict>
 	</array>
 </dict>
