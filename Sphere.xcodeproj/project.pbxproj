@@ -106,6 +106,13 @@
 		80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* IDEPlugin.m */; };
 		80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */; };
 		80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* IDEPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		804E419517F48A71003D1D52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		804E419B17F48A71003D1D52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 804E419917F48A71003D1D52 /* InfoPlist.strings */; };
+		804E41A517F48A71003D1D52 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080590A17B1B6C0004D1D41 /* XCTest.framework */; };
+		804E41A617F48A71003D1D52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		804E41A917F48A71003D1D52 /* L8DebugFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E419417F48A71003D1D52 /* L8DebugFramework.framework */; };
+		804E41AF17F48A71003D1D52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 804E41AD17F48A71003D1D52 /* InfoPlist.strings */; };
+		804E41B117F48A71003D1D52 /* L8DebugFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 804E41B017F48A71003D1D52 /* L8DebugFrameworkTests.m */; };
 		807513FB17CE97F9009547A6 /* SXBuildConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46117BA7D7300453468 /* SXBuildConfiguration.m */; };
 		807513FD17CE97F9009547A6 /* SXConfigurationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46417BA7DAF00453468 /* SXConfigurationList.m */; };
 		807513FE17CE9807009547A6 /* SPXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D45E17BA79FA00453468 /* SPXProject.m */; };
@@ -263,6 +270,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
 			remoteInfo = SphereKit;
+		};
+		804E41A717F48A71003D1D52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804E419317F48A71003D1D52;
+			remoteInfo = L8DebugFramework;
 		};
 		80F07F8117CCEC15002E582E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -475,6 +489,15 @@
 		80345AC117BA73A600170EFD /* IDEPluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJavaScriptPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJavaScriptPluginDelegate.m; sourceTree = "<group>"; };
+		804E419417F48A71003D1D52 /* L8DebugFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = L8DebugFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E419817F48A71003D1D52 /* L8DebugFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "L8DebugFramework-Info.plist"; sourceTree = "<group>"; };
+		804E419A17F48A71003D1D52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		804E419C17F48A71003D1D52 /* L8DebugFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "L8DebugFramework-Prefix.pch"; sourceTree = "<group>"; };
+		804E419D17F48A71003D1D52 /* L8Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = L8Debug.h; sourceTree = "<group>"; };
+		804E41A417F48A71003D1D52 /* L8DebugFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L8DebugFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E41AC17F48A71003D1D52 /* L8DebugFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "L8DebugFrameworkTests-Info.plist"; sourceTree = "<group>"; };
+		804E41AE17F48A71003D1D52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		804E41B017F48A71003D1D52 /* L8DebugFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = L8DebugFrameworkTests.m; sourceTree = "<group>"; };
 		8075140417CE9F47009547A6 /* SPXBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXBuildPhase.h; sourceTree = "<group>"; };
 		8075140517CE9F47009547A6 /* SPXBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXBuildPhase.m; sourceTree = "<group>"; };
 		8075140817CEA0F9009547A6 /* SPXTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXTarget.h; sourceTree = "<group>"; };
@@ -632,6 +655,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				80345AB217BA6DE300170EFD /* SphereKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804E419017F48A71003D1D52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804E419517F48A71003D1D52 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804E41A117F48A71003D1D52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804E41A617F48A71003D1D52 /* Cocoa.framework in Frameworks */,
+				804E41A917F48A71003D1D52 /* L8DebugFramework.framework in Frameworks */,
+				804E41A517F48A71003D1D52 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1096,6 +1137,43 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		804E419617F48A71003D1D52 /* L8DebugFramework */ = {
+			isa = PBXGroup;
+			children = (
+				804E419D17F48A71003D1D52 /* L8Debug.h */,
+				804E419717F48A71003D1D52 /* Supporting Files */,
+			);
+			path = L8DebugFramework;
+			sourceTree = "<group>";
+		};
+		804E419717F48A71003D1D52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				804E419817F48A71003D1D52 /* L8DebugFramework-Info.plist */,
+				804E419917F48A71003D1D52 /* InfoPlist.strings */,
+				804E419C17F48A71003D1D52 /* L8DebugFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		804E41AA17F48A71003D1D52 /* L8DebugFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				804E41B017F48A71003D1D52 /* L8DebugFrameworkTests.m */,
+				804E41AB17F48A71003D1D52 /* Supporting Files */,
+			);
+			path = L8DebugFrameworkTests;
+			sourceTree = "<group>";
+		};
+		804E41AB17F48A71003D1D52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				804E41AC17F48A71003D1D52 /* L8DebugFrameworkTests-Info.plist */,
+				804E41AD17F48A71003D1D52 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		807513F817CE92C8009547A6 /* spxproj */ = {
 			isa = PBXGroup;
 			children = (
@@ -1193,8 +1271,10 @@
 				80F07F2917CCE58A002E582E /* SphereRuntime */,
 				80F07F5B17CCE864002E582E /* SphereToolsKit */,
 				8019140417E7C8D700A45BBE /* L8Framework */,
+				804E419617F48A71003D1D52 /* L8DebugFramework */,
 				8019147D17E8CF1600A45BBE /* L8Console */,
 				8019141817E7C8D700A45BBE /* L8FrameworkTests */,
+				804E41AA17F48A71003D1D52 /* L8DebugFrameworkTests */,
 				80F07F7D17CCE8B4002E582E /* Plugins */,
 				808058E717B1B6BF004D1D41 /* Frameworks */,
 				808058E617B1B6BF004D1D41 /* Products */,
@@ -1215,6 +1295,8 @@
 				8019140217E7C8D700A45BBE /* L8Framework.framework */,
 				8019141217E7C8D700A45BBE /* L8FrameworkTests.xctest */,
 				8019147A17E8CF1600A45BBE /* L8Console */,
+				804E419417F48A71003D1D52 /* L8DebugFramework.framework */,
+				804E41A417F48A71003D1D52 /* L8DebugFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1524,6 +1606,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		804E419117F48A71003D1D52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80F07F5617CCE864002E582E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1691,6 +1780,42 @@
 			productReference = 80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
+		804E419317F48A71003D1D52 /* L8DebugFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804E41B617F48A72003D1D52 /* Build configuration list for PBXNativeTarget "L8DebugFramework" */;
+			buildPhases = (
+				804E418F17F48A71003D1D52 /* Sources */,
+				804E419017F48A71003D1D52 /* Frameworks */,
+				804E419117F48A71003D1D52 /* Headers */,
+				804E419217F48A71003D1D52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = L8DebugFramework;
+			productName = L8DebugFramework;
+			productReference = 804E419417F48A71003D1D52 /* L8DebugFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		804E41A317F48A71003D1D52 /* L8DebugFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804E41B717F48A72003D1D52 /* Build configuration list for PBXNativeTarget "L8DebugFrameworkTests" */;
+			buildPhases = (
+				804E41A017F48A71003D1D52 /* Sources */,
+				804E41A117F48A71003D1D52 /* Frameworks */,
+				804E41A217F48A71003D1D52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804E41A817F48A71003D1D52 /* PBXTargetDependency */,
+			);
+			name = L8DebugFrameworkTests;
+			productName = L8DebugFrameworkTests;
+			productReference = 804E41A417F48A71003D1D52 /* L8DebugFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		808058E417B1B6BF004D1D41 /* Sphere */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8080591917B1B6C0004D1D41 /* Build configuration list for PBXNativeTarget "Sphere" */;
@@ -1767,6 +1892,9 @@
 					8019141117E7C8D700A45BBE = {
 						TestTargetID = 808058E417B1B6BF004D1D41;
 					};
+					804E41A317F48A71003D1D52 = {
+						TestTargetID = 808058E417B1B6BF004D1D41;
+					};
 				};
 			};
 			buildConfigurationList = 808058E017B1B6BF004D1D41 /* Build configuration list for PBXProject "Sphere" */;
@@ -1788,11 +1916,13 @@
 				80F07F5817CCE864002E582E /* SphereToolsKit */,
 				8006D47717BA840400453468 /* SphereRuntimeKit */,
 				8019140117E7C8D700A45BBE /* L8Framework */,
+				804E419317F48A71003D1D52 /* L8DebugFramework */,
 				8019141117E7C8D700A45BBE /* L8FrameworkTests */,
 				80345A8B17BA6D1600170EFD /* IDEJavaScriptEditor */,
 				80345A9B17BA6D2600170EFD /* IDEQuickLookEditor */,
 				8006D4D717BBE69C00453468 /* IDESourceCodeEditor */,
 				8019147917E8CF1600A45BBE /* L8Console */,
+				804E41A317F48A71003D1D52 /* L8DebugFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1851,6 +1981,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				80345AA317BA6D2600170EFD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804E419217F48A71003D1D52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804E419B17F48A71003D1D52 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804E41A217F48A71003D1D52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804E41AF17F48A71003D1D52 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1977,6 +2123,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8006D4C617BBD5FE00453468 /* IDEQuickLookPluginDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804E418F17F48A71003D1D52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804E41A017F48A71003D1D52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804E41B117F48A71003D1D52 /* L8DebugFrameworkTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2109,6 +2270,11 @@
 			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
 			targetProxy = 80345AB017BA6DDD00170EFD /* PBXContainerItemProxy */;
 		};
+		804E41A817F48A71003D1D52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 804E419317F48A71003D1D52 /* L8DebugFramework */;
+			targetProxy = 804E41A717F48A71003D1D52 /* PBXContainerItemProxy */;
+		};
 		80F07F8217CCEC15002E582E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80F07F5817CCE864002E582E /* SphereToolsKit */;
@@ -2169,6 +2335,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				80345AA217BA6D2600170EFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		804E419917F48A71003D1D52 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804E419A17F48A71003D1D52 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		804E41AD17F48A71003D1D52 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804E41AE17F48A71003D1D52 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2510,6 +2692,82 @@
 			};
 			name = Release;
 		};
+		804E41B217F48A72003D1D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "L8DebugFramework/L8DebugFramework-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "L8DebugFramework/L8DebugFramework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		804E41B317F48A72003D1D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "L8DebugFramework/L8DebugFramework-Prefix.pch";
+				INFOPLIST_FILE = "L8DebugFramework/L8DebugFramework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		804E41B417F48A72003D1D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sphere.app/Contents/MacOS/Sphere";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "L8DebugFramework/L8DebugFramework-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "L8DebugFrameworkTests/L8DebugFrameworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		804E41B517F48A72003D1D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sphere.app/Contents/MacOS/Sphere";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "L8DebugFramework/L8DebugFramework-Prefix.pch";
+				INFOPLIST_FILE = "L8DebugFrameworkTests/L8DebugFrameworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		8080591717B1B6C0004D1D41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2753,6 +3011,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		804E41B617F48A72003D1D52 /* Build configuration list for PBXNativeTarget "L8DebugFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804E41B217F48A72003D1D52 /* Debug */,
+				804E41B317F48A72003D1D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		804E41B717F48A72003D1D52 /* Build configuration list for PBXNativeTarget "L8DebugFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804E41B417F48A72003D1D52 /* Debug */,
+				804E41B517F48A72003D1D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		808058E017B1B6BF004D1D41 /* Build configuration list for PBXProject "Sphere" */ = {
 			isa = XCConfigurationList;
