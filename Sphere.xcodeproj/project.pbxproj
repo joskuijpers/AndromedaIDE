@@ -50,7 +50,6 @@
 		8019143617E7C9CD00A45BBE /* L8Value.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142E17E7C9CD00A45BBE /* L8Value.h */; };
 		8019143717E7C9CD00A45BBE /* L8Value.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019142F17E7C9CD00A45BBE /* L8Value.mm */; };
 		8019143817E7C9CD00A45BBE /* L8Export.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143017E7C9CD00A45BBE /* L8Export.h */; };
-		8019143917E7C9CD00A45BBE /* L8RuntimeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143117E7C9CD00A45BBE /* L8RuntimeDelegate.h */; };
 		8019143A17E7C9CD00A45BBE /* L8Reporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143217E7C9CD00A45BBE /* L8Reporter.h */; };
 		8019143B17E7C9CD00A45BBE /* L8Reporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019143317E7C9CD00A45BBE /* L8Reporter.mm */; };
 		8019144717E7C9D700A45BBE /* L8Runtime_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143C17E7C9D700A45BBE /* L8Runtime_Private.h */; };
@@ -113,6 +112,8 @@
 		804E41A917F48A71003D1D52 /* L8DebugFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E419417F48A71003D1D52 /* L8DebugFramework.framework */; };
 		804E41AF17F48A71003D1D52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 804E41AD17F48A71003D1D52 /* InfoPlist.strings */; };
 		804E41B117F48A71003D1D52 /* L8DebugFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 804E41B017F48A71003D1D52 /* L8DebugFrameworkTests.m */; };
+		804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E41B817F48E04003D1D52 /* L8StackTrace.h */; };
+		804E41BB17F48E04003D1D52 /* L8StackTrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 804E41B917F48E04003D1D52 /* L8StackTrace.mm */; };
 		807513FB17CE97F9009547A6 /* SXBuildConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46117BA7D7300453468 /* SXBuildConfiguration.m */; };
 		807513FD17CE97F9009547A6 /* SXConfigurationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46417BA7DAF00453468 /* SXConfigurationList.m */; };
 		807513FE17CE9807009547A6 /* SPXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D45E17BA79FA00453468 /* SPXProject.m */; };
@@ -407,7 +408,6 @@
 		8019142E17E7C9CD00A45BBE /* L8Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8Value.h; sourceTree = "<group>"; };
 		8019142F17E7C9CD00A45BBE /* L8Value.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = L8Value.mm; sourceTree = "<group>"; };
 		8019143017E7C9CD00A45BBE /* L8Export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8Export.h; sourceTree = "<group>"; };
-		8019143117E7C9CD00A45BBE /* L8RuntimeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8RuntimeDelegate.h; sourceTree = "<group>"; };
 		8019143217E7C9CD00A45BBE /* L8Reporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8Reporter.h; sourceTree = "<group>"; };
 		8019143317E7C9CD00A45BBE /* L8Reporter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = L8Reporter.mm; sourceTree = "<group>"; };
 		8019143C17E7C9D700A45BBE /* L8Runtime_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8Runtime_Private.h; sourceTree = "<group>"; };
@@ -498,6 +498,9 @@
 		804E41AC17F48A71003D1D52 /* L8DebugFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "L8DebugFrameworkTests-Info.plist"; sourceTree = "<group>"; };
 		804E41AE17F48A71003D1D52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		804E41B017F48A71003D1D52 /* L8DebugFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = L8DebugFrameworkTests.m; sourceTree = "<group>"; };
+		804E41B817F48E04003D1D52 /* L8StackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8StackTrace.h; sourceTree = "<group>"; };
+		804E41B917F48E04003D1D52 /* L8StackTrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = L8StackTrace.mm; sourceTree = "<group>"; };
+		804E41BC17F48E37003D1D52 /* L8StackTrace_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = L8StackTrace_Private.h; sourceTree = "<group>"; };
 		8075140417CE9F47009547A6 /* SPXBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXBuildPhase.h; sourceTree = "<group>"; };
 		8075140517CE9F47009547A6 /* SPXBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXBuildPhase.m; sourceTree = "<group>"; };
 		8075140817CEA0F9009547A6 /* SPXTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXTarget.h; sourceTree = "<group>"; };
@@ -889,15 +892,11 @@
 		8019145317E7C9E400A45BBE /* L8 */ = {
 			isa = PBXGroup;
 			children = (
-				8019142A17E7C9C100A45BBE /* L8.h */,
-				8019142C17E7C9CD00A45BBE /* L8Runtime.h */,
+				804E41BD17F5B283003D1D52 /* Public */,
 				8019142D17E7C9CD00A45BBE /* L8Runtime.mm */,
-				8019142E17E7C9CD00A45BBE /* L8Value.h */,
 				8019142F17E7C9CD00A45BBE /* L8Value.mm */,
-				8019143017E7C9CD00A45BBE /* L8Export.h */,
-				8019143117E7C9CD00A45BBE /* L8RuntimeDelegate.h */,
-				8019143217E7C9CD00A45BBE /* L8Reporter.h */,
 				8019143317E7C9CD00A45BBE /* L8Reporter.mm */,
+				804E41B917F48E04003D1D52 /* L8StackTrace.mm */,
 				8019145217E7C9DE00A45BBE /* Private */,
 			);
 			name = L8;
@@ -951,6 +950,7 @@
 				8019143C17E7C9D700A45BBE /* L8Runtime_Private.h */,
 				8019143D17E7C9D700A45BBE /* L8Value_Private.h */,
 				8019143E17E7C9D700A45BBE /* L8Reporter_Private.h */,
+				804E41BC17F48E37003D1D52 /* L8StackTrace_Private.h */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -1172,6 +1172,19 @@
 				804E41AD17F48A71003D1D52 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		804E41BD17F5B283003D1D52 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8019142A17E7C9C100A45BBE /* L8.h */,
+				8019142C17E7C9CD00A45BBE /* L8Runtime.h */,
+				8019142E17E7C9CD00A45BBE /* L8Value.h */,
+				8019143017E7C9CD00A45BBE /* L8Export.h */,
+				8019143217E7C9CD00A45BBE /* L8Reporter.h */,
+				804E41B817F48E04003D1D52 /* L8StackTrace.h */,
+			);
+			name = Public;
 			sourceTree = "<group>";
 		};
 		807513F817CE92C8009547A6 /* spxproj */ = {
@@ -1575,11 +1588,11 @@
 				8019144917E7C9D700A45BBE /* L8Reporter_Private.h in Headers */,
 				8019143817E7C9CD00A45BBE /* L8Export.h in Headers */,
 				8019146217E7CA1000A45BBE /* v8config.h in Headers */,
+				804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */,
 				8019146017E7CA1000A45BBE /* v8-testing.h in Headers */,
 				8019144A17E7C9D700A45BBE /* NSString+L8.h in Headers */,
 				8019144C17E7C9D700A45BBE /* L8WrapperMap.h in Headers */,
 				8019143417E7C9CD00A45BBE /* L8Runtime.h in Headers */,
-				8019143917E7C9CD00A45BBE /* L8RuntimeDelegate.h in Headers */,
 				8019145D17E7CA1000A45BBE /* v8-debug.h in Headers */,
 				8019145E17E7CA1000A45BBE /* v8-preparser.h in Headers */,
 				8019143A17E7C9CD00A45BBE /* L8Reporter.h in Headers */,
@@ -2066,6 +2079,7 @@
 			files = (
 				8019145117E7C9D700A45BBE /* ObjCCallback.mm in Sources */,
 				8019144D17E7C9D700A45BBE /* L8WrapperMap.mm in Sources */,
+				804E41BB17F48E04003D1D52 /* L8StackTrace.mm in Sources */,
 				8019143B17E7C9CD00A45BBE /* L8Reporter.mm in Sources */,
 				8019144B17E7C9D700A45BBE /* NSString+L8.mm in Sources */,
 				8019143517E7C9CD00A45BBE /* L8Runtime.mm in Sources */,
