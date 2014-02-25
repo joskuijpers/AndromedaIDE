@@ -17,6 +17,5 @@
 #import "SRKFileRMP.h"
 #import "SRKSpriteSet.h"
 #import "SRKFont.h"
-#import "SRKFileRWS.h"
-//#import "SRKFileRFN.h"
+#import "SRKWindowStyle.h"
 #import "SRKImage.h"
