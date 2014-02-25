@@ -50,11 +50,32 @@
 {
 	self = [super init];
 	if(self) {
-		@throw [NSException exceptionWithName:@"NotImplementedException"
-									   reason:@"Not implemented"
-									 userInfo:nil];
+		_rawData = raw_data_from_nsimage(image,SRKImageFormatRGBA);
+		_rawSize = image.size;
+		_format = SRKImageFormatRGBA;
 	}
 	return self;
+}
+
+NSData *raw_data_from_nsimage(NSImage *image, SRKImageFormat format) {
+	NSData *imgData;
+	NSBitmapImageRep *bmpRep;
+	int size;
+
+	bmpRep = [image representations][0];
+
+	if(format == SRKImageFormatRGB && bmpRep.bitsPerPixel == 3*8) {
+		size = sizeof(srk_rgb_t) * image.size.width * image.size.height;
+		imgData = [NSData dataWithBytes:[bmpRep bitmapData] length:size];
+	} else if(format == SRKImageFormatRGBA && bmpRep.bitsPerPixel == 4*8) {
+		size = sizeof(srk_rgba_t) * image.size.width * image.size.height;
+		imgData = [NSData dataWithBytes:[bmpRep bitmapData] length:size];
+	} else { // Convert
+		NSLog(@"TODO");
+		return nil;
+	}
+
+	return imgData;
 }
 
 CGImageRef cgimage_from_raw_bitmap(NSSize size, NSData *data, SRKImageFormat format)
@@ -93,6 +114,7 @@ CGImageRef cgimage_from_raw_bitmap(NSSize size, NSData *data, SRKImageFormat for
 		NSMutableData *newBuf;
 		int bufSize;
 		uint8_t *oldBuf;
+		srk_rgba_t *newBufPtr;
 
 		bufSize = size.width * size.height * sizeof(srk_rgba_t);
 		if(data.length != size.width * size.height) {
@@ -100,15 +122,20 @@ CGImageRef cgimage_from_raw_bitmap(NSSize size, NSData *data, SRKImageFormat for
 			return NULL;
 		}
 
-		newBuf = [NSMutableData dataWithCapacity:bufSize];
+		newBuf = [NSMutableData dataWithLength:bufSize];
 		oldBuf = (uint8_t *)[data bytes];
+		newBufPtr = [newBuf mutableBytes];
 
 		// For every pixel, add an rgba pixel
-		NSLog(@"GrayScale image impl: len %lu",(unsigned long)newBuf.length);
-		for(int i = 0; i < data.length; i++) {
-//			[newBuf appe]
+		for(int i = 0; i < size.width * size.height; i++) {
+			newBufPtr->red = 0;
+			newBufPtr->green = 0;
+			newBufPtr->blue = 0;
+			newBufPtr->alpha = oldBuf[i];
+			newBufPtr++; // Next color
 		}
 
+		data = newBuf;
 		format = SRKImageFormatRGBA;
 	}
 
