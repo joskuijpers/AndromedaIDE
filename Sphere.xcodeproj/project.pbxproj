@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8006D47F17BA840400453468 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8006D47D17BA840400453468 /* InfoPlist.strings */; };
-		8006D48317BA840400453468 /* SphereRuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D48217BA840400453468 /* SphereRuntimeKit.m */; };
 		8006D49E17BA843800453468 /* SphereRuntimeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8006D47817BA840400453468 /* SphereRuntimeKit.framework */; };
 		8006D49F17BA847E00453468 /* SphereRuntimeKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 8006D47817BA840400453468 /* SphereRuntimeKit.framework */; };
-		8006D4A217BA84C300453468 /* SPRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D47117BA835800453468 /* SPRGame.m */; };
-		8006D4A317BA84CD00453468 /* SPRGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D47017BA835800453468 /* SPRGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8006D4A217BA84C300453468 /* SRKGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D47117BA835800453468 /* SRKGame.m */; };
+		8006D4A317BA84CD00453468 /* SRKGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D47017BA835800453468 /* SRKGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8006D4A417BA84CD00453468 /* SphereRuntimeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D48117BA840400453468 /* SphereRuntimeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8006D4A817BA880A00453468 /* IDEEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4A617BA880A00453468 /* IDEEditor.h */; };
 		8006D4A917BA880A00453468 /* IDEEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4A717BA880A00453468 /* IDEEditor.m */; };
@@ -44,13 +43,13 @@
 		8019141717E7C8D700A45BBE /* L8Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019140217E7C8D700A45BBE /* L8Framework.framework */; };
 		8019141D17E7C8D700A45BBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8019141B17E7C8D700A45BBE /* InfoPlist.strings */; };
 		8019141F17E7C8D700A45BBE /* L8ValueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8019141E17E7C8D700A45BBE /* L8ValueTests.m */; };
-		8019142B17E7C9C100A45BBE /* L8.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142A17E7C9C100A45BBE /* L8.h */; };
-		8019143417E7C9CD00A45BBE /* L8Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142C17E7C9CD00A45BBE /* L8Runtime.h */; };
+		8019142B17E7C9C100A45BBE /* L8.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142A17E7C9C100A45BBE /* L8.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8019143417E7C9CD00A45BBE /* L8Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142C17E7C9CD00A45BBE /* L8Runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8019143517E7C9CD00A45BBE /* L8Runtime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019142D17E7C9CD00A45BBE /* L8Runtime.mm */; };
-		8019143617E7C9CD00A45BBE /* L8Value.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142E17E7C9CD00A45BBE /* L8Value.h */; };
+		8019143617E7C9CD00A45BBE /* L8Value.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142E17E7C9CD00A45BBE /* L8Value.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8019143717E7C9CD00A45BBE /* L8Value.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019142F17E7C9CD00A45BBE /* L8Value.mm */; };
-		8019143817E7C9CD00A45BBE /* L8Export.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143017E7C9CD00A45BBE /* L8Export.h */; };
-		8019143A17E7C9CD00A45BBE /* L8Reporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143217E7C9CD00A45BBE /* L8Reporter.h */; };
+		8019143817E7C9CD00A45BBE /* L8Export.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143017E7C9CD00A45BBE /* L8Export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8019143A17E7C9CD00A45BBE /* L8Reporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143217E7C9CD00A45BBE /* L8Reporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8019143B17E7C9CD00A45BBE /* L8Reporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019143317E7C9CD00A45BBE /* L8Reporter.mm */; };
 		8019144717E7C9D700A45BBE /* L8Runtime_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143C17E7C9D700A45BBE /* L8Runtime_Private.h */; };
 		8019144817E7C9D700A45BBE /* L8Value_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143D17E7C9D700A45BBE /* L8Value_Private.h */; };
@@ -98,17 +97,40 @@
 		80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* IDEPlugin.m */; };
 		80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */; };
 		80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* IDEPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		804E419517F48A71003D1D52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
-		804E419B17F48A71003D1D52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 804E419917F48A71003D1D52 /* InfoPlist.strings */; };
-		804E41A517F48A71003D1D52 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080590A17B1B6C0004D1D41 /* XCTest.framework */; };
-		804E41A617F48A71003D1D52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
-		804E41A917F48A71003D1D52 /* L8DebugFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E419417F48A71003D1D52 /* L8DebugFramework.framework */; };
-		804E41AF17F48A71003D1D52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 804E41AD17F48A71003D1D52 /* InfoPlist.strings */; };
-		804E41B117F48A71003D1D52 /* L8DebugFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 804E41B017F48A71003D1D52 /* L8DebugFrameworkTests.m */; };
-		804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E41B817F48E04003D1D52 /* L8StackTrace.h */; };
+		803563A918BA496200696C5A /* L8Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563A718BA496200696C5A /* L8Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803563AA18BA496200696C5A /* L8Exception.mm in Sources */ = {isa = PBXBuildFile; fileRef = 803563A818BA496200696C5A /* L8Exception.mm */; };
+		803563AF18BA4AAC00696C5A /* L8NativeException.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563AD18BA4AAC00696C5A /* L8NativeException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803563B018BA4AAC00696C5A /* L8NativeException.mm in Sources */ = {isa = PBXBuildFile; fileRef = 803563AE18BA4AAC00696C5A /* L8NativeException.mm */; };
+		803563B218BA8AF400696C5A /* L8_Runtime_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563B118BA8AF400696C5A /* L8_Runtime_test.m */; };
+		803563B418BA8CA700696C5A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803563B318BA8CA700696C5A /* JavaScriptCore.framework */; };
+		803563B718BA98B600696C5A /* SPRConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563B618BA98B600696C5A /* SPRConsole.m */; };
+		803563BB18BA99F100696C5A /* SPRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563BA18BA99F100696C5A /* SPRGame.m */; };
+		803563C018BA9A5B00696C5A /* SPRResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563BF18BA9A5B00696C5A /* SPRResource.m */; };
+		803563C618BA9BC800696C5A /* SPRImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563C518BA9BC800696C5A /* SPRImage.m */; };
+		803563CA18BBE69500696C5A /* SRKFileSGM.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563C818BBE69500696C5A /* SRKFileSGM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803563CB18BBE69500696C5A /* SRKFileSGM.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563C918BBE69500696C5A /* SRKFileSGM.m */; };
+		803563CE18BBE6A300696C5A /* SRKFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563CC18BBE6A300696C5A /* SRKFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803563D018BBEC0500696C5A /* SphereRuntimeKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 8006D47817BA840400453468 /* SphereRuntimeKit.framework */; };
+		803563D518BBEDB000696C5A /* NSString+SRKUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563D318BBEDB000696C5A /* NSString+SRKUtilities.h */; };
+		803563D618BBEDB000696C5A /* NSString+SRKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563D418BBEDB000696C5A /* NSString+SRKUtilities.m */; };
+		803563DA18BBF2A600696C5A /* SRKFileRMP.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563D818BBF2A600696C5A /* SRKFileRMP.h */; };
+		803563DB18BBF2A600696C5A /* SRKFileRMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563D918BBF2A600696C5A /* SRKFileRMP.m */; };
+		803563DE18BBF2B500696C5A /* SRKSpriteSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563DC18BBF2B500696C5A /* SRKSpriteSet.h */; };
+		803563DF18BBF2B500696C5A /* SRKSpriteSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563DD18BBF2B500696C5A /* SRKSpriteSet.m */; };
+		803563E218BBF2DA00696C5A /* SRKFileRWS.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563E018BBF2DA00696C5A /* SRKFileRWS.h */; };
+		803563E318BBF2DA00696C5A /* SRKFileRWS.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563E118BBF2DA00696C5A /* SRKFileRWS.m */; };
+		803563E618BBFAE500696C5A /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563E418BBFAE500696C5A /* endian.h */; };
+		803563E718BBFAE500696C5A /* endian.c in Sources */ = {isa = PBXBuildFile; fileRef = 803563E518BBFAE500696C5A /* endian.c */; };
+		803563EB18BC0B5E00696C5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		803563ED18BC0B6600696C5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803563EC18BC0B6600696C5A /* CoreGraphics.framework */; };
+		803563F018BCC11A00696C5A /* SRKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563EE18BCC11A00696C5A /* SRKImage.h */; };
+		803563F118BCC11A00696C5A /* SRKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563EF18BCC11A00696C5A /* SRKImage.m */; };
+		803563F318BCE59600696C5A /* SRKFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563F218BCE59600696C5A /* SRKFile.m */; };
+		803563F618BCE9C500696C5A /* SRKFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563F418BCE9C500696C5A /* SRKFont.h */; };
+		803563F718BCE9C500696C5A /* SRKFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563F518BCE9C500696C5A /* SRKFont.m */; };
+		804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E41B817F48E04003D1D52 /* L8StackTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		804E41BB17F48E04003D1D52 /* L8StackTrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 804E41B917F48E04003D1D52 /* L8StackTrace.mm */; };
 		804E41C017F74673003D1D52 /* L8Runtime_Debugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E41BE17F74673003D1D52 /* L8Runtime_Debugging.h */; };
-		804E41C217F74AFE003D1D52 /* L8Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019140217E7C8D700A45BBE /* L8Framework.framework */; };
 		804E421717F762F8003D1D52 /* v8-debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421017F762F8003D1D52 /* v8-debug.h */; };
 		804E421817F762F8003D1D52 /* v8-preparser.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421117F762F8003D1D52 /* v8-preparser.h */; };
 		804E421917F762F8003D1D52 /* v8-profiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421217F762F8003D1D52 /* v8-profiler.h */; };
@@ -186,7 +208,7 @@
 		80F07F8617CCEC7E002E582E /* STKBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F07F8417CCEC7E002E582E /* STKBuilder.h */; };
 		80F07F8717CCEC7E002E582E /* STKBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F8517CCEC7E002E582E /* STKBuilder.m */; };
 		80F07F8817CCECA1002E582E /* SphereToolsKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 80F07F5917CCE864002E582E /* SphereToolsKit.framework */; };
-		80F07F8A17CCECC2002E582E /* SphereRuntimeKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 8006D47817BA840400453468 /* SphereRuntimeKit.framework */; };
+		80F07F8A17CCECC2002E582E /* SphereRuntimeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8006D47817BA840400453468 /* SphereRuntimeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,13 +234,6 @@
 			remoteInfo = IDESourceCodeEditor;
 		};
 		8019141517E7C8D700A45BBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8019140117E7C8D700A45BBE;
-			remoteInfo = L8Framework;
-		};
-		8019142617E7C92000A45BBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
 			proxyType = 1;
@@ -274,12 +289,12 @@
 			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
 			remoteInfo = SphereKit;
 		};
-		804E41A717F48A71003D1D52 /* PBXContainerItemProxy */ = {
+		803563D118BBEC0D00696C5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 804E419317F48A71003D1D52;
-			remoteInfo = L8DebugFramework;
+			remoteGlobalIDString = 8006D47717BA840400453468;
+			remoteInfo = SphereRuntimeKit;
 		};
 		80F07F8117CCEC15002E582E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -332,7 +347,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				80F07F8A17CCECC2002E582E /* SphereRuntimeKit.framework in Copy Private Frameworks */,
+				803563D018BBEC0500696C5A /* SphereRuntimeKit.framework in Copy Private Frameworks */,
 			);
 			name = "Copy Private Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,14 +369,13 @@
 		8006D46A17BA7EA800453468 /* SPXSourcesBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXSourcesBuildPhase.m; sourceTree = "<group>"; };
 		8006D46C17BA7EDA00453468 /* SPXCopyFilesBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXCopyFilesBuildPhase.h; sourceTree = "<group>"; };
 		8006D46D17BA7EDA00453468 /* SPXCopyFilesBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXCopyFilesBuildPhase.m; sourceTree = "<group>"; };
-		8006D47017BA835800453468 /* SPRGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRGame.h; sourceTree = "<group>"; };
-		8006D47117BA835800453468 /* SPRGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRGame.m; sourceTree = "<group>"; };
+		8006D47017BA835800453468 /* SRKGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKGame.h; sourceTree = "<group>"; };
+		8006D47117BA835800453468 /* SRKGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKGame.m; sourceTree = "<group>"; };
 		8006D47817BA840400453468 /* SphereRuntimeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SphereRuntimeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8006D47C17BA840400453468 /* SphereRuntimeKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereRuntimeKit-Info.plist"; sourceTree = "<group>"; };
 		8006D47E17BA840400453468 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8006D48017BA840400453468 /* SphereRuntimeKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SphereRuntimeKit-Prefix.pch"; sourceTree = "<group>"; };
 		8006D48117BA840400453468 /* SphereRuntimeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SphereRuntimeKit.h; sourceTree = "<group>"; };
-		8006D48217BA840400453468 /* SphereRuntimeKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SphereRuntimeKit.m; sourceTree = "<group>"; };
 		8006D4A617BA880A00453468 /* IDEEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditor.h; sourceTree = "<group>"; };
 		8006D4A717BA880A00453468 /* IDEEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEEditor.m; sourceTree = "<group>"; };
 		8006D4AF17BA885900453468 /* IDEUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEUtilities.h; sourceTree = "<group>"; };
@@ -484,15 +498,41 @@
 		80345AC117BA73A600170EFD /* IDEPluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJavaScriptPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJavaScriptPluginDelegate.m; sourceTree = "<group>"; };
-		804E419417F48A71003D1D52 /* L8DebugFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = L8DebugFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		804E419817F48A71003D1D52 /* L8DebugFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "L8DebugFramework-Info.plist"; sourceTree = "<group>"; };
-		804E419A17F48A71003D1D52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		804E419C17F48A71003D1D52 /* L8DebugFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "L8DebugFramework-Prefix.pch"; sourceTree = "<group>"; };
-		804E419D17F48A71003D1D52 /* L8Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = L8Debug.h; sourceTree = "<group>"; };
-		804E41A417F48A71003D1D52 /* L8DebugFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L8DebugFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		804E41AC17F48A71003D1D52 /* L8DebugFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "L8DebugFrameworkTests-Info.plist"; sourceTree = "<group>"; };
-		804E41AE17F48A71003D1D52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		804E41B017F48A71003D1D52 /* L8DebugFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = L8DebugFrameworkTests.m; sourceTree = "<group>"; };
+		803563A718BA496200696C5A /* L8Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8Exception.h; sourceTree = "<group>"; };
+		803563A818BA496200696C5A /* L8Exception.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = L8Exception.mm; sourceTree = "<group>"; };
+		803563AB18BA49A900696C5A /* L8Exception_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = L8Exception_Private.h; sourceTree = "<group>"; };
+		803563AD18BA4AAC00696C5A /* L8NativeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8NativeException.h; sourceTree = "<group>"; };
+		803563AE18BA4AAC00696C5A /* L8NativeException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = L8NativeException.mm; sourceTree = "<group>"; };
+		803563B118BA8AF400696C5A /* L8_Runtime_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L8_Runtime_test.m; sourceTree = "<group>"; };
+		803563B318BA8CA700696C5A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		803563B518BA98B600696C5A /* SPRConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRConsole.h; sourceTree = "<group>"; };
+		803563B618BA98B600696C5A /* SPRConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRConsole.m; sourceTree = "<group>"; };
+		803563B918BA99F100696C5A /* SPRGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRGame.h; sourceTree = "<group>"; };
+		803563BA18BA99F100696C5A /* SPRGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRGame.m; sourceTree = "<group>"; };
+		803563BE18BA9A5B00696C5A /* SPRResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRResource.h; sourceTree = "<group>"; };
+		803563BF18BA9A5B00696C5A /* SPRResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRResource.m; sourceTree = "<group>"; };
+		803563C418BA9BC800696C5A /* SPRImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRImage.h; sourceTree = "<group>"; };
+		803563C518BA9BC800696C5A /* SPRImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRImage.m; sourceTree = "<group>"; };
+		803563C818BBE69500696C5A /* SRKFileSGM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFileSGM.h; sourceTree = "<group>"; };
+		803563C918BBE69500696C5A /* SRKFileSGM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFileSGM.m; sourceTree = "<group>"; };
+		803563CC18BBE6A300696C5A /* SRKFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFile.h; sourceTree = "<group>"; };
+		803563D318BBEDB000696C5A /* NSString+SRKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SRKUtilities.h"; sourceTree = "<group>"; };
+		803563D418BBEDB000696C5A /* NSString+SRKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SRKUtilities.m"; sourceTree = "<group>"; };
+		803563D818BBF2A600696C5A /* SRKFileRMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFileRMP.h; sourceTree = "<group>"; };
+		803563D918BBF2A600696C5A /* SRKFileRMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFileRMP.m; sourceTree = "<group>"; };
+		803563DC18BBF2B500696C5A /* SRKSpriteSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKSpriteSet.h; sourceTree = "<group>"; };
+		803563DD18BBF2B500696C5A /* SRKSpriteSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKSpriteSet.m; sourceTree = "<group>"; };
+		803563E018BBF2DA00696C5A /* SRKFileRWS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFileRWS.h; sourceTree = "<group>"; };
+		803563E118BBF2DA00696C5A /* SRKFileRWS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFileRWS.m; sourceTree = "<group>"; };
+		803563E418BBFAE500696C5A /* endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = "<group>"; };
+		803563E518BBFAE500696C5A /* endian.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = endian.c; sourceTree = "<group>"; };
+		803563EC18BC0B6600696C5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		803563EE18BCC11A00696C5A /* SRKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKImage.h; sourceTree = "<group>"; };
+		803563EF18BCC11A00696C5A /* SRKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKImage.m; sourceTree = "<group>"; };
+		803563F218BCE59600696C5A /* SRKFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFile.m; sourceTree = "<group>"; };
+		803563F418BCE9C500696C5A /* SRKFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFont.h; sourceTree = "<group>"; };
+		803563F518BCE9C500696C5A /* SRKFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFont.m; sourceTree = "<group>"; };
+		803563FC18BCEBFC00696C5A /* SRKFile_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRKFile_Private.h; sourceTree = "<group>"; };
 		804E41B817F48E04003D1D52 /* L8StackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8StackTrace.h; sourceTree = "<group>"; };
 		804E41B917F48E04003D1D52 /* L8StackTrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = L8StackTrace.mm; sourceTree = "<group>"; };
 		804E41BC17F48E37003D1D52 /* L8StackTrace_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = L8StackTrace_Private.h; sourceTree = "<group>"; };
@@ -601,6 +641,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803563ED18BC0B6600696C5A /* CoreGraphics.framework in Frameworks */,
+				803563EB18BC0B5E00696C5A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,24 +706,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		804E419017F48A71003D1D52 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				804E419517F48A71003D1D52 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		804E41A117F48A71003D1D52 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				804E41A617F48A71003D1D52 /* Cocoa.framework in Frameworks */,
-				804E41A917F48A71003D1D52 /* L8DebugFramework.framework in Frameworks */,
-				804E41A517F48A71003D1D52 /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		808058E217B1B6BF004D1D41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -698,8 +722,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				804E41C217F74AFE003D1D52 /* L8Framework.framework in Frameworks */,
+				803563B418BA8CA700696C5A /* JavaScriptCore.framework in Frameworks */,
 				80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */,
+				80F07F8A17CCECC2002E582E /* SphereRuntimeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,9 +741,11 @@
 		8006D47A17BA840400453468 /* SphereRuntimeKit */ = {
 			isa = PBXGroup;
 			children = (
+				803563B818BA99B500696C5A /* Files */,
 				8006D4A117BA84B300453468 /* Game */,
 				8006D4A017BA84A000453468 /* Main */,
 				8006D47B17BA840400453468 /* Supporting Files */,
+				803563D718BBEDB700696C5A /* Categories */,
 			);
 			path = SphereRuntimeKit;
 			sourceTree = "<group>";
@@ -737,7 +764,6 @@
 			isa = PBXGroup;
 			children = (
 				8006D48117BA840400453468 /* SphereRuntimeKit.h */,
-				8006D48217BA840400453468 /* SphereRuntimeKit.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -745,8 +771,8 @@
 		8006D4A117BA84B300453468 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				8006D47017BA835800453468 /* SPRGame.h */,
-				8006D47117BA835800453468 /* SPRGame.m */,
+				8006D47017BA835800453468 /* SRKGame.h */,
+				8006D47117BA835800453468 /* SRKGame.m */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -845,6 +871,7 @@
 				8019145517E7C9FA00A45BBE /* V8 */,
 				8019145317E7C9E400A45BBE /* L8 */,
 				8019140517E7C8D700A45BBE /* Supporting Files */,
+				803563B118BA8AF400696C5A /* L8_Runtime_test.m */,
 			);
 			path = L8Framework;
 			sourceTree = "<group>";
@@ -897,11 +924,13 @@
 			isa = PBXGroup;
 			children = (
 				804E41BD17F5B283003D1D52 /* Public */,
+				8019145217E7C9DE00A45BBE /* Private */,
 				8019142D17E7C9CD00A45BBE /* L8Runtime.mm */,
 				8019142F17E7C9CD00A45BBE /* L8Value.mm */,
 				8019143317E7C9CD00A45BBE /* L8Reporter.mm */,
 				804E41B917F48E04003D1D52 /* L8StackTrace.mm */,
-				8019145217E7C9DE00A45BBE /* Private */,
+				803563A818BA496200696C5A /* L8Exception.mm */,
+				803563AE18BA4AAC00696C5A /* L8NativeException.mm */,
 			);
 			name = L8;
 			sourceTree = "<group>";
@@ -955,6 +984,7 @@
 				8019143D17E7C9D700A45BBE /* L8Value_Private.h */,
 				8019143E17E7C9D700A45BBE /* L8Reporter_Private.h */,
 				804E41BC17F48E37003D1D52 /* L8StackTrace_Private.h */,
+				803563AB18BA49A900696C5A /* L8Exception_Private.h */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -1141,46 +1171,81 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
-		804E419617F48A71003D1D52 /* L8DebugFramework */ = {
+		803563AC18BA4A8F00696C5A /* Exceptions */ = {
 			isa = PBXGroup;
 			children = (
-				804E419D17F48A71003D1D52 /* L8Debug.h */,
-				804E419717F48A71003D1D52 /* Supporting Files */,
+				803563A718BA496200696C5A /* L8Exception.h */,
+				803563AD18BA4AAC00696C5A /* L8NativeException.h */,
 			);
-			path = L8DebugFramework;
+			name = Exceptions;
 			sourceTree = "<group>";
 		};
-		804E419717F48A71003D1D52 /* Supporting Files */ = {
+		803563B818BA99B500696C5A /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				804E419817F48A71003D1D52 /* L8DebugFramework-Info.plist */,
-				804E419917F48A71003D1D52 /* InfoPlist.strings */,
-				804E419C17F48A71003D1D52 /* L8DebugFramework-Prefix.pch */,
+				803563CC18BBE6A300696C5A /* SRKFile.h */,
+				803563FC18BCEBFC00696C5A /* SRKFile_Private.h */,
+				803563F218BCE59600696C5A /* SRKFile.m */,
+				803563C818BBE69500696C5A /* SRKFileSGM.h */,
+				803563C918BBE69500696C5A /* SRKFileSGM.m */,
+				803563D818BBF2A600696C5A /* SRKFileRMP.h */,
+				803563D918BBF2A600696C5A /* SRKFileRMP.m */,
+				803563DC18BBF2B500696C5A /* SRKSpriteSet.h */,
+				803563DD18BBF2B500696C5A /* SRKSpriteSet.m */,
+				803563E018BBF2DA00696C5A /* SRKFileRWS.h */,
+				803563E118BBF2DA00696C5A /* SRKFileRWS.m */,
+				803563E418BBFAE500696C5A /* endian.h */,
+				803563E518BBFAE500696C5A /* endian.c */,
+				803563EE18BCC11A00696C5A /* SRKImage.h */,
+				803563EF18BCC11A00696C5A /* SRKImage.m */,
+				803563F418BCE9C500696C5A /* SRKFont.h */,
+				803563F518BCE9C500696C5A /* SRKFont.m */,
 			);
-			name = "Supporting Files";
+			name = Files;
 			sourceTree = "<group>";
 		};
-		804E41AA17F48A71003D1D52 /* L8DebugFrameworkTests */ = {
+		803563BC18BA99F900696C5A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				804E41B017F48A71003D1D52 /* L8DebugFrameworkTests.m */,
-				804E41AB17F48A71003D1D52 /* Supporting Files */,
+				803563B518BA98B600696C5A /* SPRConsole.h */,
+				803563B618BA98B600696C5A /* SPRConsole.m */,
+				803563BE18BA9A5B00696C5A /* SPRResource.h */,
+				803563BF18BA9A5B00696C5A /* SPRResource.m */,
 			);
-			path = L8DebugFrameworkTests;
+			name = Utilities;
 			sourceTree = "<group>";
 		};
-		804E41AB17F48A71003D1D52 /* Supporting Files */ = {
+		803563BD18BA99FF00696C5A /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				804E41AC17F48A71003D1D52 /* L8DebugFrameworkTests-Info.plist */,
-				804E41AD17F48A71003D1D52 /* InfoPlist.strings */,
+				803563B918BA99F100696C5A /* SPRGame.h */,
+				803563BA18BA99F100696C5A /* SPRGame.m */,
 			);
-			name = "Supporting Files";
+			name = Game;
+			sourceTree = "<group>";
+		};
+		803563C718BA9D5400696C5A /* JavaScript Library */ = {
+			isa = PBXGroup;
+			children = (
+				803563C418BA9BC800696C5A /* SPRImage.h */,
+				803563C518BA9BC800696C5A /* SPRImage.m */,
+			);
+			name = "JavaScript Library";
+			sourceTree = "<group>";
+		};
+		803563D718BBEDB700696C5A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				803563D318BBEDB000696C5A /* NSString+SRKUtilities.h */,
+				803563D418BBEDB000696C5A /* NSString+SRKUtilities.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		804E41BD17F5B283003D1D52 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				803563AC18BA4A8F00696C5A /* Exceptions */,
 				8019142A17E7C9C100A45BBE /* L8.h */,
 				8019142C17E7C9CD00A45BBE /* L8Runtime.h */,
 				8019142E17E7C9CD00A45BBE /* L8Value.h */,
@@ -1289,10 +1354,8 @@
 				80F07F2917CCE58A002E582E /* SphereRuntime */,
 				80F07F5B17CCE864002E582E /* SphereToolsKit */,
 				8019140417E7C8D700A45BBE /* L8Framework */,
-				804E419617F48A71003D1D52 /* L8DebugFramework */,
 				8019147D17E8CF1600A45BBE /* L8Console */,
 				8019141817E7C8D700A45BBE /* L8FrameworkTests */,
-				804E41AA17F48A71003D1D52 /* L8DebugFrameworkTests */,
 				80F07F7D17CCE8B4002E582E /* Plugins */,
 				808058E717B1B6BF004D1D41 /* Frameworks */,
 				808058E617B1B6BF004D1D41 /* Products */,
@@ -1313,8 +1376,6 @@
 				8019140217E7C8D700A45BBE /* L8Framework.framework */,
 				8019141217E7C8D700A45BBE /* L8FrameworkTests.xctest */,
 				8019147A17E8CF1600A45BBE /* L8Console */,
-				804E419417F48A71003D1D52 /* L8DebugFramework.framework */,
-				804E41A417F48A71003D1D52 /* L8DebugFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1322,6 +1383,8 @@
 		808058E717B1B6BF004D1D41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				803563EC18BC0B6600696C5A /* CoreGraphics.framework */,
+				803563B318BA8CA700696C5A /* JavaScriptCore.framework */,
 				8019146B17E7CE2800A45BBE /* libv8_base.x64.a */,
 				8019146C17E7CE2800A45BBE /* libv8_snapshot.a */,
 				802F39C317B3D242005B70C4 /* QuartzCore.framework */,
@@ -1551,8 +1614,11 @@
 		80F07F7F17CCE8D5002E582E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				803563C718BA9D5400696C5A /* JavaScript Library */,
 				80F07F3517CCE58A002E582E /* SPRAppDelegate.h */,
 				80F07F3617CCE58A002E582E /* SPRAppDelegate.m */,
+				803563BC18BA99F900696C5A /* Utilities */,
+				803563BD18BA99FF00696C5A /* Game */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -1572,8 +1638,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8006D4A317BA84CD00453468 /* SPRGame.h in Headers */,
+				803563DE18BBF2B500696C5A /* SRKSpriteSet.h in Headers */,
+				803563F618BCE9C500696C5A /* SRKFont.h in Headers */,
+				803563D518BBEDB000696C5A /* NSString+SRKUtilities.h in Headers */,
+				8006D4A317BA84CD00453468 /* SRKGame.h in Headers */,
+				803563CA18BBE69500696C5A /* SRKFileSGM.h in Headers */,
+				803563DA18BBF2A600696C5A /* SRKFileRMP.h in Headers */,
+				803563F018BCC11A00696C5A /* SRKImage.h in Headers */,
+				803563CE18BBE6A300696C5A /* SRKFile.h in Headers */,
+				803563E218BBF2DA00696C5A /* SRKFileRWS.h in Headers */,
 				8006D4A417BA84CD00453468 /* SphereRuntimeKit.h in Headers */,
+				803563E618BBFAE500696C5A /* endian.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1581,9 +1656,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8019142B17E7C9C100A45BBE /* L8.h in Headers */,
+				803563AF18BA4AAC00696C5A /* L8NativeException.h in Headers */,
+				8019143617E7C9CD00A45BBE /* L8Value.h in Headers */,
+				8019143817E7C9CD00A45BBE /* L8Export.h in Headers */,
+				804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */,
+				803563A918BA496200696C5A /* L8Exception.h in Headers */,
+				8019143417E7C9CD00A45BBE /* L8Runtime.h in Headers */,
+				8019143A17E7C9CD00A45BBE /* L8Reporter.h in Headers */,
 				804E421C17F762F8003D1D52 /* v8config.h in Headers */,
 				804E421917F762F8003D1D52 /* v8-profiler.h in Headers */,
-				8019142B17E7C9C100A45BBE /* L8.h in Headers */,
 				804E421B17F762F8003D1D52 /* v8.h in Headers */,
 				8019144717E7C9D700A45BBE /* L8Runtime_Private.h in Headers */,
 				8019145017E7C9D700A45BBE /* ObjCCallback.h in Headers */,
@@ -1591,17 +1673,12 @@
 				804E421717F762F8003D1D52 /* v8-debug.h in Headers */,
 				8019144817E7C9D700A45BBE /* L8Value_Private.h in Headers */,
 				8019144E17E7C9D700A45BBE /* ObjCRuntime+L8.h in Headers */,
-				8019143617E7C9CD00A45BBE /* L8Value.h in Headers */,
 				8019144917E7C9D700A45BBE /* L8Reporter_Private.h in Headers */,
 				804E41C017F74673003D1D52 /* L8Runtime_Debugging.h in Headers */,
-				8019143817E7C9CD00A45BBE /* L8Export.h in Headers */,
-				804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */,
 				804E421A17F762F8003D1D52 /* v8-testing.h in Headers */,
 				8019144A17E7C9D700A45BBE /* NSString+L8.h in Headers */,
 				8019144C17E7C9D700A45BBE /* L8WrapperMap.h in Headers */,
-				8019143417E7C9CD00A45BBE /* L8Runtime.h in Headers */,
 				804E421D17F762F8003D1D52 /* v8stdint.h in Headers */,
-				8019143A17E7C9CD00A45BBE /* L8Reporter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1622,13 +1699,6 @@
 				8006D4B117BA885900453468 /* IDEUtilities.h in Headers */,
 				8006D4D117BBDE2500453468 /* IDEFileInspector.h in Headers */,
 				80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		804E419117F48A71003D1D52 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1799,42 +1869,6 @@
 			productReference = 80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
-		804E419317F48A71003D1D52 /* L8DebugFramework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 804E41B617F48A72003D1D52 /* Build configuration list for PBXNativeTarget "L8DebugFramework" */;
-			buildPhases = (
-				804E418F17F48A71003D1D52 /* Sources */,
-				804E419017F48A71003D1D52 /* Frameworks */,
-				804E419117F48A71003D1D52 /* Headers */,
-				804E419217F48A71003D1D52 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = L8DebugFramework;
-			productName = L8DebugFramework;
-			productReference = 804E419417F48A71003D1D52 /* L8DebugFramework.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		804E41A317F48A71003D1D52 /* L8DebugFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 804E41B717F48A72003D1D52 /* Build configuration list for PBXNativeTarget "L8DebugFrameworkTests" */;
-			buildPhases = (
-				804E41A017F48A71003D1D52 /* Sources */,
-				804E41A117F48A71003D1D52 /* Frameworks */,
-				804E41A217F48A71003D1D52 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				804E41A817F48A71003D1D52 /* PBXTargetDependency */,
-			);
-			name = L8DebugFrameworkTests;
-			productName = L8DebugFrameworkTests;
-			productReference = 804E41A417F48A71003D1D52 /* L8DebugFrameworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		808058E417B1B6BF004D1D41 /* Sphere */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8080591917B1B6C0004D1D41 /* Build configuration list for PBXNativeTarget "Sphere" */;
@@ -1873,7 +1907,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				8019142717E7C92000A45BBE /* PBXTargetDependency */,
+				803563D218BBEC0D00696C5A /* PBXTargetDependency */,
 			);
 			name = SphereRuntime;
 			productName = SphereRuntime;
@@ -1911,9 +1945,6 @@
 					8019141117E7C8D700A45BBE = {
 						TestTargetID = 808058E417B1B6BF004D1D41;
 					};
-					804E41A317F48A71003D1D52 = {
-						TestTargetID = 808058E417B1B6BF004D1D41;
-					};
 				};
 			};
 			buildConfigurationList = 808058E017B1B6BF004D1D41 /* Build configuration list for PBXProject "Sphere" */;
@@ -1935,13 +1966,11 @@
 				80F07F5817CCE864002E582E /* SphereToolsKit */,
 				8006D47717BA840400453468 /* SphereRuntimeKit */,
 				8019140117E7C8D700A45BBE /* L8Framework */,
-				804E419317F48A71003D1D52 /* L8DebugFramework */,
 				8019141117E7C8D700A45BBE /* L8FrameworkTests */,
 				80345A8B17BA6D1600170EFD /* IDEJavaScriptEditor */,
 				80345A9B17BA6D2600170EFD /* IDEQuickLookEditor */,
 				8006D4D717BBE69C00453468 /* IDESourceCodeEditor */,
 				8019147917E8CF1600A45BBE /* L8Console */,
-				804E41A317F48A71003D1D52 /* L8DebugFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -2003,22 +2032,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		804E419217F48A71003D1D52 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				804E419B17F48A71003D1D52 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		804E41A217F48A71003D1D52 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				804E41AF17F48A71003D1D52 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		808058E317B1B6BF004D1D41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2065,8 +2078,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8006D48317BA840400453468 /* SphereRuntimeKit.m in Sources */,
-				8006D4A217BA84C300453468 /* SPRGame.m in Sources */,
+				803563F118BCC11A00696C5A /* SRKImage.m in Sources */,
+				803563DB18BBF2A600696C5A /* SRKFileRMP.m in Sources */,
+				803563DF18BBF2B500696C5A /* SRKSpriteSet.m in Sources */,
+				803563F718BCE9C500696C5A /* SRKFont.m in Sources */,
+				803563E718BBFAE500696C5A /* endian.c in Sources */,
+				803563E318BBF2DA00696C5A /* SRKFileRWS.m in Sources */,
+				803563D618BBEDB000696C5A /* NSString+SRKUtilities.m in Sources */,
+				803563F318BCE59600696C5A /* SRKFile.m in Sources */,
+				803563CB18BBE69500696C5A /* SRKFileSGM.m in Sources */,
+				8006D4A217BA84C300453468 /* SRKGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2083,12 +2104,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803563B018BA4AAC00696C5A /* L8NativeException.mm in Sources */,
+				803563AA18BA496200696C5A /* L8Exception.mm in Sources */,
 				8019145117E7C9D700A45BBE /* ObjCCallback.mm in Sources */,
 				8019144D17E7C9D700A45BBE /* L8WrapperMap.mm in Sources */,
 				804E41BB17F48E04003D1D52 /* L8StackTrace.mm in Sources */,
 				8019143B17E7C9CD00A45BBE /* L8Reporter.mm in Sources */,
 				8019144B17E7C9D700A45BBE /* NSString+L8.mm in Sources */,
 				8019143517E7C9CD00A45BBE /* L8Runtime.mm in Sources */,
+				803563B218BA8AF400696C5A /* L8_Runtime_test.m in Sources */,
 				8019144F17E7C9D700A45BBE /* ObjCRuntime+L8.mm in Sources */,
 				8019143717E7C9CD00A45BBE /* L8Value.mm in Sources */,
 			);
@@ -2146,21 +2170,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		804E418F17F48A71003D1D52 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		804E41A017F48A71003D1D52 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				804E41B117F48A71003D1D52 /* L8DebugFrameworkTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		808058E117B1B6BF004D1D41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2194,8 +2203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803563C618BA9BC800696C5A /* SPRImage.m in Sources */,
+				803563B718BA98B600696C5A /* SPRConsole.m in Sources */,
 				80F07F3717CCE58A002E582E /* SPRAppDelegate.m in Sources */,
 				80F07F3017CCE58A002E582E /* main.m in Sources */,
+				803563C018BA9A5B00696C5A /* SPRResource.m in Sources */,
+				803563BB18BA99F100696C5A /* SPRGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2250,11 +2263,6 @@
 			target = 8019140117E7C8D700A45BBE /* L8Framework */;
 			targetProxy = 8019141517E7C8D700A45BBE /* PBXContainerItemProxy */;
 		};
-		8019142717E7C92000A45BBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8019140117E7C8D700A45BBE /* L8Framework */;
-			targetProxy = 8019142617E7C92000A45BBE /* PBXContainerItemProxy */;
-		};
 		8019142917E7C93000A45BBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8019140117E7C8D700A45BBE /* L8Framework */;
@@ -2290,10 +2298,10 @@
 			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
 			targetProxy = 80345AB017BA6DDD00170EFD /* PBXContainerItemProxy */;
 		};
-		804E41A817F48A71003D1D52 /* PBXTargetDependency */ = {
+		803563D218BBEC0D00696C5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 804E419317F48A71003D1D52 /* L8DebugFramework */;
-			targetProxy = 804E41A717F48A71003D1D52 /* PBXContainerItemProxy */;
+			target = 8006D47717BA840400453468 /* SphereRuntimeKit */;
+			targetProxy = 803563D118BBEC0D00696C5A /* PBXContainerItemProxy */;
 		};
 		80F07F8217CCEC15002E582E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2355,22 +2363,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				80345AA217BA6D2600170EFD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		804E419917F48A71003D1D52 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				804E419A17F48A71003D1D52 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		804E41AD17F48A71003D1D52 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				804E41AE17F48A71003D1D52 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2712,82 +2704,6 @@
 			};
 			name = Release;
 		};
-		804E41B217F48A72003D1D52 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "L8DebugFramework/L8DebugFramework-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "L8DebugFramework/L8DebugFramework-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Debug;
-		};
-		804E41B317F48A72003D1D52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "L8DebugFramework/L8DebugFramework-Prefix.pch";
-				INFOPLIST_FILE = "L8DebugFramework/L8DebugFramework-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Release;
-		};
-		804E41B417F48A72003D1D52 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sphere.app/Contents/MacOS/Sphere";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "L8DebugFramework/L8DebugFramework-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "L8DebugFrameworkTests/L8DebugFrameworkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		804E41B517F48A72003D1D52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sphere.app/Contents/MacOS/Sphere";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "L8DebugFramework/L8DebugFramework-Prefix.pch";
-				INFOPLIST_FILE = "L8DebugFrameworkTests/L8DebugFrameworkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		8080591717B1B6C0004D1D41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2903,6 +2819,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "SphereRuntime/SphereRuntime-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2916,6 +2833,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SphereRuntime/SphereRuntime-Prefix.pch";
 				INFOPLIST_FILE = "SphereRuntime/SphereRuntime-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3031,22 +2949,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		804E41B617F48A72003D1D52 /* Build configuration list for PBXNativeTarget "L8DebugFramework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				804E41B217F48A72003D1D52 /* Debug */,
-				804E41B317F48A72003D1D52 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		804E41B717F48A72003D1D52 /* Build configuration list for PBXNativeTarget "L8DebugFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				804E41B417F48A72003D1D52 /* Debug */,
-				804E41B517F48A72003D1D52 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 		808058E017B1B6BF004D1D41 /* Build configuration list for PBXProject "Sphere" */ = {
 			isa = XCConfigurationList;

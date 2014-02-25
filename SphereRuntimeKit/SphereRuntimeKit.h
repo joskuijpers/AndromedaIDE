@@ -6,8 +6,16 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef __LITTLE_ENDIAN__
+# error Current code does not allow big endian systems
+#endif
 
-@interface SphereRuntimeKit : NSObject
+#import "SRKGame.h"
 
-@end
+#import "SRKFile.h"
+#import "SRKFileSGM.h"
+#import "SRKFileRMP.h"
+#import "SRKSpriteSet.h"
+#import "SRKFileRWS.h"
+//#import "SRKFileRFN.h"
+#import "SRKImage.h"
