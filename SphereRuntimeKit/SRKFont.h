@@ -10,4 +10,6 @@
 
 @interface SRKFont : SRKFile
 
+@property (readonly,strong) NSArray *characters; // SRKImage
+
 @end

@@ -52,13 +52,15 @@ typedef enum {
 	SRKImageFormatRGB,
 	SRKImageFormatRGBA,
 	SRKImageFormatBGR,
-	SRKImageFormatBGRA
+	SRKImageFormatBGRA,
+	SRKImageFormatGrayscale
 } SRKImageFormat;
 
 @interface SRKImage : NSImage <SRKFile>
 
 @property (readonly,assign) SRKImageFormat format;
 @property (readonly,strong) NSData *rawData;
+@property (readonly,assign) NSSize rawSize;
 
 - (instancetype)initWithRawBitmapData:(NSData *)data
 								 size:(NSSize)size

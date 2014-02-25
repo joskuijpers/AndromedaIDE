@@ -80,7 +80,6 @@ _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 {
 	NSData *fileContents;
 	NSError *error = NULL;
-	const uint8_t *bytes;
 	size_t filePos = 0;
 	srk_rss_header_t *header;
 
@@ -92,8 +91,6 @@ _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 		NSLog(@"Failed to load RSS file at %@: %@",path,error);
 		return NO;
 	}
-
-	bytes = [fileContents bytes];
 
 	// Read the header
 	if((header = srk_file_read_struct_proceed(fileContents,

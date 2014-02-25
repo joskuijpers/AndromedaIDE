@@ -31,24 +31,150 @@ _Static_assert(sizeof(srk_rfn_character_header_t) == 32,"wrong struct size");
 {
 	self = [super initWithPath:path];
 	if(self) {
-		if(![self loadFileAtPath:self.path])
+		@try {
+			if(![self loadFileAtPath:self.path])
+				return nil;
+		} @catch (NSException *ex) {
 			return nil;
+		}
 	}
 	return self;
 }
 
-// TODO: with every increase of FilePos, need to check for end of file
-// or better, before reading, check if the read (pointer assign) fits
-// to prevent segfaults
 - (BOOL)loadFileAtPath:(NSString *)path
 {
 	NSData *fileContents;
 	NSError *error = NULL;
-	const uint8_t *bytes;
-	uint32_t filePos = 0;
+	size_t filePos = 0;
 	srk_rfn_header_t *header;
+	NSMutableArray *characters;
 
-	return NO;
+	// Load the data
+	fileContents = [NSData dataWithContentsOfFile:path
+										  options:NSDataReadingMappedIfSafe
+											error:&error];
+	if(error) {
+		NSLog(@"Failed to load RFN file at %@: %@",path,error);
+		return NO;
+	}
+
+	// Read the header
+	if((header = srk_file_read_struct_proceed(fileContents,
+											  sizeof(srk_rfn_header_t),
+											  &filePos)) == NULL) {
+		NSLog(@"Failed to load RFN file at %@: file is invalid (0x1)",path);
+		return NO;
+	}
+
+	// Do a bunch of checks
+	if(memcmp(header->signature, ".rfn", 4) != 0) {
+		NSLog(@"Failed to load RFN file at %@: file is invalid (0x2)",path);
+		return NO;
+	}
+
+	if(header->version < 1 || header->version > 2) {
+		NSLog(@"Failed to load RFN file at %@: file is invalid (0x3)",path);
+		return NO;
+	}
+
+	if(header->num_characters == 0) {
+		NSLog(@"Failed to load RFN file at %@: file is invalid (0x4)",path);
+		return NO;
+	}
+
+	// Read all characters
+	characters = [[NSMutableArray alloc] initWithCapacity:header->num_characters];
+	for(int i = 0; i < header->num_characters; i++) {
+		srk_rfn_character_header_t *char_header;
+		SRKImage *image;
+
+		if((char_header = srk_file_read_struct_proceed(fileContents,
+												  sizeof(srk_rfn_character_header_t),
+												  &filePos)) == NULL) {
+			NSLog(@"Failed to load RFN file at %@: file is invalid (0x5)",path);
+			return NO;
+		}
+
+		if(char_header->width > 4096 || char_header->height > 4096) {
+			NSLog(@"Failed to load RFN file at %@: character %d is too big",path,i);
+			return NO;
+		}
+
+
+		if(header->version == 1) { // grayscale
+			NSData *imgData;
+
+			int size = char_header->width * char_header->height;
+			imgData = [fileContents subdataWithRange:NSMakeRange(filePos, size)];
+			filePos += size;
+
+			image = [[SRKImage alloc] initWithRawBitmapData:imgData
+													   size:NSMakeSize(char_header->width, char_header->height)
+													 format:SRKImageFormatGrayscale];
+			if(image == nil) {
+				NSLog(@"Failed to load RFN file at %@: failed to load glyph %d (0x6)",path,i);
+				return NO;
+			}
+		} else if(header->version == 2) { // rgba
+			NSData *imgData;
+
+			int size = char_header->width * char_header->height * sizeof(srk_rgba_t);
+			imgData = [fileContents subdataWithRange:NSMakeRange(filePos, size)];
+			filePos += size;
+
+			image = [[SRKImage alloc] initWithRawBitmapData:imgData
+													   size:NSMakeSize(char_header->width, char_header->height)
+													 format:SRKImageFormatRGBA];
+			if(image == nil) {
+				NSLog(@"Failed to load RFN file at %@: failed to load glyph %d (0x7)",path,i);
+				return NO;
+			}
+		}
+
+		characters[i] = image;
+	}
+
+	_characters = characters;
+
+	return YES;
+}
+
+- (BOOL)saveToFile:(NSString *)path
+{
+	NSMutableData *data;
+	srk_rfn_header_t header;
+	NSError *error = NULL;
+
+	data = [NSMutableData data];
+
+	// Fill the header
+	memset(&header, 0, sizeof(srk_rfn_header_t));
+	memcpy(header.signature, ".rfn", 4);
+	header.version = 2;
+	header.num_characters = _characters.count;
+	[data appendBytes:&header length:sizeof(srk_rfn_header_t)];
+
+	// Write glyphs
+	for(SRKImage *glyph in _characters) {
+		srk_rfn_character_header_t char_header;
+
+		memset(&char_header, 0, sizeof(srk_rfn_character_header_t));
+		char_header.width = glyph.rawSize.width;
+		char_header.height = glyph.rawSize.height;
+		[data appendBytes:&header length:sizeof(srk_rfn_character_header_t)];
+
+		[data appendData:[glyph rawDataWithFormat:SRKImageFormatRGBA]];
+	}
+
+	// Write the file
+	if(![data writeToFile:path
+			  options:NSDataWritingAtomic
+				error:&error]) {
+		NSLog(@"Failed to save RFN file to %@: %@",path,error);
+		return NO;
+	}
+
+	return YES;
 }
 
 @end

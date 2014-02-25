@@ -27,6 +27,7 @@
 	if(self) {
 		_format = format;
 		_rawData = data;
+		_rawSize = size;
 	}
 	return self;
 }
@@ -70,6 +71,7 @@ CGImageRef cgimage_from_raw_bitmap(NSSize size, NSData *data, SRKImageFormat for
 			bitmapInfo = kCGBitmapByteOrder32Big | kCGImageAlphaNone;
 			break;
 		case SRKImageFormatRGBA:
+		case SRKImageFormatGrayscale:
 			numComponents = 4;
 			bitmapInfo = kCGBitmapByteOrder32Big | kCGImageAlphaLast;
 			break;
@@ -84,6 +86,30 @@ CGImageRef cgimage_from_raw_bitmap(NSSize size, NSData *data, SRKImageFormat for
 		default:
 			NSLog(@"Failed to create image from data: %d is an invalid format.",format);
 			return NULL;
+	}
+
+	if(format == SRKImageFormatGrayscale) {
+		// TODO STUFF
+		NSMutableData *newBuf;
+		int bufSize;
+		uint8_t *oldBuf;
+
+		bufSize = size.width * size.height * sizeof(srk_rgba_t);
+		if(data.length != size.width * size.height) {
+			NSLog(@"Failed to convert grayscale image: data size incorrect");
+			return NULL;
+		}
+
+		newBuf = [NSMutableData dataWithCapacity:bufSize];
+		oldBuf = (uint8_t *)[data bytes];
+
+		// For every pixel, add an rgba pixel
+		NSLog(@"GrayScale image impl: len %lu",(unsigned long)newBuf.length);
+		for(int i = 0; i < data.length; i++) {
+//			[newBuf appe]
+		}
+
+		format = SRKImageFormatRGBA;
 	}
 
 	provider = CGDataProviderCreateWithCFData((CFDataRef)data);
@@ -129,7 +155,7 @@ NSImage *srk_nsimage_from_cgimage(CGImageRef imageRef, NSSize size)
 	NSBitmapImageRep *rep;
 	NSBitmapImageFileType fileType;
 
-	fileType = NSJPEGFileType;
+	fileType = NSPNGFileType;
 	if([[path pathExtension] isEqualToString:@"jpg"]
 	   || [[path pathExtension] isEqualToString:@"jpeg"])
 		fileType = NSJPEGFileType;
