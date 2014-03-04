@@ -15,14 +15,14 @@ typedef struct {
 	uint16_t version;
 	uint16_t num_characters;
 	uint8_t reserved[248];
-} srk_rfn_header_t;
+} __attribute__((packed)) srk_rfn_header_t;
 _Static_assert(sizeof(srk_rfn_header_t) == 256,"wrong struct size");
 
 typedef struct {
 	uint16_t width;
 	uint16_t height;
 	uint8_t reserved[28];
-} srk_rfn_character_header_t;
+} __attribute__((packed)) srk_rfn_character_header_t;
 _Static_assert(sizeof(srk_rfn_character_header_t) == 32,"wrong struct size");
 
 @implementation SRKFont
@@ -59,7 +59,7 @@ _Static_assert(sizeof(srk_rfn_character_header_t) == 32,"wrong struct size");
 	}
 
 	// Read the header
-	if((header = srk_file_read_struct_proceed(fileContents,
+	if((header = srk_file_read_struct(fileContents,
 											  sizeof(srk_rfn_header_t),
 											  &filePos)) == NULL) {
 		NSLog(@"Failed to load RFN file at %@: file is invalid (0x1)",path);
@@ -88,7 +88,7 @@ _Static_assert(sizeof(srk_rfn_character_header_t) == 32,"wrong struct size");
 		srk_rfn_character_header_t *char_header;
 		SRKImage *image;
 
-		if((char_header = srk_file_read_struct_proceed(fileContents,
+		if((char_header = srk_file_read_struct(fileContents,
 												  sizeof(srk_rfn_character_header_t),
 												  &filePos)) == NULL) {
 			NSLog(@"Failed to load RFN file at %@: file is invalid (0x5)",path);

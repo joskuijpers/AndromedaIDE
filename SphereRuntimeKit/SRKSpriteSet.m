@@ -27,20 +27,20 @@ typedef struct {
 	uint16_t base_x2;
 	uint16_t base_y2;
 	uint8_t reserved[106];
-} srk_rss_header_t;
+} __attribute__((packed)) srk_rss_header_t;
 _Static_assert(sizeof(srk_rss_header_t) == 128,"wrong struct size");
 
 typedef struct {
 	uint16_t num_frames;
 	uint8_t reserved[62];
-} srk_rss_direction_header_v2_t;
+} __attribute__((packed)) srk_rss_direction_header_v2_t;
 _Static_assert(sizeof(srk_rss_direction_header_v2_t) == 64,"wrong struct size");
 
 typedef struct {
 	uint16_t num_frames;
 	uint8_t reserved[6];
 	uint16_t name_length;
-} srk_rss_direction_header_v3_t;
+} __attribute__((packed)) srk_rss_direction_header_v3_t;
 _Static_assert(sizeof(srk_rss_direction_header_v3_t) == 10,"wrong struct size");
 
 typedef struct {
@@ -48,14 +48,14 @@ typedef struct {
 	uint16_t height;
 	uint16_t delay;
 	uint8_t reserved[26];
-} srk_rss_frame_header_v2_t;
+} __attribute__((packed)) srk_rss_frame_header_v2_t;
 _Static_assert(sizeof(srk_rss_frame_header_v2_t) == 32,"wrong struct size");
 
 typedef struct {
 	uint16_t index;
 	uint16_t delay;
 	uint8_t reserved[4];
-} srk_rss_frame_v3_t;
+} __attribute__((packed)) srk_rss_frame_v3_t;
 _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 
 #pragma mark - Implementation of file loading and saving
@@ -93,7 +93,7 @@ _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 	}
 
 	// Read the header
-	if((header = srk_file_read_struct_proceed(fileContents,
+	if((header = srk_file_read_struct(fileContents,
 											  sizeof(srk_rss_header_t),
 											  &filePos)) == NULL) {
 		NSLog(@"Failed to load RSS file at %@: file is invalid (0x1)",path);
@@ -188,7 +188,7 @@ _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 			SRKSpriteSetDirection *dir;
 			NSMutableArray *frames;
 
-			if((dir_header = srk_file_read_struct_proceed(fileContents,
+			if((dir_header = srk_file_read_struct(fileContents,
 													  sizeof(srk_rss_direction_header_v2_t),
 													  &filePos)) == NULL) {
 				NSLog(@"Failed to load RSS file at %@: file is invalid (0x5)",path);
@@ -209,7 +209,7 @@ _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 				SRKSpriteSetFrame *frame;
 				NSData *imgData;
 
-				if((frame_header = srk_file_read_struct_proceed(fileContents,
+				if((frame_header = srk_file_read_struct(fileContents,
 														  sizeof(srk_rss_frame_header_v2_t),
 														  &filePos)) == NULL) {
 					NSLog(@"Failed to load RSS file at %@: file is invalid (0x6)",path);
@@ -298,7 +298,7 @@ _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 			dir = [[SRKSpriteSetDirection alloc] init];
 
 			// Read the header
-			if((dir_header = srk_file_read_struct_proceed(fileContents,
+			if((dir_header = srk_file_read_struct(fileContents,
 													  sizeof(srk_rss_direction_header_v3_t),
 													  &filePos)) == NULL) {
 				NSLog(@"Failed to load RSS file at %@: file is invalid (0x7)",path);
@@ -311,7 +311,7 @@ _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 				return NO;
 			}
 
-			if((cname = srk_file_read_struct_proceed(fileContents,
+			if((cname = srk_file_read_struct(fileContents,
 													  dir_header->name_length,
 													  &filePos)) == NULL) {
 				NSLog(@"Failed to load RSS file at %@: file is invalid (0x9)",path);
@@ -331,7 +331,7 @@ _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 				srk_rss_frame_v3_t *cframe;
 				SRKSpriteSetFrame *frame;
 
-				if((cframe = srk_file_read_struct_proceed(fileContents,
+				if((cframe = srk_file_read_struct(fileContents,
 														  sizeof(srk_rss_frame_v3_t),
 														  &filePos)) == NULL) {
 					NSLog(@"Failed to load RSS file at %@: file is invalid (0xA)",path);

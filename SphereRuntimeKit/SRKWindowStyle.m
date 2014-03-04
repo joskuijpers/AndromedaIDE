@@ -18,13 +18,13 @@ typedef struct {
 	srk_rgba_t corner_colors[4];
 	uint8_t edge_offsets[4];
 	uint8_t reserved[36];
-} srk_rws_header_t;
+} __attribute__((packed)) srk_rws_header_t;
 _Static_assert(sizeof(srk_rws_header_t) == 64,"wrong struct size");
 
 typedef struct {
 	uint16_t width;
 	uint16_t height;
-} srk_rws_bitmap_header_t;
+} __attribute__((packed)) srk_rws_bitmap_header_t;
 _Static_assert(sizeof(srk_rws_bitmap_header_t) == 4,"wrong struct size");
 
 @implementation SRKWindowStyle {
@@ -88,7 +88,7 @@ _Static_assert(sizeof(srk_rws_bitmap_header_t) == 4,"wrong struct size");
 	}
 
 	// Read the header
-	if((header = srk_file_read_struct_proceed(fileContents,
+	if((header = srk_file_read_struct(fileContents,
 											  sizeof(srk_rws_header_t),
 											  &filePos)) == NULL) {
 		NSLog(@"Failed to load RWS file at %@: file is invalid (0x1)",path);
@@ -138,7 +138,7 @@ _Static_assert(sizeof(srk_rws_bitmap_header_t) == 4,"wrong struct size");
 	NSData *imgData;
 	SRKImage *image;
 
-	if((header = srk_file_read_struct_proceed(data,
+	if((header = srk_file_read_struct(data,
 											  sizeof(srk_rws_bitmap_header_t),
 											  filePos)) == NULL)
 		return nil;

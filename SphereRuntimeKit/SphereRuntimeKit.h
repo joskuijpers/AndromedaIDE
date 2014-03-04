@@ -14,8 +14,10 @@
 
 #import "SRKFile.h"
 #import "SRKFileSGM.h"
-#import "SRKFileRMP.h"
+#import "SRKMap.h"
 #import "SRKSpriteSet.h"
 #import "SRKFont.h"
 #import "SRKWindowStyle.h"
 #import "SRKImage.h"
+#import "SRKTileSet.h"
+#import "SRKObstructionMap.h"

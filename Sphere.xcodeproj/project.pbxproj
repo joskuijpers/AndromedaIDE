@@ -111,22 +111,21 @@
 		803563CB18BBE69500696C5A /* SRKFileSGM.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563C918BBE69500696C5A /* SRKFileSGM.m */; };
 		803563CE18BBE6A300696C5A /* SRKFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563CC18BBE6A300696C5A /* SRKFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563D018BBEC0500696C5A /* SphereRuntimeKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 8006D47817BA840400453468 /* SphereRuntimeKit.framework */; };
-		803563D518BBEDB000696C5A /* NSString+SRKUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563D318BBEDB000696C5A /* NSString+SRKUtilities.h */; };
+		803563D518BBEDB000696C5A /* NSString+SRKUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563D318BBEDB000696C5A /* NSString+SRKUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563D618BBEDB000696C5A /* NSString+SRKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563D418BBEDB000696C5A /* NSString+SRKUtilities.m */; };
-		803563DA18BBF2A600696C5A /* SRKFileRMP.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563D818BBF2A600696C5A /* SRKFileRMP.h */; };
-		803563DB18BBF2A600696C5A /* SRKFileRMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563D918BBF2A600696C5A /* SRKFileRMP.m */; };
-		803563DE18BBF2B500696C5A /* SRKSpriteSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563DC18BBF2B500696C5A /* SRKSpriteSet.h */; };
+		803563DA18BBF2A600696C5A /* SRKMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563D818BBF2A600696C5A /* SRKMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803563DB18BBF2A600696C5A /* SRKMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563D918BBF2A600696C5A /* SRKMap.m */; };
+		803563DE18BBF2B500696C5A /* SRKSpriteSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563DC18BBF2B500696C5A /* SRKSpriteSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563DF18BBF2B500696C5A /* SRKSpriteSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563DD18BBF2B500696C5A /* SRKSpriteSet.m */; };
-		803563E218BBF2DA00696C5A /* SRKFileRWS.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563E018BBF2DA00696C5A /* SRKFileRWS.h */; };
-		803563E318BBF2DA00696C5A /* SRKFileRWS.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563E118BBF2DA00696C5A /* SRKFileRWS.m */; };
-		803563E618BBFAE500696C5A /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563E418BBFAE500696C5A /* endian.h */; };
-		803563E718BBFAE500696C5A /* endian.c in Sources */ = {isa = PBXBuildFile; fileRef = 803563E518BBFAE500696C5A /* endian.c */; };
+		803563E218BBF2DA00696C5A /* SRKWindowStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563E018BBF2DA00696C5A /* SRKWindowStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803563E318BBF2DA00696C5A /* SRKWindowStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563E118BBF2DA00696C5A /* SRKWindowStyle.m */; };
+		803563E618BBFAE500696C5A /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563E418BBFAE500696C5A /* endian.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563EB18BC0B5E00696C5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		803563ED18BC0B6600696C5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803563EC18BC0B6600696C5A /* CoreGraphics.framework */; };
-		803563F018BCC11A00696C5A /* SRKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563EE18BCC11A00696C5A /* SRKImage.h */; };
+		803563F018BCC11A00696C5A /* SRKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563EE18BCC11A00696C5A /* SRKImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563F118BCC11A00696C5A /* SRKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563EF18BCC11A00696C5A /* SRKImage.m */; };
 		803563F318BCE59600696C5A /* SRKFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563F218BCE59600696C5A /* SRKFile.m */; };
-		803563F618BCE9C500696C5A /* SRKFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563F418BCE9C500696C5A /* SRKFont.h */; };
+		803563F618BCE9C500696C5A /* SRKFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563F418BCE9C500696C5A /* SRKFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563F718BCE9C500696C5A /* SRKFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563F518BCE9C500696C5A /* SRKFont.m */; };
 		804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E41B817F48E04003D1D52 /* L8StackTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		804E41BB17F48E04003D1D52 /* L8StackTrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 804E41B917F48E04003D1D52 /* L8StackTrace.mm */; };
@@ -196,6 +195,11 @@
 		80AC29DE17C6DEAF005D4D54 /* SPHNewFileSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC29DC17C6DEAF005D4D54 /* SPHNewFileSheet.xib */; };
 		80AC29E117C6DF50005D4D54 /* IDESheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AC29DF17C6DF50005D4D54 /* IDESheetController.h */; };
 		80AC29E217C6DF50005D4D54 /* IDESheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC29E017C6DF50005D4D54 /* IDESheetController.m */; };
+		80BB197018BD0885004CBF91 /* SRKFile_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563FC18BCEBFC00696C5A /* SRKFile_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		80BB197318C6761A004CBF91 /* SRKTileSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197118C6761A004CBF91 /* SRKTileSet.h */; };
+		80BB197418C6761A004CBF91 /* SRKTileSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB197218C6761A004CBF91 /* SRKTileSet.m */; };
+		80BB197818C680CD004CBF91 /* SRKObstructionMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197618C680CD004CBF91 /* SRKObstructionMap.h */; };
+		80BB197918C680CD004CBF91 /* SRKObstructionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB197718C680CD004CBF91 /* SRKObstructionMap.m */; };
 		80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80F07F2E17CCE58A002E582E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F2C17CCE58A002E582E /* InfoPlist.strings */; };
 		80F07F3017CCE58A002E582E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F2F17CCE58A002E582E /* main.m */; };
@@ -518,14 +522,13 @@
 		803563CC18BBE6A300696C5A /* SRKFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFile.h; sourceTree = "<group>"; };
 		803563D318BBEDB000696C5A /* NSString+SRKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SRKUtilities.h"; sourceTree = "<group>"; };
 		803563D418BBEDB000696C5A /* NSString+SRKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SRKUtilities.m"; sourceTree = "<group>"; };
-		803563D818BBF2A600696C5A /* SRKFileRMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFileRMP.h; sourceTree = "<group>"; };
-		803563D918BBF2A600696C5A /* SRKFileRMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFileRMP.m; sourceTree = "<group>"; };
+		803563D818BBF2A600696C5A /* SRKMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKMap.h; sourceTree = "<group>"; };
+		803563D918BBF2A600696C5A /* SRKMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKMap.m; sourceTree = "<group>"; };
 		803563DC18BBF2B500696C5A /* SRKSpriteSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKSpriteSet.h; sourceTree = "<group>"; };
 		803563DD18BBF2B500696C5A /* SRKSpriteSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKSpriteSet.m; sourceTree = "<group>"; };
-		803563E018BBF2DA00696C5A /* SRKFileRWS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFileRWS.h; sourceTree = "<group>"; };
-		803563E118BBF2DA00696C5A /* SRKFileRWS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFileRWS.m; sourceTree = "<group>"; };
+		803563E018BBF2DA00696C5A /* SRKWindowStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKWindowStyle.h; sourceTree = "<group>"; };
+		803563E118BBF2DA00696C5A /* SRKWindowStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKWindowStyle.m; sourceTree = "<group>"; };
 		803563E418BBFAE500696C5A /* endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = "<group>"; };
-		803563E518BBFAE500696C5A /* endian.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = endian.c; sourceTree = "<group>"; };
 		803563EC18BC0B6600696C5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		803563EE18BCC11A00696C5A /* SRKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKImage.h; sourceTree = "<group>"; };
 		803563EF18BCC11A00696C5A /* SRKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKImage.m; sourceTree = "<group>"; };
@@ -617,6 +620,11 @@
 		80AC29E017C6DF50005D4D54 /* IDESheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESheetController.m; sourceTree = "<group>"; };
 		80AC29E317C7E9AD005D4D54 /* SPXReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXReference.h; sourceTree = "<group>"; };
 		80AC29E417C7E9AD005D4D54 /* SPXReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXReference.m; sourceTree = "<group>"; };
+		80BB197118C6761A004CBF91 /* SRKTileSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKTileSet.h; sourceTree = "<group>"; };
+		80BB197218C6761A004CBF91 /* SRKTileSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKTileSet.m; sourceTree = "<group>"; };
+		80BB197518C67937004CBF91 /* SRKTileSet_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRKTileSet_Private.h; sourceTree = "<group>"; };
+		80BB197618C680CD004CBF91 /* SRKObstructionMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKObstructionMap.h; sourceTree = "<group>"; };
+		80BB197718C680CD004CBF91 /* SRKObstructionMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKObstructionMap.m; sourceTree = "<group>"; };
 		80F07F2717CCE58A002E582E /* SphereRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F07F2B17CCE58A002E582E /* SphereRuntime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereRuntime-Info.plist"; sourceTree = "<group>"; };
 		80F07F2D17CCE58A002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1188,18 +1196,22 @@
 				803563F218BCE59600696C5A /* SRKFile.m */,
 				803563C818BBE69500696C5A /* SRKFileSGM.h */,
 				803563C918BBE69500696C5A /* SRKFileSGM.m */,
-				803563D818BBF2A600696C5A /* SRKFileRMP.h */,
-				803563D918BBF2A600696C5A /* SRKFileRMP.m */,
+				803563D818BBF2A600696C5A /* SRKMap.h */,
+				803563D918BBF2A600696C5A /* SRKMap.m */,
 				803563DC18BBF2B500696C5A /* SRKSpriteSet.h */,
 				803563DD18BBF2B500696C5A /* SRKSpriteSet.m */,
-				803563E018BBF2DA00696C5A /* SRKFileRWS.h */,
-				803563E118BBF2DA00696C5A /* SRKFileRWS.m */,
+				803563E018BBF2DA00696C5A /* SRKWindowStyle.h */,
+				803563E118BBF2DA00696C5A /* SRKWindowStyle.m */,
 				803563E418BBFAE500696C5A /* endian.h */,
-				803563E518BBFAE500696C5A /* endian.c */,
 				803563EE18BCC11A00696C5A /* SRKImage.h */,
 				803563EF18BCC11A00696C5A /* SRKImage.m */,
 				803563F418BCE9C500696C5A /* SRKFont.h */,
 				803563F518BCE9C500696C5A /* SRKFont.m */,
+				80BB197118C6761A004CBF91 /* SRKTileSet.h */,
+				80BB197218C6761A004CBF91 /* SRKTileSet.m */,
+				80BB197518C67937004CBF91 /* SRKTileSet_Private.h */,
+				80BB197618C680CD004CBF91 /* SRKObstructionMap.h */,
+				80BB197718C680CD004CBF91 /* SRKObstructionMap.m */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -1638,17 +1650,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80BB197318C6761A004CBF91 /* SRKTileSet.h in Headers */,
 				803563DE18BBF2B500696C5A /* SRKSpriteSet.h in Headers */,
 				803563F618BCE9C500696C5A /* SRKFont.h in Headers */,
 				803563D518BBEDB000696C5A /* NSString+SRKUtilities.h in Headers */,
+				803563DA18BBF2A600696C5A /* SRKMap.h in Headers */,
+				803563F018BCC11A00696C5A /* SRKImage.h in Headers */,
+				803563E218BBF2DA00696C5A /* SRKWindowStyle.h in Headers */,
+				80BB197818C680CD004CBF91 /* SRKObstructionMap.h in Headers */,
+				803563E618BBFAE500696C5A /* endian.h in Headers */,
 				8006D4A317BA84CD00453468 /* SRKGame.h in Headers */,
 				803563CA18BBE69500696C5A /* SRKFileSGM.h in Headers */,
-				803563DA18BBF2A600696C5A /* SRKFileRMP.h in Headers */,
-				803563F018BCC11A00696C5A /* SRKImage.h in Headers */,
 				803563CE18BBE6A300696C5A /* SRKFile.h in Headers */,
-				803563E218BBF2DA00696C5A /* SRKFileRWS.h in Headers */,
 				8006D4A417BA84CD00453468 /* SphereRuntimeKit.h in Headers */,
-				803563E618BBFAE500696C5A /* endian.h in Headers */,
+				80BB197018BD0885004CBF91 /* SRKFile_Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2079,11 +2094,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				803563F118BCC11A00696C5A /* SRKImage.m in Sources */,
-				803563DB18BBF2A600696C5A /* SRKFileRMP.m in Sources */,
+				803563DB18BBF2A600696C5A /* SRKMap.m in Sources */,
 				803563DF18BBF2B500696C5A /* SRKSpriteSet.m in Sources */,
+				80BB197418C6761A004CBF91 /* SRKTileSet.m in Sources */,
 				803563F718BCE9C500696C5A /* SRKFont.m in Sources */,
-				803563E718BBFAE500696C5A /* endian.c in Sources */,
-				803563E318BBF2DA00696C5A /* SRKFileRWS.m in Sources */,
+				80BB197918C680CD004CBF91 /* SRKObstructionMap.m in Sources */,
+				803563E318BBF2DA00696C5A /* SRKWindowStyle.m in Sources */,
 				803563D618BBEDB000696C5A /* NSString+SRKUtilities.m in Sources */,
 				803563F318BCE59600696C5A /* SRKFile.m in Sources */,
 				803563CB18BBE69500696C5A /* SRKFileSGM.m in Sources */,
