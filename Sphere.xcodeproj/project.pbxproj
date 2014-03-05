@@ -196,18 +196,23 @@
 		80AC29E117C6DF50005D4D54 /* IDESheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AC29DF17C6DF50005D4D54 /* IDESheetController.h */; };
 		80AC29E217C6DF50005D4D54 /* IDESheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC29E017C6DF50005D4D54 /* IDESheetController.m */; };
 		80BB197018BD0885004CBF91 /* SRKFile_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563FC18BCEBFC00696C5A /* SRKFile_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		80BB197318C6761A004CBF91 /* SRKTileSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197118C6761A004CBF91 /* SRKTileSet.h */; };
+		80BB197318C6761A004CBF91 /* SRKTileSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197118C6761A004CBF91 /* SRKTileSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80BB197418C6761A004CBF91 /* SRKTileSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB197218C6761A004CBF91 /* SRKTileSet.m */; };
-		80BB197818C680CD004CBF91 /* SRKObstructionMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197618C680CD004CBF91 /* SRKObstructionMap.h */; };
+		80BB197818C680CD004CBF91 /* SRKObstructionMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197618C680CD004CBF91 /* SRKObstructionMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80BB197918C680CD004CBF91 /* SRKObstructionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB197718C680CD004CBF91 /* SRKObstructionMap.m */; };
-		80BB197C18C7698F004CBF91 /* SRKPlayList.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197A18C7698F004CBF91 /* SRKPlayList.h */; };
+		80BB197C18C7698F004CBF91 /* SRKPlayList.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197A18C7698F004CBF91 /* SRKPlayList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80BB197D18C7698F004CBF91 /* SRKPlayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB197B18C7698F004CBF91 /* SRKPlayList.m */; };
-		80BB198018C77073004CBF91 /* SRKAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197E18C77073004CBF91 /* SRKAnimation.h */; };
+		80BB198018C77073004CBF91 /* SRKAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197E18C77073004CBF91 /* SRKAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80BB198118C77073004CBF91 /* SRKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB197F18C77073004CBF91 /* SRKAnimation.m */; };
-		80BB198418C77082004CBF91 /* SRKMNGAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB198218C77082004CBF91 /* SRKMNGAnimation.h */; };
+		80BB198418C77082004CBF91 /* SRKMNGAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB198218C77082004CBF91 /* SRKMNGAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80BB198518C77082004CBF91 /* SRKMNGAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB198318C77082004CBF91 /* SRKMNGAnimation.m */; };
-		80BB198818C7708D004CBF91 /* SRKFLICAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB198618C7708D004CBF91 /* SRKFLICAnimation.h */; };
+		80BB198818C7708D004CBF91 /* SRKFLICAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB198618C7708D004CBF91 /* SRKFLICAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80BB198918C7708D004CBF91 /* SRKFLICAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB198718C7708D004CBF91 /* SRKFLICAnimation.m */; };
+		80BB198B18C770FB004CBF91 /* SRKTileSet_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB197518C67937004CBF91 /* SRKTileSet_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		80BB198F18C775F8004CBF91 /* SRKSound.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB198D18C775F8004CBF91 /* SRKSound.h */; };
+		80BB199018C775F8004CBF91 /* SRKSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB198E18C775F8004CBF91 /* SRKSound.m */; };
+		80BB199418C77613004CBF91 /* SRKResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB199218C77613004CBF91 /* SRKResource.h */; };
+		80BB199518C77613004CBF91 /* SRKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB199318C77613004CBF91 /* SRKResource.m */; };
 		80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80F07F2E17CCE58A002E582E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F2C17CCE58A002E582E /* InfoPlist.strings */; };
 		80F07F3017CCE58A002E582E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F2F17CCE58A002E582E /* main.m */; };
@@ -641,6 +646,10 @@
 		80BB198318C77082004CBF91 /* SRKMNGAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKMNGAnimation.m; sourceTree = "<group>"; };
 		80BB198618C7708D004CBF91 /* SRKFLICAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFLICAnimation.h; sourceTree = "<group>"; };
 		80BB198718C7708D004CBF91 /* SRKFLICAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFLICAnimation.m; sourceTree = "<group>"; };
+		80BB198D18C775F8004CBF91 /* SRKSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKSound.h; sourceTree = "<group>"; };
+		80BB198E18C775F8004CBF91 /* SRKSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKSound.m; sourceTree = "<group>"; };
+		80BB199218C77613004CBF91 /* SRKResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKResource.h; sourceTree = "<group>"; };
+		80BB199318C77613004CBF91 /* SRKResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKResource.m; sourceTree = "<group>"; };
 		80F07F2717CCE58A002E582E /* SphereRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F07F2B17CCE58A002E582E /* SphereRuntime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereRuntime-Info.plist"; sourceTree = "<group>"; };
 		80F07F2D17CCE58A002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -765,7 +774,7 @@
 		8006D47A17BA840400453468 /* SphereRuntimeKit */ = {
 			isa = PBXGroup;
 			children = (
-				803563B818BA99B500696C5A /* Files */,
+				80BB199118C77606004CBF91 /* Resources */,
 				8006D4A117BA84B300453468 /* Game */,
 				8006D4A017BA84A000453468 /* Main */,
 				8006D47B17BA840400453468 /* Supporting Files */,
@@ -777,6 +786,7 @@
 		8006D47B17BA840400453468 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				803563E418BBFAE500696C5A /* endian.h */,
 				8006D47C17BA840400453468 /* SphereRuntimeKit-Info.plist */,
 				8006D47D17BA840400453468 /* InfoPlist.strings */,
 				8006D48017BA840400453468 /* SphereRuntimeKit-Prefix.pch */,
@@ -1204,7 +1214,7 @@
 			name = Exceptions;
 			sourceTree = "<group>";
 		};
-		803563B818BA99B500696C5A /* Files */ = {
+		803563B818BA99B500696C5A /* Sphere files */ = {
 			isa = PBXGroup;
 			children = (
 				803563CC18BBE6A300696C5A /* SRKFile.h */,
@@ -1218,7 +1228,6 @@
 				803563DD18BBF2B500696C5A /* SRKSpriteSet.m */,
 				803563E018BBF2DA00696C5A /* SRKWindowStyle.h */,
 				803563E118BBF2DA00696C5A /* SRKWindowStyle.m */,
-				803563E418BBFAE500696C5A /* endian.h */,
 				803563EE18BCC11A00696C5A /* SRKImage.h */,
 				803563EF18BCC11A00696C5A /* SRKImage.m */,
 				803563F418BCE9C500696C5A /* SRKFont.h */,
@@ -1230,14 +1239,8 @@
 				80BB197618C680CD004CBF91 /* SRKObstructionMap.h */,
 				80BB197A18C7698F004CBF91 /* SRKPlayList.h */,
 				80BB197B18C7698F004CBF91 /* SRKPlayList.m */,
-				80BB197E18C77073004CBF91 /* SRKAnimation.h */,
-				80BB197F18C77073004CBF91 /* SRKAnimation.m */,
-				80BB198218C77082004CBF91 /* SRKMNGAnimation.h */,
-				80BB198318C77082004CBF91 /* SRKMNGAnimation.m */,
-				80BB198618C7708D004CBF91 /* SRKFLICAnimation.h */,
-				80BB198718C7708D004CBF91 /* SRKFLICAnimation.m */,
 			);
-			name = Files;
+			name = "Sphere files";
 			sourceTree = "<group>";
 		};
 		803563BC18BA99F900696C5A /* Utilities */ = {
@@ -1582,6 +1585,40 @@
 			name = App;
 			sourceTree = "<group>";
 		};
+		80BB198A18C770C4004CBF91 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				80BB197E18C77073004CBF91 /* SRKAnimation.h */,
+				80BB197F18C77073004CBF91 /* SRKAnimation.m */,
+				80BB198218C77082004CBF91 /* SRKMNGAnimation.h */,
+				80BB198318C77082004CBF91 /* SRKMNGAnimation.m */,
+				80BB198618C7708D004CBF91 /* SRKFLICAnimation.h */,
+				80BB198718C7708D004CBF91 /* SRKFLICAnimation.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		80BB198C18C775D4004CBF91 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				80BB198D18C775F8004CBF91 /* SRKSound.h */,
+				80BB198E18C775F8004CBF91 /* SRKSound.m */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		80BB199118C77606004CBF91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80BB199218C77613004CBF91 /* SRKResource.h */,
+				80BB199318C77613004CBF91 /* SRKResource.m */,
+				80BB198C18C775D4004CBF91 /* Sound */,
+				80BB198A18C770C4004CBF91 /* Animation */,
+				803563B818BA99B500696C5A /* Sphere files */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		80F07F2917CCE58A002E582E /* SphereRuntime */ = {
 			isa = PBXGroup;
 			children = (
@@ -1674,24 +1711,27 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80BB197318C6761A004CBF91 /* SRKTileSet.h in Headers */,
-				80BB197C18C7698F004CBF91 /* SRKPlayList.h in Headers */,
 				803563DE18BBF2B500696C5A /* SRKSpriteSet.h in Headers */,
 				803563F618BCE9C500696C5A /* SRKFont.h in Headers */,
-				80BB198018C77073004CBF91 /* SRKAnimation.h in Headers */,
-				80BB198418C77082004CBF91 /* SRKMNGAnimation.h in Headers */,
 				803563D518BBEDB000696C5A /* NSString+SRKUtilities.h in Headers */,
 				803563DA18BBF2A600696C5A /* SRKMap.h in Headers */,
 				803563F018BCC11A00696C5A /* SRKImage.h in Headers */,
+				80BB199418C77613004CBF91 /* SRKResource.h in Headers */,
+				80BB198F18C775F8004CBF91 /* SRKSound.h in Headers */,
 				803563E218BBF2DA00696C5A /* SRKWindowStyle.h in Headers */,
+				80BB197318C6761A004CBF91 /* SRKTileSet.h in Headers */,
+				80BB197C18C7698F004CBF91 /* SRKPlayList.h in Headers */,
+				80BB198018C77073004CBF91 /* SRKAnimation.h in Headers */,
+				80BB198418C77082004CBF91 /* SRKMNGAnimation.h in Headers */,
 				80BB197818C680CD004CBF91 /* SRKObstructionMap.h in Headers */,
-				803563E618BBFAE500696C5A /* endian.h in Headers */,
 				80BB198818C7708D004CBF91 /* SRKFLICAnimation.h in Headers */,
+				803563E618BBFAE500696C5A /* endian.h in Headers */,
 				8006D4A317BA84CD00453468 /* SRKGame.h in Headers */,
 				803563CA18BBE69500696C5A /* SRKFileSGM.h in Headers */,
 				803563CE18BBE6A300696C5A /* SRKFile.h in Headers */,
 				8006D4A417BA84CD00453468 /* SphereRuntimeKit.h in Headers */,
 				80BB197018BD0885004CBF91 /* SRKFile_Private.h in Headers */,
+				80BB198B18C770FB004CBF91 /* SRKTileSet_Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2131,10 +2171,12 @@
 				80BB197918C680CD004CBF91 /* SRKObstructionMap.m in Sources */,
 				803563E318BBF2DA00696C5A /* SRKWindowStyle.m in Sources */,
 				803563D618BBEDB000696C5A /* NSString+SRKUtilities.m in Sources */,
+				80BB199518C77613004CBF91 /* SRKResource.m in Sources */,
 				803563F318BCE59600696C5A /* SRKFile.m in Sources */,
 				803563CB18BBE69500696C5A /* SRKFileSGM.m in Sources */,
 				80BB197D18C7698F004CBF91 /* SRKPlayList.m in Sources */,
 				80BB198918C7708D004CBF91 /* SRKFLICAnimation.m in Sources */,
+				80BB199018C775F8004CBF91 /* SRKSound.m in Sources */,
 				8006D4A217BA84C300453468 /* SRKGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

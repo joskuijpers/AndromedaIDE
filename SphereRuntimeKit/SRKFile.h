@@ -6,21 +6,12 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
+#import "SRKResource.h"
+
 /**
  * Any file with special format for Sphere.
  */
-@protocol SRKFile <NSObject>
-
-/// Path of the file
-@property (copy) NSString *path;
-
-/**
- * Initialize a file, opening the file at given path
- *
- * @param path The path pointing to the location of the file to open
- * @return self
- */
-- (instancetype)initWithPath:(NSString *)path;
+@protocol SRKFile <SRKResource>
 
 /**
  * Save the file to the same path
@@ -42,6 +33,6 @@
 /**
  * Any file with special format for Sphere.
  */
-@interface SRKFile : NSObject <SRKFile>
+@interface SRKFile : SRKResource <SRKFile>
 
 @end

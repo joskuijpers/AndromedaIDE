@@ -1,5 +1,5 @@
 //
-//  SRKAnimation.h
+//  SRKSound.h
 //  Sphere
 //
 //  Created by Jos Kuijpers on 05/03/14.
@@ -8,6 +8,6 @@
 
 #import "SRKResource.h"
 
-@interface SRKAnimation : SRKResource
+@interface SRKSound : SRKResource
 
 @end

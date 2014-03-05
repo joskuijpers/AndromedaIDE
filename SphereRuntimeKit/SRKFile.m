@@ -10,22 +10,11 @@
 
 @implementation SRKFile
 
-@synthesize path=_path;
-
-- (instancetype)initWithPath:(NSString *)path
-{
-	self = [super init];
-	if(self) {
-		_path = [path copy];
-	}
-	return self;
-}
-
 - (BOOL)save
 {
-	if(_path.length == 0)
+	if(self.path.length == 0)
 		return NO;
-	return [self saveToFile:_path];
+	return [self saveToFile:self.path];
 }
 
 - (BOOL)saveToFile:(NSString *)path
