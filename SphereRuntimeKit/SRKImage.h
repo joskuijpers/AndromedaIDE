@@ -48,6 +48,7 @@ typedef struct {
 #endif
 } srk_bgra_t;
 
+/// The format of the bitmap data
 typedef enum {
 	SRKImageFormatRGB,
 	SRKImageFormatRGBA,
@@ -56,17 +57,51 @@ typedef enum {
 	SRKImageFormatGrayscale
 } SRKImageFormat;
 
+/**
+ * An NSImage subclass with bitmap related additions, such as
+ * easy initializing with raw bitmap data, and writing of such data.
+ */
 @interface SRKImage : NSImage <SRKFile>
 
+/// The raw bitmap format of the rawData
 @property (readonly,assign) SRKImageFormat format;
+
+/// The raw data of the bitmap. Do not use: use -rawDataWithFormat: instead.
 @property (readonly,strong) NSData *rawData;
+
+/// The size of the actual image. The data size should be width*height*formatSize.
 @property (readonly,assign) NSSize rawSize;
 
+/**
+ * Initialize with raw bitmap data.
+ *
+ * The data length must be size.width * size.height * sizeof(format)
+ *
+ * @param data The raw bitmap data
+ * @param size The size of the resulting image
+ * @param format The format of the pixels
+ * @return self
+ */
 - (instancetype)initWithRawBitmapData:(NSData *)data
 								 size:(NSSize)size
 							   format:(SRKImageFormat)format;
+
+/**
+ * Initialize an SRKImage given an NSImage.
+ *
+ * This extracts raw data from the NSImage and stores it
+ *
+ * @param image An NSImage
+ * @return self
+ */
 - (instancetype)initWithImage:(NSImage *)image;
 
+/**
+ * Get the raw data form of the bitmap image in requested format.
+ *
+ * @param format Format to get the data into
+ * @return NSData on success, or nil on failure
+ */
 - (NSData *)rawDataWithFormat:(SRKImageFormat)format;
 
 @end

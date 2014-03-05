@@ -10,6 +10,8 @@
 #import "SRKFile_Private.h"
 #import "SRKTileSet_Private.h"
 #import "SRKObstructionMap.h"
+#import "SRKImage.h"
+#import "SRKSpriteSet.h"
 
 typedef struct {
 	uint8_t signature[4];
@@ -336,7 +338,6 @@ _Static_assert(sizeof(srk_rmp_zone_header_t) == 16,"wrong struct size");
 			NSLog(@"Failed to load RMP file at %@: file is invalid (0xA)",path);
 			return NO;
 		}
-		NSLog(@"Tileset not in image");
 	}
 
 	return YES;
@@ -364,6 +365,73 @@ _Static_assert(sizeof(srk_rmp_zone_header_t) == 16,"wrong struct size");
 	return YES;
 }
 
+- (SRKImage *)initialMapImage
+{
+	SRKImage *image;
+	NSSize mapSize, imageSize;
+
+	mapSize = [(SRKMapLayer *)_layers[0] size];
+	imageSize = NSMakeSize(mapSize.width * 32, mapSize.height * 32);
+
+	// Assume tilesize = 32px * 32px
+	image = [[SRKImage alloc] initWithSize:imageSize];
+	[image lockFocus];
+
+	for(int y = 0; y < mapSize.width; y++) {
+		for(int x = 0; x < mapSize.height; x++) {
+			for(int l = 0; l < _layers.count; l++) {
+				SRKTile *tile;
+				SRKMapLayer *layer;
+				int tileIndex;
+
+				layer = _layers[l];
+				if(!layer.visible)
+					continue;
+
+				tileIndex = [layer tileIndexAtPoint:NSMakePoint(x, y)];
+				if(tileIndex >= _tileSet.tiles.count)
+					continue;
+				tile = _tileSet.tiles[tileIndex];
+
+				[tile.image drawAtPoint:NSMakePoint(x * 32, imageSize.height - y * 32)
+							   fromRect:NSZeroRect
+							  operation:NSCompositeSourceOver
+							   fraction:1.0];
+			}
+		}
+	}
+
+	// Draw entities
+	for(SRKMapEntity *entity in _entities) {
+		if([entity isKindOfClass:[SRKMapTrigger class]])
+			continue;
+		SRKMapPerson *person = (SRKMapPerson *)entity;
+		NSString *path = [self.path stringByDeletingLastPathComponent];
+		path = [path stringByDeletingLastPathComponent];
+		path = [path stringByAppendingPathComponent:@"spritesets"];
+		path = [path stringByAppendingPathComponent:person.spriteSetFilename];
+		SRKSpriteSet *rss = [[SRKSpriteSet alloc] initWithPath:path];
+
+		SRKSpriteSetDirection *dir = rss.directions[0];
+		SRKSpriteSetFrame *frame = dir.frames[0];
+		if(rss.directions.count >= 3) {
+			dir = rss.directions[1];
+			if(dir.frames.count >= 2)
+				frame = dir.frames[1];
+		}
+
+		[rss.images[frame.index] drawAtPoint:NSMakePoint(person.location.x - 16, imageSize.height - person.location.y + 16)
+						  fromRect:NSZeroRect
+						 operation:NSCompositeSourceOver
+						  fraction:1.0];
+	}
+
+
+	[image unlockFocus];
+
+	return image;
+}
+
 - (NSString *)description
 {
 	return [NSString stringWithFormat:@"<SRKMap>{startLocation: %@, startLayer: %d, startDirection:"
@@ -387,6 +455,16 @@ _Static_assert(sizeof(srk_rmp_zone_header_t) == 16,"wrong struct size");
 		_obstructionMap = [[SRKObstructionMap alloc] init];
 	}
 	return self;
+}
+
+- (unsigned int)tileIndexAtPoint:(NSPoint)point
+{
+	uint16_t *words;
+
+	words = (uint16_t *)[_tileData bytes];
+	words += (int)point.y * (int)_size.width  + (int)point.x;
+
+	return *words;
 }
 
 - (NSString *)description

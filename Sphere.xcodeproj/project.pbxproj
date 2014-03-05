@@ -1210,8 +1210,8 @@
 				80BB197118C6761A004CBF91 /* SRKTileSet.h */,
 				80BB197218C6761A004CBF91 /* SRKTileSet.m */,
 				80BB197518C67937004CBF91 /* SRKTileSet_Private.h */,
-				80BB197618C680CD004CBF91 /* SRKObstructionMap.h */,
 				80BB197718C680CD004CBF91 /* SRKObstructionMap.m */,
+				80BB197618C680CD004CBF91 /* SRKObstructionMap.h */,
 			);
 			name = Files;
 			sourceTree = "<group>";

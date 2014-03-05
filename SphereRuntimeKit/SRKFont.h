@@ -8,8 +8,12 @@
 
 #import <SphereRuntimeKit/SphereRuntimeKit.h>
 
+/**
+ * A font. Also the representation of .rfn files
+ */
 @interface SRKFont : SRKFile
 
-@property (readonly,strong) NSArray *characters; // SRKImage
+/// An array of SRKImages, one for each character.
+@property (readonly,strong) NSArray *characters;
 
 @end

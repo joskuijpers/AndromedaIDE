@@ -10,6 +10,4 @@
 
 @interface SRKGame : NSObject
 
-@property (strong) NSDictionary *infoDictionary;
-
 @end

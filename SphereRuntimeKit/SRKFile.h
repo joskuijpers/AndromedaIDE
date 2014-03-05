@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
+/**
+ * Any file with special format for Sphere.
+ */
 @protocol SRKFile <NSObject>
 
 /// Path of the file
@@ -36,6 +39,9 @@
 
 @end
 
+/**
+ * Any file with special format for Sphere.
+ */
 @interface SRKFile : NSObject <SRKFile>
 
 @end

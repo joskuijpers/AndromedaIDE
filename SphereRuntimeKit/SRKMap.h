@@ -8,6 +8,7 @@
 
 #import "SRKFile.h"
 
+/// An edge of the map. Used in the edge script.
 typedef enum {
 	SRKMapEdgeNorth = 0,
 	SRKMapEdgeEast = 1,
@@ -15,26 +16,56 @@ typedef enum {
 	SRKMapEdgeWest = 3
 } SRKMapEdge;
 
-@class SRKObstructionMap, SRKTileSet;
+@class SRKObstructionMap, SRKTileSet, SRKImage;
 
+/**
+ * A map. Also the representation of .rmp files
+ */
 @interface SRKMap : SRKFile
 
+/// Location of the player when entering the map
 @property (readonly,assign) NSPoint startLocation;
-@property (readonly,assign) uint8_t startLayer; // object instead?
+
+/// The layer where the player starts in. (The player-layer affects collision and touch)
+@property (readonly,assign) uint8_t startLayer;
+
+/// Start direction of the player spriteset
 @property (readonly,assign) int startDirection;
+
+/// Whether the map repeats in all directions
 @property (readonly,assign,getter=isRepeating) BOOL repeating;
 
+/// The filename of the background music. Must be relative to /sounds
 @property (readonly,copy) NSString *musicFilename;
 
+/// The script executed on entry of the map by the player
 @property (readonly,strong) NSString *entryScript;
+
+/// The script executed on exit of the map by the player
 @property (readonly,strong) NSString *exitScript;
+
+/// A list of scripts, each an NSString
 @property (readonly,strong) NSArray *edgeScripts;
 
+/// A list of layers of class SRKMapLayer
 @property (readonly,strong) NSArray *layers;
+
+/// A list of entities of class SRKMapEntity
 @property (readonly,strong) NSArray *entities;
+
+/// A list of zones of class SRKMapZone
 @property (readonly,strong) NSArray *zones;
 
+/// Tile set of this map
 @property (readonly,strong) SRKTileSet *tileSet;
+
+/**
+ * Create an image containing the initial setup of the map.
+ * Useful for testing purposes.
+ *
+ * @return An SRKImage
+ */
+- (SRKImage *)initialMapImage;
 
 @end
 
@@ -49,6 +80,8 @@ typedef enum {
 @property (assign,getter=isVisible) BOOL visible;
 @property (assign,getter=isReflective) BOOL reflective;
 @property (readonly,strong) SRKObstructionMap *obstructionMap;
+
+- (unsigned int)tileIndexAtPoint:(NSPoint)point;
 
 @end
 

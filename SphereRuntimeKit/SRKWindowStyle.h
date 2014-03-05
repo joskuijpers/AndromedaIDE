@@ -44,9 +44,15 @@ typedef enum {
 
 @class SRKImage;
 
+/**
+ * A window style. Also the representation of .rws files
+ */
 @interface SRKWindowStyle : SRKFile
 
+/// Images in the window style. Will always contain 9 items.
 @property (readonly,strong) NSArray *images;
+
+/// The background mode: used for drawing the background
 @property (assign) SRKWindowStyleMode backgroundMode;
 
 - (void)setOffset:(uint8_t)offset forEdge:(SRKWindowStyleEdge)edge;

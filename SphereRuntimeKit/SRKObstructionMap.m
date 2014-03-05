@@ -37,6 +37,11 @@
 	[_segments addObject:[NSValue valueWithRect:segment]];
 }
 
++ (BOOL)testSegment:(NSRect)s0 withSegment:(NSRect)s1
+{
+	return NO;
+}
+
 - (BOOL)testRect:(NSRect)rect
 {
 	return NO;

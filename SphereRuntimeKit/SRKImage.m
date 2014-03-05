@@ -57,6 +57,17 @@
 	return self;
 }
 
+- (instancetype)initWithSize:(NSSize)aSize
+{
+	self = [super initWithSize:aSize];
+	if(self) {
+//		_rawData = raw_data_from_nsimage(self,SRKImageFormatRGBA);
+		_rawSize = aSize;
+		_format = SRKImageFormatRGBA;
+	}
+	return self;
+}
+
 NSData *raw_data_from_nsimage(NSImage *image, SRKImageFormat format) {
 	NSData *imgData;
 	NSBitmapImageRep *bmpRep;
@@ -136,7 +147,6 @@ CGImageRef cgimage_from_raw_bitmap(NSSize size, NSData *data, SRKImageFormat for
 		}
 
 		data = newBuf;
-		format = SRKImageFormatRGBA;
 	}
 
 	provider = CGDataProviderCreateWithCFData((CFDataRef)data);
@@ -155,8 +165,12 @@ CGImageRef cgimage_from_raw_bitmap(NSSize size, NSData *data, SRKImageFormat for
 							 kCGRenderingIntentDefault);
 
 	if(CGImageGetWidth(imageRef) != size.width
-	   || CGImageGetHeight(imageRef) != size.height)
+	   || CGImageGetHeight(imageRef) != size.height) {
+		CGColorSpaceRelease(colorSpaceRef);
+		CGDataProviderRelease(provider);
+		CGImageRelease(imageRef);
 		return nil;
+	}
 
 	CGColorSpaceRelease(colorSpaceRef);
 	CGDataProviderRelease(provider);
