@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
+/**
+ * Any file loadable by the engine.
+ */
 @protocol SRKResource <NSObject>
 
 /// Path of the file
@@ -21,6 +24,9 @@
 
 @end
 
+/**
+ * Any file loadable by the engine.
+ */
 @interface SRKResource : NSObject <SRKResource>
 
 @end
