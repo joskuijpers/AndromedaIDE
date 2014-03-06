@@ -65,7 +65,7 @@ typedef enum {
  *
  * @return An SRKImage
  */
-- (SRKImage *)initialMapImage;
+- (SRKImage *)overviewRender;
 
 @end
 

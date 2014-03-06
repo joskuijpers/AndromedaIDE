@@ -365,7 +365,7 @@ _Static_assert(sizeof(srk_rmp_zone_header_t) == 16,"wrong struct size");
 	return YES;
 }
 
-- (SRKImage *)initialMapImage
+- (SRKImage *)overviewRender
 {
 	SRKImage *image;
 	NSSize mapSize, imageSize;

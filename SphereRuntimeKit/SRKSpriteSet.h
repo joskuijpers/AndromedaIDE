@@ -10,6 +10,8 @@
 
 #define SRK_RSS_DEFAULT_FRAME_DELAY 8
 
+@class SRKImage;
+
 /**
  * A sprite set. Also the representation of .rss files
  */
@@ -26,6 +28,14 @@
 
 /// An array of NSImages
 @property (readonly,strong) NSArray *images;
+
+/**
+ * Create an image containing the initial setup of the map.
+ * Useful for testing purposes.
+ *
+ * @return An SRKImage
+ */
+- (SRKImage *)overviewRender;
 
 @end
 

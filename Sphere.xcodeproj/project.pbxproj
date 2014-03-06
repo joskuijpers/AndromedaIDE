@@ -215,6 +215,7 @@
 		80BB199518C77613004CBF91 /* SRKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB199318C77613004CBF91 /* SRKResource.m */; };
 		80BB199818C7778C004CBF91 /* SRKSoundEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB199618C7778C004CBF91 /* SRKSoundEffect.h */; };
 		80BB199918C7778C004CBF91 /* SRKSoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB199718C7778C004CBF91 /* SRKSoundEffect.m */; };
+		80BB199D18C8DC97004CBF91 /* JSContext+SPRExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB199C18C8DC97004CBF91 /* JSContext+SPRExceptions.m */; };
 		80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80F07F2E17CCE58A002E582E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F2C17CCE58A002E582E /* InfoPlist.strings */; };
 		80F07F3017CCE58A002E582E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F2F17CCE58A002E582E /* main.m */; };
@@ -654,6 +655,9 @@
 		80BB199318C77613004CBF91 /* SRKResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKResource.m; sourceTree = "<group>"; };
 		80BB199618C7778C004CBF91 /* SRKSoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKSoundEffect.h; sourceTree = "<group>"; };
 		80BB199718C7778C004CBF91 /* SRKSoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKSoundEffect.m; sourceTree = "<group>"; };
+		80BB199B18C8DC97004CBF91 /* JSContext+SPRExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSContext+SPRExceptions.h"; sourceTree = "<group>"; };
+		80BB199C18C8DC97004CBF91 /* JSContext+SPRExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSContext+SPRExceptions.m"; sourceTree = "<group>"; };
+		80BB199E18C8E01A004CBF91 /* ExceptionHandling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExceptionHandling.framework; path = System/Library/Frameworks/ExceptionHandling.framework; sourceTree = SDKROOT; };
 		80F07F2717CCE58A002E582E /* SphereRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F07F2B17CCE58A002E582E /* SphereRuntime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereRuntime-Info.plist"; sourceTree = "<group>"; };
 		80F07F2D17CCE58A002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1426,6 +1430,7 @@
 		808058E717B1B6BF004D1D41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80BB199E18C8E01A004CBF91 /* ExceptionHandling.framework */,
 				803563EC18BC0B6600696C5A /* CoreGraphics.framework */,
 				803563B318BA8CA700696C5A /* JavaScriptCore.framework */,
 				8019146B17E7CE2800A45BBE /* libv8_base.x64.a */,
@@ -1625,6 +1630,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		80BB199A18C8DC71004CBF91 /* JSC Additions */ = {
+			isa = PBXGroup;
+			children = (
+				80BB199B18C8DC97004CBF91 /* JSContext+SPRExceptions.h */,
+				80BB199C18C8DC97004CBF91 /* JSContext+SPRExceptions.m */,
+			);
+			name = "JSC Additions";
+			sourceTree = "<group>";
+		};
 		80F07F2917CCE58A002E582E /* SphereRuntime */ = {
 			isa = PBXGroup;
 			children = (
@@ -1693,6 +1707,7 @@
 		80F07F7F17CCE8D5002E582E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				80BB199A18C8DC71004CBF91 /* JSC Additions */,
 				803563C718BA9D5400696C5A /* JavaScript Library */,
 				80F07F3517CCE58A002E582E /* SPRAppDelegate.h */,
 				80F07F3617CCE58A002E582E /* SPRAppDelegate.m */,
@@ -2305,6 +2320,7 @@
 				803563B718BA98B600696C5A /* SPRConsole.m in Sources */,
 				80F07F3717CCE58A002E582E /* SPRAppDelegate.m in Sources */,
 				80F07F3017CCE58A002E582E /* main.m in Sources */,
+				80BB199D18C8DC97004CBF91 /* JSContext+SPRExceptions.m in Sources */,
 				803563C018BA9A5B00696C5A /* SPRResource.m in Sources */,
 				803563BB18BA99F100696C5A /* SPRGame.m in Sources */,
 			);

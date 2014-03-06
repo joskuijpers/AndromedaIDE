@@ -354,6 +354,47 @@ _Static_assert(sizeof(srk_rss_frame_v3_t) == 8,"wrong struct size");
 	return YES;
 }
 
+- (SRKImage *)overviewRender
+{
+	SRKImage *image;
+	NSSize overviewSize, imageSize;
+
+	// Find largest direction
+	size_t largestDir = 0;
+	for(SRKSpriteSetDirection *dir in _directions) {
+		if(dir.frames.count > largestDir)
+			largestDir = dir.frames.count;
+	}
+
+	overviewSize = NSMakeSize(largestDir, _directions.count);
+	imageSize = NSMakeSize(overviewSize.width * _frameSize.width,
+						   overviewSize.height * _frameSize.height);
+	if(imageSize.width == 0 || imageSize.height == 0)
+		return nil;
+
+	image = [[SRKImage alloc] initWithSize:imageSize];
+	[image lockFocus];
+
+	[_directions enumerateObjectsUsingBlock:^(SRKSpriteSetDirection *dir, NSUInteger d, BOOL *stop) {
+		[dir.frames enumerateObjectsUsingBlock:^(SRKSpriteSetFrame *frame, NSUInteger f, BOOL *stop2) {
+			SRKImage *image;
+
+			if(frame.index >= _images.count)
+				return;
+			image = _images[frame.index];
+
+			[image drawAtPoint:NSMakePoint(f * _frameSize.width, d * _frameSize.height)
+					  fromRect:NSZeroRect
+					 operation:NSCompositeSourceOver
+					  fraction:1.0];
+		}];
+	}];
+
+	[image unlockFocus];
+	
+	return image;
+}
+
 - (BOOL)saveToFile:(NSString *)path
 {
 	NSMutableData *fileContents;
