@@ -30,6 +30,8 @@ JSExportAs(write,
 - (void)writeKey:(NSString *)key value:(NSString *)value
 );
 
+- (NSString *)md5hash;
+
 - (void)flush;
 - (void)close;
 

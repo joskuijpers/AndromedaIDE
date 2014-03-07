@@ -119,7 +119,6 @@
 
 - (void)writeKey:(NSString *)key value:(NSString *)value
 {
-	NSLog(@"SET %@ FOR %@",value,key);
 	_storage[key] = value;
 }
 
@@ -136,6 +135,11 @@
 - (void)close
 {
 	// Does nothing
+}
+
+- (NSString *)md5hash
+{
+	return nil;
 }
 
 @end
