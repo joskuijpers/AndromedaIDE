@@ -8,4 +8,5 @@
 	#import <Cocoa/Cocoa.h>
 	#import <JavaScriptCore/JavaScriptCore.h>
 	#import "JSContext+SPRExceptions.h"
+	#import "JSContext+SPRFixes.h"
 #endif

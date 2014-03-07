@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
+@class SPRColor;
+
 @protocol SPRColor <JSExport>
 
 @property (assign) uint8_t red;
@@ -14,6 +16,14 @@
 @property (assign) uint8_t alpha;
 
 - (instancetype)init;
+
+- (SPRColor *)blend:(SPRColor *)other;
+
+JSExportAs(blendWeighted,
+- (SPRColor *)blend:(SPRColor *)other
+		 withLeftWeight:(double)w1
+			rightWeight:(double)w2
+);
 
 @end
 

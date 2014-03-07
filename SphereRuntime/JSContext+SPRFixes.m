@@ -25,7 +25,7 @@ void spr_make_class_available(JSContext *context, Class class, NSString *name)
 		return [[class alloc] init];
 	};
 
-    [context evaluateScript:[NSString stringWithFormat:@"var %@ = function (){ return %@();};", name, formattedName]];
+    [context evaluateScript:[NSString stringWithFormat:@"var %@ = function (){ return %@.apply(this,arguments);};", name, formattedName]];
 }
 
 // Replace the default implementation (publicly availble) with an implementation

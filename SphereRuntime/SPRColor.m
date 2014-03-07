@@ -68,6 +68,30 @@
 	return self;
 }
 
+- (SPRColor *)blend:(SPRColor *)other
+{
+	return [[SPRColor alloc] initWithRed:(other.red+_red)/2
+								   green:(other.green+_green)/2
+									blue:(other.blue+_blue)/2
+								   alpha:(other.alpha+_alpha)/2];
+}
+
+- (SPRColor *)blend:(SPRColor *)other
+	 withLeftWeight:(double)w1
+		rightWeight:(double)w2
+{
+	w1 = (w1 < 0.0)?-w1:w1;
+	w2 = (w2 < 0.0)?-w2:w2;
+
+	if(w1+w2 == 0.0)
+		[[JSContext currentContext] throw:@"Invalid arguments: (w1+w2) must be > 0.0"];
+
+	return [[SPRColor alloc] initWithRed:(other.red*w2+_red*w1)/(w1+w2)
+								   green:(other.green*w2+_green*w1)/(w1+w2)
+									blue:(other.blue*w2+_blue*w1)/(w1+w2)
+								   alpha:(other.alpha*w2+_alpha*w1)/(w1+w2)];
+}
+
 - (BOOL)isEqual:(id)object
 {
 	if([object isKindOfClass:[self class]]) {
