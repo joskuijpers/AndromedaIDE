@@ -7,7 +7,6 @@
 //
 
 #import "SPRAppDelegate.h"
-#import <JavaScriptCore/JavaScriptCore.h>
 
 #import "SPRConsole.h"
 #import "SPRColor.h"
@@ -18,37 +17,12 @@
 	NSMutableArray *_comboOptions;
 }
 
-void spr_make_class_available(JSContext *context, Class class, NSString *name)
-{
-    NSString *className, *formattedName;
-
-	className = NSStringFromClass(class);
-	formattedName = [NSString stringWithFormat:@"__%@", className];
-
-	// The constructor function
-	// TODO: arguments
-    context[formattedName] = ^(void) {
-		return [[class alloc] init];
-	};
-
-    [context evaluateScript:[NSString stringWithFormat:@"var %@ = function (){ return %@();};", name, formattedName]];
-
-	// TODO: not neccesery
-    SEL selector = NSSelectorFromString(@"classWasMadeAvailableInContext:");
-    if ([class respondsToSelector:selector]){
-        ((void (*)(id, SEL, JSContext*))[class methodForSelector:selector])(class, selector, context);
-    }
-}
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	_context = [[JSContext alloc] initWithExceptionHandler];
 	_context[@"console"] = [[SPRConsole alloc] init];
-	spr_make_class_available(_context, [SPRConsole class], @"Console");
-//	_context[@"Console"] = [SPRConsole class];
-
-	spr_make_class_available(_context, [SPRColor class], @"Color");
-//	_context[@"Color"] = [SPRColor class];
+	
+	_context[@"Color"] = [SPRColor class];
 
 #if 0
 	NSString *gamePath;
