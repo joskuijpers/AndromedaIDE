@@ -24,12 +24,8 @@
 		if(arguments.count >= 1) {
 			_path = [[(JSValue *)arguments[0] toString] copy];
 
-			NSString *path;
-
 			// TODO: use some resource manager to find the correct path
-			path = [[NSBundle mainBundle] pathForResource:[_path stringByDeletingPathExtension]
-												   ofType:[_path pathExtension]];
-			if(![self loadFileAtPath:path])
+			if(![self loadFileAtPath:_path])
 				return nil;
 		} else
 			return nil; // TODO: exception instead?
@@ -43,6 +39,11 @@
 	NSError *error = NULL;
 	NSArray *fileLines;
 	NSCharacterSet *lineSplitSet;
+
+	if(![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+		_storage = [[NSMutableDictionary alloc] init];
+		return YES;
+	}
 
 	fileContents = [NSString stringWithContentsOfFile:path
 											 encoding:NSUTF8StringEncoding
@@ -95,6 +96,12 @@
 		[fileContents appendFormat:@"%@=%@\n",key,obj];
 	}];
 
+	/*if(![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+		return [[NSFileManager defaultManager] createFileAtPath:path
+													   contents:_data
+													 attributes:nil];
+	}*/
+
 	if(![fileContents writeToFile:path
 					   atomically:YES
 						 encoding:NSUTF8StringEncoding
@@ -124,17 +131,12 @@
 
 - (void)flush
 {
-	NSString *path;
-
-	// TODO: use some resource manager to find the correct path
-	path = [[NSBundle mainBundle] pathForResource:[_path stringByDeletingPathExtension]
-										   ofType:[_path pathExtension]];
-	[self saveFileToPath:path];
+	[self saveFileToPath:_path];
 }
 
 - (void)close
 {
-	// Does nothing
+	[self flush];
 }
 
 - (NSString *)md5hash

@@ -10,17 +10,13 @@
 
 @protocol SPRFile <JSExport>
 
+/// Number of entries in the file
+@property (nonatomic,assign,readonly) size_t size;
+
 /// Path of the file
 @property (strong,readonly) NSString *path;
 
 - (instancetype)init;
-
-/**
- * Number of key-value items in the file
- *
- * @return Integer with number of items
- */
-- (size_t)size;
 
 JSExportAs(read,
 - (NSString *)readKey:(NSString *)key withDefault:(NSString *)def
@@ -30,9 +26,19 @@ JSExportAs(write,
 - (void)writeKey:(NSString *)key value:(NSString *)value
 );
 
+/**
+ * Creates an MD5 hash from the file
+ */
 - (NSString *)md5hash;
 
+/**
+ * Writes all data to the output
+ */
 - (void)flush;
+
+/**
+ * Closes the file handle
+ */
 - (void)close;
 
 // TODO: Object subscription. But that has to be made to work with JSC

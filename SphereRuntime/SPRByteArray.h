@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @class SPRByteArray;
 
 @protocol SPRByteArray <JSExport>
@@ -24,10 +22,17 @@ JSExportAs(slice,
 
 - (size_t)size;
 - (NSString *)makeString;
+
+/**
+ * Creates an MD5 hash from the byte array
+ */
 - (NSString *)md5hash;
 
 @end
 
 @interface SPRByteArray : NSObject <SPRByteArray>
+
+- (instancetype)initWithData:(NSData *)data;
+- (NSMutableData *)data;
 
 @end

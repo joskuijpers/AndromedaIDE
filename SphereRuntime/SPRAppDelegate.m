@@ -12,6 +12,7 @@
 #import "SPRColor.h"
 #import "SPRFile.h"
 #import "SPRByteArray.h"
+#import "SPRRawFile.h"
 #import "SphereRuntimeKit.h"
 
 @implementation SPRAppDelegate {
@@ -27,6 +28,7 @@
 	_context[@"Color"] = [SPRColor class];
 	_context[@"File"] = [SPRFile class];
 	_context[@"ByteArray"] = [SPRByteArray class];
+	_context[@"RawFile"] = [SPRRawFile class];
 
 #if 0
 	NSString *gamePath;

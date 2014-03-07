@@ -40,7 +40,7 @@
 	return self;
 }
 
-- (NSMutableData *)rawData
+- (NSMutableData *)data
 {
 	return _data;
 }
@@ -48,7 +48,7 @@
 - (SPRByteArray *)byteArrayByAppendingByteArray:(SPRByteArray *)byteArray
 {
 	NSMutableData *data = [_data mutableCopy];
-	[data appendData:[byteArray rawData]];
+	[data appendData:[byteArray data]];
 	if(data)
 		return [[SPRByteArray alloc] initWithData:data];
 	return nil;

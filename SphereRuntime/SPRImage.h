@@ -6,12 +6,10 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @protocol JSExport;
 @protocol SPRImage <JSExport>
 
-- (instancetype)initWithPath:(NSString *)path; // new Image('')
+- (instancetype)init;
 
 @end
 
