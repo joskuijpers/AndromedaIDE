@@ -10,51 +10,122 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 
 #import "SPRConsole.h"
+#import "SPRColor.h"
 #import "SphereRuntimeKit.h"
 
 @implementation SPRAppDelegate {
 	JSContext *_context;
+	NSMutableArray *_comboOptions;
+}
+
+void spr_make_class_available(JSContext *context, Class class, NSString *name)
+{
+    NSString *className, *formattedName;
+
+	className = NSStringFromClass(class);
+	formattedName = [NSString stringWithFormat:@"__%@", className];
+
+	// The constructor function
+	// TODO: arguments
+    context[formattedName] = ^(void) {
+		return [[class alloc] init];
+	};
+
+    [context evaluateScript:[NSString stringWithFormat:@"var %@ = function (){ return %@();};", name, formattedName]];
+
+	// TODO: not neccesery
+    SEL selector = NSSelectorFromString(@"classWasMadeAvailableInContext:");
+    if ([class respondsToSelector:selector]){
+        ((void (*)(id, SEL, JSContext*))[class methodForSelector:selector])(class, selector, context);
+    }
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	_context = [[JSContext alloc] init];
-
-	// Create a simple text console for debugging
+	_context = [[JSContext alloc] initWithExceptionHandler];
 	_context[@"console"] = [[SPRConsole alloc] init];
+	spr_make_class_available(_context, [SPRConsole class], @"Console");
+//	_context[@"Console"] = [SPRConsole class];
 
-
-	/// TESTTSSS
-	NSString *projectPath;
-
-	projectPath = @"/Users/jos/Documents/Jarvix/Production/Sphere/Games/SphereOriginal/Frogby";
+	spr_make_class_available(_context, [SPRColor class], @"Color");
+//	_context[@"Color"] = [SPRColor class];
 
 #if 0
-	SRKFileSGM *sgm;
-	sgm = [[SRKFileSGM alloc] initWithPath:[projectPath stringByAppendingPathComponent:@"game.sgm"]];
-	NSLog(@"SGM: %@",sgm);
+	NSString *gamePath;
+	gamePath = @"/Users/jos/Documents/Jarvix/Production/Sphere/Games/SphereOriginal/Scala World/";
+
+	_context[@"RequireScript"] = ^(NSString *script) {
+		NSString *p, *data;
+		p = [gamePath stringByAppendingPathComponent:@"scripts"];
+		p = [p stringByAppendingPathComponent:script];
+
+		data = [NSString stringWithContentsOfFile:p
+										 encoding:NSUTF8StringEncoding
+											error:NULL];
+
+		[[JSContext currentContext] evaluateScript:data];
+	};
 #endif
 
-#if 0
-	SRKSpriteSet *rss;
-	rss = [[SRKSpriteSet alloc] initWithPath:[projectPath stringByAppendingPathComponent:@"spritesets/sportcar.rss"]];
-	NSLog(@"RSS: %@",rss);
 
-	NSLog(@"RSS with path: %@",rss.path);
-	NSLog(@"Images: %@",rss.images);
-	int x = 0;
-	for(SRKImage *img in rss.images) {
-		[img saveToFile:[projectPath stringByAppendingPathComponent:[NSString stringWithFormat:@"spritesets/sportcar_%d.png",x]]];
-		x++;
+	NSString *main;
+	main = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"js"]
+									 encoding:NSUTF8StringEncoding
+										error:NULL];
+	@try {
+		[_context evaluateScript:main];
+	} @catch(id ex) {
+		printf("[EXC ] %s\n",[[ex toString] UTF8String]);
 	}
 
-	[rss.directions enumerateObjectsUsingBlock:^(SRKSpriteSetDirection *obj, NSUInteger idx, BOOL *stop) {
-		NSLog(@"Direction %lu (%@):",(unsigned long)idx,obj.name);
-		[obj.frames enumerateObjectsUsingBlock:^(SRKSpriteSetFrame *frame, NSUInteger idx2, BOOL *stop) {
-			NSLog(@"\tFrame %lu: {image index: %d, delay: %d}",idx2,frame.index,frame.animationDelay);
-		}];
-	}];
+
+
+#if 0
+	_comboOptions = [NSMutableArray array];
+	NSArray *searchPaths;
+
+	searchPaths = @[@"/Users/jos/Documents/Jarvix/Production/Sphere/Games/SphereOriginal/Scala World/maps/",
+					@"/Users/jos/Documents/Jarvix/Production/Sphere/Games/SphereOriginal/Scala World/spritesets/",
+					@"/Users/jos/Documents/Jarvix/Production/Sphere/Games/Resources/maps/",
+					@"/Users/jos/Documents/Jarvix/Production/Sphere/Games/Resources/spritesets/"];
+
+	for(NSString *xpath in searchPaths) {
+		NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:xpath error:NULL];
+
+		for(NSString *str in files) {
+			if([str.pathExtension isEqualToString:@"rmp"]
+			   || [str.pathExtension isEqualToString:@"rss"])
+				[_comboOptions addObject:[xpath stringByAppendingPathComponent:str]];
+		}
+	}
 #endif
+}
+
+- (NSInteger)numberOfItemsInComboBox:(NSComboBox *)aComboBox
+{
+	return _comboOptions.count;
+}
+
+- (void)comboBoxSelectionDidChange:(NSNotification *)notification
+{
+	NSComboBox *box;
+
+	box = notification.object;
+
+	NSString *path = _comboOptions[box.indexOfSelectedItem];
+
+	if([path.pathExtension isEqualToString:@"rmp"]) {
+		SRKMap *map = [[SRKMap alloc] initWithPath:path];
+		_imageView.image = [map overviewRender];
+	} else if([path.pathExtension isEqualToString:@"rss"]) {
+		SRKSpriteSet *ss = [[SRKSpriteSet alloc] initWithPath:path];
+		_imageView.image = [ss overviewRender];
+	}
+}
+
+- (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(NSInteger)index
+{
+	return [_comboOptions[index] lastPathComponent];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender

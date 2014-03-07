@@ -6,4 +6,6 @@
 
 #ifdef __OBJC__
 	#import <Cocoa/Cocoa.h>
+	#import <JavaScriptCore/JavaScriptCore.h>
+	#import "JSContext+SPRExceptions.h"
 #endif

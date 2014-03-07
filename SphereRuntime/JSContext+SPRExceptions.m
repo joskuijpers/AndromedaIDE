@@ -16,7 +16,8 @@
 	if(self) {
 		self.exceptionHandler = ^(JSContext *context, JSValue *value) {
 			// TODO: dissect the JSValue and work with TypeError, SyntaxError, etc exceptions
-			@throw value;
+//			@throw value;
+			printf("[EXC ] %s\n",[[value toString] UTF8String]);
 		};
 	}
 	return self;

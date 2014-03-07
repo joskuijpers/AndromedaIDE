@@ -6,9 +6,6 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <JavaScriptCore/JavaScriptCore.h>
-
 @protocol SPRConsole <JSExport>
 
 - (void)log:(NSString *)string;

@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SPRAppDelegate : NSObject <NSApplicationDelegate>
+@interface SPRAppDelegate : NSObject <NSApplicationDelegate, NSComboBoxDataSource, NSComboBoxDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSImageView *imageView;
 
 @end
