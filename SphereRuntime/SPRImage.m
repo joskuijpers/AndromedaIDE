@@ -10,4 +10,9 @@
 
 @implementation SPRImage
 
+- (instancetype)initWithPath:(NSString *)path
+{
+	return nil;
+}
+
 @end

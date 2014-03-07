@@ -10,6 +10,7 @@
 
 #import "SPRConsole.h"
 #import "SPRColor.h"
+#import "SPRFile.h"
 #import "SphereRuntimeKit.h"
 
 @implementation SPRAppDelegate {
@@ -23,6 +24,7 @@
 	_context[@"console"] = [[SPRConsole alloc] init];
 	
 	_context[@"Color"] = [SPRColor class];
+	_context[@"File"] = [SPRFile class];
 
 #if 0
 	NSString *gamePath;
