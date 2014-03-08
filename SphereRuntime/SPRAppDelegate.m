@@ -19,6 +19,19 @@
 	NSMutableArray *_comboOptions;
 }
 
+void load_bundle_script(JSContext *context, NSString *name)
+{
+	NSString *main;
+	main = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:@"js"]
+									 encoding:NSUTF8StringEncoding
+										error:NULL];
+	@try {
+		[context evaluateScript:main];
+	} @catch(id ex) {
+		printf("[EXC ] %s\n",[[ex toString] UTF8String]);
+	}
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	_context = [[JSContext alloc] initWithExceptionHandler];
@@ -44,18 +57,8 @@
 	};
 #endif
 
-
-	NSString *main;
-	main = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"js"]
-									 encoding:NSUTF8StringEncoding
-										error:NULL];
-	@try {
-		[_context evaluateScript:main];
-	} @catch(id ex) {
-		printf("[EXC ] %s\n",[[ex toString] UTF8String]);
-	}
-
-
+	load_bundle_script(_context, @"sphere16");
+	load_bundle_script(_context, @"test");
 
 #if 0
 	_comboOptions = [NSMutableArray array];

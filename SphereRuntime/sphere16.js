@@ -39,3 +39,23 @@ function HashByteArray(byte_array) {
 function LoadImage(filename) {
 	return new __Image(filename);
 }
+
+function GetLocalAddress() {
+	return Network.localAddress;
+}
+
+function GetLocalName() {
+	return Network.localName;
+}
+
+function ListenOnPort(port) {
+	return Network.listen(port);
+}
+
+function OpenAddress(address, port) {
+	return new __Socket(address, port);
+}
+
+Socket.prototype.isConnected = function() {
+	return this.connected;
+}
