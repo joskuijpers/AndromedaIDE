@@ -1,7 +1,7 @@
 
 
 function OpenFile(path) {
-	return new File(path);
+	return new __File(path);
 }
 
 function HashFromFile(file) {
@@ -9,7 +9,7 @@ function HashFromFile(file) {
 }
 
 function CreateColor(r,g,b,a) {
-	return new Color(r,g,b,a);
+	return new __Color(r,g,b,a);
 }
 
 function BlendColors(c1,c2) {
@@ -21,11 +21,11 @@ function BlendColorsWeighted(c1,c2,w1,w2) {
 }
 
 function CreateByteArray(length) {
-	return new ByteArray(length);
+	return new __ByteArray(length);
 }
 
 function CreateByteArrayFromString(string) {
-	return new ByteArray(string);
+	return new __ByteArray(string);
 }
 
 function CreateStringFromByteArray(byte_array) {
@@ -34,4 +34,8 @@ function CreateStringFromByteArray(byte_array) {
 
 function HashByteArray(byte_array) {
 	return byte_array.md5hash();
+}
+
+function LoadImage(filename) {
+	return new __Image(filename);
 }

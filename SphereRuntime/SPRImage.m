@@ -7,12 +7,19 @@
 //
 
 #import "SPRImage.h"
+#import <SRKImage.h>
 
-@implementation SPRImage
+@implementation SPRImage {
+	SRKImage *_image;
+}
 
 - (instancetype)init
 {
-	return nil;
+	self = [super init];
+	if(self) {
+
+	}
+	return self;
 }
 
 @end
