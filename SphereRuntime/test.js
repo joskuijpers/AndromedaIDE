@@ -1,4 +1,10 @@
 
+console.log(NativeModule._cache);
+
+var testModule = require("./test_module.js");
+
+testModule.doSomethingFancy("With My Argument");
+//console.log(__filename);
 
 //var s = new __Socket("www.google.com",80);
 //console.log(String(s));
@@ -23,6 +29,7 @@
 // fs.readFile(filename, [Options{flag,encoding}], cb(err, data))
 
 // Modules
+/*
 var link = require("./link.js");
 link.create("foo");
 
@@ -35,17 +42,19 @@ var js = new JSON("{x:1}");
 
 module.exports = function(string) { // the constructor
 }
+*/
 
 // Folders as modules
 
 // Create a folder, add a package.json with:
-{ "name":"Link","main":"./lib/link.js","version":"1.6"}
+//{ "name":"Link","main":"./lib/link.js","version":"1.6"}
 // Now require('./link') (if ./link is the lib folder) will load ./link/lib/link.js
 // If no package.json found, load main.js
 
 // require(x) always returns same object: no multi-eval! Allows transitive dependencies to be loaded
 // because partially done can be returned
 
+/*
 Module {
 	var id;
 	var filename;
@@ -136,7 +145,7 @@ net.Datagram {
 
 os.hostname()
 os.networkInterfaces()
-
+*/
 
 //GLOBAL
 // In modules, the global scope is module-scope. Use some trick?
@@ -151,3 +160,7 @@ os.networkInterfaces()
 // clearTimeout(t)
 // t = setInterval(cb, ms)
 // clearInterval(t)
+
+// module.exports.Console = Console;
+// module.exports.createServer = function() {}
+// module.exports.<classname> = <classname>
