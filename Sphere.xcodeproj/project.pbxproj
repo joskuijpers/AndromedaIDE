@@ -229,6 +229,10 @@
 		80C07A4A18CAAD390082F562 /* SPRSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A4918CAAD390082F562 /* SPRSocket.m */; };
 		80C07A4D18CAAD520082F562 /* SPRNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A4C18CAAD520082F562 /* SPRNetwork.m */; };
 		80C07A5018CAB6530082F562 /* SPRBonjour.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A4F18CAB6530082F562 /* SPRBonjour.m */; };
+		80C07A5318CB73BB0082F562 /* test_module.js in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5218CB73BB0082F562 /* test_module.js */; };
+		80C07A5418CB73D60082F562 /* test_module.js in Resources */ = {isa = PBXBuildFile; fileRef = 80C07A5218CB73BB0082F562 /* test_module.js */; };
+		80C07A5818CB74E30082F562 /* SPRCompatibility16.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5718CB74E30082F562 /* SPRCompatibility16.m */; };
+		80C07A5B18CB74F80082F562 /* SPRCompatibility15.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5A18CB74F80082F562 /* SPRCompatibility15.m */; };
 		80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80F07F2E17CCE58A002E582E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F2C17CCE58A002E582E /* InfoPlist.strings */; };
 		80F07F3017CCE58A002E582E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F2F17CCE58A002E582E /* main.m */; };
@@ -694,6 +698,12 @@
 		80C07A4C18CAAD520082F562 /* SPRNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRNetwork.m; sourceTree = "<group>"; };
 		80C07A4E18CAB6530082F562 /* SPRBonjour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRBonjour.h; sourceTree = "<group>"; };
 		80C07A4F18CAB6530082F562 /* SPRBonjour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRBonjour.m; sourceTree = "<group>"; };
+		80C07A5218CB73BB0082F562 /* test_module.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test_module.js; sourceTree = "<group>"; };
+		80C07A5618CB74E30082F562 /* SPRCompatibility16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRCompatibility16.h; sourceTree = "<group>"; };
+		80C07A5718CB74E30082F562 /* SPRCompatibility16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRCompatibility16.m; sourceTree = "<group>"; };
+		80C07A5918CB74F80082F562 /* SPRCompatibility15.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRCompatibility15.h; sourceTree = "<group>"; };
+		80C07A5A18CB74F80082F562 /* SPRCompatibility15.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRCompatibility15.m; sourceTree = "<group>"; };
+		80C07A5C18CB753D0082F562 /* SPRCompatibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRCompatibility.h; sourceTree = "<group>"; };
 		80F07F2717CCE58A002E582E /* SphereRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F07F2B17CCE58A002E582E /* SphereRuntime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereRuntime-Info.plist"; sourceTree = "<group>"; };
 		80F07F2D17CCE58A002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1308,12 +1318,10 @@
 		803563C718BA9D5400696C5A /* JavaScript Library */ = {
 			isa = PBXGroup;
 			children = (
+				80C07A5518CB74C40082F562 /* Compatibility */,
 				803563B518BA98B600696C5A /* SPRConsole.h */,
 				803563B618BA98B600696C5A /* SPRConsole.m */,
-				803563C418BA9BC800696C5A /* SPRImage.h */,
-				803563C518BA9BC800696C5A /* SPRImage.m */,
-				80C07A2418C94BFC0082F562 /* SPRColor.h */,
-				80C07A2518C94BFD0082F562 /* SPRColor.m */,
+				80C07A5118CB6E060082F562 /* Graphics */,
 				80C07A4718CAAD220082F562 /* Networking */,
 				80C07A4618CAAD1A0082F562 /* Files */,
 				80C07A4518CAAD100082F562 /* Internal */,
@@ -1719,6 +1727,29 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		80C07A5118CB6E060082F562 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				803563C418BA9BC800696C5A /* SPRImage.h */,
+				803563C518BA9BC800696C5A /* SPRImage.m */,
+				80C07A2418C94BFC0082F562 /* SPRColor.h */,
+				80C07A2518C94BFD0082F562 /* SPRColor.m */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		80C07A5518CB74C40082F562 /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				80C07A5C18CB753D0082F562 /* SPRCompatibility.h */,
+				80C07A5618CB74E30082F562 /* SPRCompatibility16.h */,
+				80C07A5718CB74E30082F562 /* SPRCompatibility16.m */,
+				80C07A5918CB74F80082F562 /* SPRCompatibility15.h */,
+				80C07A5A18CB74F80082F562 /* SPRCompatibility15.m */,
+			);
+			name = Compatibility;
+			sourceTree = "<group>";
+		};
 		80F07F2917CCE58A002E582E /* SphereRuntime */ = {
 			isa = PBXGroup;
 			children = (
@@ -1804,6 +1835,7 @@
 				80C07A2718C94C1C0082F562 /* sphere16.js */,
 				80C07A2918C94C240082F562 /* sphere15.js */,
 				80C07A2B18C94E4C0082F562 /* test.js */,
+				80C07A5218CB73BB0082F562 /* test_module.js */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2251,6 +2283,7 @@
 				80C07A2D18C94EE60082F562 /* sphere16.js in Resources */,
 				80C07A2E18C94EE60082F562 /* sphere15.js in Resources */,
 				80C07A2F18C94EE60082F562 /* test.js in Resources */,
+				80C07A5418CB73D60082F562 /* test_module.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2402,9 +2435,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C07A5B18CB74F80082F562 /* SPRCompatibility15.m in Sources */,
 				80C07A4118CA21C90082F562 /* SPRFileSystem.m in Sources */,
 				80C07A3218C957F00082F562 /* JSContext+SPRFixes.m in Sources */,
+				80C07A5318CB73BB0082F562 /* test_module.js in Sources */,
 				803563C618BA9BC800696C5A /* SPRImage.m in Sources */,
+				80C07A5818CB74E30082F562 /* SPRCompatibility16.m in Sources */,
 				80C07A2618C94BFD0082F562 /* SPRColor.m in Sources */,
 				80C07A3B18C96C2D0082F562 /* SPRRawFile.m in Sources */,
 				80C07A4A18CAAD390082F562 /* SPRSocket.m in Sources */,

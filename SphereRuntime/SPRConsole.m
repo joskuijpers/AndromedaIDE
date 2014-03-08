@@ -12,7 +12,23 @@
 
 - (void)log:(NSString *)string
 {
-	printf("[LOG ] %s\n",[string UTF8String]);
+	NSArray *arguments;
+
+	arguments = [JSContext currentArguments];
+
+	// Not a format string, write all arguments
+	if([string rangeOfString:@"%"].location == NSNotFound) {
+		for(JSValue *arg in arguments)
+			fprintf(stdout,"[LOG ] %s\n",[[arg toString] UTF8String]);
+	} else {
+		NSLog(@"To Implement: printf-like formatting!");
+		fprintf(stdout,"[LOG ] %s\n",[string UTF8String]);
+	}
+}
+
+- (void)error:(NSString *)string
+{
+	fprintf(stderr,"[ERR ] %s\n",[string UTF8String]);
 }
 
 @end
