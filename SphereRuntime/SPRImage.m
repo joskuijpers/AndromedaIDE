@@ -7,7 +7,7 @@
 //
 
 #import "SPRImage.h"
-#import <SRKImage.h>
+#import "SRKImage.h"
 
 @implementation SPRImage {
 	SRKImage *_image;
