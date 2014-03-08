@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
+#import "SPRJSClass.h"
+
 @class SPRByteArray;
 
 @protocol SPRByteArray <JSExport>
@@ -30,7 +32,7 @@ JSExportAs(slice,
 
 @end
 
-@interface SPRByteArray : NSObject <SPRByteArray>
+@interface SPRByteArray : NSObject <SPRByteArray, SPRJSClass>
 
 - (instancetype)initWithData:(NSData *)data;
 - (NSMutableData *)data;

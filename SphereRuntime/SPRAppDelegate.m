@@ -6,13 +6,12 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
+#import <objc/runtime.h>
+
 #import "SPRAppDelegate.h"
 
+#import "SPRJSClass.h"
 #import "SPRConsole.h"
-#import "SPRColor.h"
-#import "SPRFile.h"
-#import "SPRByteArray.h"
-#import "SPRRawFile.h"
 #import "SphereRuntimeKit.h"
 
 @implementation SPRAppDelegate {
@@ -23,12 +22,10 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	_context = [[JSContext alloc] initWithExceptionHandler];
+	spr_install_js_lib(_context);
+
 	_context[@"console"] = [[SPRConsole alloc] init];
-	
-	_context[@"Color"] = [SPRColor class];
-	_context[@"File"] = [SPRFile class];
-	_context[@"ByteArray"] = [SPRByteArray class];
-	_context[@"RawFile"] = [SPRRawFile class];
+
 
 #if 0
 	NSString *gamePath;

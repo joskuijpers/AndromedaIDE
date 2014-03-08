@@ -12,6 +12,11 @@
 
 @synthesize red=_red, green=_green, blue=_blue, alpha=_alpha;
 
++ (void)installIntoContext:(JSContext *)context
+{
+	context[@"Color"] = [SPRColor class];
+}
+
 - (instancetype)init
 {
 	self = [super init];

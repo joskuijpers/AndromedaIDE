@@ -11,9 +11,8 @@
 
 @implementation JSContext (SPRFixes)
 
-// This code is needed to make constructors work.
-// After calling this on the context with given class and name, one can actually do
-// new <name>() on the context.
+// This code is needed to make constructors work. After this, there is
+// 'name' for access to class methods and 'new __name()' to create a new object.
 void spr_make_class_available(JSContext *context, Class class, NSString *name)
 {
     NSString *formattedName;
@@ -21,11 +20,14 @@ void spr_make_class_available(JSContext *context, Class class, NSString *name)
 	formattedName = [NSString stringWithFormat:@"__%s", class_getName(class)];
 
 	// The constructor function
-    context[formattedName] = ^(void) {
+    context.globalObject[formattedName] = ^(void) {
 		return [[class alloc] init];
 	};
 
-    [context evaluateScript:[NSString stringWithFormat:@"var %@ = function (){ return %@.apply(this,arguments);};", name, formattedName]];
+	// Set the class to get access to class methods
+	context.globalObject[name] = class;
+
+    [context evaluateScript:[NSString stringWithFormat:@"function __%@(){ return %@.apply(this,arguments);};", name, formattedName]];
 }
 
 // Replace the default implementation (publicly availble) with an implementation

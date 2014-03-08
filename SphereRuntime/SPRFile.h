@@ -6,8 +6,13 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
+#import "SPRJSClass.h"
+
 @class SPRFile;
 
+/**
+ * A key-value coding file
+ */
 @protocol SPRFile <JSExport>
 
 /// Number of entries in the file
@@ -45,6 +50,8 @@ JSExportAs(write,
 
 @end
 
-@interface SPRFile : NSObject <SPRFile>
-
+/**
+ * A key-value coding file
+ */
+@interface SPRFile : NSObject <SPRFile, SPRJSClass>
 @end

@@ -12,6 +12,11 @@
 	NSMutableData *_data;
 }
 
++ (void)installIntoContext:(JSContext *)context
+{
+	context[@"ByteArray"] = [SPRByteArray class];
+}
+
 - (instancetype)init
 {
 	self = [super init];

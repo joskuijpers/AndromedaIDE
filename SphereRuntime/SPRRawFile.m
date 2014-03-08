@@ -17,6 +17,11 @@
 @synthesize size=_size, position=_position;
 @synthesize path=_path, writable=_writable;
 
++ (void)installIntoContext:(JSContext *)context
+{
+	context[@"RawFile"] = [SPRRawFile class];
+}
+
 - (instancetype)init
 {
 	self = [super init];

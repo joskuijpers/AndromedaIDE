@@ -15,6 +15,11 @@
 
 @synthesize path=_path;
 
++ (void)installIntoContext:(JSContext *)context
+{
+	context[@"File"] = [SPRFile class];
+}
+
 - (instancetype)init
 {
 	self = [super init];

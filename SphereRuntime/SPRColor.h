@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
+#import "SPRJSClass.h"
+
 @class SPRColor;
 
 @protocol SPRColor <JSExport>
@@ -27,7 +29,7 @@ JSExportAs(blendWeighted,
 
 @end
 
-@interface SPRColor : NSObject <SPRColor>
+@interface SPRColor : NSObject <SPRColor, SPRJSClass>
 
 - (instancetype)initWithRed:(uint8_t)red
 					  green:(uint8_t)green

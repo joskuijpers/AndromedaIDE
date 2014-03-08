@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
+#import "SPRJSClass.h"
+
 @class SPRRawFile, SPRByteArray;
 
 @protocol SPRRawFile <JSExport>
@@ -49,7 +51,7 @@ JSExportAs(write,
 
 @end
 
-@interface SPRRawFile : NSObject <SPRRawFile>
+@interface SPRRawFile : NSObject <SPRRawFile, SPRJSClass>
 
 - (instancetype)initWithPath:(NSString *)path
 				   writeable:(BOOL)writeable;
