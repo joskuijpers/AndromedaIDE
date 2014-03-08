@@ -30,11 +30,10 @@ typedef struct {
 	uint16_t next_tile;
 	uint16_t delay;
 	uint8_t obsolete2;
-	uint8_t block_type;
+	uint8_t block_type; // 0 = no obs data, 1 = old obs data, 2 = new obstruction data
 	uint16_t num_segments;
 	uint16_t name_length;
-	uint8_t terraformed;
-	uint8_t reserved[19];
+	uint8_t reserved[20];
 } __attribute__((packed)) srk_rts_info_block_t;
 _Static_assert(sizeof(srk_rts_info_block_t) == 32,"wrong struct size");
 
@@ -165,7 +164,6 @@ _Static_assert(sizeof(srk_rts_obstruction_segment_t) == 8,"wrong struct size");
 
 		tile.animated = info->animated;
 		tile.nextTile = info->next_tile;
-		tile.terraformable = info->terraformed;
 		tile.delay = info->delay;
 
 		nameData = [fileContents subdataWithRange:NSMakeRange(*filePos, info->name_length)];
@@ -218,9 +216,9 @@ _Static_assert(sizeof(srk_rts_obstruction_segment_t) == 8,"wrong struct size");
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat:@"<SRKTile>{name: %@, animated: %d, terraformable: %d, "
+	return [NSString stringWithFormat:@"<SRKTile>{name: %@, animated: %d, "
 			@"nextTile: %d, delay: %d, image: %@, obstructionMap: %@}",
-			_name,_animated,_terraformable,_nextTile,_delay,_image,_obstructionMap];
+			_name,_animated,_nextTile,_delay,_image,_obstructionMap];
 }
 
 @end

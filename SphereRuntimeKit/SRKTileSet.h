@@ -37,9 +37,6 @@
 /// Whether the tile is animated
 @property (assign) BOOL animated;
 
-/// Whether the tile is terraformable
-@property (assign) BOOL terraformable;
-
 /// The next tile in the animation
 @property (assign) int nextTile;
 
