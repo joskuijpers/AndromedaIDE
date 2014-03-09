@@ -25,7 +25,7 @@
 	NSNetService *_service;
 }
 
-+ (void)installIntoContext:(JSContext *)context
++ (void)installIntoContext:(L8Runtime *)context
 {
 	context[@"Bonjour"] = [SPRBonjour class];
 }

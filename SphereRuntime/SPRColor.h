@@ -10,7 +10,7 @@
 
 @class SPRColor;
 
-@protocol SPRColor <JSExport>
+@protocol SPRColor <L8Export>
 
 @property (assign) uint8_t red;
 @property (assign) uint8_t green;
@@ -21,7 +21,7 @@
 
 - (SPRColor *)blend:(SPRColor *)other;
 
-JSExportAs(blendWeighted,
+L8ExportAs(blendWeighted,
 - (SPRColor *)blend:(SPRColor *)other
 		 withLeftWeight:(double)w1
 			rightWeight:(double)w2

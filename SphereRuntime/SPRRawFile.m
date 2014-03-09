@@ -17,7 +17,7 @@
 @synthesize size=_size, position=_position;
 @synthesize path=_path, writable=_writable;
 
-+ (void)installIntoContext:(JSContext *)context
++ (void)installIntoContext:(L8Runtime *)context
 {
 	context[@"RawFile"] = [SPRRawFile class];
 }
@@ -26,7 +26,7 @@
 {
 	self = [super init];
 	if(self) {
-		NSArray *arguments = [JSContext currentArguments];
+		NSArray *arguments = [L8Runtime currentArguments];
 
 		if(arguments.count >= 1)
 			_path = [arguments[0] toString];
@@ -136,7 +136,7 @@
 - (void)flush
 {
 	if(![self saveToFile:_path])
-		[[JSContext currentContext] throw:@"Failed to write file"];
+		[[L8Value valueWithObject:@"Failed to write file"] throwValue];
 }
 
 - (void)close

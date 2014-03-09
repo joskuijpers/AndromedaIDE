@@ -19,7 +19,7 @@
 
 @synthesize connected=_connected;
 
-+ (void)installIntoContext:(JSContext *)context
++ (void)installIntoContext:(L8Runtime *)context
 {
 	context[@"Socket"] = [SPRSocket class];
 }
@@ -28,7 +28,7 @@
 {
 	self = [super init];
 	if(self) {
-		NSArray *arguments = [JSContext currentArguments];
+		NSArray *arguments = [L8Runtime currentArguments];
 
 		if(arguments.count >= 2) {
 			NSString *host = [arguments[0] toString];
@@ -170,7 +170,8 @@
 	[_outputStream removeFromRunLoop:[NSRunLoop mainRunLoop]
 							 forMode:NSDefaultRunLoopMode];
 
-	_inputStream = _outputStream = nil;
+	_inputStream = nil;
+	_outputStream = nil;
 }
 
 - (void)stream:(NSStream *)aStream handleEvent:(NSStreamEvent)eventCode

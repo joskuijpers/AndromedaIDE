@@ -10,15 +10,15 @@
 
 @class SPRByteArray;
 
-@protocol SPRByteArray <JSExport>
+@protocol SPRByteArray <L8Export>
 
 - (instancetype)init;
 
-JSExportAs(concat,
+L8ExportAs(concat,
 - (SPRByteArray *)byteArrayByAppendingByteArray:(SPRByteArray *)byteArray
 );
 
-JSExportAs(slice,
+L8ExportAs(slice,
 - (SPRByteArray *)subArrayWithStart:(size_t)start end:(size_t)end
 );
 

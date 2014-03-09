@@ -12,18 +12,21 @@
 
 - (void)log:(NSString *)string
 {
+#if 0
 	NSArray *arguments;
 
-	arguments = [JSContext currentArguments];
+	arguments = [L8Runtime currentArguments];
 
 	// Not a format string, write all arguments
 	if([string rangeOfString:@"%"].location == NSNotFound) {
-		for(JSValue *arg in arguments)
+		for(L8Value *arg in arguments)
 			fprintf(stdout,"[LOG ] %s\n",[[arg toString] UTF8String]);
 	} else {
 		NSLog(@"To Implement: printf-like formatting!");
 		fprintf(stdout,"[LOG ] %s\n",[string UTF8String]);
 	}
+#endif
+	fprintf(stdout,"[LOG ] %s\n",[string UTF8String]);
 }
 
 - (void)error:(NSString *)string

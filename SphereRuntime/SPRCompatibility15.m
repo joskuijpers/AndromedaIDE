@@ -10,7 +10,7 @@
 
 @implementation SPRCompatibility15
 
-+ (void)makeContextCompatible:(JSContext *)context
++ (void)makeContextCompatible:(L8Runtime *)context
 {
 
 }

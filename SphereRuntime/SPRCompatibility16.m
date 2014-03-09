@@ -10,7 +10,7 @@
 
 @implementation SPRCompatibility16
 
-+ (void)makeContextCompatible:(JSContext *)context
++ (void)makeContextCompatible:(L8Runtime *)context
 {
 	// Load the shim file
 	NSString *main;
@@ -37,7 +37,7 @@
 										 encoding:NSUTF8StringEncoding
 											error:NULL];
 
-		[[JSContext currentContext] evaluateScript:data];
+		[[L8Runtime currentRuntime] evaluateScript:data];
 	};
 
 }

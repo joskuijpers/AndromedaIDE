@@ -9,7 +9,7 @@
 #import <objc/runtime.h>
 #import "SPRJSClass.h"
 
-void spr_install_js_lib(JSContext *context) {
+void spr_install_js_lib(L8Runtime *context) {
 	Class *classes;
 	unsigned int count;
 

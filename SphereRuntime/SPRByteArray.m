@@ -12,7 +12,7 @@
 	NSMutableData *_data;
 }
 
-+ (void)installIntoContext:(JSContext *)context
++ (void)installIntoContext:(L8Runtime *)context
 {
 	context[@"ByteArray"] = [SPRByteArray class];
 }
@@ -21,9 +21,9 @@
 {
 	self = [super init];
 	if(self) {
-		NSArray *arguments = [JSContext currentArguments];
+		NSArray *arguments = [L8Runtime currentArguments];
 		if(arguments.count >= 1) {
-			JSValue *val = arguments[0];
+			L8Value *val = arguments[0];
 			if([val isNumber]) {
 				int size = [[val toNumber] intValue];
 				_data = [[NSMutableData alloc] initWithLength:size];

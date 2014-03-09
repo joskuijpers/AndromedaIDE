@@ -11,13 +11,12 @@
 
 @implementation SPRNetwork
 
-+ (void)installIntoContext:(JSContext *)context
++ (void)installIntoContext:(L8Runtime *)context
 {
 	context[@"Network"] = [SPRNetwork class];
 	context[@"Network"][@"bonjour"] = [SPRBonjour class];
-
+#if 0
 	NSDictionary *property;
-
 	// localName property on Network
 	property = @{JSPropertyDescriptorGetKey: ^{
 					 return [SPRNetwork localName];
@@ -31,6 +30,7 @@
 				 }};
 	[context[@"Network"] defineProperty:@"localAddress"
 							 descriptor:property];
+#endif
 }
 
 + (NSString *)localName

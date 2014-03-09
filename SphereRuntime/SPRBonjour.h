@@ -10,13 +10,13 @@
 
 @class SPRSocket;
 
-@protocol SPRBonjour <JSExport>
+@protocol SPRBonjour <L8Export>
 
 - (instancetype)init;
 
 // publish
 //: name, type, domain, port
-JSExportAs(publish,
+L8ExportAs(publish,
 - (BOOL)publishWithName:(NSString *)name
 				   type:(NSString *)type
 				   port:(uint16_t)port
@@ -25,7 +25,7 @@ JSExportAs(publish,
 
 // discover
 //: type, domain => name (+ port?)
-JSExportAs(discover,
+L8ExportAs(discover,
 - (void)discoverPeersWithType:(NSString *)type
 		   domain:(NSString *)domain
 		   callback:(void (^)(NSString *name))callback
@@ -33,7 +33,7 @@ JSExportAs(discover,
 
 // resolve -> toSocket
 //: name => addr + port
-JSExportAs(resolve,
+L8ExportAs(resolve,
 - (SPRSocket *)resolvePeerWithName:(NSString *)name
 );
 

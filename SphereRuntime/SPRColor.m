@@ -12,7 +12,7 @@
 
 @synthesize red=_red, green=_green, blue=_blue, alpha=_alpha;
 
-+ (void)installIntoContext:(JSContext *)context
++ (void)installIntoContext:(L8Runtime *)context
 {
 	context[@"Color"] = [SPRColor class];
 }
@@ -21,7 +21,7 @@
 {
 	self = [super init];
 	if(self) {
-		NSArray *args = [JSContext currentArguments];
+		NSArray *args = [L8Runtime currentArguments];
 		size_t count = args.count;
 
 		_red = (count >= 1)?[args[0] toUInt32]:0;
@@ -89,7 +89,7 @@
 	w2 = (w2 < 0.0)?-w2:w2;
 
 	if(w1+w2 == 0.0)
-		[[JSContext currentContext] throw:@"Invalid arguments: (w1+w2) must be > 0.0"];
+		[[L8Value valueWithObject:@"Invalid arguments: (w1+w2) must be > 0.0"] throwValue];
 
 	return [[SPRColor alloc] initWithRed:(other.red*w2+_red*w1)/(w1+w2)
 								   green:(other.green*w2+_green*w1)/(w1+w2)

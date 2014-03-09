@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
-@protocol JSExport;
-@protocol SPRImage <JSExport>
+@protocol L8Export;
+@protocol SPRImage <L8Export>
 
 - (instancetype)init;
 

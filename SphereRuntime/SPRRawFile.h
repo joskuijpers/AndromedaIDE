@@ -10,7 +10,7 @@
 
 @class SPRRawFile, SPRByteArray;
 
-@protocol SPRRawFile <JSExport>
+@protocol SPRRawFile <L8Export>
 
 /// Path of the file
 @property (strong,readonly) NSString *path;
@@ -26,11 +26,11 @@
 
 - (instancetype)init;
 
-JSExportAs(read,
+L8ExportAs(read,
 - (SPRByteArray *)readBytes:(size_t)len
 );
 
-JSExportAs(write,
+L8ExportAs(write,
 - (void)writeByteArray:(SPRByteArray *)byteArray
 );
 

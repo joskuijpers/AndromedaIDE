@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Jarvix. All rights reserved.
 //
 
-@protocol SPRConsole <JSExport>
+@protocol SPRConsole <L8Export>
 
 /**
  * Prints to stdout with newline. Uses a printf-like format,

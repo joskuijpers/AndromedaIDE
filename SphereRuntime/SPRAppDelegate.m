@@ -15,18 +15,14 @@
 #import "SphereRuntimeKit.h"
 
 @implementation SPRAppDelegate {
-	JSContext *_context;
+	L8Runtime *_runtime;
 	NSMutableArray *_comboOptions;
 }
 
-void load_bundle_script(JSContext *context, NSString *name)
+void load_bundle_script(L8Runtime *context, NSString *name)
 {
-	NSString *main;
-	main = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:@"js"]
-									 encoding:NSUTF8StringEncoding
-										error:NULL];
 	@try {
-		[context evaluateScript:main];
+		[context loadScriptAtPath:[[NSBundle mainBundle] pathForResource:name ofType:@"js"]];
 	} @catch(id ex) {
 		printf("[EXC ] %s\n",[[ex toString] UTF8String]);
 	}
@@ -34,19 +30,18 @@ void load_bundle_script(JSContext *context, NSString *name)
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	_context = [[JSContext alloc] initWithExceptionHandler];
-	spr_install_js_lib(_context);
-
-	_context[@"console"] = [[SPRConsole alloc] init];
+	_runtime = [[L8Runtime alloc] init];
 
 
+	[_runtime executeBlockInRuntime:^(L8Runtime *runtime) {
+		spr_install_js_lib(_runtime);
+
+		_runtime[@"console"] = [[SPRConsole alloc] init];
 
 
+		load_bundle_script(_runtime, @"test");
+	}];
 
-
-
-
-	load_bundle_script(_context, @"test");
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender

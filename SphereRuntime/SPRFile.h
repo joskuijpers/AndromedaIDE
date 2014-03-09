@@ -13,7 +13,7 @@
 /**
  * A key-value coding file
  */
-@protocol SPRFile <JSExport>
+@protocol SPRFile <L8Export>
 
 /// Number of entries in the file
 @property (nonatomic,assign,readonly) size_t size;
@@ -23,11 +23,11 @@
 
 - (instancetype)init;
 
-JSExportAs(read,
+L8ExportAs(read,
 - (NSString *)readKey:(NSString *)key withDefault:(NSString *)def
 );
 
-JSExportAs(write,
+L8ExportAs(write,
 - (void)writeKey:(NSString *)key value:(NSString *)value
 );
 

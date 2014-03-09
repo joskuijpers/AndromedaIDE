@@ -10,7 +10,7 @@
 
 @implementation SPRModule
 
-+ (void)installIntoContext:(JSContext *)context
++ (void)installIntoContext:(L8Runtime *)context
 {
 
 }

@@ -10,9 +10,9 @@
 
 @class SPRFileSystem;
 
-@protocol SPRFileSystem <JSExport>
+@protocol SPRFileSystem <L8Export>
 
-JSExportAs(createDirectory,
+L8ExportAs(createDirectory,
 + (BOOL)createDirectoryAtPath:(NSString *)path
 );
 

@@ -102,7 +102,6 @@
 		803563AF18BA4AAC00696C5A /* L8NativeException.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563AD18BA4AAC00696C5A /* L8NativeException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563B018BA4AAC00696C5A /* L8NativeException.mm in Sources */ = {isa = PBXBuildFile; fileRef = 803563AE18BA4AAC00696C5A /* L8NativeException.mm */; };
 		803563B218BA8AF400696C5A /* L8_Runtime_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563B118BA8AF400696C5A /* L8_Runtime_test.m */; };
-		803563B418BA8CA700696C5A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803563B318BA8CA700696C5A /* JavaScriptCore.framework */; };
 		803563B718BA98B600696C5A /* SPRConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563B618BA98B600696C5A /* SPRConsole.m */; };
 		803563BB18BA99F100696C5A /* SPRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563BA18BA99F100696C5A /* SPRGame.m */; };
 		803563C018BA9A5B00696C5A /* SPRResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563BF18BA9A5B00696C5A /* SPRResource.m */; };
@@ -215,12 +214,10 @@
 		80BB199518C77613004CBF91 /* SRKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB199318C77613004CBF91 /* SRKResource.m */; };
 		80BB199818C7778C004CBF91 /* SRKSoundEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB199618C7778C004CBF91 /* SRKSoundEffect.h */; };
 		80BB199918C7778C004CBF91 /* SRKSoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB199718C7778C004CBF91 /* SRKSoundEffect.m */; };
-		80BB199D18C8DC97004CBF91 /* JSContext+SPRExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB199C18C8DC97004CBF91 /* JSContext+SPRExceptions.m */; };
 		80C07A2618C94BFD0082F562 /* SPRColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A2518C94BFD0082F562 /* SPRColor.m */; };
 		80C07A2D18C94EE60082F562 /* sphere16.js in Resources */ = {isa = PBXBuildFile; fileRef = 80C07A2718C94C1C0082F562 /* sphere16.js */; };
 		80C07A2E18C94EE60082F562 /* sphere15.js in Resources */ = {isa = PBXBuildFile; fileRef = 80C07A2918C94C240082F562 /* sphere15.js */; };
 		80C07A2F18C94EE60082F562 /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = 80C07A2B18C94E4C0082F562 /* test.js */; };
-		80C07A3218C957F00082F562 /* JSContext+SPRFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A3118C957F00082F562 /* JSContext+SPRFixes.m */; };
 		80C07A3818C963C10082F562 /* SPRFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A3718C963C10082F562 /* SPRFile.m */; };
 		80C07A3B18C96C2D0082F562 /* SPRRawFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A3A18C96C2D0082F562 /* SPRRawFile.m */; };
 		80C07A3E18C96C360082F562 /* SPRByteArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A3D18C96C360082F562 /* SPRByteArray.m */; };
@@ -234,6 +231,8 @@
 		80C07A5818CB74E30082F562 /* SPRCompatibility16.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5718CB74E30082F562 /* SPRCompatibility16.m */; };
 		80C07A5B18CB74F80082F562 /* SPRCompatibility15.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5A18CB74F80082F562 /* SPRCompatibility15.m */; };
 		80C07A6218CBCA6D0082F562 /* SPRModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A6118CBCA6D0082F562 /* SPRModule.m */; };
+		80C07A6318CBEA090082F562 /* L8Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019140217E7C8D700A45BBE /* L8Framework.framework */; };
+		80C07A6618CBEA1B0082F562 /* L8Framework.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 8019140217E7C8D700A45BBE /* L8Framework.framework */; };
 		80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80F07F2E17CCE58A002E582E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F2C17CCE58A002E582E /* InfoPlist.strings */; };
 		80F07F3017CCE58A002E582E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F2F17CCE58A002E582E /* main.m */; };
@@ -334,6 +333,13 @@
 			remoteGlobalIDString = 8006D47717BA840400453468;
 			remoteInfo = SphereRuntimeKit;
 		};
+		80C07A6418CBEA0F0082F562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8019140117E7C8D700A45BBE;
+			remoteInfo = L8Framework;
+		};
 		80F07F8117CCEC15002E582E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
@@ -385,6 +391,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				80C07A6618CBEA1B0082F562 /* L8Framework.framework in Copy Private Frameworks */,
 				803563D018BBEC0500696C5A /* SphereRuntimeKit.framework in Copy Private Frameworks */,
 			);
 			name = "Copy Private Frameworks";
@@ -673,16 +680,12 @@
 		80BB199318C77613004CBF91 /* SRKResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKResource.m; sourceTree = "<group>"; };
 		80BB199618C7778C004CBF91 /* SRKSoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKSoundEffect.h; sourceTree = "<group>"; };
 		80BB199718C7778C004CBF91 /* SRKSoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKSoundEffect.m; sourceTree = "<group>"; };
-		80BB199B18C8DC97004CBF91 /* JSContext+SPRExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSContext+SPRExceptions.h"; sourceTree = "<group>"; };
-		80BB199C18C8DC97004CBF91 /* JSContext+SPRExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSContext+SPRExceptions.m"; sourceTree = "<group>"; };
 		80BB199E18C8E01A004CBF91 /* ExceptionHandling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExceptionHandling.framework; path = System/Library/Frameworks/ExceptionHandling.framework; sourceTree = SDKROOT; };
 		80C07A2418C94BFC0082F562 /* SPRColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRColor.h; sourceTree = "<group>"; };
 		80C07A2518C94BFD0082F562 /* SPRColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRColor.m; sourceTree = "<group>"; };
 		80C07A2718C94C1C0082F562 /* sphere16.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sphere16.js; sourceTree = "<group>"; };
 		80C07A2918C94C240082F562 /* sphere15.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sphere15.js; sourceTree = "<group>"; };
 		80C07A2B18C94E4C0082F562 /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
-		80C07A3018C957F00082F562 /* JSContext+SPRFixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSContext+SPRFixes.h"; sourceTree = "<group>"; };
-		80C07A3118C957F00082F562 /* JSContext+SPRFixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSContext+SPRFixes.m"; sourceTree = "<group>"; };
 		80C07A3618C963C10082F562 /* SPRFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRFile.h; sourceTree = "<group>"; };
 		80C07A3718C963C10082F562 /* SPRFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRFile.m; sourceTree = "<group>"; };
 		80C07A3918C96C2D0082F562 /* SPRRawFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRRawFile.h; sourceTree = "<group>"; };
@@ -812,7 +815,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803563B418BA8CA700696C5A /* JavaScriptCore.framework in Frameworks */,
+				80C07A6318CBEA090082F562 /* L8Framework.framework in Frameworks */,
 				80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */,
 				80F07F8A17CCECC2002E582E /* SphereRuntimeKit.framework in Frameworks */,
 			);
@@ -1684,17 +1687,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		80BB199A18C8DC71004CBF91 /* JSC Additions */ = {
-			isa = PBXGroup;
-			children = (
-				80BB199B18C8DC97004CBF91 /* JSContext+SPRExceptions.h */,
-				80BB199C18C8DC97004CBF91 /* JSContext+SPRExceptions.m */,
-				80C07A3018C957F00082F562 /* JSContext+SPRFixes.h */,
-				80C07A3118C957F00082F562 /* JSContext+SPRFixes.m */,
-			);
-			name = "JSC Additions";
-			sourceTree = "<group>";
-		};
 		80C07A4518CAAD100082F562 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
@@ -1823,7 +1815,6 @@
 		80F07F7F17CCE8D5002E582E /* App */ = {
 			isa = PBXGroup;
 			children = (
-				80BB199A18C8DC71004CBF91 /* JSC Additions */,
 				803563C718BA9D5400696C5A /* JavaScript Library */,
 				80F07F3517CCE58A002E582E /* SPRAppDelegate.h */,
 				80F07F3617CCE58A002E582E /* SPRAppDelegate.m */,
@@ -2132,6 +2123,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				80C07A6518CBEA0F0082F562 /* PBXTargetDependency */,
 				803563D218BBEC0D00696C5A /* PBXTargetDependency */,
 			);
 			name = SphereRuntime;
@@ -2442,7 +2434,6 @@
 			files = (
 				80C07A5B18CB74F80082F562 /* SPRCompatibility15.m in Sources */,
 				80C07A4118CA21C90082F562 /* SPRFileSystem.m in Sources */,
-				80C07A3218C957F00082F562 /* JSContext+SPRFixes.m in Sources */,
 				80C07A5318CB73BB0082F562 /* test_module.js in Sources */,
 				803563C618BA9BC800696C5A /* SPRImage.m in Sources */,
 				80C07A6218CBCA6D0082F562 /* SPRModule.m in Sources */,
@@ -2455,7 +2446,6 @@
 				803563B718BA98B600696C5A /* SPRConsole.m in Sources */,
 				80F07F3717CCE58A002E582E /* SPRAppDelegate.m in Sources */,
 				80F07F3017CCE58A002E582E /* main.m in Sources */,
-				80BB199D18C8DC97004CBF91 /* JSContext+SPRExceptions.m in Sources */,
 				80C07A3818C963C10082F562 /* SPRFile.m in Sources */,
 				80C07A3E18C96C360082F562 /* SPRByteArray.m in Sources */,
 				803563C018BA9A5B00696C5A /* SPRResource.m in Sources */,
@@ -2554,6 +2544,11 @@
 			isa = PBXTargetDependency;
 			target = 8006D47717BA840400453468 /* SphereRuntimeKit */;
 			targetProxy = 803563D118BBEC0D00696C5A /* PBXContainerItemProxy */;
+		};
+		80C07A6518CBEA0F0082F562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8019140117E7C8D700A45BBE /* L8Framework */;
+			targetProxy = 80C07A6418CBEA0F0082F562 /* PBXContainerItemProxy */;
 		};
 		80F07F8217CCEC15002E582E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

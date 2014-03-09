@@ -10,7 +10,7 @@
 
 @class SPRByteArray;
 
-@protocol SPRSocket <JSExport>
+@protocol SPRSocket <L8Export>
 
 /// Whether the socket is (still) connected
 @property (readonly,assign,getter=isConnected) BOOL connected;
@@ -19,11 +19,11 @@
 
 // something with getPendingReadSize()
 
-JSExportAs(read,
+L8ExportAs(read,
 - (SPRByteArray *)readBytes:(size_t)size
 );
 
-JSExportAs(write,
+L8ExportAs(write,
 - (void)writeByteArray:(SPRByteArray *)byteArray
 );
 

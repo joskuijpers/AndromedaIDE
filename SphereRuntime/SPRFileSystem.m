@@ -10,7 +10,7 @@
 
 @implementation SPRFileSystem
 
-+ (void)installIntoContext:(JSContext *)context
++ (void)installIntoContext:(L8Runtime *)context
 {
 	context[@"FileSystem"] = [SPRFileSystem class];
 }

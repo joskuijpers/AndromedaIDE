@@ -8,7 +8,7 @@
 
 #import "SPRJSClass.h"
 
-@protocol SPRModule <JSExport>
+@protocol SPRModule <L8Export>
 
 @end
 

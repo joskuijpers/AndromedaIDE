@@ -15,7 +15,7 @@
 
 @synthesize path=_path;
 
-+ (void)installIntoContext:(JSContext *)context
++ (void)installIntoContext:(L8Runtime *)context
 {
 	context[@"File"] = [SPRFile class];
 }
@@ -24,10 +24,10 @@
 {
 	self = [super init];
 	if(self) {
-		NSArray *arguments = [JSContext currentArguments];
+		NSArray *arguments = [L8Runtime currentArguments];
 
 		if(arguments.count >= 1) {
-			_path = [[(JSValue *)arguments[0] toString] copy];
+			_path = [[(L8Value *)arguments[0] toString] copy];
 
 			// TODO: use some resource manager to find the correct path
 			if(![self loadFileAtPath:_path])

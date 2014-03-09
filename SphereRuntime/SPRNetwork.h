@@ -8,13 +8,13 @@
 
 #import "SPRJSClass.h"
 
-@protocol SPRNetwork <JSExport>
+@protocol SPRNetwork <L8Export>
 
 // Properties:
 // + NSString *localName
 // + NSString *localAddress
 
-JSExportAs(listen,
+L8ExportAs(listen,
 + (BOOL)listenOnPort:(uint16_t)port
 );
 
