@@ -12,7 +12,6 @@
 
 - (void)log:(NSString *)string
 {
-#if 0
 	NSArray *arguments;
 
 	arguments = [L8Runtime currentArguments];
@@ -25,8 +24,6 @@
 		NSLog(@"To Implement: printf-like formatting!");
 		fprintf(stdout,"[LOG ] %s\n",[string UTF8String]);
 	}
-#endif
-	fprintf(stdout,"[LOG ] %s\n",[string UTF8String]);
 }
 
 - (void)error:(NSString *)string
