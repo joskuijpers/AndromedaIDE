@@ -1,10 +1,5 @@
 
-console.log(NativeModule._cache);
 
-var testModule = require("./test_module.js");
-
-testModule.doSomethingFancy("With My Argument");
-//console.log(__filename);
 
 //var s = new __Socket("www.google.com",80);
 //console.log(String(s));
@@ -118,22 +113,86 @@ net.Socket {
 }
 
 net.Bonjour {
-	new Bonjour(type, domain)
-	var type
-	var domain
+	// domain defaults to "", which results in .local
+	// type defaults to "_game._tcp"
+	function Bonjour([type, [domain]])
+
+	var type; // String
+	var domain; // String
 
 	var state; // 'publishing', 'published', 'discovering'
-	function isPublished()
+	function isPublished(); // Boolean
 
-	function publish([name]="",port,[cb]=null)
-	function discover(cb) // Peer objects
-	function resolve(cb) // to host+port
+	// publish a new service with known type and domain
+	// name defaults to "" which causes the system to use the computer name
+	// if no callback is supplied, no notification made about the status
+	// cb = function(error, status)
+	function publish([name],port,[cb])
+ 
+	// discover services with known type and domain
+	// cb is function(error, Bonjour.Peer);
+	function discover(cb)
+ 
+	// resolve a name to a host and port
+	// cb = function(error, host, port)
+	function resolve(name, cb) // to host+port
+ 
+	// Stop publishing, resolving or discovering
+	function stop();
 }
 
 net.Bonjour.Peer {
-	resolve()
-	function getSocket()
+	var name;
+
+	// resolve the peer to a host and port
+	// cb = function(error, host, port)
+	function resolve(cb)
+ 
+	// returns net.Socket, not connected but intialized
+	// only connect() will then be needed.
+	function getSocket();
 }
+
+Game that will host:
+ 
+ // Create a server
+ var server = new Server();
+ server.listen(12345, function(error, status, peerSocket) {
+	if(error)
+		throw error;
+	if(peerSocket) {
+		console.log("New Peer with address "+peerSocket.remoteAddress);
+	} else
+		console.log("Listening!");
+ });
+
+ // Publish the service
+ var service = new Bonjour();
+ service.publish("My Awesome Name",12345,function(error,status){
+	if(error)
+		throw error;
+	console.log("Published service!");
+});
+ 
+ 
+ Game that wants to play:
+ var service = new Bonjour();
+ service.discover(function(error, peer) {
+	if(error)
+		throw error;
+	console.log("Server found: "+peer.name);
+ 
+	// Assume we want the first hit, to omit a UI now
+	// stop the service
+	service.stop();
+ 
+	// connect to the peer
+	var socket = peer.getSocket();
+	socket.connect();
+ 
+	// ... do whatever
+ });
+ 
 
 // net.Stream {}
 
