@@ -16,7 +16,8 @@
 
 	arguments = [L8Runtime currentArguments];
 
-	// Not a format string, write all arguments
+	// If the string does not contain any formatting elements,
+	// assume the function just received a variable number of objects to log
 	if([string rangeOfString:@"%"].location == NSNotFound) {
 		for(L8Value *arg in arguments)
 			fprintf(stdout,"[LOG ] %s\n",[[arg toString] UTF8String]);
