@@ -27,6 +27,4 @@
 
 @interface L8Runtime (L8Test)
 
-- (void)runWithBlock:(void (^)(L8Runtime *runtime))block;
-
 @end

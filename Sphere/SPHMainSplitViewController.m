@@ -68,4 +68,9 @@
 	[_splitView replaceSubview:_splitView.subviews[0] with:_navigatorViewController.view];
 }
 
+- (IDEProjectNavigatorViewController *)projectNavigator
+{
+	return nil;
+}
+
 @end

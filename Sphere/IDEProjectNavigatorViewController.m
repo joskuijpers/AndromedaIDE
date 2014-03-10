@@ -142,7 +142,8 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 
 - (SPXGroup *)selectedGroup
 {
-	return _rootItem.reference;
+//	return _rootItem.reference;
+	return nil;
 }
 
 #pragma mark - Drag and Drop

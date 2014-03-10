@@ -76,4 +76,9 @@
 	return _extensions;
 }
 
+- (NSArray *)rules
+{
+	return nil;
+}
+
 @end
