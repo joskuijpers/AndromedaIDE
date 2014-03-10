@@ -226,7 +226,6 @@
 		80C07A4A18CAAD390082F562 /* SPRSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A4918CAAD390082F562 /* SPRSocket.m */; };
 		80C07A4D18CAAD520082F562 /* SPRNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A4C18CAAD520082F562 /* SPRNetwork.m */; };
 		80C07A5018CAB6530082F562 /* SPRBonjour.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A4F18CAB6530082F562 /* SPRBonjour.m */; };
-		80C07A5318CB73BB0082F562 /* test_module.js in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5218CB73BB0082F562 /* test_module.js */; };
 		80C07A5418CB73D60082F562 /* test_module.js in Resources */ = {isa = PBXBuildFile; fileRef = 80C07A5218CB73BB0082F562 /* test_module.js */; };
 		80C07A5818CB74E30082F562 /* SPRCompatibility16.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5718CB74E30082F562 /* SPRCompatibility16.m */; };
 		80C07A5B18CB74F80082F562 /* SPRCompatibility15.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5A18CB74F80082F562 /* SPRCompatibility15.m */; };
@@ -2434,7 +2433,6 @@
 			files = (
 				80C07A5B18CB74F80082F562 /* SPRCompatibility15.m in Sources */,
 				80C07A4118CA21C90082F562 /* SPRFileSystem.m in Sources */,
-				80C07A5318CB73BB0082F562 /* test_module.js in Sources */,
 				803563C618BA9BC800696C5A /* SPRImage.m in Sources */,
 				80C07A6218CBCA6D0082F562 /* SPRModule.m in Sources */,
 				80C07A5818CB74E30082F562 /* SPRCompatibility16.m in Sources */,
@@ -2987,6 +2985,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
 		};
@@ -3021,6 +3020,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
 		};

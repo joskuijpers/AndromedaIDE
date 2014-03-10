@@ -16,10 +16,10 @@
 @protocol SPRFile <L8Export>
 
 /// Number of entries in the file
-@property (nonatomic,assign,readonly) size_t size;
+@property (nonatomic,readonly) size_t size;
 
 /// Path of the file
-@property (strong,readonly) NSString *path;
+@property (readonly) NSString *path;
 
 - (instancetype)init;
 

@@ -14,7 +14,6 @@
  * Then all arguments are just printed.
  *
  * @param string Format string
- * @param ... any other value
  */
 - (void)log:(NSString *)string;
 
@@ -24,7 +23,6 @@
  * Then all arguments are just printed.
  *
  * @param string Format string
- * @param ... any other value
  */
 - (void)error:(NSString *)string;
 

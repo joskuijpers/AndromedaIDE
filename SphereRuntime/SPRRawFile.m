@@ -64,7 +64,7 @@
 	}
 
 	fileContents = [NSData dataWithContentsOfFile:path
-										  options:0
+										  options:NSDataReadingMappedIfSafe
 											error:&error];
 	if(!fileContents) {
 		NSLog(@"Failed to load SPRRawFile at path %@: %@",path,error);

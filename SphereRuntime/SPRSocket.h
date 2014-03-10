@@ -13,7 +13,7 @@
 @protocol SPRSocket <L8Export>
 
 /// Whether the socket is (still) connected
-@property (readonly,assign,getter=isConnected) BOOL connected;
+@property (readonly,getter=isConnected) BOOL connected;
 
 - (instancetype)init;
 

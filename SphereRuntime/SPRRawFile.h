@@ -13,16 +13,16 @@
 @protocol SPRRawFile <L8Export>
 
 /// Path of the file
-@property (strong,readonly) NSString *path;
+@property (readonly) NSString *path;
 
 /// Size of the file
-@property (nonatomic,assign,readonly) size_t size;
+@property (nonatomic,readonly) size_t size;
 
 /// Seek position within the file
 @property (nonatomic,assign) size_t position;
 
 /// Whether the file is writeable
-@property (assign,readonly,getter=isWriteable) BOOL writable;
+@property (readonly,getter=isWriteable) BOOL writable;
 
 - (instancetype)init;
 

@@ -6,13 +6,38 @@
 //  Copyright (c) 2013 Jarvix. All rights reserved.
 //
 
-#import <objc/runtime.h>
+@import ObjectiveC.runtime;
 
 #import "SPRAppDelegate.h"
 
 #import "SPRJSClass.h"
 #import "SPRConsole.h"
 #import "SphereRuntimeKit.h"
+
+@protocol ClassA <L8Export>
+- (void)mySuperClassMethod;
+@end
+@interface ClassA : NSObject <ClassA>
+@end
+@implementation ClassA
+- (void)mySuperClassMethod
+{
+	NSLog(@"Superclass calling. Class is %@",[self className]);
+}
+@end
+
+
+@protocol ClassB <L8Export>
+- (void)myMethod;
+@end
+@interface ClassB : ClassA <ClassB>
+@end
+@implementation ClassB
+- (void)myMethod
+{
+	NSLog(@"Just another method. Class is %@",[self className]);
+}
+@end
 
 @implementation SPRAppDelegate {
 	L8Runtime *_runtime;
@@ -38,6 +63,8 @@ void load_bundle_script(L8Runtime *context, NSString *name)
 
 		_runtime[@"console"] = [[SPRConsole alloc] init];
 
+//		_runtime[@"ClassA"] = [ClassA class];
+		_runtime[@"ClassB"] = [ClassB class];
 
 		load_bundle_script(_runtime, @"test");
 	}];

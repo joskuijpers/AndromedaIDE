@@ -64,7 +64,7 @@
 	NSData *data;
 	@try {
 		data = [_data subdataWithRange:NSMakeRange(start, end-start+1)];
-	} @catch(id ex) {
+	} @catch(id) {
 		return nil;
 	}
 	return [[SPRByteArray alloc] initWithData:data];
