@@ -14,6 +14,6 @@
 @interface SRKFont : SRKFile
 
 /// An array of SRKImages, one for each character.
-@property (readonly,strong) NSArray *characters;
+@property (readonly) NSArray *characters;
 
 @end

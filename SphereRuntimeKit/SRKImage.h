@@ -64,13 +64,13 @@ typedef enum {
 @interface SRKImage : NSImage <SRKFile>
 
 /// The raw bitmap format of the rawData
-@property (readonly,assign) SRKImageFormat format;
+@property (readonly) SRKImageFormat format;
 
 /// The raw data of the bitmap. Do not use: use -rawDataWithFormat: instead.
-@property (readonly,strong) NSData *rawData;
+@property (readonly) NSData *rawData;
 
 /// The size of the actual image. The data size should be width*height*formatSize.
-@property (readonly,assign) NSSize rawSize;
+@property (readonly) NSSize rawSize;
 
 /**
  * Initialize with raw bitmap data.

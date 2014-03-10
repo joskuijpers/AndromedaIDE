@@ -17,7 +17,7 @@
  * An array of NSStrings each pointing to a sound
  * relative to /sounds/
  */
-@property (readonly,strong) NSArray *filenames;
+@property (readonly) NSArray *filenames;
 
 /**
  * Adds given file to the playlist

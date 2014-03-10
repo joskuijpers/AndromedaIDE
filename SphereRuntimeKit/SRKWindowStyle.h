@@ -50,7 +50,7 @@ typedef enum {
 @interface SRKWindowStyle : SRKFile
 
 /// Images in the window style. Will always contain 9 items.
-@property (readonly,strong) NSArray *images;
+@property (readonly) NSArray *images;
 
 /// The background mode: used for drawing the background
 @property (assign) SRKWindowStyleMode backgroundMode;

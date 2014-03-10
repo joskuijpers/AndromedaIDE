@@ -16,10 +16,10 @@
 @interface SRKTileSet : SRKFile
 
 /// Size of a single tile
-@property (readonly,assign) NSSize tileSize;
+@property (readonly) NSSize tileSize;
 
 /// An array of SRKTiles
-@property (readonly,strong) NSArray *tiles;
+@property (readonly) NSArray *tiles;
 
 @end
 

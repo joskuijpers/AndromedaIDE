@@ -14,18 +14,18 @@
 @interface SRKFileSGM : SRKFile
 
 /// Name of the game
-@property (readonly,copy) NSString *name;
+@property (readonly) NSString *name;
 
 /// Author of the game
-@property (readonly,copy) NSString *author;
+@property (readonly) NSString *author;
 
 /// Description of the game
-@property (readonly,copy) NSString *gameDescription;
+@property (readonly) NSString *gameDescription;
 
 /// Screen size used within the game
-@property (readonly,assign) NSSize screenSize;
+@property (readonly) NSSize screenSize;
 
 /// Name of the main script file, located in /scripts/
-@property (readonly,copy) NSString *mainScript;
+@property (readonly) NSString *mainScript;
 
 @end

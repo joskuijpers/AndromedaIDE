@@ -18,16 +18,16 @@
 @interface SRKSpriteSet : SRKFile
 
 /// Size of each frame image
-@property (readonly,assign) NSSize frameSize;
+@property (readonly) NSSize frameSize;
 
 /// Rectangle forming the base, used for touch, talk and obstruction
-@property (readonly,assign) NSRect base;
+@property (readonly) NSRect base;
 
 /// An array of directions of class SRKSpriteSetDirection
-@property (readonly,strong) NSArray *directions;
+@property (readonly) NSArray *directions;
 
 /// An array of NSImages
-@property (readonly,strong) NSArray *images;
+@property (readonly) NSArray *images;
 
 /**
  * Create an image containing the initial setup of the map.
