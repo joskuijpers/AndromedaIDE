@@ -504,20 +504,6 @@
 		802F39A217B2BF25005B70C4 /* AGNSSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNSSplitViewDelegate.h; sourceTree = "<group>"; };
 		802F39A317B2BF25005B70C4 /* AGNSSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNSSplitView.m; sourceTree = "<group>"; };
 		802F39A417B2BF25005B70C4 /* AGNSSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNSSplitView.h; sourceTree = "<group>"; };
-		802F39AF17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSView+CNSplitViewToolbar.m"; path = "CNSplitView/CNSplitView/NSView+CNSplitViewToolbar.m"; sourceTree = SOURCE_ROOT; };
-		802F39B017B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView+CNSplitViewToolbar.h"; path = "CNSplitView/CNSplitView/NSView+CNSplitViewToolbar.h"; sourceTree = SOURCE_ROOT; };
-		802F39B117B3CBCB005B70C4 /* CNSplitViewToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNSplitViewToolbarDelegate.h; path = CNSplitView/CNSplitView/CNSplitViewToolbarDelegate.h; sourceTree = SOURCE_ROOT; };
-		802F39B217B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNSplitViewToolbarButtonCell.m; path = CNSplitView/CNSplitView/CNSplitViewToolbarButtonCell.m; sourceTree = SOURCE_ROOT; };
-		802F39B317B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNSplitViewToolbarButtonCell.h; path = CNSplitView/CNSplitView/CNSplitViewToolbarButtonCell.h; sourceTree = SOURCE_ROOT; };
-		802F39B417B3CBCB005B70C4 /* CNSplitViewToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNSplitViewToolbarButton.m; path = CNSplitView/CNSplitView/CNSplitViewToolbarButton.m; sourceTree = SOURCE_ROOT; };
-		802F39B517B3CBCB005B70C4 /* CNSplitViewToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNSplitViewToolbarButton.h; path = CNSplitView/CNSplitView/CNSplitViewToolbarButton.h; sourceTree = SOURCE_ROOT; };
-		802F39B617B3CBCB005B70C4 /* CNSplitViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNSplitViewToolbar.m; path = CNSplitView/CNSplitView/CNSplitViewToolbar.m; sourceTree = SOURCE_ROOT; };
-		802F39B717B3CBCB005B70C4 /* CNSplitViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNSplitViewToolbar.h; path = CNSplitView/CNSplitView/CNSplitViewToolbar.h; sourceTree = SOURCE_ROOT; };
-		802F39B817B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNSplitViewDraggingHandle.m; path = CNSplitView/CNSplitView/CNSplitViewDraggingHandle.m; sourceTree = SOURCE_ROOT; };
-		802F39B917B3CBCB005B70C4 /* CNSplitViewDraggingHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNSplitViewDraggingHandle.h; path = CNSplitView/CNSplitView/CNSplitViewDraggingHandle.h; sourceTree = SOURCE_ROOT; };
-		802F39BA17B3CBCB005B70C4 /* CNSplitViewDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNSplitViewDefinitions.h; path = CNSplitView/CNSplitView/CNSplitViewDefinitions.h; sourceTree = SOURCE_ROOT; };
-		802F39BB17B3CBCB005B70C4 /* CNSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNSplitView.m; path = CNSplitView/CNSplitView/CNSplitView.m; sourceTree = SOURCE_ROOT; };
-		802F39BC17B3CBCB005B70C4 /* CNSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNSplitView.h; path = CNSplitView/CNSplitView/CNSplitView.h; sourceTree = SOURCE_ROOT; };
 		802F39C317B3D242005B70C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		802F39D917B46E26005B70C4 /* SPHMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHMainWindowController.h; sourceTree = "<group>"; };
 		802F39DA17B46E26005B70C4 /* SPHMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHMainWindowController.m; sourceTree = "<group>"; };
@@ -1127,31 +1113,9 @@
 		802F39A817B2BF32005B70C4 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				802F39AE17B3CBA9005B70C4 /* CNSplitView */,
 				802F39A717B2BF2A005B70C4 /* AGNSplitView */,
 			);
 			name = ThirdParty;
-			sourceTree = "<group>";
-		};
-		802F39AE17B3CBA9005B70C4 /* CNSplitView */ = {
-			isa = PBXGroup;
-			children = (
-				802F39AF17B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.m */,
-				802F39B017B3CBCB005B70C4 /* NSView+CNSplitViewToolbar.h */,
-				802F39B117B3CBCB005B70C4 /* CNSplitViewToolbarDelegate.h */,
-				802F39B217B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.m */,
-				802F39B317B3CBCB005B70C4 /* CNSplitViewToolbarButtonCell.h */,
-				802F39B417B3CBCB005B70C4 /* CNSplitViewToolbarButton.m */,
-				802F39B517B3CBCB005B70C4 /* CNSplitViewToolbarButton.h */,
-				802F39B617B3CBCB005B70C4 /* CNSplitViewToolbar.m */,
-				802F39B717B3CBCB005B70C4 /* CNSplitViewToolbar.h */,
-				802F39B817B3CBCB005B70C4 /* CNSplitViewDraggingHandle.m */,
-				802F39B917B3CBCB005B70C4 /* CNSplitViewDraggingHandle.h */,
-				802F39BA17B3CBCB005B70C4 /* CNSplitViewDefinitions.h */,
-				802F39BB17B3CBCB005B70C4 /* CNSplitView.m */,
-				802F39BC17B3CBCB005B70C4 /* CNSplitView.h */,
-			);
-			name = CNSplitView;
 			sourceTree = "<group>";
 		};
 		802F39C717B3DEF7005B70C4 /* Navigator */ = {
