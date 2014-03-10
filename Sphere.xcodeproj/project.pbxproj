@@ -126,11 +126,14 @@
 		803563F318BCE59600696C5A /* SRKFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563F218BCE59600696C5A /* SRKFile.m */; };
 		803563F618BCE9C500696C5A /* SRKFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563F418BCE9C500696C5A /* SRKFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563F718BCE9C500696C5A /* SRKFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563F518BCE9C500696C5A /* SRKFont.m */; };
+		80442E0A18CD7439004B4824 /* v8-platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 80442E0918CD7439004B4824 /* v8-platform.h */; };
+		80442E0C18CD761E004B4824 /* libicudata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80442E0B18CD761E004B4824 /* libicudata.a */; };
+		80442E0E18CD7630004B4824 /* libicuuc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80442E0D18CD7630004B4824 /* libicuuc.a */; };
+		80442E1018CD7648004B4824 /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80442E0F18CD7648004B4824 /* libicui18n.a */; };
 		804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E41B817F48E04003D1D52 /* L8StackTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		804E41BB17F48E04003D1D52 /* L8StackTrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 804E41B917F48E04003D1D52 /* L8StackTrace.mm */; };
 		804E41C017F74673003D1D52 /* L8Runtime_Debugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E41BE17F74673003D1D52 /* L8Runtime_Debugging.h */; };
 		804E421717F762F8003D1D52 /* v8-debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421017F762F8003D1D52 /* v8-debug.h */; };
-		804E421817F762F8003D1D52 /* v8-preparser.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421117F762F8003D1D52 /* v8-preparser.h */; };
 		804E421917F762F8003D1D52 /* v8-profiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421217F762F8003D1D52 /* v8-profiler.h */; };
 		804E421A17F762F8003D1D52 /* v8-testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421317F762F8003D1D52 /* v8-testing.h */; };
 		804E421B17F762F8003D1D52 /* v8.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421417F762F8003D1D52 /* v8.h */; };
@@ -576,12 +579,15 @@
 		803563F418BCE9C500696C5A /* SRKFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFont.h; sourceTree = "<group>"; };
 		803563F518BCE9C500696C5A /* SRKFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFont.m; sourceTree = "<group>"; };
 		803563FC18BCEBFC00696C5A /* SRKFile_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRKFile_Private.h; sourceTree = "<group>"; };
+		80442E0918CD7439004B4824 /* v8-platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "v8-platform.h"; path = "../../v8/include/v8-platform.h"; sourceTree = "<group>"; };
+		80442E0B18CD761E004B4824 /* libicudata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicudata.a; path = ../v8/xcodebuild/Release/libicudata.a; sourceTree = "<group>"; };
+		80442E0D18CD7630004B4824 /* libicuuc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicuuc.a; path = ../v8/xcodebuild/Release/libicuuc.a; sourceTree = "<group>"; };
+		80442E0F18CD7648004B4824 /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicui18n.a; path = ../v8/xcodebuild/Release/libicui18n.a; sourceTree = "<group>"; };
 		804E41B817F48E04003D1D52 /* L8StackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8StackTrace.h; sourceTree = "<group>"; };
 		804E41B917F48E04003D1D52 /* L8StackTrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = L8StackTrace.mm; sourceTree = "<group>"; };
 		804E41BC17F48E37003D1D52 /* L8StackTrace_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = L8StackTrace_Private.h; sourceTree = "<group>"; };
 		804E41BE17F74673003D1D52 /* L8Runtime_Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8Runtime_Debugging.h; sourceTree = "<group>"; };
 		804E421017F762F8003D1D52 /* v8-debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "v8-debug.h"; path = "../../v8/include/v8-debug.h"; sourceTree = "<group>"; };
-		804E421117F762F8003D1D52 /* v8-preparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "v8-preparser.h"; path = "../../v8/include/v8-preparser.h"; sourceTree = "<group>"; };
 		804E421217F762F8003D1D52 /* v8-profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "v8-profiler.h"; path = "../../v8/include/v8-profiler.h"; sourceTree = "<group>"; };
 		804E421317F762F8003D1D52 /* v8-testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "v8-testing.h"; path = "../../v8/include/v8-testing.h"; sourceTree = "<group>"; };
 		804E421417F762F8003D1D52 /* v8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = v8.h; path = ../../v8/include/v8.h; sourceTree = "<group>"; };
@@ -751,6 +757,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8019146D17E7CE2800A45BBE /* libv8_base.x64.a in Frameworks */,
+				80442E0E18CD7630004B4824 /* libicuuc.a in Frameworks */,
+				80442E1018CD7648004B4824 /* libicui18n.a in Frameworks */,
+				80442E0C18CD761E004B4824 /* libicudata.a in Frameworks */,
 				8019146E17E7CE2800A45BBE /* libv8_snapshot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1032,7 +1041,7 @@
 			isa = PBXGroup;
 			children = (
 				804E421017F762F8003D1D52 /* v8-debug.h */,
-				804E421117F762F8003D1D52 /* v8-preparser.h */,
+				80442E0918CD7439004B4824 /* v8-platform.h */,
 				804E421217F762F8003D1D52 /* v8-profiler.h */,
 				804E421317F762F8003D1D52 /* v8-testing.h */,
 				804E421417F762F8003D1D52 /* v8.h */,
@@ -1490,6 +1499,9 @@
 				803563EC18BC0B6600696C5A /* CoreGraphics.framework */,
 				803563B318BA8CA700696C5A /* JavaScriptCore.framework */,
 				8019146B17E7CE2800A45BBE /* libv8_base.x64.a */,
+				80442E0F18CD7648004B4824 /* libicui18n.a */,
+				80442E0B18CD761E004B4824 /* libicudata.a */,
+				80442E0D18CD7630004B4824 /* libicuuc.a */,
 				8019146C17E7CE2800A45BBE /* libv8_snapshot.a */,
 				802F39C317B3D242005B70C4 /* QuartzCore.framework */,
 				8080593117B1EA23004D1D41 /* libcrypto.dylib */,
@@ -1876,6 +1888,7 @@
 				8019143617E7C9CD00A45BBE /* L8Value.h in Headers */,
 				8019143817E7C9CD00A45BBE /* L8Export.h in Headers */,
 				804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */,
+				80442E0A18CD7439004B4824 /* v8-platform.h in Headers */,
 				803563A918BA496200696C5A /* L8Exception.h in Headers */,
 				8019143417E7C9CD00A45BBE /* L8Runtime.h in Headers */,
 				8019143A17E7C9CD00A45BBE /* L8Reporter.h in Headers */,
@@ -1884,7 +1897,6 @@
 				804E421B17F762F8003D1D52 /* v8.h in Headers */,
 				8019144717E7C9D700A45BBE /* L8Runtime_Private.h in Headers */,
 				8019145017E7C9D700A45BBE /* ObjCCallback.h in Headers */,
-				804E421817F762F8003D1D52 /* v8-preparser.h in Headers */,
 				804E421717F762F8003D1D52 /* v8-debug.h in Headers */,
 				8019144817E7C9D700A45BBE /* L8Value_Private.h in Headers */,
 				8019144E17E7C9D700A45BBE /* ObjCRuntime+L8.h in Headers */,
