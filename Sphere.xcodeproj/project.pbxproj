@@ -848,11 +848,11 @@
 		8006D47A17BA840400453468 /* SphereRuntimeKit */ = {
 			isa = PBXGroup;
 			children = (
+				803563D718BBEDB700696C5A /* Categories */,
 				80BB199118C77606004CBF91 /* Resources */,
 				8006D4A117BA84B300453468 /* Game */,
 				8006D4A017BA84A000453468 /* Main */,
 				8006D47B17BA840400453468 /* Supporting Files */,
-				803563D718BBEDB700696C5A /* Categories */,
 			);
 			path = SphereRuntimeKit;
 			sourceTree = "<group>";
