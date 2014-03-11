@@ -101,7 +101,6 @@
 		803563AA18BA496200696C5A /* L8Exception.mm in Sources */ = {isa = PBXBuildFile; fileRef = 803563A818BA496200696C5A /* L8Exception.mm */; };
 		803563AF18BA4AAC00696C5A /* L8NativeException.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563AD18BA4AAC00696C5A /* L8NativeException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563B018BA4AAC00696C5A /* L8NativeException.mm in Sources */ = {isa = PBXBuildFile; fileRef = 803563AE18BA4AAC00696C5A /* L8NativeException.mm */; };
-		803563B218BA8AF400696C5A /* L8_Runtime_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563B118BA8AF400696C5A /* L8_Runtime_test.m */; };
 		803563B718BA98B600696C5A /* SPRConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563B618BA98B600696C5A /* SPRConsole.m */; };
 		803563BB18BA99F100696C5A /* SPRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563BA18BA99F100696C5A /* SPRGame.m */; };
 		803563C018BA9A5B00696C5A /* SPRResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563BF18BA9A5B00696C5A /* SPRResource.m */; };
@@ -535,7 +534,6 @@
 		803563AB18BA49A900696C5A /* L8Exception_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = L8Exception_Private.h; sourceTree = "<group>"; };
 		803563AD18BA4AAC00696C5A /* L8NativeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L8NativeException.h; sourceTree = "<group>"; };
 		803563AE18BA4AAC00696C5A /* L8NativeException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = L8NativeException.mm; sourceTree = "<group>"; };
-		803563B118BA8AF400696C5A /* L8_Runtime_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L8_Runtime_test.m; sourceTree = "<group>"; };
 		803563B318BA8CA700696C5A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		803563B518BA98B600696C5A /* SPRConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRConsole.h; sourceTree = "<group>"; };
 		803563B618BA98B600696C5A /* SPRConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRConsole.m; sourceTree = "<group>"; };
@@ -961,7 +959,6 @@
 				8019145517E7C9FA00A45BBE /* V8 */,
 				8019145317E7C9E400A45BBE /* L8 */,
 				8019140517E7C8D700A45BBE /* Supporting Files */,
-				803563B118BA8AF400696C5A /* L8_Runtime_test.m */,
 			);
 			path = L8Framework;
 			sourceTree = "<group>";
@@ -2320,7 +2317,6 @@
 				8019143B17E7C9CD00A45BBE /* L8Reporter.mm in Sources */,
 				8019144B17E7C9D700A45BBE /* NSString+L8.mm in Sources */,
 				8019143517E7C9CD00A45BBE /* L8Runtime.mm in Sources */,
-				803563B218BA8AF400696C5A /* L8_Runtime_test.m in Sources */,
 				8019144F17E7C9D700A45BBE /* ObjCRuntime+L8.mm in Sources */,
 				8019143717E7C9CD00A45BBE /* L8Value.mm in Sources */,
 			);
