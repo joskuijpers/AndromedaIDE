@@ -184,9 +184,6 @@
 		8098F90417BFB58E0070BC58 /* SPHWelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F90317BFB58E0070BC58 /* SPHWelcomeWindowController.m */; };
 		8098F95617BFCA950070BC58 /* SPHWelcomeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F95517BFCA950070BC58 /* SPHWelcomeWindow.m */; };
 		8098F95917BFCC990070BC58 /* SPHWelcomeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F95817BFCC990070BC58 /* SPHWelcomeMainView.m */; };
-		8098F95D17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.normal.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8098F95A17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.normal.pdf */; };
-		8098F95E17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.over.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8098F95B17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.over.pdf */; };
-		8098F95F17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.pressed.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8098F95C17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.pressed.pdf */; };
 		8098F96317BFE7A10070BC58 /* IDEHoverButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8098F96117BFE7A10070BC58 /* IDEHoverButton.h */; };
 		8098F96417BFE7A10070BC58 /* IDEHoverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F96217BFE7A10070BC58 /* IDEHoverButton.m */; };
 		8098F96717C01B450070BC58 /* SPHWelcomeListRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F96617C01B450070BC58 /* SPHWelcomeListRowView.m */; };
@@ -638,9 +635,6 @@
 		8098F95517BFCA950070BC58 /* SPHWelcomeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHWelcomeWindow.m; sourceTree = "<group>"; };
 		8098F95717BFCC990070BC58 /* SPHWelcomeMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHWelcomeMainView.h; sourceTree = "<group>"; };
 		8098F95817BFCC990070BC58 /* SPHWelcomeMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHWelcomeMainView.m; sourceTree = "<group>"; };
-		8098F95A17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.normal.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nl.jarvix.sphere.image.welcome.close.normal.pdf; sourceTree = "<group>"; };
-		8098F95B17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.over.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nl.jarvix.sphere.image.welcome.close.over.pdf; sourceTree = "<group>"; };
-		8098F95C17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.pressed.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nl.jarvix.sphere.image.welcome.close.pressed.pdf; sourceTree = "<group>"; };
 		8098F96117BFE7A10070BC58 /* IDEHoverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEHoverButton.h; sourceTree = "<group>"; };
 		8098F96217BFE7A10070BC58 /* IDEHoverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEHoverButton.m; sourceTree = "<group>"; };
 		8098F96517C01B450070BC58 /* SPHWelcomeListRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHWelcomeListRowView.h; sourceTree = "<group>"; };
@@ -1535,7 +1529,6 @@
 		8080591F17B1B97A004D1D41 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				8098F96017BFE1740070BC58 /* WelcomeWindow */,
 				80345A5317BA27D500170EFD /* Images.xcassets */,
 			);
 			name = Assets;
@@ -1601,16 +1594,6 @@
 				8098F95817BFCC990070BC58 /* SPHWelcomeMainView.m */,
 				8098F96517C01B450070BC58 /* SPHWelcomeListRowView.h */,
 				8098F96617C01B450070BC58 /* SPHWelcomeListRowView.m */,
-			);
-			name = WelcomeWindow;
-			sourceTree = "<group>";
-		};
-		8098F96017BFE1740070BC58 /* WelcomeWindow */ = {
-			isa = PBXGroup;
-			children = (
-				8098F95A17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.normal.pdf */,
-				8098F95B17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.over.pdf */,
-				8098F95C17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.pressed.pdf */,
 			);
 			name = WelcomeWindow;
 			sourceTree = "<group>";
@@ -2255,15 +2238,12 @@
 				808058FF17B1B6C0004D1D41 /* SPHWorkspaceWindow.xib in Resources */,
 				808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */,
 				80345A5417BA27D500170EFD /* Images.xcassets in Resources */,
-				8098F95E17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.over.pdf in Resources */,
 				80345A4A17B5B63D00170EFD /* IDEProjectNavigatorView.xib in Resources */,
-				8098F95D17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.normal.pdf in Resources */,
 				8098F90117BFB5740070BC58 /* SPHWelcomeWindow.xib in Resources */,
 				80AC29D917C6DE9F005D4D54 /* SPHNewProjectSheet.xib in Resources */,
 				808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */,
 				802A641417B47D0E00597DB6 /* SPHMainSplitView.xib in Resources */,
 				8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */,
-				8098F95F17BFE16D0070BC58 /* nl.jarvix.sphere.image.welcome.close.pressed.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
