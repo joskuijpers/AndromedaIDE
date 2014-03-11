@@ -1,4 +1,4 @@
-
+console.log("Hello World!");
 
 
 //var s = new __Socket("www.google.com",80);

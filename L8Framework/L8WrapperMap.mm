@@ -1,14 +1,33 @@
-//
-//  L8WrapperMap.m
-//  L8Framework
-//
-//  Created by Jos Kuijpers on 9/13/13.
-//  Copyright (c) 2013 Jarvix. All rights reserved.
-//
+/*
+ * Copyright (c) 2014 Jos Kuijpers. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY APPLE INC. ``AS IS'' AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL APPLE INC. OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
 
-#import <objc/runtime.h>
-#include <map>
+#include <objc/runtime.h>
 #include <vector>
+#include <string>
+#include <unordered_map>
+#include <iterator>
 
 #import "L8WrapperMap.h"
 
@@ -21,10 +40,6 @@
 #import "ObjCCallback.h"
 
 #include "v8.h"
-
-/*Opt*/ static v8::Handle<v8::String> V8StringWithCString(const char *cstr) {
-	return [@(cstr) V8String];
-}
 
 /*!
  * Extract a propertyname from a selectorname.
@@ -55,16 +70,12 @@ static NSString *selectorToPropertyName(const char *start, bool instanceMethod =
 	while(true) {
 		char c;
 
-		// Skip over semicolons, as they shall not be included
 		while((c = *(input++)) == ':');
 
-		// The first character after a semicolon should be uppercase
-		// copy it, unless it is zero
 		if(!(*(output++) = toupper(c)))
 			goto done;
 
 		while((c = *(input++)) != ':') {
-			// Copy the character until the character equals zero
 			if(!(*(output++) = c))
 				goto done;
 		}
@@ -169,9 +180,12 @@ void copyMethodsToObject(L8WrapperMap *wrapperMap, Protocol *protocol,
 
 		const char *selName = sel_getName(sel);
 		NSString *rawName = @(selName);
+		const char *extraTypes;
+
+		extraTypes = _protocol_getMethodTypeEncoding(protocol, sel, YES, isInstanceMethod);
 
 		if(accessorMethods[rawName]) {
-			accessorMethods[rawName] = [L8Value valueWithV8Value:v8::String::New(types)];
+			accessorMethods[rawName] = [L8Value valueWithV8Value:v8::String::New(extraTypes)];
 		} else {
 			NSString *propertyName = renameMap[rawName];
 
@@ -182,12 +196,10 @@ void copyMethodsToObject(L8WrapperMap *wrapperMap, Protocol *protocol,
 
 			v8::Handle<v8::FunctionTemplate> function = v8::FunctionTemplate::New();
 
-			// only if want to suply data
 			v8::Handle<v8::Array> extraData = v8::Array::New();
 			extraData->Set(0, v8::String::New(selName));
-			extraData->Set(1, v8::String::New(types));
+			extraData->Set(1, v8::String::New(extraTypes));
 			extraData->Set(2, v8::Boolean::New(!isInstanceMethod));
-
 			function->SetCallHandler(ObjCMethodCall,extraData);
 
 			theTemplate->Set(v8Name, function);
@@ -242,7 +254,6 @@ void parsePropertyAttributes(objc_property_t property, char *&getterName, char *
 void copyPrototypeProperties(L8WrapperMap *wrapperMap, v8::Handle<v8::ObjectTemplate> prototypeTemplate,
 							 v8::Handle<v8::ObjectTemplate> instanceTemplate, Protocol *protocol)
 {
-	// Find all properties in the protocol
 	struct property_t {
 		const char *name;
 		char *getterName;
@@ -258,7 +269,8 @@ void copyPrototypeProperties(L8WrapperMap *wrapperMap, v8::Handle<v8::ObjectTemp
 	L8Value *undefinedValue = [L8Value valueWithUndefined];
 
 	// This is not neccesary, just move them inside the block
-	// but it is to avoid analyzer errors
+	// but it is to avoid analyzer errors: the allocation is in another loop
+	// than the freeing
 	__block char *getterName = NULL;
 	__block char *setterName = NULL;
 	__block char *type = NULL;
@@ -296,15 +308,18 @@ void copyPrototypeProperties(L8WrapperMap *wrapperMap, v8::Handle<v8::ObjectTemp
 	for(int i = 0; i < propertyList.size(); i++) {
 		property_t& property = propertyList[i];
 
-		v8::Handle<v8::String> v8PropertyName = V8StringWithCString(property.name);
+		v8::Handle<v8::String> v8PropertyName = [@(property.name) V8String];
 		v8::Handle<v8::Array> extraData = v8::Array::New();
 
 		extraData->Set(0, v8PropertyName);
 		extraData->Set(1, v8::String::New(property.type)); // value type
 		extraData->Set(2, v8::String::New(property.getterName)); // getter SEL
 		extraData->Set(3, [accessorMethods[@(property.getterName)] V8Value]); // getter Types
-		extraData->Set(4, v8::String::New(property.setterName)); // setter SEL
-		extraData->Set(5, [accessorMethods[@(property.setterName)] V8Value]); // setter Types
+
+		if(!property.readonly) {
+			extraData->Set(4, v8::String::New(property.setterName)); // setter SEL
+			extraData->Set(5, [accessorMethods[@(property.setterName)] V8Value]); // setter Types
+		}
 
 		free(property.type);
 		free(property.getterName);
@@ -321,7 +336,9 @@ void copyPrototypeProperties(L8WrapperMap *wrapperMap, v8::Handle<v8::ObjectTemp
  * Sets keyed and indexed subscription handles depending on whether they are implemented
  * in the ObjC class.
  */
-void installSubscriptionMethods(L8WrapperMap *wrapperMap, v8::Handle<v8::ObjectTemplate> instanceTemplate, Class cls)
+void installSubscriptionMethods(L8WrapperMap *wrapperMap,
+								v8::Handle<v8::ObjectTemplate> instanceTemplate,
+								Class cls)
 {
 	bool readonly = true;
 
@@ -346,21 +363,100 @@ void installSubscriptionMethods(L8WrapperMap *wrapperMap, v8::Handle<v8::ObjectT
 
 @implementation L8WrapperMap {
 	L8Runtime * _runtime;
-	NSMutableDictionary *_cachedJSWrappers;
-//	NSMapTable *_cachedObjCWrappers;
+	std::unordered_map<std::string,v8::Eternal<v8::FunctionTemplate>> _classCache;
 }
 
 - (id)initWithRuntime:(L8Runtime *)runtime
 {
 	self = [super init];
 	if(self) {
-//		_cachedObjCWrappers = [[NSMapTable alloc] initWithKeyOptions:NSPointerFunctionsOpaqueMemory | NSPointerFunctionsOpaqueMemory
-//														valueOptions:NSPointerFunctionsWeakMemory | NSPointerFunctionsObjectPointerPersonality
-//															capacity:0];
 		_runtime = runtime;
-		_cachedJSWrappers = [[NSMutableDictionary alloc] init];
 	}
 	return self;
+}
+
+- (void)cacheFunctionTemplate:(v8::Local<v8::FunctionTemplate>)funcTemplate
+					 forClass:(Class)cls
+{
+	std::string key(class_getName(cls));
+
+	assert(_classCache.find(key) == _classCache.end() && "Must only cache once");
+
+	v8::Eternal<v8::FunctionTemplate> myEternal;
+	{
+		v8::HandleScope localScope(v8::Isolate::GetCurrent());
+		myEternal.Set(v8::Isolate::GetCurrent(), funcTemplate);
+	}
+
+	_classCache[key] = myEternal;
+}
+
+- (v8::Local<v8::FunctionTemplate>)getCachedFunctionTemplateForClass:(Class)cls
+{
+	std::string key(class_getName(cls));
+	std::unordered_map<std::string,v8::Eternal<v8::FunctionTemplate>>::iterator it;
+
+	it = _classCache.find(key);
+	if(it != _classCache.end()) {
+		v8::Eternal<v8::FunctionTemplate> eternal;
+
+		eternal = it->second;
+		return eternal.Get(v8::Isolate::GetCurrent());
+	}
+
+	v8::HandleScope localScope(v8::Isolate::GetCurrent());
+	return localScope.Close(v8::Local<v8::FunctionTemplate>());
+}
+
+- (v8::Handle<v8::FunctionTemplate>)functionTemplateForClass:(Class)cls
+{
+	v8::HandleScope localScope(v8::Isolate::GetCurrent());
+	v8::Handle<v8::FunctionTemplate> classTemplate;
+	v8::Handle<v8::ObjectTemplate> prototypeTemplate, instanceTemplate;
+	NSString *className;
+	Class parentClass;
+
+	className = @(class_getName(cls));
+	classTemplate = v8::FunctionTemplate::New();
+
+	// TODO set prototype of the prototype, to prototype of the superclass
+	// TODO Get from cache
+
+	parentClass = class_getSuperclass(cls);
+	if(parentClass != Nil && cls != parentClass && class_isMetaClass(parentClass)) { // Top-level class
+		v8::Handle<v8::FunctionTemplate> parentTemplate;
+
+		parentTemplate = [self getCachedFunctionTemplateForClass:parentClass];
+		if(parentTemplate.IsEmpty())
+			parentTemplate = [self functionTemplateForClass:parentClass];
+		if(!parentTemplate.IsEmpty())
+			classTemplate->Inherit(parentTemplate);
+	}
+
+	classTemplate->SetClassName([className V8String]);
+
+	prototypeTemplate = classTemplate->PrototypeTemplate();
+	instanceTemplate = classTemplate->InstanceTemplate();
+	instanceTemplate->SetInternalFieldCount(1);
+
+#if 0
+	// TODO: Find out if this makes any sense at all
+	installSubscriptionMethods(self, instanceTemplate, (class_isMetaClass(cls)) ? object : cls);
+#endif
+
+	forEachProtocolImplementingProtocol(cls, objc_getProtocol("L8Export"), ^(Protocol *protocol) {
+		copyPrototypeProperties(self, prototypeTemplate, instanceTemplate, protocol);
+
+		copyMethodsToObject(self, protocol, NO, classTemplate);
+	});
+
+	// Set constructor callback
+	classTemplate->SetCallHandler(ObjCConstructor,v8::String::New(class_getName(cls)));
+
+	[self cacheFunctionTemplate:classTemplate
+					   forClass:cls];
+
+	return localScope.Close(classTemplate);
 }
 
 /*!
@@ -370,44 +466,27 @@ void installSubscriptionMethods(L8WrapperMap *wrapperMap, v8::Handle<v8::ObjectT
  */
 - (L8Value *)JSWrapperForObjCObject:(id)object
 {
-	Class cls = object_getClass(object);
-	NSString *className = @(class_getName(cls));
-
 	v8::HandleScope localScope(v8::Isolate::GetCurrent());
+	v8::Handle<v8::FunctionTemplate> classTemplate;
+	v8::Handle<v8::Function> function;
+	Class cls;
 
-	v8::Handle<v8::FunctionTemplate> classTemplate = v8::FunctionTemplate::New();
+	cls = object_getClass(object);
 
-	// TODO set prototype of the prototype to prototype of the superclass
-//	v8::Handle<v8::FunctionTemplate> parentTemplate; // need to store the function templates for each class and have function that returns those
-//	classTemplate->Inherit(parentTemplate);
-
-	classTemplate->SetClassName([className V8String]);
-
-	v8::Handle<v8::ObjectTemplate> prototypeTemplate = classTemplate->PrototypeTemplate();
-	v8::Handle<v8::ObjectTemplate> instanceTemplate = classTemplate->InstanceTemplate();
-	instanceTemplate->SetInternalFieldCount(1);
-
-	installSubscriptionMethods(self, instanceTemplate, (class_isMetaClass(cls)) ? object : cls);
-
-	forEachProtocolImplementingProtocol(cls, objc_getProtocol("L8Export"), ^(Protocol *protocol) {
-		copyPrototypeProperties(self, prototypeTemplate, instanceTemplate, protocol);
-
-		// Copy class methods
-		copyMethodsToObject(self, protocol, NO, classTemplate);
-	});
+	classTemplate = [self getCachedFunctionTemplateForClass:cls];
+	if(classTemplate.IsEmpty())
+		classTemplate = [self functionTemplateForClass:cls];
 
 	// The class (constructor)
-	v8::Handle<v8::Function> function = classTemplate->GetFunction();
+	function = classTemplate->GetFunction();
 
 	if(class_isMetaClass(object_getClass(object))) {
-		classTemplate->SetCallHandler(ObjCConstructor,v8::String::New(class_getName(cls)));
 		return [L8Value valueWithV8Value:localScope.Close(function)];
 	} else {
-		// The objcConstructor should not be called when the object already exists
-		// so we set the constructor after use
+		[_runtime V8Context]->SetEmbedderData(L8_RUNTIME_EMBEDDER_DATA_SKIP_CONSTRUCTING, v8::True());
 		v8::Handle<v8::Object> instance = function->NewInstance();
+		[_runtime V8Context]->SetEmbedderData(L8_RUNTIME_EMBEDDER_DATA_SKIP_CONSTRUCTING, v8::False());
 
-		classTemplate->SetCallHandler(ObjCConstructor,v8::String::New(class_getName(cls)));
 		instance->SetInternalField(0, makeWrapper([_runtime V8Context], object));
 
 		return [L8Value valueWithV8Value:localScope.Close(instance)];
@@ -435,16 +514,12 @@ void installSubscriptionMethods(L8WrapperMap *wrapperMap, v8::Handle<v8::ObjectT
  */
 - (L8Value *)JSWrapperForObject:(id)object
 {
-	L8Value *wrapper;// = _cachedJSWrappers[[object className]];
-//	if(wrapper)
-//		return wrapper;
+	L8Value *wrapper;
 
 	if([object isKindOfClass:BlockClass()]) {
 		wrapper = [self JSWrapperForBlock:object];
 	} else
 		wrapper = [self JSWrapperForObjCObject:object];
-
-//	_cachedJSWrappers[[object className]] = wrapper;
 
 	return wrapper;
 }
@@ -457,14 +532,7 @@ void installSubscriptionMethods(L8WrapperMap *wrapperMap, v8::Handle<v8::ObjectT
  */
 - (L8Value *)ObjCWrapperForValue:(v8::Handle<v8::Value>)value
 {
-//	NSLog(@"%@%@",NSStringFromSelector(_cmd),[NSString stringWithV8Value:value]);
-
-	L8Value *wrapper;// = static_cast<L8Value *>(NSMapGet(_cachedObjCWrappers, value));
-//	if(!wrapper) {
-		wrapper = [[L8Value alloc] initWithV8Value:value];
-//		NSMapInsert(_cachedObjCWrappers, (void *)*value, wrapper);
-//	}
-	return wrapper;
+	return [[L8Value alloc] initWithV8Value:value];
 }
 
 @end
@@ -481,12 +549,15 @@ id unwrapObjcObject(v8::Handle<v8::Context> context, v8::Handle<v8::Value> value
 			return (__bridge id)v8::External::Cast(*field)->Value();
 	}
 
-	if(object->IsFunction()) { // Class, or block :/
-		bool isBlock = object->GetHiddenValue(v8::String::New("isBlock"))->IsTrue();
+	if(object->IsFunction()) { // Class (arguments.callee), or block
+		v8::Local<v8::Value> isBlockInfo;
+		bool isBlock;
+		NSString *name;
 
-		NSString *name = [NSString stringWithV8Value:object.As<v8::Function>()->GetName()];
+		isBlockInfo = object->GetHiddenValue(v8::String::New("isBlock"));
+		isBlock = !isBlockInfo.IsEmpty() && isBlockInfo->IsTrue();
 
-		NSLog(@"Class?: %@, %d",name,object->GetHiddenValue(v8::String::New("isBlock"))->IsTrue());
+		name = [NSString stringWithV8Value:object.As<v8::Function>()->GetName()];
 
 		if(isBlock) {
 			if(id target = unwrapBlock(object)) // Block
@@ -495,9 +566,6 @@ id unwrapObjcObject(v8::Handle<v8::Context> context, v8::Handle<v8::Value> value
 		}
 		return objc_getClass([name UTF8String]);
 	}
-
-//	if(id target = unwrapBlock(object)) // Block
-//		return target;
 
 	return nil;
 }

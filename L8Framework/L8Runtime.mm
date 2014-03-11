@@ -1,10 +1,27 @@
-//
-//  V8Context.m
-//  L8Framework
-//
-//  Created by Jos Kuijpers on 9/13/13.
-//  Copyright (c) 2013 Jarvix. All rights reserved.
-//
+/*
+ * Copyright (c) 2014 Jos Kuijpers. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY APPLE INC. ``AS IS'' AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL APPLE INC. OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
 
 #import <objc/runtime.h>
 
@@ -13,6 +30,7 @@
 #import "L8Value_Private.h"
 #import "L8Reporter_Private.h"
 #import "L8WrapperMap.h"
+#import "L8ManagedValue_Private.h"
 
 #import "NSString+L8.h"
 
@@ -25,6 +43,7 @@
 
 @implementation L8Runtime {
 	v8::Persistent<v8::Context> _v8context;
+	NSMapTable *_managedObjectGraph;
 }
 
 + (void)initialize
@@ -52,7 +71,7 @@
 
 		// Create the context
 		v8::Local<v8::Context> context = v8::Context::New(isolate);
-		context->SetEmbedderData(0, v8::External::New((void *)CFBridgingRetain(self)));
+		context->SetEmbedderData(L8_RUNTIME_EMBEDDER_DATA_SELF, v8::External::New((void *)CFBridgingRetain(self)));
 		_v8context.Reset(isolate, context);
 
 		// Start the context scope
@@ -60,6 +79,10 @@
 
 		// Create the wrappermap for the context
 		_wrapperMap = [[L8WrapperMap alloc] initWithRuntime:self];
+
+		_managedObjectGraph = [[NSMapTable alloc] initWithKeyOptions:NSPointerFunctionsWeakMemory | NSPointerFunctionsObjectPersonality
+														valueOptions:NSPointerFunctionsStrongMemory | NSPointerFunctionsObjectPersonality
+															capacity:0];
 	}
 	return self;
 }
@@ -71,7 +94,7 @@
 	v8::Context::Scope contextScope(isolate,_v8context);
 	v8::Handle<v8::Context> context = v8::Handle<v8::Context>::New(isolate, _v8context);
 
-	v8::Handle<v8::External> selfStored = context->GetEmbedderData(0).As<v8::External>();
+	v8::Handle<v8::External> selfStored = context->GetEmbedderData(L8_RUNTIME_EMBEDDER_DATA_SELF).As<v8::External>();
 	if(!selfStored.IsEmpty()) {
 		CFRelease(selfStored->Value());
 	}
@@ -139,6 +162,11 @@
 	return YES;
 }
 
+- (L8Value *)evaluateScript:(NSString *)scriptData
+{
+	return [self evaluateScript:scriptData withName:@""];
+}
+
 - (L8Value *)evaluateScript:(NSString *)scriptData withName:(NSString *)name
 {
 	if(scriptData == nil)
@@ -188,14 +216,69 @@
 
 + (L8Value *)currentThis
 {
-	@throw [NSException exceptionWithName:@"NotImplemented" reason:@"Not Implemented" userInfo:nil];
-	return nil;
+	v8::Local<v8::Value> thisObject;
+	v8::Local<v8::Context> context;
+
+	context = v8::Isolate::GetCurrent()->GetCurrentContext();
+	if(context.IsEmpty())
+		return nil;
+
+	// Retrieve the object from the store
+	thisObject = context->GetEmbedderData(L8_RUNTIME_EMBEDDER_DATA_CB_THIS);
+	if(thisObject.IsEmpty() || thisObject->IsNull())
+		return nil;
+
+	assert(thisObject->IsObject());
+
+	return [L8Value valueWithV8Value:thisObject];
+}
+
++ (L8Value *)currentCallee
+{
+	v8::Local<v8::Value> thisObject;
+	v8::Local<v8::Context> context;
+
+	context = v8::Isolate::GetCurrent()->GetCurrentContext();
+	if(context.IsEmpty())
+		return nil;
+
+	// Retrieve the function from the store
+	thisObject = context->GetEmbedderData(L8_RUNTIME_EMBEDDER_DATA_CB_CALLEE);
+	if(thisObject.IsEmpty() || thisObject->IsNull())
+		return nil;
+
+	// Callee should be a function
+	assert(thisObject->IsFunction());
+
+	return [L8Value valueWithV8Value:thisObject];
 }
 
 + (NSArray *)currentArguments
 {
-	@throw [NSException exceptionWithName:@"NotImplemented" reason:@"Not Implemented" userInfo:nil];
-	return nil;
+	v8::Local<v8::Value> thisObject;
+	v8::Local<v8::Context> context;
+	v8::Local<v8::Array> argArray;
+	NSMutableArray *arguments;
+
+	context = v8::Isolate::GetCurrent()->GetCurrentContext();
+	if(context.IsEmpty())
+		return nil;
+
+	// Retrieve the function from the store
+	thisObject = context->GetEmbedderData(L8_RUNTIME_EMBEDDER_DATA_CB_ARGS);
+	if(thisObject.IsEmpty() || thisObject->IsNull())
+		return nil;
+
+	// Callee should be an array
+	assert(thisObject->IsArray());
+
+	argArray = v8::Handle<v8::Array>::Cast(thisObject);
+	arguments = [[NSMutableArray alloc] init];
+
+	for(int i = 0; i < argArray->Length(); ++i)
+		arguments[i] = [L8Value valueWithV8Value:argArray->Get(i)];
+
+	return arguments;
 }
 
 - (v8::Local<v8::Context>)V8Context
@@ -249,6 +332,103 @@ void L8RuntimeDebugMessageDispatchHandler()
 - (void)disableDebugging
 {
 	v8::Debug::DisableAgent();
+}
+
+- (id)getInternalObjCObject:(id)object
+{
+	v8::Isolate *isolate = v8::Isolate::GetCurrent();
+	v8::HandleScope localScope(isolate);
+	v8::Local<v8::Context> localContext;
+
+	localContext = v8::Local<v8::Context>::New(isolate, _v8context);
+
+	if([object isKindOfClass:[L8ManagedValue class]]) {
+		id temp;
+		L8Value *value;
+
+		value = [(L8ManagedValue *)object value];
+		temp = unwrapObjcObject(localContext, [value V8Value]);
+
+		if(temp)
+			return temp;
+		return object;
+	}
+
+	if([object isKindOfClass:[L8Value class]]) {
+		L8Value *value;
+
+		value = (L8Value *)object;
+		object = unwrapObjcObject(localContext, [value V8Value]);
+	}
+
+	return object;
+}
+
+- (void)addManagedReference:(id)object withOwner:(id)owner
+{
+	NSMapTable *objectsOwned;
+	const void *key;
+	size_t count;
+
+	if([object isKindOfClass:[L8ManagedValue class]])
+		[object didAddOwner:owner];
+
+	object = [self getInternalObjCObject:object];
+	owner = [self getInternalObjCObject:owner];
+
+	if(object == nil || owner == nil)
+		return;
+
+	objectsOwned = [_managedObjectGraph objectForKey:object];
+	if(!objectsOwned) {
+		objectsOwned = [[NSMapTable alloc] initWithKeyOptions:NSPointerFunctionsWeakMemory | NSPointerFunctionsObjectPersonality
+												 valueOptions:NSPointerFunctionsOpaqueMemory | NSPointerFunctionsIntegerPersonality
+													 capacity:1];
+
+		[_managedObjectGraph setObject:objectsOwned forKey:owner];
+	}
+
+	key = (__bridge void *)object;
+	count = reinterpret_cast<size_t>(NSMapGet(objectsOwned, key));
+	NSMapInsert(objectsOwned, key, reinterpret_cast<void *>(count + 1));
+}
+
+- (void)removeManagedReference:(id)object withOwner:(id)owner
+{
+	NSMapTable *objectsOwned;
+	const void *key;
+	size_t count;
+
+	if([object isKindOfClass:[L8ManagedValue class]])
+		[object didRemoveOwner:owner];
+
+	object = [self getInternalObjCObject:object];
+	owner = [self getInternalObjCObject:owner];
+
+	if(object == nil || owner == nil)
+		return;
+
+	objectsOwned = [_managedObjectGraph objectForKey:object];
+	if(!objectsOwned)
+		return;
+
+	key = (__bridge void *)object;
+	count = reinterpret_cast<size_t>(NSMapGet(objectsOwned, key));
+	if(count > 1) {
+		NSMapInsert(objectsOwned, key, reinterpret_cast<void *>(count - 1));
+		return;
+	}
+
+	if(count == 1)
+		NSMapRemove(objectsOwned, key);
+
+	if(![objectsOwned count])
+		[_managedObjectGraph removeObjectForKey:owner];
+}
+
+- (void)runGarbageCollector
+{
+	while(!v8::V8::IdleNotification()) {};
 }
 
 @end

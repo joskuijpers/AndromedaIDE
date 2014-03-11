@@ -1,22 +1,39 @@
-//
-//  SPRBonjour.h
-//  Sphere
-//
-//  Created by Jos Kuijpers on 08/03/14.
-//  Copyright (c) 2014 Jarvix. All rights reserved.
-//
+/*
+ * Copyright (c) 2014 Jos Kuijpers. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY APPLE INC. ``AS IS'' AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL APPLE INC. OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
 
 #import "SPRJSClass.h"
 
 @class SPRSocket;
 
-@protocol SPRBonjour <JSExport>
+@protocol SPRBonjour <L8Export>
 
 - (instancetype)init;
 
 // publish
 //: name, type, domain, port
-JSExportAs(publish,
+L8ExportAs(publish,
 - (BOOL)publishWithName:(NSString *)name
 				   type:(NSString *)type
 				   port:(uint16_t)port
@@ -25,7 +42,7 @@ JSExportAs(publish,
 
 // discover
 //: type, domain => name (+ port?)
-JSExportAs(discover,
+L8ExportAs(discover,
 - (void)discoverPeersWithType:(NSString *)type
 		   domain:(NSString *)domain
 		   callback:(void (^)(NSString *name))callback
@@ -33,7 +50,7 @@ JSExportAs(discover,
 
 // resolve -> toSocket
 //: name => addr + port
-JSExportAs(resolve,
+L8ExportAs(resolve,
 - (SPRSocket *)resolvePeerWithName:(NSString *)name
 );
 

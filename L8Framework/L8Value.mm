@@ -1,10 +1,27 @@
-//
-//  V8Value.m
-//  L8Framework
-//
-//  Created by Jos Kuijpers on 9/13/13.
-//  Copyright (c) 2013 Jarvix. All rights reserved.
-//
+/*
+ * Copyright (c) 2014 Jos Kuijpers. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY APPLE INC. ``AS IS'' AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL APPLE INC. OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
 
 #import "L8Value_Private.h"
 #import "NSString+L8.h"
@@ -205,6 +222,11 @@
 	object->Set((uint32_t)index, objectToValue(_runtime,value));
 }
 
+- (void)defineProperty:(NSString *)property descriptor:(id)descriptor
+{
+	@throw [NSException exceptionWithName:@"NotImplementedException" reason:@"" userInfo:nil];
+}
+
 - (BOOL)isUndefined
 {
 	return _v8value->IsUndefined();
@@ -257,20 +279,28 @@
 
 - (BOOL)isEqualWithTypeCoercionToObject:(id)value
 {
-	@throw [NSException exceptionWithName:@"NotImplemented" reason:@"Not Implemented" userInfo:nil];
-	return NO;
+	return 	_v8value->Equals(objectToValue(_runtime,value));
 }
 
 - (BOOL)isInstanceOf:(id)value
 {
+	Class cls = Nil;
+	L8WrapperMap *map;
 	v8::Isolate *isolate = v8::Isolate::GetCurrent();
 	v8::HandleScope localScope(isolate);
+	v8::Local<v8::FunctionTemplate> funcTemplate;
 
-//	v8::Local<v8::Object> constructor = objectToValue(_runtime, value)->ToObject();
-	BOOL result = NO;
+	if(class_isMetaClass(cls))
+		cls = value;
+	else
+		cls = [value class];
 
-	@throw [NSException exceptionWithName:@"NotImplemented" reason:@"Not Implemented" userInfo:nil];
-	return result;
+	map = [[L8Runtime currentRuntime] wrapperMap];
+	funcTemplate = [map getCachedFunctionTemplateForClass:cls];
+	if(funcTemplate.IsEmpty())
+		return NO;
+
+	return funcTemplate->HasInstance(_v8value);
 }
 
 - (void)throwValue
@@ -713,7 +743,7 @@ static ObjCContainerConverter::Job objectToValueWithoutCopy(L8Runtime *runtime, 
 		assert(0 && "Code must not be reached, or implementation is missing");
 
 		// managed value
-		// https://github.com/WebKit/webkit/blob/master/Source/JavaScriptCore/API/JSValue.mm#L901
+		// https://github.com/WebKit/webkit/blob/master/Source/JavaScriptCore/API/L8Value.mm#L901
 	}
 
 	return (ObjCContainerConverter::Job){ object, [runtime wrapperForObjCObject:object]->_v8value, COLLECTION_NONE };
@@ -723,6 +753,9 @@ v8::Local<v8::Value> objectToValue(L8Runtime *runtime, id object)
 {
 	v8::Handle<v8::Context> context = [runtime V8Context];
 	v8::HandleScope handleScope(context->GetIsolate());
+
+	if(object == nil)
+		handleScope.Close(v8::Null());
 
 	ObjCContainerConverter::Job job = objectToValueWithoutCopy(runtime, object);
 	if(job.type == COLLECTION_NONE)
