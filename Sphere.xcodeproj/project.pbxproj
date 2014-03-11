@@ -629,6 +629,8 @@
 		8080592D17B1E877004D1D41 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8080592F17B1E8DD004D1D41 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		8080593117B1EA23004D1D41 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		808E37BA18CEAE92002DDFEF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		808E37BB18CEAEC6002DDFEF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8098F90017BFB5740070BC58 /* SPHWelcomeWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPHWelcomeWindow.xib; sourceTree = "<group>"; };
 		8098F90217BFB58E0070BC58 /* SPHWelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHWelcomeWindowController.h; sourceTree = "<group>"; };
 		8098F90317BFB58E0070BC58 /* SPHWelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHWelcomeWindowController.m; sourceTree = "<group>"; };
@@ -1443,6 +1445,7 @@
 				8019147D17E8CF1600A45BBE /* L8Console */,
 				8019141817E7C8D700A45BBE /* L8FrameworkTests */,
 				80F07F7D17CCE8B4002E582E /* Plugins */,
+				808E37BC18CEAECB002DDFEF /* Supporting Files */,
 				808058E717B1B6BF004D1D41 /* Frameworks */,
 				808058E617B1B6BF004D1D41 /* Products */,
 			);
@@ -1576,6 +1579,15 @@
 				8006D4FB17BBF1A800453468 /* SPHPluginLoadRule.m */,
 			);
 			name = PluginSystem;
+			sourceTree = "<group>";
+		};
+		808E37BC18CEAECB002DDFEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				808E37BA18CEAE92002DDFEF /* LICENSE */,
+				808E37BB18CEAEC6002DDFEF /* README.md */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8098F90517BFB5930070BC58 /* WelcomeWindow */ = {

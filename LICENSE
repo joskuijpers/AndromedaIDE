@@ -1,39 +1,3 @@
-JSphere
-=======
-
-Sphere RPG Engine and IDE for Mac OSX. Not created by the developers 
-and maintainers of the original Sphere.
-
-Project setup
-===
-
-The project contains multiple targets. They might be split up later, but for
-convenience it is set up this way.
-
-* Sphere.app
- * The Sphere IDE for Mac
-* SphereKit.framework
- * A kit used by Sphere.app and IDE plugins
-* IDEPlugins
- * Plugins for the IDE.
-* SphereToolsKit.framework
- * This is a provider for external tools in a wrapper package. It will be able to use multiple
-   lints, optimizers, etc to do optimizing, syntax checking, minimizing, etc.
-* SphereRuntimeKit.framework
- * Common classes used by Sphere and the SphereRuntime, such as Sphere file format implementations.
-* SphereRuntime.app
- * The actual runtime application
-* L8Framework.framework
- * Objective-C V8 API
-* L8Console
- * A remote debugger for L8
-
-License
-===
-
-This software is released under the 2 clause BSD license. See LICENSE.
-
-```
 Copyright (c) 2014 Jos Kuijpers. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -56,4 +20,3 @@ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
 OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-```
