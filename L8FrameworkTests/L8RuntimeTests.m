@@ -36,7 +36,7 @@
 - (void)testCurrentRuntime
 {
 	L8Runtime *localRuntime = [[L8Runtime alloc] init];
-	[localRuntime runWithBlock:^(L8Runtime *paramRuntime) {
+	[localRuntime executeBlockInRuntime:^(L8Runtime *paramRuntime) {
 		XCTAssertEqual(localRuntime, paramRuntime, "Runtime in block parameter is expected runtime");
 		XCTAssertEqual(localRuntime, [L8Runtime currentRuntime], "-[currentRuntime] returns current runtime");
 	}];
