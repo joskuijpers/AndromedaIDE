@@ -2140,7 +2140,7 @@
 				ORGANIZATIONNAME = Jarvix;
 				TargetAttributes = {
 					8019141117E7C8D700A45BBE = {
-						TestTargetID = 808058E417B1B6BF004D1D41;
+						TestTargetID = 8019140117E7C8D700A45BBE;
 					};
 				};
 			};
@@ -2772,7 +2772,6 @@
 		8019142217E7C8D800A45BBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sphere.app/Contents/MacOS/Sphere";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -2786,7 +2785,6 @@
 				);
 				INFOPLIST_FILE = "L8FrameworkTests/L8FrameworkTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -2794,7 +2792,6 @@
 		8019142317E7C8D800A45BBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sphere.app/Contents/MacOS/Sphere";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -2804,7 +2801,6 @@
 				GCC_PREFIX_HEADER = "L8Framework/L8Framework-Prefix.pch";
 				INFOPLIST_FILE = "L8FrameworkTests/L8FrameworkTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
