@@ -168,27 +168,6 @@
 			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
 			remoteInfo = SphereKit;
 		};
-		80477C0818D1313400B16692 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80477C0318D1313100B16692 /* SphereRuntime.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 80477BCC18D1313100B16692;
-			remoteInfo = SphereRuntime;
-		};
-		80B5FEE618D1379E0035C62B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80477C0318D1313100B16692 /* SphereRuntime.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 80B5FE6418D133AD0035C62B;
-			remoteInfo = SphereRuntimeKit;
-		};
-		80B5FEE818D1379E0035C62B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80477C0318D1313100B16692 /* SphereRuntime.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 80B5FE7418D133AD0035C62B;
-			remoteInfo = SphereRuntimeKitTests;
-		};
 		80F07F8117CCEC15002E582E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
@@ -312,7 +291,6 @@
 		80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJavaScriptPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJavaScriptPluginDelegate.m; sourceTree = "<group>"; };
 		803563EC18BC0B6600696C5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		80477C0318D1313100B16692 /* SphereRuntime.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SphereRuntime.xcodeproj; path = SphereRuntime/SphereRuntime.xcodeproj; sourceTree = "<group>"; };
 		8075140417CE9F47009547A6 /* SPXBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXBuildPhase.h; sourceTree = "<group>"; };
 		8075140517CE9F47009547A6 /* SPXBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXBuildPhase.m; sourceTree = "<group>"; };
 		8075140817CEA0F9009547A6 /* SPXTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXTarget.h; sourceTree = "<group>"; };
@@ -693,16 +671,6 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
-		80477C0418D1313100B16692 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				80477C0918D1313400B16692 /* SphereRuntime.app */,
-				80B5FEE718D1379E0035C62B /* SphereRuntimeKit.framework */,
-				80B5FEE918D1379E0035C62B /* SphereRuntimeKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		807513F817CE92C8009547A6 /* spxproj */ = {
 			isa = PBXGroup;
 			children = (
@@ -794,7 +762,6 @@
 		808058DC17B1B6BF004D1D41 = {
 			isa = PBXGroup;
 			children = (
-				80477C0318D1313100B16692 /* SphereRuntime.xcodeproj */,
 				808058EE17B1B6BF004D1D41 /* Sphere */,
 				80345A6017BA6B8800170EFD /* SphereKit */,
 				80F07F5B17CCE864002E582E /* SphereToolsKit */,
@@ -1195,12 +1162,6 @@
 			mainGroup = 808058DC17B1B6BF004D1D41;
 			productRefGroup = 808058E617B1B6BF004D1D41 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 80477C0418D1313100B16692 /* Products */;
-					ProjectRef = 80477C0318D1313100B16692 /* SphereRuntime.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				808058E417B1B6BF004D1D41 /* Sphere */,
@@ -1212,30 +1173,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		80477C0918D1313400B16692 /* SphereRuntime.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SphereRuntime.app;
-			remoteRef = 80477C0818D1313400B16692 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80B5FEE718D1379E0035C62B /* SphereRuntimeKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SphereRuntimeKit.framework;
-			remoteRef = 80B5FEE618D1379E0035C62B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80B5FEE918D1379E0035C62B /* SphereRuntimeKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SphereRuntimeKitTests.xctest;
-			remoteRef = 80B5FEE818D1379E0035C62B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8006D4D617BBE69C00453468 /* Resources */ = {

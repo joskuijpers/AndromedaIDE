@@ -1,12 +1,10 @@
 JSphere
 =======
 
-Sphere RPG Engine and IDE for Mac OSX. Not created by the developers 
+Sphere RPG IDE for Mac OSX. Not created by the developers 
 and maintainers of the original Sphere.
 
-Project setup
-===
-
+## Project setup ##
 The project contains multiple targets. They might be split up later, but for
 convenience it is set up this way.
 
@@ -19,18 +17,8 @@ convenience it is set up this way.
 * SphereToolsKit.framework
  * This is a provider for external tools in a wrapper package. It will be able to use multiple
    lints, optimizers, etc to do optimizing, syntax checking, minimizing, etc.
-* SphereRuntimeKit.framework
- * Common classes used by Sphere and the SphereRuntime, such as Sphere file format implementations.
-* SphereRuntime.app
- * The actual runtime application
-* L8Framework.framework
- * Objective-C V8 API
-* L8Console
- * A remote debugger for L8
 
-License
-===
-
+## License ##
 This software is released under the 2 clause BSD license. See LICENSE.
 
 ```
