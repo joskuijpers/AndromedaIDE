@@ -288,8 +288,6 @@
 		8006D4F817BBEBA900453468 /* SPHPluginExtensionPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHPluginExtensionPoint.m; sourceTree = "<group>"; };
 		8006D4FA17BBF1A800453468 /* SPHPluginLoadRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHPluginLoadRule.h; sourceTree = "<group>"; };
 		8006D4FB17BBF1A800453468 /* SPHPluginLoadRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHPluginLoadRule.m; sourceTree = "<group>"; };
-		8019146B17E7CE2800A45BBE /* libv8_base.x64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_base.x64.a; path = ../v8/xcodebuild/Release/libv8_base.x64.a; sourceTree = "<group>"; };
-		8019146C17E7CE2800A45BBE /* libv8_snapshot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_snapshot.a; path = ../v8/xcodebuild/Release/libv8_snapshot.a; sourceTree = "<group>"; };
 		8019147B17E8CF1600A45BBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		802A640A17B4758A00597DB6 /* IDEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDEDocument.h; path = ../Sphere/IDEDocument.h; sourceTree = "<group>"; };
 		802A640B17B4758A00597DB6 /* IDEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDEDocument.m; path = ../Sphere/IDEDocument.m; sourceTree = "<group>"; };
@@ -327,11 +325,7 @@
 		80345AC117BA73A600170EFD /* IDEPluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJavaScriptPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJavaScriptPluginDelegate.m; sourceTree = "<group>"; };
-		803563B318BA8CA700696C5A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		803563EC18BC0B6600696C5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		80442E0B18CD761E004B4824 /* libicudata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicudata.a; path = ../v8/xcodebuild/Release/libicudata.a; sourceTree = "<group>"; };
-		80442E0D18CD7630004B4824 /* libicuuc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicuuc.a; path = ../v8/xcodebuild/Release/libicuuc.a; sourceTree = "<group>"; };
-		80442E0F18CD7648004B4824 /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicui18n.a; path = ../v8/xcodebuild/Release/libicui18n.a; sourceTree = "<group>"; };
 		80477B5118D119F000B16692 /* L8Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = L8Framework.xcodeproj; path = L8Framework/L8Framework.xcodeproj; sourceTree = "<group>"; };
 		80477C0318D1313100B16692 /* SphereRuntime.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SphereRuntime.xcodeproj; path = SphereRuntime/SphereRuntime.xcodeproj; sourceTree = "<group>"; };
 		8075140417CE9F47009547A6 /* SPXBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXBuildPhase.h; sourceTree = "<group>"; };
@@ -406,7 +400,6 @@
 		80AC29E017C6DF50005D4D54 /* IDESheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESheetController.m; sourceTree = "<group>"; };
 		80AC29E317C7E9AD005D4D54 /* SPXReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXReference.h; sourceTree = "<group>"; };
 		80AC29E417C7E9AD005D4D54 /* SPXReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXReference.m; sourceTree = "<group>"; };
-		80BB199E18C8E01A004CBF91 /* ExceptionHandling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExceptionHandling.framework; path = System/Library/Frameworks/ExceptionHandling.framework; sourceTree = SDKROOT; };
 		80F07F5917CCE864002E582E /* SphereToolsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SphereToolsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F07F5D17CCE864002E582E /* SphereToolsKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereToolsKit-Info.plist"; sourceTree = "<group>"; };
 		80F07F5F17CCE864002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -853,14 +846,7 @@
 		808058E717B1B6BF004D1D41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				80BB199E18C8E01A004CBF91 /* ExceptionHandling.framework */,
 				803563EC18BC0B6600696C5A /* CoreGraphics.framework */,
-				803563B318BA8CA700696C5A /* JavaScriptCore.framework */,
-				8019146B17E7CE2800A45BBE /* libv8_base.x64.a */,
-				80442E0F18CD7648004B4824 /* libicui18n.a */,
-				80442E0B18CD761E004B4824 /* libicudata.a */,
-				80442E0D18CD7630004B4824 /* libicuuc.a */,
-				8019146C17E7CE2800A45BBE /* libv8_snapshot.a */,
 				802F39C317B3D242005B70C4 /* QuartzCore.framework */,
 				8080593117B1EA23004D1D41 /* libcrypto.dylib */,
 				8080592F17B1E8DD004D1D41 /* libcommonCrypto.dylib */,
