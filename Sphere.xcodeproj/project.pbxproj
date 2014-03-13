@@ -39,37 +39,10 @@
 		8006D4FC17BBF1A800453468 /* SPHPluginLoadRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4FB17BBF1A800453468 /* SPHPluginLoadRule.m */; };
 		8019141317E7C8D700A45BBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080590A17B1B6C0004D1D41 /* XCTest.framework */; };
 		8019141417E7C8D700A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
-		8019141717E7C8D700A45BBE /* L8Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019140217E7C8D700A45BBE /* L8Framework.framework */; };
-		8019141D17E7C8D700A45BBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8019141B17E7C8D700A45BBE /* InfoPlist.strings */; };
-		8019141F17E7C8D700A45BBE /* L8ValueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8019141E17E7C8D700A45BBE /* L8ValueTests.m */; };
-		8019142B17E7C9C100A45BBE /* L8.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142A17E7C9C100A45BBE /* L8.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8019143417E7C9CD00A45BBE /* L8Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142C17E7C9CD00A45BBE /* L8Runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8019143517E7C9CD00A45BBE /* L8Runtime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019142D17E7C9CD00A45BBE /* L8Runtime.mm */; };
-		8019143617E7C9CD00A45BBE /* L8Value.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019142E17E7C9CD00A45BBE /* L8Value.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8019143717E7C9CD00A45BBE /* L8Value.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019142F17E7C9CD00A45BBE /* L8Value.mm */; };
-		8019143817E7C9CD00A45BBE /* L8Export.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143017E7C9CD00A45BBE /* L8Export.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8019143A17E7C9CD00A45BBE /* L8Reporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143217E7C9CD00A45BBE /* L8Reporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8019143B17E7C9CD00A45BBE /* L8Reporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019143317E7C9CD00A45BBE /* L8Reporter.mm */; };
-		8019144717E7C9D700A45BBE /* L8Runtime_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143C17E7C9D700A45BBE /* L8Runtime_Private.h */; };
-		8019144817E7C9D700A45BBE /* L8Value_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143D17E7C9D700A45BBE /* L8Value_Private.h */; };
-		8019144917E7C9D700A45BBE /* L8Reporter_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143E17E7C9D700A45BBE /* L8Reporter_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8019144A17E7C9D700A45BBE /* NSString+L8.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019143F17E7C9D700A45BBE /* NSString+L8.h */; };
-		8019144B17E7C9D700A45BBE /* NSString+L8.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019144017E7C9D700A45BBE /* NSString+L8.mm */; };
-		8019144C17E7C9D700A45BBE /* L8WrapperMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019144117E7C9D700A45BBE /* L8WrapperMap.h */; };
-		8019144D17E7C9D700A45BBE /* L8WrapperMap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019144217E7C9D700A45BBE /* L8WrapperMap.mm */; };
-		8019144E17E7C9D700A45BBE /* ObjCRuntime+L8.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019144317E7C9D700A45BBE /* ObjCRuntime+L8.h */; };
-		8019144F17E7C9D700A45BBE /* ObjCRuntime+L8.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019144417E7C9D700A45BBE /* ObjCRuntime+L8.mm */; };
-		8019145017E7C9D700A45BBE /* ObjCCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019144517E7C9D700A45BBE /* ObjCCallback.h */; };
-		8019145117E7C9D700A45BBE /* ObjCCallback.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019144617E7C9D700A45BBE /* ObjCCallback.mm */; };
-		8019146D17E7CE2800A45BBE /* libv8_base.x64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019146B17E7CE2800A45BBE /* libv8_base.x64.a */; };
-		8019146E17E7CE2800A45BBE /* libv8_snapshot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019146C17E7CE2800A45BBE /* libv8_snapshot.a */; };
 		8019146F17E7CE9500A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		8019147017E7CEC500A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
-		8019147317E85E9000A45BBE /* L8Runtime+L8Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 8019147217E85E9000A45BBE /* L8Runtime+L8Test.m */; };
-		8019147517E8B8E700A45BBE /* L8RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8019147417E8B8E700A45BBE /* L8RuntimeTests.m */; };
 		8019147C17E8CF1600A45BBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019147B17E8CF1600A45BBE /* Foundation.framework */; };
 		8019147F17E8CF1600A45BBE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019147E17E8CF1600A45BBE /* main.mm */; };
-		8019148717E8CF2000A45BBE /* L8Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019140217E7C8D700A45BBE /* L8Framework.framework */; };
 		802A641317B47D0E00597DB6 /* SPHMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* SPHMainSplitViewController.m */; };
 		802A641417B47D0E00597DB6 /* SPHMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* SPHMainSplitView.xib */; };
 		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -96,10 +69,6 @@
 		80345ABF17BA72A800170EFD /* IDEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* IDEPlugin.m */; };
 		80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */; };
 		80345AC517BA745C00170EFD /* IDEPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* IDEPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		803563A918BA496200696C5A /* L8Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563A718BA496200696C5A /* L8Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		803563AA18BA496200696C5A /* L8Exception.mm in Sources */ = {isa = PBXBuildFile; fileRef = 803563A818BA496200696C5A /* L8Exception.mm */; };
-		803563AF18BA4AAC00696C5A /* L8NativeException.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563AD18BA4AAC00696C5A /* L8NativeException.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		803563B018BA4AAC00696C5A /* L8NativeException.mm in Sources */ = {isa = PBXBuildFile; fileRef = 803563AE18BA4AAC00696C5A /* L8NativeException.mm */; };
 		803563B718BA98B600696C5A /* SPRConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563B618BA98B600696C5A /* SPRConsole.m */; };
 		803563BB18BA99F100696C5A /* SPRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563BA18BA99F100696C5A /* SPRGame.m */; };
 		803563C018BA9A5B00696C5A /* SPRResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563BF18BA9A5B00696C5A /* SPRResource.m */; };
@@ -124,21 +93,6 @@
 		803563F318BCE59600696C5A /* SRKFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563F218BCE59600696C5A /* SRKFile.m */; };
 		803563F618BCE9C500696C5A /* SRKFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 803563F418BCE9C500696C5A /* SRKFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		803563F718BCE9C500696C5A /* SRKFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 803563F518BCE9C500696C5A /* SRKFont.m */; };
-		80442E0A18CD7439004B4824 /* v8-platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 80442E0918CD7439004B4824 /* v8-platform.h */; };
-		80442E0C18CD761E004B4824 /* libicudata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80442E0B18CD761E004B4824 /* libicudata.a */; };
-		80442E0E18CD7630004B4824 /* libicuuc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80442E0D18CD7630004B4824 /* libicuuc.a */; };
-		80442E1018CD7648004B4824 /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80442E0F18CD7648004B4824 /* libicui18n.a */; };
-		80442E1318CD8CE0004B4824 /* L8ManagedValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 80442E1118CD8CE0004B4824 /* L8ManagedValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80442E1418CD8CE0004B4824 /* L8ManagedValue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80442E1218CD8CE0004B4824 /* L8ManagedValue.mm */; };
-		804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E41B817F48E04003D1D52 /* L8StackTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		804E41BB17F48E04003D1D52 /* L8StackTrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 804E41B917F48E04003D1D52 /* L8StackTrace.mm */; };
-		804E41C017F74673003D1D52 /* L8Runtime_Debugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E41BE17F74673003D1D52 /* L8Runtime_Debugging.h */; };
-		804E421717F762F8003D1D52 /* v8-debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421017F762F8003D1D52 /* v8-debug.h */; };
-		804E421917F762F8003D1D52 /* v8-profiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421217F762F8003D1D52 /* v8-profiler.h */; };
-		804E421A17F762F8003D1D52 /* v8-testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421317F762F8003D1D52 /* v8-testing.h */; };
-		804E421B17F762F8003D1D52 /* v8.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421417F762F8003D1D52 /* v8.h */; };
-		804E421C17F762F8003D1D52 /* v8config.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421517F762F8003D1D52 /* v8config.h */; };
-		804E421D17F762F8003D1D52 /* v8stdint.h in Headers */ = {isa = PBXBuildFile; fileRef = 804E421617F762F8003D1D52 /* v8stdint.h */; };
 		807513FB17CE97F9009547A6 /* SXBuildConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46117BA7D7300453468 /* SXBuildConfiguration.m */; };
 		807513FD17CE97F9009547A6 /* SXConfigurationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D46417BA7DAF00453468 /* SXConfigurationList.m */; };
 		807513FE17CE9807009547A6 /* SPXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D45E17BA79FA00453468 /* SPXProject.m */; };
@@ -230,8 +184,6 @@
 		80C07A5818CB74E30082F562 /* SPRCompatibility16.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5718CB74E30082F562 /* SPRCompatibility16.m */; };
 		80C07A5B18CB74F80082F562 /* SPRCompatibility15.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A5A18CB74F80082F562 /* SPRCompatibility15.m */; };
 		80C07A6218CBCA6D0082F562 /* SPRModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C07A6118CBCA6D0082F562 /* SPRModule.m */; };
-		80C07A6318CBEA090082F562 /* L8Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019140217E7C8D700A45BBE /* L8Framework.framework */; };
-		80C07A6618CBEA1B0082F562 /* L8Framework.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 8019140217E7C8D700A45BBE /* L8Framework.framework */; };
 		80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		80F07F2E17CCE58A002E582E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80F07F2C17CCE58A002E582E /* InfoPlist.strings */; };
 		80F07F3017CCE58A002E582E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F07F2F17CCE58A002E582E /* main.m */; };
@@ -268,27 +220,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8006D4D717BBE69C00453468;
 			remoteInfo = IDESourceCodeEditor;
-		};
-		8019141517E7C8D700A45BBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8019140117E7C8D700A45BBE;
-			remoteInfo = L8Framework;
-		};
-		8019142817E7C93000A45BBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8019140117E7C8D700A45BBE;
-			remoteInfo = L8Framework;
-		};
-		8019148817E8CF8F00A45BBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8019140117E7C8D700A45BBE;
-			remoteInfo = L8Framework;
 		};
 		80345A8517BA6C2400170EFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -332,12 +263,19 @@
 			remoteGlobalIDString = 8006D47717BA840400453468;
 			remoteInfo = SphereRuntimeKit;
 		};
-		80C07A6418CBEA0F0082F562 /* PBXContainerItemProxy */ = {
+		80477B5618D119F200B16692 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8019140117E7C8D700A45BBE;
+			containerPortal = 80477B5118D119F000B16692 /* L8Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80477B2318D119ED00B16692;
 			remoteInfo = L8Framework;
+		};
+		80477B5818D119F200B16692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80477B5118D119F000B16692 /* L8Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80477B3A18D119F000B16692;
+			remoteInfo = L8FrameworkTests;
 		};
 		80F07F8117CCEC15002E582E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -390,7 +328,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				80C07A6618CBEA1B0082F562 /* L8Framework.framework in Copy Private Frameworks */,
 				803563D018BBEC0500696C5A /* SphereRuntimeKit.framework in Copy Private Frameworks */,
 			);
 			name = "Copy Private Frameworks";
@@ -454,37 +391,9 @@
 		8006D4F817BBEBA900453468 /* SPHPluginExtensionPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHPluginExtensionPoint.m; sourceTree = "<group>"; };
 		8006D4FA17BBF1A800453468 /* SPHPluginLoadRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHPluginLoadRule.h; sourceTree = "<group>"; };
 		8006D4FB17BBF1A800453468 /* SPHPluginLoadRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHPluginLoadRule.m; sourceTree = "<group>"; };
-		8019140217E7C8D700A45BBE /* L8Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = L8Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8019140617E7C8D700A45BBE /* L8Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "L8Framework-Info.plist"; sourceTree = "<group>"; };
-		8019140A17E7C8D700A45BBE /* L8Framework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "L8Framework-Prefix.pch"; sourceTree = "<group>"; };
 		8019141217E7C8D700A45BBE /* L8FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L8FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8019141A17E7C8D700A45BBE /* L8FrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "L8FrameworkTests-Info.plist"; sourceTree = "<group>"; };
-		8019141C17E7C8D700A45BBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8019141E17E7C8D700A45BBE /* L8ValueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = L8ValueTests.m; sourceTree = "<group>"; };
-		8019142A17E7C9C100A45BBE /* L8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8.h; path = Headers/L8.h; sourceTree = "<group>"; };
-		8019142C17E7C9CD00A45BBE /* L8Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8Runtime.h; path = Headers/L8Runtime.h; sourceTree = "<group>"; };
-		8019142D17E7C9CD00A45BBE /* L8Runtime.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = L8Runtime.mm; path = Source/L8Runtime.mm; sourceTree = "<group>"; };
-		8019142E17E7C9CD00A45BBE /* L8Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8Value.h; path = Headers/L8Value.h; sourceTree = "<group>"; };
-		8019142F17E7C9CD00A45BBE /* L8Value.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = L8Value.mm; path = Source/L8Value.mm; sourceTree = "<group>"; };
-		8019143017E7C9CD00A45BBE /* L8Export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8Export.h; path = Headers/L8Export.h; sourceTree = "<group>"; };
-		8019143217E7C9CD00A45BBE /* L8Reporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8Reporter.h; path = Headers/L8Reporter.h; sourceTree = "<group>"; };
-		8019143317E7C9CD00A45BBE /* L8Reporter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = L8Reporter.mm; path = Source/L8Reporter.mm; sourceTree = "<group>"; };
-		8019143C17E7C9D700A45BBE /* L8Runtime_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8Runtime_Private.h; path = Source/L8Runtime_Private.h; sourceTree = "<group>"; };
-		8019143D17E7C9D700A45BBE /* L8Value_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8Value_Private.h; path = Source/L8Value_Private.h; sourceTree = "<group>"; };
-		8019143E17E7C9D700A45BBE /* L8Reporter_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8Reporter_Private.h; path = Source/L8Reporter_Private.h; sourceTree = "<group>"; };
-		8019143F17E7C9D700A45BBE /* NSString+L8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+L8.h"; sourceTree = "<group>"; };
-		8019144017E7C9D700A45BBE /* NSString+L8.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+L8.mm"; sourceTree = "<group>"; };
-		8019144117E7C9D700A45BBE /* L8WrapperMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8WrapperMap.h; path = Source/L8WrapperMap.h; sourceTree = "<group>"; };
-		8019144217E7C9D700A45BBE /* L8WrapperMap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = L8WrapperMap.mm; path = Source/L8WrapperMap.mm; sourceTree = "<group>"; };
-		8019144317E7C9D700A45BBE /* ObjCRuntime+L8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjCRuntime+L8.h"; sourceTree = "<group>"; };
-		8019144417E7C9D700A45BBE /* ObjCRuntime+L8.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ObjCRuntime+L8.mm"; sourceTree = "<group>"; };
-		8019144517E7C9D700A45BBE /* ObjCCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjCCallback.h; path = Source/ObjCCallback.h; sourceTree = "<group>"; };
-		8019144617E7C9D700A45BBE /* ObjCCallback.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjCCallback.mm; path = Source/ObjCCallback.mm; sourceTree = "<group>"; };
 		8019146B17E7CE2800A45BBE /* libv8_base.x64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_base.x64.a; path = ../v8/xcodebuild/Release/libv8_base.x64.a; sourceTree = "<group>"; };
 		8019146C17E7CE2800A45BBE /* libv8_snapshot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_snapshot.a; path = ../v8/xcodebuild/Release/libv8_snapshot.a; sourceTree = "<group>"; };
-		8019147117E85E9000A45BBE /* L8Runtime+L8Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "L8Runtime+L8Test.h"; sourceTree = "<group>"; };
-		8019147217E85E9000A45BBE /* L8Runtime+L8Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "L8Runtime+L8Test.m"; sourceTree = "<group>"; };
-		8019147417E8B8E700A45BBE /* L8RuntimeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L8RuntimeTests.m; sourceTree = "<group>"; };
 		8019147A17E8CF1600A45BBE /* L8Console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = L8Console; sourceTree = BUILT_PRODUCTS_DIR; };
 		8019147B17E8CF1600A45BBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8019147E17E8CF1600A45BBE /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
@@ -527,11 +436,6 @@
 		80345AC117BA73A600170EFD /* IDEPluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJavaScriptPluginDelegate.h; sourceTree = "<group>"; };
 		80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJavaScriptPluginDelegate.m; sourceTree = "<group>"; };
-		803563A718BA496200696C5A /* L8Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8Exception.h; path = Headers/L8Exception.h; sourceTree = "<group>"; };
-		803563A818BA496200696C5A /* L8Exception.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = L8Exception.mm; path = Source/L8Exception.mm; sourceTree = "<group>"; };
-		803563AB18BA49A900696C5A /* L8Exception_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = L8Exception_Private.h; path = Source/L8Exception_Private.h; sourceTree = "<group>"; };
-		803563AD18BA4AAC00696C5A /* L8NativeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8NativeException.h; path = Headers/L8NativeException.h; sourceTree = "<group>"; };
-		803563AE18BA4AAC00696C5A /* L8NativeException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = L8NativeException.mm; path = Source/L8NativeException.mm; sourceTree = "<group>"; };
 		803563B318BA8CA700696C5A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		803563B518BA98B600696C5A /* SPRConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRConsole.h; sourceTree = "<group>"; };
 		803563B618BA98B600696C5A /* SPRConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRConsole.m; sourceTree = "<group>"; };
@@ -560,24 +464,10 @@
 		803563F418BCE9C500696C5A /* SRKFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKFont.h; sourceTree = "<group>"; };
 		803563F518BCE9C500696C5A /* SRKFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKFont.m; sourceTree = "<group>"; };
 		803563FC18BCEBFC00696C5A /* SRKFile_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRKFile_Private.h; sourceTree = "<group>"; };
-		80442E0918CD7439004B4824 /* v8-platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "v8-platform.h"; path = "../../v8/include/v8-platform.h"; sourceTree = "<group>"; };
 		80442E0B18CD761E004B4824 /* libicudata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicudata.a; path = ../v8/xcodebuild/Release/libicudata.a; sourceTree = "<group>"; };
 		80442E0D18CD7630004B4824 /* libicuuc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicuuc.a; path = ../v8/xcodebuild/Release/libicuuc.a; sourceTree = "<group>"; };
 		80442E0F18CD7648004B4824 /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicui18n.a; path = ../v8/xcodebuild/Release/libicui18n.a; sourceTree = "<group>"; };
-		80442E1118CD8CE0004B4824 /* L8ManagedValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8ManagedValue.h; path = Headers/L8ManagedValue.h; sourceTree = "<group>"; };
-		80442E1218CD8CE0004B4824 /* L8ManagedValue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = L8ManagedValue.mm; path = Source/L8ManagedValue.mm; sourceTree = "<group>"; };
-		80442E1518CD8D04004B4824 /* L8ManagedValue_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = L8ManagedValue_Private.h; path = Source/L8ManagedValue_Private.h; sourceTree = "<group>"; };
-		804E41B817F48E04003D1D52 /* L8StackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8StackTrace.h; path = Headers/L8StackTrace.h; sourceTree = "<group>"; };
-		804E41B917F48E04003D1D52 /* L8StackTrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = L8StackTrace.mm; path = Source/L8StackTrace.mm; sourceTree = "<group>"; };
-		804E41BC17F48E37003D1D52 /* L8StackTrace_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = L8StackTrace_Private.h; path = Source/L8StackTrace_Private.h; sourceTree = "<group>"; };
-		804E41BE17F74673003D1D52 /* L8Runtime_Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L8Runtime_Debugging.h; path = Headers/L8Runtime_Debugging.h; sourceTree = "<group>"; };
-		804E421017F762F8003D1D52 /* v8-debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "v8-debug.h"; path = "../../v8/include/v8-debug.h"; sourceTree = "<group>"; };
-		804E421217F762F8003D1D52 /* v8-profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "v8-profiler.h"; path = "../../v8/include/v8-profiler.h"; sourceTree = "<group>"; };
-		804E421317F762F8003D1D52 /* v8-testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "v8-testing.h"; path = "../../v8/include/v8-testing.h"; sourceTree = "<group>"; };
-		804E421417F762F8003D1D52 /* v8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = v8.h; path = ../../v8/include/v8.h; sourceTree = "<group>"; };
-		804E421517F762F8003D1D52 /* v8config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = v8config.h; path = ../../v8/include/v8config.h; sourceTree = "<group>"; };
-		804E421617F762F8003D1D52 /* v8stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = v8stdint.h; path = ../../v8/include/v8stdint.h; sourceTree = "<group>"; };
-		805337B118CFB0BC00E8E93D /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		80477B5118D119F000B16692 /* L8Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = L8Framework.xcodeproj; path = L8Framework/L8Framework.xcodeproj; sourceTree = "<group>"; };
 		8075140417CE9F47009547A6 /* SPXBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXBuildPhase.h; sourceTree = "<group>"; };
 		8075140517CE9F47009547A6 /* SPXBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXBuildPhase.m; sourceTree = "<group>"; };
 		8075140817CEA0F9009547A6 /* SPXTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXTarget.h; sourceTree = "<group>"; };
@@ -699,7 +589,6 @@
 		80C07A5C18CB753D0082F562 /* SPRCompatibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRCompatibility.h; sourceTree = "<group>"; };
 		80C07A6018CBCA6D0082F562 /* SPRModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRModule.h; sourceTree = "<group>"; };
 		80C07A6118CBCA6D0082F562 /* SPRModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRModule.m; sourceTree = "<group>"; };
-		80E138AC18CE5F45003BEBE2 /* Doxyfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
 		80F07F2717CCE58A002E582E /* SphereRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F07F2B17CCE58A002E582E /* SphereRuntime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SphereRuntime-Info.plist"; sourceTree = "<group>"; };
 		80F07F2D17CCE58A002E582E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -737,24 +626,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		801913FE17E7C8D700A45BBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8019146D17E7CE2800A45BBE /* libv8_base.x64.a in Frameworks */,
-				80442E0E18CD7630004B4824 /* libicuuc.a in Frameworks */,
-				80442E1018CD7648004B4824 /* libicui18n.a in Frameworks */,
-				80442E0C18CD761E004B4824 /* libicudata.a in Frameworks */,
-				8019146E17E7CE2800A45BBE /* libv8_snapshot.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8019140F17E7C8D700A45BBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8019141417E7C8D700A45BBE /* Cocoa.framework in Frameworks */,
-				8019141717E7C8D700A45BBE /* L8Framework.framework in Frameworks */,
 				8019141317E7C8D700A45BBE /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,7 +639,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8019148717E8CF2000A45BBE /* L8Framework.framework in Frameworks */,
 				8019147C17E8CF1600A45BBE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -808,7 +683,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C07A6318CBEA090082F562 /* L8Framework.framework in Frameworks */,
 				80F07F2817CCE58A002E582E /* Cocoa.framework in Frameworks */,
 				80F07F8A17CCECC2002E582E /* SphereRuntimeKit.framework in Frameworks */,
 			);
@@ -952,91 +826,6 @@
 			name = Editor;
 			sourceTree = "<group>";
 		};
-		8019140417E7C8D700A45BBE /* L8Framework */ = {
-			isa = PBXGroup;
-			children = (
-				8019145517E7C9FA00A45BBE /* V8 */,
-				8019145317E7C9E400A45BBE /* L8 */,
-				8019140517E7C8D700A45BBE /* Supporting Files */,
-			);
-			path = L8Framework;
-			sourceTree = "<group>";
-		};
-		8019140517E7C8D700A45BBE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				80E138AC18CE5F45003BEBE2 /* Doxyfile */,
-				8019140617E7C8D700A45BBE /* L8Framework-Info.plist */,
-				8019140A17E7C8D700A45BBE /* L8Framework-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8019141817E7C8D700A45BBE /* L8FrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				8019141E17E7C8D700A45BBE /* L8ValueTests.m */,
-				8019147417E8B8E700A45BBE /* L8RuntimeTests.m */,
-				8019147117E85E9000A45BBE /* L8Runtime+L8Test.h */,
-				8019147217E85E9000A45BBE /* L8Runtime+L8Test.m */,
-				8019141917E7C8D700A45BBE /* Supporting Files */,
-			);
-			path = L8FrameworkTests;
-			sourceTree = "<group>";
-		};
-		8019141917E7C8D700A45BBE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8019141A17E7C8D700A45BBE /* L8FrameworkTests-Info.plist */,
-				8019141B17E7C8D700A45BBE /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8019145217E7C9DE00A45BBE /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				801914FB17EE372D00A45BBE /* Extensions */,
-				801914FA17EE372200A45BBE /* Categories */,
-				8019144117E7C9D700A45BBE /* L8WrapperMap.h */,
-				8019144217E7C9D700A45BBE /* L8WrapperMap.mm */,
-				8019144517E7C9D700A45BBE /* ObjCCallback.h */,
-				8019144617E7C9D700A45BBE /* ObjCCallback.mm */,
-			);
-			name = Private;
-			sourceTree = "<group>";
-		};
-		8019145317E7C9E400A45BBE /* L8 */ = {
-			isa = PBXGroup;
-			children = (
-				804E41BD17F5B283003D1D52 /* Public */,
-				8019145217E7C9DE00A45BBE /* Private */,
-				8019142D17E7C9CD00A45BBE /* L8Runtime.mm */,
-				8019142F17E7C9CD00A45BBE /* L8Value.mm */,
-				8019143317E7C9CD00A45BBE /* L8Reporter.mm */,
-				804E41B917F48E04003D1D52 /* L8StackTrace.mm */,
-				803563A818BA496200696C5A /* L8Exception.mm */,
-				803563AE18BA4AAC00696C5A /* L8NativeException.mm */,
-				80442E1218CD8CE0004B4824 /* L8ManagedValue.mm */,
-				805337B118CFB0BC00E8E93D /* config.h */,
-			);
-			name = L8;
-			sourceTree = "<group>";
-		};
-		8019145517E7C9FA00A45BBE /* V8 */ = {
-			isa = PBXGroup;
-			children = (
-				804E421017F762F8003D1D52 /* v8-debug.h */,
-				80442E0918CD7439004B4824 /* v8-platform.h */,
-				804E421217F762F8003D1D52 /* v8-profiler.h */,
-				804E421317F762F8003D1D52 /* v8-testing.h */,
-				804E421417F762F8003D1D52 /* v8.h */,
-				804E421517F762F8003D1D52 /* v8config.h */,
-				804E421617F762F8003D1D52 /* v8stdint.h */,
-			);
-			name = V8;
-			sourceTree = "<group>";
-		};
 		8019147D17E8CF1600A45BBE /* L8Console */ = {
 			isa = PBXGroup;
 			children = (
@@ -1052,31 +841,6 @@
 				8019148117E8CF1600A45BBE /* L8Console-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		801914FA17EE372200A45BBE /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				8019143F17E7C9D700A45BBE /* NSString+L8.h */,
-				8019144017E7C9D700A45BBE /* NSString+L8.mm */,
-				8019144317E7C9D700A45BBE /* ObjCRuntime+L8.h */,
-				8019144417E7C9D700A45BBE /* ObjCRuntime+L8.mm */,
-			);
-			name = Categories;
-			path = Source/Categories;
-			sourceTree = "<group>";
-		};
-		801914FB17EE372D00A45BBE /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				80442E1518CD8D04004B4824 /* L8ManagedValue_Private.h */,
-				8019143C17E7C9D700A45BBE /* L8Runtime_Private.h */,
-				8019143D17E7C9D700A45BBE /* L8Value_Private.h */,
-				8019143E17E7C9D700A45BBE /* L8Reporter_Private.h */,
-				804E41BC17F48E37003D1D52 /* L8StackTrace_Private.h */,
-				803563AB18BA49A900696C5A /* L8Exception_Private.h */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 		802A640F17B47CF700597DB6 /* Main */ = {
@@ -1239,15 +1003,6 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
-		803563AC18BA4A8F00696C5A /* Exceptions */ = {
-			isa = PBXGroup;
-			children = (
-				803563A718BA496200696C5A /* L8Exception.h */,
-				803563AD18BA4AAC00696C5A /* L8NativeException.h */,
-			);
-			name = Exceptions;
-			sourceTree = "<group>";
-		};
 		803563B818BA99B500696C5A /* Sphere files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1320,20 +1075,13 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		804E41BD17F5B283003D1D52 /* Public */ = {
+		80477B5218D119F000B16692 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				803563AC18BA4A8F00696C5A /* Exceptions */,
-				8019142A17E7C9C100A45BBE /* L8.h */,
-				8019142C17E7C9CD00A45BBE /* L8Runtime.h */,
-				8019142E17E7C9CD00A45BBE /* L8Value.h */,
-				80442E1118CD8CE0004B4824 /* L8ManagedValue.h */,
-				8019143017E7C9CD00A45BBE /* L8Export.h */,
-				8019143217E7C9CD00A45BBE /* L8Reporter.h */,
-				804E41B817F48E04003D1D52 /* L8StackTrace.h */,
-				804E41BE17F74673003D1D52 /* L8Runtime_Debugging.h */,
+				80477B5718D119F200B16692 /* L8Framework.framework */,
+				80477B5918D119F200B16692 /* L8FrameworkTests.xctest */,
 			);
-			name = Public;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		807513F817CE92C8009547A6 /* spxproj */ = {
@@ -1427,14 +1175,13 @@
 		808058DC17B1B6BF004D1D41 = {
 			isa = PBXGroup;
 			children = (
+				80477B5118D119F000B16692 /* L8Framework.xcodeproj */,
 				808058EE17B1B6BF004D1D41 /* Sphere */,
 				80345A6017BA6B8800170EFD /* SphereKit */,
 				8006D47A17BA840400453468 /* SphereRuntimeKit */,
 				80F07F2917CCE58A002E582E /* SphereRuntime */,
 				80F07F5B17CCE864002E582E /* SphereToolsKit */,
-				8019140417E7C8D700A45BBE /* L8Framework */,
 				8019147D17E8CF1600A45BBE /* L8Console */,
-				8019141817E7C8D700A45BBE /* L8FrameworkTests */,
 				80F07F7D17CCE8B4002E582E /* Plugins */,
 				808E37BC18CEAECB002DDFEF /* Supporting Files */,
 				808058E717B1B6BF004D1D41 /* Frameworks */,
@@ -1453,7 +1200,6 @@
 				8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */,
 				80F07F2717CCE58A002E582E /* SphereRuntime.app */,
 				80F07F5917CCE864002E582E /* SphereToolsKit.framework */,
-				8019140217E7C8D700A45BBE /* L8Framework.framework */,
 				8019141217E7C8D700A45BBE /* L8FrameworkTests.xctest */,
 				8019147A17E8CF1600A45BBE /* L8Console */,
 			);
@@ -1845,37 +1591,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		801913FF17E7C8D700A45BBE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8019142B17E7C9C100A45BBE /* L8.h in Headers */,
-				803563AF18BA4AAC00696C5A /* L8NativeException.h in Headers */,
-				8019143617E7C9CD00A45BBE /* L8Value.h in Headers */,
-				8019143817E7C9CD00A45BBE /* L8Export.h in Headers */,
-				804E41BA17F48E04003D1D52 /* L8StackTrace.h in Headers */,
-				80442E0A18CD7439004B4824 /* v8-platform.h in Headers */,
-				803563A918BA496200696C5A /* L8Exception.h in Headers */,
-				8019144917E7C9D700A45BBE /* L8Reporter_Private.h in Headers */,
-				8019143417E7C9CD00A45BBE /* L8Runtime.h in Headers */,
-				80442E1318CD8CE0004B4824 /* L8ManagedValue.h in Headers */,
-				8019143A17E7C9CD00A45BBE /* L8Reporter.h in Headers */,
-				804E421C17F762F8003D1D52 /* v8config.h in Headers */,
-				804E421917F762F8003D1D52 /* v8-profiler.h in Headers */,
-				804E421B17F762F8003D1D52 /* v8.h in Headers */,
-				8019144717E7C9D700A45BBE /* L8Runtime_Private.h in Headers */,
-				8019145017E7C9D700A45BBE /* ObjCCallback.h in Headers */,
-				804E41C017F74673003D1D52 /* L8Runtime_Debugging.h in Headers */,
-				804E421717F762F8003D1D52 /* v8-debug.h in Headers */,
-				8019144817E7C9D700A45BBE /* L8Value_Private.h in Headers */,
-				8019144E17E7C9D700A45BBE /* ObjCRuntime+L8.h in Headers */,
-				804E421A17F762F8003D1D52 /* v8-testing.h in Headers */,
-				8019144A17E7C9D700A45BBE /* NSString+L8.h in Headers */,
-				8019144C17E7C9D700A45BBE /* L8WrapperMap.h in Headers */,
-				804E421D17F762F8003D1D52 /* v8stdint.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		80345A5B17BA6B8700170EFD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1955,24 +1670,6 @@
 			productReference = 8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
-		8019140117E7C8D700A45BBE /* L8Framework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8019142417E7C8D800A45BBE /* Build configuration list for PBXNativeTarget "L8Framework" */;
-			buildPhases = (
-				801913FD17E7C8D700A45BBE /* Sources */,
-				801913FE17E7C8D700A45BBE /* Frameworks */,
-				801913FF17E7C8D700A45BBE /* Headers */,
-				8019140017E7C8D700A45BBE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = L8Framework;
-			productName = L8Framework;
-			productReference = 8019140217E7C8D700A45BBE /* L8Framework.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		8019141117E7C8D700A45BBE /* L8FrameworkTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8019142517E7C8D800A45BBE /* Build configuration list for PBXNativeTarget "L8FrameworkTests" */;
@@ -1984,7 +1681,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				8019141617E7C8D700A45BBE /* PBXTargetDependency */,
 			);
 			name = L8FrameworkTests;
 			productName = L8FrameworkTests;
@@ -2002,7 +1698,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				8019148917E8CF8F00A45BBE /* PBXTargetDependency */,
 			);
 			name = L8Console;
 			productName = L8Console;
@@ -2076,7 +1771,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				8019142917E7C93000A45BBE /* PBXTargetDependency */,
 				80F07F8217CCEC15002E582E /* PBXTargetDependency */,
 				8006D49D17BA843200453468 /* PBXTargetDependency */,
 				80345A8617BA6C2400170EFD /* PBXTargetDependency */,
@@ -2101,7 +1795,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				80C07A6518CBEA0F0082F562 /* PBXTargetDependency */,
 				803563D218BBEC0D00696C5A /* PBXTargetDependency */,
 			);
 			name = SphereRuntime;
@@ -2153,6 +1846,12 @@
 			mainGroup = 808058DC17B1B6BF004D1D41;
 			productRefGroup = 808058E617B1B6BF004D1D41 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 80477B5218D119F000B16692 /* Products */;
+					ProjectRef = 80477B5118D119F000B16692 /* L8Framework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				808058E417B1B6BF004D1D41 /* Sphere */,
@@ -2160,7 +1859,6 @@
 				80345A5D17BA6B8700170EFD /* SphereKit */,
 				80F07F5817CCE864002E582E /* SphereToolsKit */,
 				8006D47717BA840400453468 /* SphereRuntimeKit */,
-				8019140117E7C8D700A45BBE /* L8Framework */,
 				8019141117E7C8D700A45BBE /* L8FrameworkTests */,
 				80345A8B17BA6D1600170EFD /* IDEJavaScriptEditor */,
 				80345A9B17BA6D2600170EFD /* IDEQuickLookEditor */,
@@ -2169,6 +1867,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		80477B5718D119F200B16692 /* L8Framework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = L8Framework.framework;
+			remoteRef = 80477B5618D119F200B16692 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80477B5918D119F200B16692 /* L8FrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = L8FrameworkTests.xctest;
+			remoteRef = 80477B5818D119F200B16692 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8006D47617BA840400453468 /* Resources */ = {
@@ -2187,18 +1902,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8019140017E7C8D700A45BBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8019141017E7C8D700A45BBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8019141D17E7C8D700A45BBE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2303,31 +2010,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		801913FD17E7C8D700A45BBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				803563B018BA4AAC00696C5A /* L8NativeException.mm in Sources */,
-				80442E1418CD8CE0004B4824 /* L8ManagedValue.mm in Sources */,
-				803563AA18BA496200696C5A /* L8Exception.mm in Sources */,
-				8019145117E7C9D700A45BBE /* ObjCCallback.mm in Sources */,
-				8019144D17E7C9D700A45BBE /* L8WrapperMap.mm in Sources */,
-				804E41BB17F48E04003D1D52 /* L8StackTrace.mm in Sources */,
-				8019143B17E7C9CD00A45BBE /* L8Reporter.mm in Sources */,
-				8019144B17E7C9D700A45BBE /* NSString+L8.mm in Sources */,
-				8019143517E7C9CD00A45BBE /* L8Runtime.mm in Sources */,
-				8019144F17E7C9D700A45BBE /* ObjCRuntime+L8.mm in Sources */,
-				8019143717E7C9CD00A45BBE /* L8Value.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8019140E17E7C8D700A45BBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8019147317E85E9000A45BBE /* L8Runtime+L8Test.m in Sources */,
-				8019141F17E7C8D700A45BBE /* L8ValueTests.m in Sources */,
-				8019147517E8B8E700A45BBE /* L8RuntimeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2473,21 +2159,6 @@
 			target = 8006D4D717BBE69C00453468 /* IDESourceCodeEditor */;
 			targetProxy = 8006D4E717BBE6B200453468 /* PBXContainerItemProxy */;
 		};
-		8019141617E7C8D700A45BBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8019140117E7C8D700A45BBE /* L8Framework */;
-			targetProxy = 8019141517E7C8D700A45BBE /* PBXContainerItemProxy */;
-		};
-		8019142917E7C93000A45BBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8019140117E7C8D700A45BBE /* L8Framework */;
-			targetProxy = 8019142817E7C93000A45BBE /* PBXContainerItemProxy */;
-		};
-		8019148917E8CF8F00A45BBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8019140117E7C8D700A45BBE /* L8Framework */;
-			targetProxy = 8019148817E8CF8F00A45BBE /* PBXContainerItemProxy */;
-		};
 		80345A8617BA6C2400170EFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80345A5D17BA6B8700170EFD /* SphereKit */;
@@ -2518,11 +2189,6 @@
 			target = 8006D47717BA840400453468 /* SphereRuntimeKit */;
 			targetProxy = 803563D118BBEC0D00696C5A /* PBXContainerItemProxy */;
 		};
-		80C07A6518CBEA0F0082F562 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8019140117E7C8D700A45BBE /* L8Framework */;
-			targetProxy = 80C07A6418CBEA0F0082F562 /* PBXContainerItemProxy */;
-		};
 		80F07F8217CCEC15002E582E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80F07F5817CCE864002E582E /* SphereToolsKit */;
@@ -2543,14 +2209,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				8006D4DE17BBE69C00453468 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8019141B17E7C8D700A45BBE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8019141C17E7C8D700A45BBE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2709,52 +2367,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = ideplugin;
-			};
-			name = Release;
-		};
-		8019142017E7C8D800A45BBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "L8Framework/L8Framework-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "L8Framework/L8Framework-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/jos/Documents/Jarvix/Production/Sphere,
-					/Users/jos/Documents/Jarvix/Production/v8/xcodebuild/Release,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Debug;
-		};
-		8019142117E7C8D800A45BBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "L8Framework/L8Framework-Prefix.pch";
-				INFOPLIST_FILE = "L8Framework/L8Framework-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/jos/Documents/Jarvix/Production/Sphere,
-					/Users/jos/Documents/Jarvix/Production/v8/xcodebuild/Release,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
@@ -3104,15 +2716,6 @@
 			buildConfigurations = (
 				8006D4E217BBE69C00453468 /* Debug */,
 				8006D4E317BBE69C00453468 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8019142417E7C8D800A45BBE /* Build configuration list for PBXNativeTarget "L8Framework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8019142017E7C8D800A45BBE /* Debug */,
-				8019142117E7C8D800A45BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -25,5 +25,5 @@ Build/
 *.dep
 
 # Documentation
-*/docs/
-*/Docs/
+**/docs/
+**/Docs/
