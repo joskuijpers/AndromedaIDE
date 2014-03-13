@@ -1554,7 +1554,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IDESourceCodeEditor/IDESourceCodeEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "IDEPlugins/IDESourceCodeEditor/IDESourceCodeEditor-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1571,7 +1571,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IDESourceCodeEditor/IDESourceCodeEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "IDEPlugins/IDESourceCodeEditor/IDESourceCodeEditor-Prefix.pch";
 				INFOPLIST_FILE = "IDEPlugins/IDESourceCodeEditor/IDESourceCodeEditor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1620,7 +1620,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IDEJavaScriptEditor/IDEJavaScriptEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "IDEPlugins/IDEJavaScriptEditor/IDEJavaScriptEditor-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1637,7 +1637,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IDEJavaScriptEditor/IDEJavaScriptEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "IDEPlugins/IDEJavaScriptEditor/IDEJavaScriptEditor-Prefix.pch";
 				INFOPLIST_FILE = "IDEPlugins/IDEJavaScriptEditor/IDEJavaScriptEditor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1650,7 +1650,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IDEQuickLookEditor/IDEQuickLookEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "IDEPlugins/IDEQuickLookEditor/IDEQuickLookEditor-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1667,7 +1667,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IDEQuickLookEditor/IDEQuickLookEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "IDEPlugins/IDEQuickLookEditor/IDEQuickLookEditor-Prefix.pch";
 				INFOPLIST_FILE = "IDEPlugins/IDEQuickLookEditor/IDEQuickLookEditor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
