@@ -37,8 +37,6 @@
 		8019141417E7C8D700A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		8019146F17E7CE9500A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		8019147017E7CEC500A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
-		8019147C17E8CF1600A45BBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8019147B17E8CF1600A45BBE /* Foundation.framework */; };
-		8019147F17E8CF1600A45BBE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8019147E17E8CF1600A45BBE /* main.mm */; };
 		802A641317B47D0E00597DB6 /* SPHMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* SPHMainSplitViewController.m */; };
 		802A641417B47D0E00597DB6 /* SPHMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* SPHMainSplitView.xib */; };
 		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -241,15 +239,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8019147817E8CF1600A45BBE /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		80345A8217BA6BDB00170EFD /* Copy Private Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -342,7 +331,6 @@
 		8019141217E7C8D700A45BBE /* L8FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L8FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8019146B17E7CE2800A45BBE /* libv8_base.x64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_base.x64.a; path = ../v8/xcodebuild/Release/libv8_base.x64.a; sourceTree = "<group>"; };
 		8019146C17E7CE2800A45BBE /* libv8_snapshot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_snapshot.a; path = ../v8/xcodebuild/Release/libv8_snapshot.a; sourceTree = "<group>"; };
-		8019147A17E8CF1600A45BBE /* L8Console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = L8Console; sourceTree = BUILT_PRODUCTS_DIR; };
 		8019147B17E8CF1600A45BBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8019147E17E8CF1600A45BBE /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		8019148117E8CF1600A45BBE /* L8Console-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "L8Console-Prefix.pch"; sourceTree = "<group>"; };
@@ -498,14 +486,6 @@
 			files = (
 				8019141417E7C8D700A45BBE /* Cocoa.framework in Frameworks */,
 				8019141317E7C8D700A45BBE /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8019147717E8CF1600A45BBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8019147C17E8CF1600A45BBE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,7 +944,6 @@
 				80F07F2717CCE58A002E582E /* SphereRuntime.app */,
 				80F07F5917CCE864002E582E /* SphereToolsKit.framework */,
 				8019141217E7C8D700A45BBE /* L8FrameworkTests.xctest */,
-				8019147A17E8CF1600A45BBE /* L8Console */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1277,23 +1256,6 @@
 			productReference = 8019141217E7C8D700A45BBE /* L8FrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8019147917E8CF1600A45BBE /* L8Console */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8019148417E8CF1600A45BBE /* Build configuration list for PBXNativeTarget "L8Console" */;
-			buildPhases = (
-				8019147617E8CF1600A45BBE /* Sources */,
-				8019147717E8CF1600A45BBE /* Frameworks */,
-				8019147817E8CF1600A45BBE /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = L8Console;
-			productName = L8Console;
-			productReference = 8019147A17E8CF1600A45BBE /* L8Console */;
-			productType = "com.apple.product-type.tool";
-		};
 		80345A5D17BA6B8700170EFD /* SphereKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80345A7C17BA6B8900170EFD /* Build configuration list for PBXNativeTarget "SphereKit" */;
@@ -1457,7 +1419,6 @@
 				80345A8B17BA6D1600170EFD /* IDEJavaScriptEditor */,
 				80345A9B17BA6D2600170EFD /* IDEQuickLookEditor */,
 				8006D4D717BBE69C00453468 /* IDESourceCodeEditor */,
-				8019147917E8CF1600A45BBE /* L8Console */,
 			);
 		};
 /* End PBXProject section */
@@ -1602,14 +1563,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8019147617E8CF1600A45BBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8019147F17E8CF1600A45BBE /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1944,28 +1897,6 @@
 			};
 			name = Release;
 		};
-		8019148517E8CF1600A45BBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "L8Console/L8Console-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		8019148617E8CF1600A45BBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "L8Console/L8Console-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		80345A7D17BA6B8900170EFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2263,15 +2194,6 @@
 			buildConfigurations = (
 				8019142217E7C8D800A45BBE /* Debug */,
 				8019142317E7C8D800A45BBE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8019148417E8CF1600A45BBE /* Build configuration list for PBXNativeTarget "L8Console" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8019148517E8CF1600A45BBE /* Debug */,
-				8019148617E8CF1600A45BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
