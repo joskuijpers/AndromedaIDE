@@ -1,8 +1,9 @@
-JSphere
-=======
+Andromeda IDE
+=============
 
-Sphere RPG IDE for Mac OSX. Not created by the developers 
-and maintainers of the original Sphere.
+Sphere RPG IDE for Mac OSX. Uses the Andromeda runtime.
+
+Not created by the developers and maintainers of the original Sphere.
 
 ## Project setup ##
 The project contains multiple targets. They might be split up later, but for
