@@ -23,8 +23,32 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ACXProject.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+NSString * const kACXProjectAttributeProductName = @"productName";
+NSString * const kACXProjectAttributeOrganizationName = @"organizationName";
+
+@implementation ACXProject
+
++ (ACXProject *)projectWithName:(NSString *)name
+{
+	return nil;
+}
+
++ (ACXProject *)projectWithURL:(NSURL *)url
+{
+	return nil;
+}
+
+
++ (BOOL)isProjectWrapperExtension:(NSString *)extension
+{
+	return NO;
+}
+
+- (BOOL)writeToFileSystem
+{
+	return NO;
+}
 
 @end

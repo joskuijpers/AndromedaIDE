@@ -23,8 +23,44 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ADEProjectDocument.h"
+#import "ADEMainWindowController.h"
+#import "ACXProject.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEProjectDocument()
+{
+	ADEMainWindowController *_windowController;
+}
+@end
+
+@implementation ADEProjectDocument
+
+- (void)makeWindowControllers
+{
+	_windowController = [[ADEMainWindowController alloc] init];
+
+	[self addWindowController:_windowController];
+}
+
++ (BOOL)autosavesInPlace
+{
+    return YES; // TODO: NO
+}
+
+- (BOOL)canAsynchronouslyWriteToURL:(NSURL *)url ofType:(NSString *)typeName forSaveOperation:(NSSaveOperationType)saveOperation
+{
+	return YES;
+}
+
+#pragma mark - Package support
+
+- (BOOL)readFromURL:(NSURL *)url
+			 ofType:(NSString *)typeName
+			  error:(NSError *__autoreleasing *)outError
+{
+	_project = [ACXProject projectWithURL:[url URLByAppendingPathComponent:@"project.spxproj"]];
+
+	return YES;
+}
 
 @end

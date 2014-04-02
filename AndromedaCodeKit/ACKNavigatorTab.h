@@ -23,8 +23,10 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@interface ACKNavigatorTab : NSObject
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+- (NSImage *)icon;
+- (NSString *)title;
+- (NSString *)toolTip;
 
 @end

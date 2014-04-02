@@ -23,8 +23,24 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ACKSheetController.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ACKSheetController ()
+
+@end
+
+@implementation ACKSheetController
+
+- (IBAction)dismiss:(id)sender
+{
+	[NSApp endSheet:self.window
+		 returnCode:NSOKButton];
+}
+
+- (IBAction)cancel:(id)sender
+{
+	[NSApp endSheet:self.window
+		 returnCode:NSCancelButton];
+}
 
 @end

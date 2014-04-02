@@ -23,8 +23,17 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ADEPluginExtension.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@implementation ADEPluginExtension
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
+{
+	self = [super init];
+	if(self) {
+		
+	}
+	return self;
+}
 
 @end

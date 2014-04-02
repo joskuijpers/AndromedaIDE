@@ -23,8 +23,54 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ADEMainSplitViewController.h"
+#import "AGNSSplitViewDelegate.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+#import "ADEProjectNavigatorViewController.h"
+
+@interface ADEMainSplitViewController ()
+{
+	NSViewController *_navigatorViewController;
+	NSViewController *_editorViewController;
+	NSViewController *_utilitiesViewController;
+	
+	AGNSSplitViewDelegate *_delegate;
+}
+@end
+
+@implementation ADEMainSplitViewController
+
+- (id)init
+{
+    return [super initWithNibName:@"ADEMainSplitView" bundle:nil];
+}
+
+- (void)loadView
+{
+	[super loadView];
+	
+	_delegate = [[AGNSSplitViewDelegate alloc] initWithSplitView:_splitView];
+	_delegate.resizingStyle = AGNSSplitViewPriorityResizingStyle;
+	_delegate.priorityIndexes = @[@1,@0,@2];
+	
+	[_delegate setMinSize:200.0f forSubviewAtIndex:0];
+	[_delegate setCanCollapse:YES subviewAtIndex:0];
+	
+	[_delegate setMinSize:200.0f forSubviewAtIndex:1];
+	
+	[_delegate setMinSize:200.0f forSubviewAtIndex:2];
+	[_delegate setCanCollapse:YES subviewAtIndex:2];
+	
+	_splitView.delegate = _delegate;
+	
+	
+	_navigatorViewController = [[ADEProjectNavigatorViewController alloc] init];
+	[_splitView replaceSubview:_splitView.subviews[0] with:_navigatorViewController.view];
+}
+
+- (ADEProjectNavigatorViewController *)projectNavigator
+{
+	return nil;
+}
 
 @end

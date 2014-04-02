@@ -23,8 +23,62 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ADEPlugin.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEPlugin()
+{
+	NSBundle *_bundle;
+	NSObject<ACKPluginDelegate> *_instance;
+	NSMutableArray *_extensions;
+}
+@end
+
+@implementation ADEPlugin
+
+- (id)initWithBundle:(NSBundle *)bundle instance:(NSObject<ACKPluginDelegate> *)instance
+{
+	self = [super init];
+	if(self) {
+		_bundle = bundle;
+		_instance = instance;
+	}
+	return self;
+}
+
+- (NSArray *)discoverExtensions
+{
+	NSLog(@"Discover extensions of %@ with %@",self.name,self.extensionDictionary);
+	return nil;
+}
+
+- (NSString *)name
+{
+	return [[[_bundle bundlePath] lastPathComponent] stringByDeletingPathExtension];
+}
+
+- (NSBundle *)bundle
+{
+	return _bundle;
+}
+
+- (NSObject<ACKPluginDelegate> *)instance
+{
+	return _instance;
+}
+
+- (NSDictionary *)extensionDictionary
+{
+	return [_instance extensions];
+}
+
+- (NSArray *)extensions
+{
+	return _extensions;
+}
+
+- (NSArray *)rules
+{
+	return nil;
+}
 
 @end

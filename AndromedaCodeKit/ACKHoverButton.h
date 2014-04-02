@@ -23,8 +23,8 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@interface ACKHoverButton : NSButton
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@property (strong) NSImage *hoverImage;
 
 @end

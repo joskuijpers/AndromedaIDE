@@ -23,8 +23,13 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ACKDisabledSplitViewDelegate.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@implementation ACKDisabledSplitViewDelegate
+
+- (NSRect)splitView:(NSSplitView *)splitView effectiveRect:(NSRect)proposedEffectiveRect forDrawnRect:(NSRect)drawnRect ofDividerAtIndex:(NSInteger)dividerIndex
+{
+	return NSZeroRect;
+}
 
 @end

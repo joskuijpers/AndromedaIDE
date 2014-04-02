@@ -23,8 +23,28 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+typedef enum {
+	ADEProjectNavigatorItemProject,
+	ADEProjectNavigatorItemGroup,
+	ADEProjectNavigatorItemFolder,
+	ADEProjectNavigatorItemFile
+} JSXProjectNavigatorItemType;
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@class ACXReference, ACXProject;
+
+@interface ADEProjectNavigatorItem : NSObject <NSPasteboardWriting,NSPasteboardReading>
+
+@property (strong) NSURL *url;
+@property (strong,readonly) ACXReference *reference;
+
+@property (strong) NSString *title;
+@property (strong) NSString *subTitle;
+@property (strong) NSImage *image;
+
+@property (assign) JSXProjectNavigatorItemType type;
+@property (strong) NSMutableArray *children;
+
++ (ADEProjectNavigatorItem *)itemWithProject:(ACXProject *)project;
++ (ADEProjectNavigatorItem *)itemWithReference:(ACXReference *)reference;
 
 @end

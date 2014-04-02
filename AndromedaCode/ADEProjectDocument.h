@@ -23,8 +23,10 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@class ACXProject;
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEProjectDocument : NSDocument
+
+@property (strong) ACXProject *project;
 
 @end

@@ -23,8 +23,11 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@interface ADEPluginLoadRule : NSObject
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@property (strong) NSString *kind;
+@property (strong) NSString *identifier;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end

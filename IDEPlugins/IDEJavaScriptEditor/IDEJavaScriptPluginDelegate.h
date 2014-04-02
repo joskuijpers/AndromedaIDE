@@ -25,6 +25,6 @@
 
 #import <SphereKit/SphereKit.h>
 
-@interface IDEJavaScriptPluginDelegate : NSObject <IDEPluginDelegate>
+@interface IDEJavaScriptPluginDelegate : NSObject <ACKPluginDelegate>
 
 @end

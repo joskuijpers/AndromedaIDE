@@ -23,8 +23,49 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ACKHoverButton.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ACKHoverButton()
+{
+	NSImage *_normalImage;
+	NSTrackingArea *_trackingArea;
+}
+@end
+
+@implementation ACKHoverButton
+
+- (void)updateTrackingAreas
+{
+	[super updateTrackingAreas];
+
+	if(!_trackingArea) {
+		NSUInteger options = NSTrackingMouseEnteredAndExited;
+		options |= NSTrackingActiveInActiveApp;
+		options |= NSTrackingInVisibleRect;
+
+		_trackingArea = [[NSTrackingArea alloc] initWithRect:self.frame
+													 options:options
+													   owner:self
+													userInfo:nil];
+	}
+	if(![self.trackingAreas containsObject:_trackingArea])
+		[self addTrackingArea:_trackingArea];
+}
+
+- (void)mouseEntered:(NSEvent *)event
+{
+	if(_hoverImage) {
+		_normalImage = self.image;
+		self.image = _hoverImage;
+	}
+}
+
+- (void)mouseExited:(NSEvent *)event
+{
+	if(_hoverImage) {
+		self.image = _normalImage;
+		_normalImage = nil;
+	}
+}
 
 @end

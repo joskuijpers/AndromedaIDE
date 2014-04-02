@@ -23,8 +23,18 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ADEPluginLoadRule.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@implementation ADEPluginLoadRule
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
+{
+	self = [super init];
+	if(self) {
+		_kind = dictionary[@"kind"];
+		_identifier = dictionary[@"id"];
+	}
+	return self;
+}
 
 @end

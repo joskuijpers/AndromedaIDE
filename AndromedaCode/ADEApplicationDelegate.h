@@ -23,8 +23,15 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@class ADEPluginManager;
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEApplicationDelegate : NSObject <NSApplicationDelegate>
+
+@property (strong,readonly) ADEPluginManager *pluginManager;
+
+- (IBAction)showWelcomeWindow:(id)sender;
+- (void)closeWelcomeWindow;
+
+- (IBAction)newProject:(id)sender;
 
 @end

@@ -23,8 +23,15 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@class ADEProjectNavigatorViewController;
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEMainSplitViewController : NSViewController
+
+@property (weak,nonatomic) IBOutlet NSSplitView *splitView;
+
+// - (ADEEditor *)currentEditor;
+// - (NSArray *)navigators;
+// TODO: make ADEProjectNavigator
+- (ADEProjectNavigatorViewController *)projectNavigator;
 
 @end

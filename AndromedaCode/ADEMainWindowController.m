@@ -23,8 +23,51 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ADEMainWindowController.h"
+#import "ADEMainSplitViewController.h"
+#import "ADENewFileSheetController.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEMainWindowController ()
+{
+	ADEMainSplitViewController *_mainSplitViewController;
+	NSWindowController *_currentSheetController;
+}
+@end
+
+@implementation ADEMainWindowController
+
+- (id)init
+{
+	return [super initWithWindowNibName:@"ADEWorkspaceWindow"];
+}
+
+- (void)windowDidLoad
+{
+    [super windowDidLoad];
+
+	_mainSplitViewController = [[ADEMainSplitViewController alloc] init];
+	self.window.contentView = _mainSplitViewController.view;
+}
+
+- (IBAction)newFile:(id)sender
+{
+	if(_currentSheetController != nil)
+		return;
+
+	_currentSheetController = [[ADENewFileSheetController alloc] init];
+	_currentSheetController.document = self.document;
+	[NSApp beginSheet:_currentSheetController.window
+	   modalForWindow:[self.document windowForSheet]
+		modalDelegate:self
+	   didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:)
+		  contextInfo:nil];
+}
+
+- (void)sheetDidEnd:(NSWindow *)sheet
+		 returnCode:(NSInteger)returnCode
+		contextInfo:(void *)contextInfo {
+	_currentSheetController = nil;
+	[sheet orderOut:self];
+}
 
 @end

@@ -23,8 +23,42 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ADEWelcomeWindow.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEWelcomeWindow()
+{
+	NSPoint _initialLocation;
+}
+@end
+
+@implementation ADEWelcomeWindow
+
+- (id)initWithContentRect:(NSRect)contentRect
+				styleMask:(NSUInteger)aStyle
+				  backing:(NSBackingStoreType)bufferingType
+					defer:(BOOL)flag
+{
+	self = [super initWithContentRect:contentRect
+							styleMask:NSBorderlessWindowMask
+							  backing:bufferingType
+								defer:flag];
+	if(self) {
+		[self setOpaque:NO];
+		[self setBackgroundColor:[NSColor clearColor]];
+		[self setMovableByWindowBackground:YES];
+		[self setStyleMask:NSBorderlessWindowMask];
+	}
+	return self;
+}
+
+- (void)setContentView:(NSView *)aView
+{
+	aView.wantsLayer = YES;
+	aView.layer.frame = aView.frame;
+	aView.layer.cornerRadius = 7.5;
+	aView.layer.masksToBounds = 7.5;
+
+	[super setContentView:aView];
+}
 
 @end

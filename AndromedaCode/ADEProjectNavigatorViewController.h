@@ -23,8 +23,14 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@class ACXGroup;
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEProjectNavigatorViewController : NSViewController <NSOutlineViewDataSource, NSOutlineViewDelegate>
+
+@property (weak,nonatomic) IBOutlet NSOutlineView *outlineView;
+
+- (void)reload;
+- (void)reloadGroup:(ACXGroup *)group;
+- (ACXGroup *)selectedGroup;
 
 @end

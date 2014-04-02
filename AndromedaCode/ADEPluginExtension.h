@@ -23,8 +23,15 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@class ADEPluginExtensionPoint;
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEPluginExtension : NSObject
+
+@property (strong) NSString *identifier;
+@property (strong) ADEPluginExtensionPoint *point;
+@property (strong) NSNumber *version;
+@property (strong) NSDictionary *info;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end

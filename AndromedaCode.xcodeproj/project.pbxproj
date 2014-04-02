@@ -1,0 +1,1459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8006D4A817BA880A00453468 /* ACKEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4A617BA880A00453468 /* ACKEditor.h */; };
+		8006D4A917BA880A00453468 /* ACKEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4A717BA880A00453468 /* ACKEditor.m */; };
+		8006D4B117BA885900453468 /* ACKUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4AF17BA885900453468 /* ACKUtilities.h */; };
+		8006D4B217BA885900453468 /* ACKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4B017BA885900453468 /* ACKUtilities.m */; };
+		8006D4B517BA886A00453468 /* ACKNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4B317BA886A00453468 /* ACKNavigator.h */; };
+		8006D4B617BA886A00453468 /* ACKNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4B417BA886A00453468 /* ACKNavigator.m */; };
+		8006D4BB17BA88DB00453468 /* ADEPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4BA17BA88DB00453468 /* ADEPluginManager.m */; };
+		8006D4BE17BA897900453468 /* ADEApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4BD17BA897900453468 /* ADEApplicationDelegate.m */; };
+		8006D4C117BBCF5800453468 /* ADEPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4C017BBCF5800453468 /* ADEPlugin.m */; };
+		8006D4C617BBD5FE00453468 /* IDEQuickLookPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4C317BBD57900453468 /* IDEQuickLookPluginDelegate.m */; };
+		8006D4C917BBD77700453468 /* ACKNavigatorTab.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4C717BBD77700453468 /* ACKNavigatorTab.h */; };
+		8006D4CA17BBD77700453468 /* ACKNavigatorTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4C817BBD77700453468 /* ACKNavigatorTab.m */; };
+		8006D4CD17BBD78200453468 /* ACKUtilitiesTab.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4CB17BBD78200453468 /* ACKUtilitiesTab.h */; };
+		8006D4CE17BBD78200453468 /* ACKUtilitiesTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4CC17BBD78200453468 /* ACKUtilitiesTab.m */; };
+		8006D4D117BBDE2500453468 /* ACKFileInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8006D4CF17BBDE2500453468 /* ACKFileInspector.h */; };
+		8006D4D217BBDE2500453468 /* ACKFileInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4D017BBDE2500453468 /* ACKFileInspector.m */; };
+		8006D4E617BBE6AA00453468 /* AndromedaCodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* AndromedaCodeKit.framework */; };
+		8006D4EA17BBE6F600453468 /* IDESourceCodeEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */; };
+		8006D4ED17BBE72800453468 /* IDESourceCodeEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */; };
+		8006D4F017BBE73400453468 /* IDESourceCodePluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */; };
+		8006D4F617BBEB9A00453468 /* ADEPluginExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4F517BBEB9A00453468 /* ADEPluginExtension.m */; };
+		8006D4F917BBEBA900453468 /* ADEPluginExtensionPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4F817BBEBA900453468 /* ADEPluginExtensionPoint.m */; };
+		8006D4FC17BBF1A800453468 /* ADEPluginLoadRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4FB17BBF1A800453468 /* ADEPluginLoadRule.m */; };
+		8019146F17E7CE9500A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		8019147017E7CEC500A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
+		802A641317B47D0E00597DB6 /* ADEMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* ADEMainSplitViewController.m */; };
+		802A641417B47D0E00597DB6 /* ADEMainSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A641217B47D0E00597DB6 /* ADEMainSplitView.xib */; };
+		802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39A317B2BF25005B70C4 /* AGNSSplitView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		802F39DB17B46E26005B70C4 /* ADEMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802F39DA17B46E26005B70C4 /* ADEMainWindowController.m */; };
+		80345A4917B5B63D00170EFD /* ADEProjectNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4717B5B63D00170EFD /* ADEProjectNavigatorViewController.m */; };
+		80345A4A17B5B63D00170EFD /* ADEProjectNavigatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80345A4817B5B63D00170EFD /* ADEProjectNavigatorView.xib */; };
+		80345A4D17B5BCE700170EFD /* ADEProjectNavigatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4C17B5BCE700170EFD /* ADEProjectNavigatorItem.m */; };
+		80345A5017B67C6F00170EFD /* ADEProjectNavigatorRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345A4F17B67C6F00170EFD /* ADEProjectNavigatorRowView.m */; };
+		80345A5417BA27D500170EFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80345A5317BA27D500170EFD /* Images.xcassets */; };
+		80345A6517BA6B8800170EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80345A6317BA6B8800170EFD /* InfoPlist.strings */; };
+		80345A8417BA6C0900170EFD /* AndromedaCodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* AndromedaCodeKit.framework */; };
+		80345A8717BA6C3300170EFD /* AndromedaCodeKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* AndromedaCodeKit.framework */; };
+		80345AAC17BA6DB400170EFD /* IDEJavaScriptEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 80345A8C17BA6D1600170EFD /* IDEJavaScriptEditor.ideplugin */; };
+		80345AAD17BA6DB400170EFD /* IDEQuickLookEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */; };
+		80345AB217BA6DE300170EFD /* AndromedaCodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* AndromedaCodeKit.framework */; };
+		80345AB317BA6DE600170EFD /* AndromedaCodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80345A5E17BA6B8800170EFD /* AndromedaCodeKit.framework */; };
+		80345AB517BA6F4200170EFD /* ACKDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A640B17B4758A00597DB6 /* ACKDocument.m */; };
+		80345AB717BA6FEE00170EFD /* AndromedaCodeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345A6717BA6B8800170EFD /* AndromedaCodeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345AB817BA6FEF00170EFD /* ACKDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 802A640A17B4758A00597DB6 /* ACKDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345ABE17BA72A800170EFD /* ACKPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345ABC17BA72A800170EFD /* ACKPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80345ABF17BA72A800170EFD /* ACKPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345ABD17BA72A800170EFD /* ACKPlugin.m */; };
+		80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */; };
+		80345AC517BA745C00170EFD /* ACKPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80345AC117BA73A600170EFD /* ACKPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8042AD2C18EC42FC00320DF4 /* ACXGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 8042AD2A18EC42FC00320DF4 /* ACXGroup.h */; };
+		8042AD2D18EC42FC00320DF4 /* ACXGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8042AD2B18EC42FC00320DF4 /* ACXGroup.m */; };
+		8042AD3018EC430A00320DF4 /* ACXFileReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 8042AD2E18EC430A00320DF4 /* ACXFileReference.h */; };
+		8042AD3118EC430A00320DF4 /* ACXFileReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 8042AD2F18EC430A00320DF4 /* ACXFileReference.m */; };
+		8042AD3418EC431400320DF4 /* ACXProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8042AD3218EC431400320DF4 /* ACXProject.h */; };
+		8042AD3518EC431400320DF4 /* ACXProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8042AD3318EC431400320DF4 /* ACXProject.m */; };
+		8042AD3818EC432700320DF4 /* ACXReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 8042AD3618EC432700320DF4 /* ACXReference.h */; };
+		8042AD3918EC432700320DF4 /* ACXReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 8042AD3718EC432700320DF4 /* ACXReference.m */; };
+		808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808058F117B1B6BF004D1D41 /* InfoPlist.strings */; };
+		808058F517B1B6C0004D1D41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058F417B1B6BF004D1D41 /* main.m */; };
+		808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 808058F717B1B6C0004D1D41 /* Credits.rtf */; };
+		808058FC17B1B6C0004D1D41 /* ADEProjectDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 808058FB17B1B6C0004D1D41 /* ADEProjectDocument.m */; };
+		808058FF17B1B6C0004D1D41 /* ADEWorkspaceWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808058FD17B1B6C0004D1D41 /* ADEWorkspaceWindow.xib */; };
+		8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8080590017B1B6C0004D1D41 /* MainMenu.xib */; };
+		8080593217B1EA23004D1D41 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8080593117B1EA23004D1D41 /* libcrypto.dylib */; };
+		8098F90117BFB5740070BC58 /* ADEWelcomeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8098F90017BFB5740070BC58 /* ADEWelcomeWindow.xib */; };
+		8098F90417BFB58E0070BC58 /* ADEWelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F90317BFB58E0070BC58 /* ADEWelcomeWindowController.m */; };
+		8098F95617BFCA950070BC58 /* ADEWelcomeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F95517BFCA950070BC58 /* ADEWelcomeWindow.m */; };
+		8098F95917BFCC990070BC58 /* ADEWelcomeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F95817BFCC990070BC58 /* ADEWelcomeMainView.m */; };
+		8098F96317BFE7A10070BC58 /* ACKHoverButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8098F96117BFE7A10070BC58 /* ACKHoverButton.h */; };
+		8098F96417BFE7A10070BC58 /* ACKHoverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F96217BFE7A10070BC58 /* ACKHoverButton.m */; };
+		8098F96717C01B450070BC58 /* ADEWelcomeListRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F96617C01B450070BC58 /* ADEWelcomeListRowView.m */; };
+		80AC293317C651F7005D4D54 /* ACKDisabledSplitViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AC293117C651F7005D4D54 /* ACKDisabledSplitViewDelegate.h */; };
+		80AC293417C651F7005D4D54 /* ACKDisabledSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC293217C651F7005D4D54 /* ACKDisabledSplitViewDelegate.m */; };
+		80AC298D17C6D818005D4D54 /* ADEDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC298C17C6D818005D4D54 /* ADEDocumentController.m */; };
+		80AC29D817C6DE9F005D4D54 /* ADENewProjectSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC29D617C6DE9F005D4D54 /* ADENewProjectSheetController.m */; };
+		80AC29D917C6DE9F005D4D54 /* ADENewProjectSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC29D717C6DE9F005D4D54 /* ADENewProjectSheet.xib */; };
+		80AC29DD17C6DEAF005D4D54 /* ADENewFileSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC29DB17C6DEAF005D4D54 /* ADENewFileSheetController.m */; };
+		80AC29DE17C6DEAF005D4D54 /* ADENewFileSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC29DC17C6DEAF005D4D54 /* ADENewFileSheet.xib */; };
+		80AC29E117C6DF50005D4D54 /* ACKSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AC29DF17C6DF50005D4D54 /* ACKSheetController.h */; };
+		80AC29E217C6DF50005D4D54 /* ACKSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC29E017C6DF50005D4D54 /* ACKSheetController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8006D4E417BBE6A300453468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
+			remoteInfo = SphereKit;
+		};
+		8006D4E717BBE6B200453468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8006D4D717BBE69C00453468;
+			remoteInfo = IDESourceCodeEditor;
+		};
+		80345A8517BA6C2400170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
+			remoteInfo = SphereKit;
+		};
+		80345AA817BA6D3D00170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A8B17BA6D1600170EFD;
+			remoteInfo = IDEJavaScriptEditor;
+		};
+		80345AAA17BA6D3D00170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A9B17BA6D2600170EFD;
+			remoteInfo = IDEQuickLookEditor;
+		};
+		80345AAE17BA6DDA00170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
+			remoteInfo = SphereKit;
+		};
+		80345AB017BA6DDD00170EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808058DD17B1B6BF004D1D41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80345A5D17BA6B8700170EFD;
+			remoteInfo = SphereKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80345A8217BA6BDB00170EFD /* Copy Private Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				80345A8717BA6C3300170EFD /* AndromedaCodeKit.framework in Copy Private Frameworks */,
+			);
+			name = "Copy Private Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A8317BA6BDF00170EFD /* Copy PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8006D4EA17BBE6F600453468 /* IDESourceCodeEditor.ideplugin in Copy PlugIns */,
+				80345AAC17BA6DB400170EFD /* IDEJavaScriptEditor.ideplugin in Copy PlugIns */,
+				80345AAD17BA6DB400170EFD /* IDEQuickLookEditor.ideplugin in Copy PlugIns */,
+			);
+			name = "Copy PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8006D4A617BA880A00453468 /* ACKEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKEditor.h; sourceTree = "<group>"; };
+		8006D4A717BA880A00453468 /* ACKEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKEditor.m; sourceTree = "<group>"; };
+		8006D4AF17BA885900453468 /* ACKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKUtilities.h; sourceTree = "<group>"; };
+		8006D4B017BA885900453468 /* ACKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKUtilities.m; sourceTree = "<group>"; };
+		8006D4B317BA886A00453468 /* ACKNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKNavigator.h; sourceTree = "<group>"; };
+		8006D4B417BA886A00453468 /* ACKNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKNavigator.m; sourceTree = "<group>"; };
+		8006D4B917BA88DB00453468 /* ADEPluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEPluginManager.h; sourceTree = "<group>"; };
+		8006D4BA17BA88DB00453468 /* ADEPluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEPluginManager.m; sourceTree = "<group>"; };
+		8006D4BC17BA897900453468 /* ADEApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEApplicationDelegate.h; sourceTree = "<group>"; };
+		8006D4BD17BA897900453468 /* ADEApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEApplicationDelegate.m; sourceTree = "<group>"; };
+		8006D4BF17BBCF5800453468 /* ADEPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEPlugin.h; sourceTree = "<group>"; };
+		8006D4C017BBCF5800453468 /* ADEPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEPlugin.m; sourceTree = "<group>"; };
+		8006D4C217BBD57900453468 /* IDEQuickLookPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEQuickLookPluginDelegate.h; sourceTree = "<group>"; };
+		8006D4C317BBD57900453468 /* IDEQuickLookPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEQuickLookPluginDelegate.m; sourceTree = "<group>"; };
+		8006D4C717BBD77700453468 /* ACKNavigatorTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKNavigatorTab.h; sourceTree = "<group>"; };
+		8006D4C817BBD77700453468 /* ACKNavigatorTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKNavigatorTab.m; sourceTree = "<group>"; };
+		8006D4CB17BBD78200453468 /* ACKUtilitiesTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKUtilitiesTab.h; sourceTree = "<group>"; };
+		8006D4CC17BBD78200453468 /* ACKUtilitiesTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKUtilitiesTab.m; sourceTree = "<group>"; };
+		8006D4CF17BBDE2500453468 /* ACKFileInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKFileInspector.h; sourceTree = "<group>"; };
+		8006D4D017BBDE2500453468 /* ACKFileInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKFileInspector.m; sourceTree = "<group>"; };
+		8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDESourceCodeEditor.ideplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8006D4DC17BBE69C00453468 /* IDESourceCodeEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDESourceCodeEditor-Info.plist"; sourceTree = "<group>"; };
+		8006D4E017BBE69C00453468 /* IDESourceCodeEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDESourceCodeEditor-Prefix.pch"; sourceTree = "<group>"; };
+		8006D4EB17BBE72800453468 /* IDESourceCodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeEditor.h; sourceTree = "<group>"; };
+		8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESourceCodeEditor.m; sourceTree = "<group>"; };
+		8006D4EE17BBE73400453468 /* IDESourceCodePluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodePluginDelegate.h; sourceTree = "<group>"; };
+		8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESourceCodePluginDelegate.m; sourceTree = "<group>"; };
+		8006D4F417BBEB9A00453468 /* ADEPluginExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEPluginExtension.h; sourceTree = "<group>"; };
+		8006D4F517BBEB9A00453468 /* ADEPluginExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEPluginExtension.m; sourceTree = "<group>"; };
+		8006D4F717BBEBA900453468 /* ADEPluginExtensionPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEPluginExtensionPoint.h; sourceTree = "<group>"; };
+		8006D4F817BBEBA900453468 /* ADEPluginExtensionPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEPluginExtensionPoint.m; sourceTree = "<group>"; };
+		8006D4FA17BBF1A800453468 /* ADEPluginLoadRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEPluginLoadRule.h; sourceTree = "<group>"; };
+		8006D4FB17BBF1A800453468 /* ADEPluginLoadRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEPluginLoadRule.m; sourceTree = "<group>"; };
+		8019147B17E8CF1600A45BBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		802A640A17B4758A00597DB6 /* ACKDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKDocument.h; sourceTree = "<group>"; };
+		802A640B17B4758A00597DB6 /* ACKDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKDocument.m; sourceTree = "<group>"; };
+		802A641017B47D0E00597DB6 /* ADEMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEMainSplitViewController.h; sourceTree = "<group>"; };
+		802A641117B47D0E00597DB6 /* ADEMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEMainSplitViewController.m; sourceTree = "<group>"; };
+		802A641217B47D0E00597DB6 /* ADEMainSplitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADEMainSplitView.xib; sourceTree = "<group>"; };
+		802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNSSplitViewDelegate.m; sourceTree = "<group>"; };
+		802F39A217B2BF25005B70C4 /* AGNSSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNSSplitViewDelegate.h; sourceTree = "<group>"; };
+		802F39A317B2BF25005B70C4 /* AGNSSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNSSplitView.m; sourceTree = "<group>"; };
+		802F39A417B2BF25005B70C4 /* AGNSSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNSSplitView.h; sourceTree = "<group>"; };
+		802F39C317B3D242005B70C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		802F39D917B46E26005B70C4 /* ADEMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEMainWindowController.h; sourceTree = "<group>"; };
+		802F39DA17B46E26005B70C4 /* ADEMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEMainWindowController.m; sourceTree = "<group>"; };
+		80345A4617B5B63D00170EFD /* ADEProjectNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEProjectNavigatorViewController.h; sourceTree = "<group>"; };
+		80345A4717B5B63D00170EFD /* ADEProjectNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEProjectNavigatorViewController.m; sourceTree = "<group>"; };
+		80345A4817B5B63D00170EFD /* ADEProjectNavigatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADEProjectNavigatorView.xib; sourceTree = "<group>"; };
+		80345A4B17B5BCE700170EFD /* ADEProjectNavigatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEProjectNavigatorItem.h; sourceTree = "<group>"; };
+		80345A4C17B5BCE700170EFD /* ADEProjectNavigatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEProjectNavigatorItem.m; sourceTree = "<group>"; };
+		80345A4E17B67C6F00170EFD /* ADEProjectNavigatorRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEProjectNavigatorRowView.h; sourceTree = "<group>"; };
+		80345A4F17B67C6F00170EFD /* ADEProjectNavigatorRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEProjectNavigatorRowView.m; sourceTree = "<group>"; };
+		80345A5317BA27D500170EFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80345A5E17BA6B8800170EFD /* AndromedaCodeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AndromedaCodeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80345A6217BA6B8800170EFD /* AndromedaCodeKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AndromedaCodeKit-Info.plist"; sourceTree = "<group>"; };
+		80345A6417BA6B8800170EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80345A6617BA6B8800170EFD /* AndromedaCodeKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AndromedaCodeKit-Prefix.pch"; sourceTree = "<group>"; };
+		80345A6717BA6B8800170EFD /* AndromedaCodeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndromedaCodeKit.h; sourceTree = "<group>"; };
+		80345A8C17BA6D1600170EFD /* IDEJavaScriptEditor.ideplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDEJavaScriptEditor.ideplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		80345A9017BA6D1600170EFD /* IDEJavaScriptEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDEJavaScriptEditor-Info.plist"; sourceTree = "<group>"; };
+		80345A9417BA6D1600170EFD /* IDEJavaScriptEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDEJavaScriptEditor-Prefix.pch"; sourceTree = "<group>"; };
+		80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDEQuickLookEditor.ideplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		80345AA017BA6D2600170EFD /* IDEQuickLookEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDEQuickLookEditor-Info.plist"; sourceTree = "<group>"; };
+		80345AA417BA6D2600170EFD /* IDEQuickLookEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDEQuickLookEditor-Prefix.pch"; sourceTree = "<group>"; };
+		80345ABC17BA72A800170EFD /* ACKPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKPlugin.h; sourceTree = "<group>"; };
+		80345ABD17BA72A800170EFD /* ACKPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKPlugin.m; sourceTree = "<group>"; };
+		80345AC117BA73A600170EFD /* ACKPluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACKPluginDelegate.h; sourceTree = "<group>"; };
+		80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEJavaScriptPluginDelegate.h; sourceTree = "<group>"; };
+		80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEJavaScriptPluginDelegate.m; sourceTree = "<group>"; };
+		803563EC18BC0B6600696C5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8042AD2A18EC42FC00320DF4 /* ACXGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACXGroup.h; sourceTree = "<group>"; };
+		8042AD2B18EC42FC00320DF4 /* ACXGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACXGroup.m; sourceTree = "<group>"; };
+		8042AD2E18EC430A00320DF4 /* ACXFileReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACXFileReference.h; sourceTree = "<group>"; };
+		8042AD2F18EC430A00320DF4 /* ACXFileReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACXFileReference.m; sourceTree = "<group>"; };
+		8042AD3218EC431400320DF4 /* ACXProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACXProject.h; sourceTree = "<group>"; };
+		8042AD3318EC431400320DF4 /* ACXProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACXProject.m; sourceTree = "<group>"; };
+		8042AD3618EC432700320DF4 /* ACXReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACXReference.h; sourceTree = "<group>"; };
+		8042AD3718EC432700320DF4 /* ACXReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACXReference.m; sourceTree = "<group>"; };
+		808058E517B1B6BF004D1D41 /* AndromedaCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndromedaCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		808058E817B1B6BF004D1D41 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		808058EB17B1B6BF004D1D41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		808058EC17B1B6BF004D1D41 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		808058ED17B1B6BF004D1D41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		808058F017B1B6BF004D1D41 /* AndromedaCode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AndromedaCode-Info.plist"; sourceTree = "<group>"; };
+		808058F217B1B6BF004D1D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		808058F417B1B6BF004D1D41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		808058F617B1B6C0004D1D41 /* AndromedaCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AndromedaCode-Prefix.pch"; sourceTree = "<group>"; };
+		808058F817B1B6C0004D1D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		808058FA17B1B6C0004D1D41 /* ADEProjectDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADEProjectDocument.h; sourceTree = "<group>"; };
+		808058FB17B1B6C0004D1D41 /* ADEProjectDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADEProjectDocument.m; sourceTree = "<group>"; };
+		808058FE17B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ADEWorkspaceWindow.xib; sourceTree = "<group>"; };
+		8080590117B1B6C0004D1D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8080590A17B1B6C0004D1D41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8080592D17B1E877004D1D41 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8080592F17B1E8DD004D1D41 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		8080593117B1EA23004D1D41 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		808E37BA18CEAE92002DDFEF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		808E37BB18CEAEC6002DDFEF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8098F90017BFB5740070BC58 /* ADEWelcomeWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADEWelcomeWindow.xib; sourceTree = "<group>"; };
+		8098F90217BFB58E0070BC58 /* ADEWelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEWelcomeWindowController.h; sourceTree = "<group>"; };
+		8098F90317BFB58E0070BC58 /* ADEWelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEWelcomeWindowController.m; sourceTree = "<group>"; };
+		8098F95417BFCA950070BC58 /* ADEWelcomeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEWelcomeWindow.h; sourceTree = "<group>"; };
+		8098F95517BFCA950070BC58 /* ADEWelcomeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEWelcomeWindow.m; sourceTree = "<group>"; };
+		8098F95717BFCC990070BC58 /* ADEWelcomeMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEWelcomeMainView.h; sourceTree = "<group>"; };
+		8098F95817BFCC990070BC58 /* ADEWelcomeMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEWelcomeMainView.m; sourceTree = "<group>"; };
+		8098F96117BFE7A10070BC58 /* ACKHoverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKHoverButton.h; sourceTree = "<group>"; };
+		8098F96217BFE7A10070BC58 /* ACKHoverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKHoverButton.m; sourceTree = "<group>"; };
+		8098F96517C01B450070BC58 /* ADEWelcomeListRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEWelcomeListRowView.h; sourceTree = "<group>"; };
+		8098F96617C01B450070BC58 /* ADEWelcomeListRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEWelcomeListRowView.m; sourceTree = "<group>"; };
+		80AC293117C651F7005D4D54 /* ACKDisabledSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKDisabledSplitViewDelegate.h; sourceTree = "<group>"; };
+		80AC293217C651F7005D4D54 /* ACKDisabledSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKDisabledSplitViewDelegate.m; sourceTree = "<group>"; };
+		80AC298B17C6D818005D4D54 /* ADEDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEDocumentController.h; sourceTree = "<group>"; };
+		80AC298C17C6D818005D4D54 /* ADEDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEDocumentController.m; sourceTree = "<group>"; };
+		80AC29D517C6DE9F005D4D54 /* ADENewProjectSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADENewProjectSheetController.h; sourceTree = "<group>"; };
+		80AC29D617C6DE9F005D4D54 /* ADENewProjectSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADENewProjectSheetController.m; sourceTree = "<group>"; };
+		80AC29D717C6DE9F005D4D54 /* ADENewProjectSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADENewProjectSheet.xib; sourceTree = "<group>"; };
+		80AC29DA17C6DEAF005D4D54 /* ADENewFileSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADENewFileSheetController.h; sourceTree = "<group>"; };
+		80AC29DB17C6DEAF005D4D54 /* ADENewFileSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADENewFileSheetController.m; sourceTree = "<group>"; };
+		80AC29DC17C6DEAF005D4D54 /* ADENewFileSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADENewFileSheet.xib; sourceTree = "<group>"; };
+		80AC29DF17C6DF50005D4D54 /* ACKSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKSheetController.h; sourceTree = "<group>"; };
+		80AC29E017C6DF50005D4D54 /* ACKSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKSheetController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8006D4D517BBE69C00453468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8006D4E617BBE6AA00453468 /* AndromedaCodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A5A17BA6B8700170EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8019146F17E7CE9500A45BBE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A8917BA6D1600170EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345AB317BA6DE600170EFD /* AndromedaCodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A9917BA6D2600170EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345AB217BA6DE300170EFD /* AndromedaCodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808058E217B1B6BF004D1D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8019147017E7CEC500A45BBE /* Cocoa.framework in Frameworks */,
+				80345A8417BA6C0900170EFD /* AndromedaCodeKit.framework in Frameworks */,
+				8080593217B1EA23004D1D41 /* libcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8006D4AE17BA881700453468 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4A617BA880A00453468 /* ACKEditor.h */,
+				8006D4A717BA880A00453468 /* ACKEditor.m */,
+			);
+			name = Editor;
+			sourceTree = "<group>";
+		};
+		8006D4B717BA886C00453468 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4B317BA886A00453468 /* ACKNavigator.h */,
+				8006D4B417BA886A00453468 /* ACKNavigator.m */,
+				8006D4C717BBD77700453468 /* ACKNavigatorTab.h */,
+				8006D4C817BBD77700453468 /* ACKNavigatorTab.m */,
+			);
+			name = Navigator;
+			sourceTree = "<group>";
+		};
+		8006D4B817BA887300453468 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4AF17BA885900453468 /* ACKUtilities.h */,
+				8006D4B017BA885900453468 /* ACKUtilities.m */,
+				8006D4CB17BBD78200453468 /* ACKUtilitiesTab.h */,
+				8006D4CC17BBD78200453468 /* ACKUtilitiesTab.m */,
+				8006D4D317BBDE2B00453468 /* FileInspector */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		8006D4C517BBD57C00453468 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4C217BBD57900453468 /* IDEQuickLookPluginDelegate.h */,
+				8006D4C317BBD57900453468 /* IDEQuickLookPluginDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8006D4D317BBDE2B00453468 /* FileInspector */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4CF17BBDE2500453468 /* ACKFileInspector.h */,
+				8006D4D017BBDE2500453468 /* ACKFileInspector.m */,
+			);
+			name = FileInspector;
+			sourceTree = "<group>";
+		};
+		8006D4DA17BBE69C00453468 /* IDESourceCodeEditor */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4F217BBE73D00453468 /* Editor */,
+				8006D4F117BBE73700453468 /* Main */,
+				8006D4DB17BBE69C00453468 /* Supporting Files */,
+			);
+			path = IDESourceCodeEditor;
+			sourceTree = "<group>";
+		};
+		8006D4DB17BBE69C00453468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4DC17BBE69C00453468 /* IDESourceCodeEditor-Info.plist */,
+				8006D4E017BBE69C00453468 /* IDESourceCodeEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8006D4F117BBE73700453468 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4EE17BBE73400453468 /* IDESourceCodePluginDelegate.h */,
+				8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8006D4F217BBE73D00453468 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4EB17BBE72800453468 /* IDESourceCodeEditor.h */,
+				8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */,
+			);
+			name = Editor;
+			sourceTree = "<group>";
+		};
+		802A640F17B47CF700597DB6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				802F39D917B46E26005B70C4 /* ADEMainWindowController.h */,
+				802F39DA17B46E26005B70C4 /* ADEMainWindowController.m */,
+				802A641017B47D0E00597DB6 /* ADEMainSplitViewController.h */,
+				802A641117B47D0E00597DB6 /* ADEMainSplitViewController.m */,
+				80AC298B17C6D818005D4D54 /* ADEDocumentController.h */,
+				80AC298C17C6D818005D4D54 /* ADEDocumentController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		802F39A717B2BF2A005B70C4 /* AGNSplitView */ = {
+			isa = PBXGroup;
+			children = (
+				802F39A117B2BF25005B70C4 /* AGNSSplitViewDelegate.m */,
+				802F39A217B2BF25005B70C4 /* AGNSSplitViewDelegate.h */,
+				802F39A317B2BF25005B70C4 /* AGNSSplitView.m */,
+				802F39A417B2BF25005B70C4 /* AGNSSplitView.h */,
+			);
+			name = AGNSplitView;
+			sourceTree = "<group>";
+		};
+		802F39A817B2BF32005B70C4 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				802F39A717B2BF2A005B70C4 /* AGNSplitView */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		802F39C717B3DEF7005B70C4 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				802F39C817B3DEFD005B70C4 /* Project */,
+			);
+			name = Navigator;
+			sourceTree = "<group>";
+		};
+		802F39C817B3DEFD005B70C4 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				80345A4617B5B63D00170EFD /* ADEProjectNavigatorViewController.h */,
+				80345A4717B5B63D00170EFD /* ADEProjectNavigatorViewController.m */,
+				80345A4E17B67C6F00170EFD /* ADEProjectNavigatorRowView.h */,
+				80345A4F17B67C6F00170EFD /* ADEProjectNavigatorRowView.m */,
+				80345A5817BA470B00170EFD /* Model */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		802F39D617B46994005B70C4 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				8080592117B1B988004D1D41 /* Document */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		80345A5817BA470B00170EFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80345A4B17B5BCE700170EFD /* ADEProjectNavigatorItem.h */,
+				80345A4C17B5BCE700170EFD /* ADEProjectNavigatorItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		80345A6017BA6B8800170EFD /* AndromedaCodeKit */ = {
+			isa = PBXGroup;
+			children = (
+				8042AD2918EC42C800320DF4 /* Project */,
+				80345AC017BA72B100170EFD /* Plugin */,
+				802A640A17B4758A00597DB6 /* ACKDocument.h */,
+				802A640B17B4758A00597DB6 /* ACKDocument.m */,
+				8006D4AE17BA881700453468 /* Editor */,
+				8006D4B817BA887300453468 /* Utilities */,
+				8006D4B717BA886C00453468 /* Navigator */,
+				80345ABA17BA6FFC00170EFD /* Main */,
+				80345A6117BA6B8800170EFD /* Supporting Files */,
+				80AC293017C651D7005D4D54 /* UI */,
+			);
+			path = AndromedaCodeKit;
+			sourceTree = "<group>";
+		};
+		80345A6117BA6B8800170EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80345A6217BA6B8800170EFD /* AndromedaCodeKit-Info.plist */,
+				80345A6317BA6B8800170EFD /* InfoPlist.strings */,
+				80345A6617BA6B8800170EFD /* AndromedaCodeKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80345A8E17BA6D1600170EFD /* IDEJavaScriptEditor */ = {
+			isa = PBXGroup;
+			children = (
+				80345AC617BA747B00170EFD /* Main */,
+				80345A8F17BA6D1600170EFD /* Supporting Files */,
+			);
+			path = IDEJavaScriptEditor;
+			sourceTree = "<group>";
+		};
+		80345A8F17BA6D1600170EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80345A9017BA6D1600170EFD /* IDEJavaScriptEditor-Info.plist */,
+				80345A9417BA6D1600170EFD /* IDEJavaScriptEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80345A9E17BA6D2600170EFD /* IDEQuickLookEditor */ = {
+			isa = PBXGroup;
+			children = (
+				80345A9F17BA6D2600170EFD /* Supporting Files */,
+				8006D4C517BBD57C00453468 /* Main */,
+			);
+			path = IDEQuickLookEditor;
+			sourceTree = "<group>";
+		};
+		80345A9F17BA6D2600170EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80345AA017BA6D2600170EFD /* IDEQuickLookEditor-Info.plist */,
+				80345AA417BA6D2600170EFD /* IDEQuickLookEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80345ABA17BA6FFC00170EFD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				80345A6717BA6B8800170EFD /* AndromedaCodeKit.h */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		80345AC017BA72B100170EFD /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				80345ABC17BA72A800170EFD /* ACKPlugin.h */,
+				80345ABD17BA72A800170EFD /* ACKPlugin.m */,
+				80345AC117BA73A600170EFD /* ACKPluginDelegate.h */,
+			);
+			name = Plugin;
+			sourceTree = "<group>";
+		};
+		80345AC617BA747B00170EFD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				80345AC217BA742B00170EFD /* IDEJavaScriptPluginDelegate.h */,
+				80345AC317BA742B00170EFD /* IDEJavaScriptPluginDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8042AD2918EC42C800320DF4 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				8042AD2A18EC42FC00320DF4 /* ACXGroup.h */,
+				8042AD2B18EC42FC00320DF4 /* ACXGroup.m */,
+				8042AD2E18EC430A00320DF4 /* ACXFileReference.h */,
+				8042AD2F18EC430A00320DF4 /* ACXFileReference.m */,
+				8042AD3218EC431400320DF4 /* ACXProject.h */,
+				8042AD3318EC431400320DF4 /* ACXProject.m */,
+				8042AD3618EC432700320DF4 /* ACXReference.h */,
+				8042AD3718EC432700320DF4 /* ACXReference.m */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		808058DC17B1B6BF004D1D41 = {
+			isa = PBXGroup;
+			children = (
+				808058EE17B1B6BF004D1D41 /* AndromedaCode */,
+				80345A6017BA6B8800170EFD /* AndromedaCodeKit */,
+				80F07F7D17CCE8B4002E582E /* Plugins */,
+				808E37BC18CEAECB002DDFEF /* Supporting Files */,
+				808058E717B1B6BF004D1D41 /* Frameworks */,
+				808058E617B1B6BF004D1D41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		808058E617B1B6BF004D1D41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				808058E517B1B6BF004D1D41 /* AndromedaCode.app */,
+				80345A5E17BA6B8800170EFD /* AndromedaCodeKit.framework */,
+				80345A8C17BA6D1600170EFD /* IDEJavaScriptEditor.ideplugin */,
+				80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */,
+				8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		808058E717B1B6BF004D1D41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				803563EC18BC0B6600696C5A /* CoreGraphics.framework */,
+				802F39C317B3D242005B70C4 /* QuartzCore.framework */,
+				8080593117B1EA23004D1D41 /* libcrypto.dylib */,
+				8080592F17B1E8DD004D1D41 /* libcommonCrypto.dylib */,
+				8080592D17B1E877004D1D41 /* Security.framework */,
+				808058E817B1B6BF004D1D41 /* Cocoa.framework */,
+				8080590A17B1B6C0004D1D41 /* XCTest.framework */,
+				8019147B17E8CF1600A45BBE /* Foundation.framework */,
+				808058EA17B1B6BF004D1D41 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		808058EA17B1B6BF004D1D41 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				808058EB17B1B6BF004D1D41 /* AppKit.framework */,
+				808058EC17B1B6BF004D1D41 /* CoreData.framework */,
+				808058ED17B1B6BF004D1D41 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		808058EE17B1B6BF004D1D41 /* AndromedaCode */ = {
+			isa = PBXGroup;
+			children = (
+				802F39A817B2BF32005B70C4 /* ThirdParty */,
+				8080592417B1B9AA004D1D41 /* PluginSystem */,
+				802F39C717B3DEF7005B70C4 /* Navigator */,
+				802F39D617B46994005B70C4 /* Project */,
+				802A640F17B47CF700597DB6 /* Main */,
+				8098F90517BFB5930070BC58 /* WelcomeWindow */,
+				80AC291A17C644C4005D4D54 /* NewObjectDialog */,
+				80AC298E17C6D81D005D4D54 /* App */,
+				8080592017B1B980004D1D41 /* Resources */,
+				8080591F17B1B97A004D1D41 /* Assets */,
+				808058EF17B1B6BF004D1D41 /* Supporting Files */,
+			);
+			path = AndromedaCode;
+			sourceTree = "<group>";
+		};
+		808058EF17B1B6BF004D1D41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				808058F017B1B6BF004D1D41 /* AndromedaCode-Info.plist */,
+				808058F117B1B6BF004D1D41 /* InfoPlist.strings */,
+				808058F417B1B6BF004D1D41 /* main.m */,
+				808058F617B1B6C0004D1D41 /* AndromedaCode-Prefix.pch */,
+				808058F717B1B6C0004D1D41 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8080591F17B1B97A004D1D41 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				80345A5317BA27D500170EFD /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		8080592017B1B980004D1D41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80AC29D717C6DE9F005D4D54 /* ADENewProjectSheet.xib */,
+				80AC29DC17C6DEAF005D4D54 /* ADENewFileSheet.xib */,
+				8098F90017BFB5740070BC58 /* ADEWelcomeWindow.xib */,
+				808058FD17B1B6C0004D1D41 /* ADEWorkspaceWindow.xib */,
+				802A641217B47D0E00597DB6 /* ADEMainSplitView.xib */,
+				8080590017B1B6C0004D1D41 /* MainMenu.xib */,
+				80345A4817B5B63D00170EFD /* ADEProjectNavigatorView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8080592117B1B988004D1D41 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				808058FA17B1B6C0004D1D41 /* ADEProjectDocument.h */,
+				808058FB17B1B6C0004D1D41 /* ADEProjectDocument.m */,
+			);
+			name = Document;
+			sourceTree = "<group>";
+		};
+		8080592417B1B9AA004D1D41 /* PluginSystem */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4B917BA88DB00453468 /* ADEPluginManager.h */,
+				8006D4BA17BA88DB00453468 /* ADEPluginManager.m */,
+				8006D4BF17BBCF5800453468 /* ADEPlugin.h */,
+				8006D4C017BBCF5800453468 /* ADEPlugin.m */,
+				8006D4F417BBEB9A00453468 /* ADEPluginExtension.h */,
+				8006D4F517BBEB9A00453468 /* ADEPluginExtension.m */,
+				8006D4F717BBEBA900453468 /* ADEPluginExtensionPoint.h */,
+				8006D4F817BBEBA900453468 /* ADEPluginExtensionPoint.m */,
+				8006D4FA17BBF1A800453468 /* ADEPluginLoadRule.h */,
+				8006D4FB17BBF1A800453468 /* ADEPluginLoadRule.m */,
+			);
+			name = PluginSystem;
+			sourceTree = "<group>";
+		};
+		808E37BC18CEAECB002DDFEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				808E37BA18CEAE92002DDFEF /* LICENSE */,
+				808E37BB18CEAEC6002DDFEF /* README.md */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8098F90517BFB5930070BC58 /* WelcomeWindow */ = {
+			isa = PBXGroup;
+			children = (
+				8098F90217BFB58E0070BC58 /* ADEWelcomeWindowController.h */,
+				8098F90317BFB58E0070BC58 /* ADEWelcomeWindowController.m */,
+				8098F95417BFCA950070BC58 /* ADEWelcomeWindow.h */,
+				8098F95517BFCA950070BC58 /* ADEWelcomeWindow.m */,
+				8098F95717BFCC990070BC58 /* ADEWelcomeMainView.h */,
+				8098F95817BFCC990070BC58 /* ADEWelcomeMainView.m */,
+				8098F96517C01B450070BC58 /* ADEWelcomeListRowView.h */,
+				8098F96617C01B450070BC58 /* ADEWelcomeListRowView.m */,
+			);
+			name = WelcomeWindow;
+			sourceTree = "<group>";
+		};
+		80AC291A17C644C4005D4D54 /* NewObjectDialog */ = {
+			isa = PBXGroup;
+			children = (
+				80AC29D517C6DE9F005D4D54 /* ADENewProjectSheetController.h */,
+				80AC29D617C6DE9F005D4D54 /* ADENewProjectSheetController.m */,
+				80AC29DA17C6DEAF005D4D54 /* ADENewFileSheetController.h */,
+				80AC29DB17C6DEAF005D4D54 /* ADENewFileSheetController.m */,
+			);
+			name = NewObjectDialog;
+			sourceTree = "<group>";
+		};
+		80AC293017C651D7005D4D54 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8098F96117BFE7A10070BC58 /* ACKHoverButton.h */,
+				8098F96217BFE7A10070BC58 /* ACKHoverButton.m */,
+				80AC293117C651F7005D4D54 /* ACKDisabledSplitViewDelegate.h */,
+				80AC293217C651F7005D4D54 /* ACKDisabledSplitViewDelegate.m */,
+				80AC29DF17C6DF50005D4D54 /* ACKSheetController.h */,
+				80AC29E017C6DF50005D4D54 /* ACKSheetController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		80AC298E17C6D81D005D4D54 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8006D4BC17BA897900453468 /* ADEApplicationDelegate.h */,
+				8006D4BD17BA897900453468 /* ADEApplicationDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		80F07F7D17CCE8B4002E582E /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				80345A8E17BA6D1600170EFD /* IDEJavaScriptEditor */,
+				80345A9E17BA6D2600170EFD /* IDEQuickLookEditor */,
+				8006D4DA17BBE69C00453468 /* IDESourceCodeEditor */,
+			);
+			name = Plugins;
+			path = IDEPlugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		80345A5B17BA6B8700170EFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8006D4A817BA880A00453468 /* ACKEditor.h in Headers */,
+				8042AD3818EC432700320DF4 /* ACXReference.h in Headers */,
+				80345AB717BA6FEE00170EFD /* AndromedaCodeKit.h in Headers */,
+				8098F96317BFE7A10070BC58 /* ACKHoverButton.h in Headers */,
+				8042AD2C18EC42FC00320DF4 /* ACXGroup.h in Headers */,
+				80345AB817BA6FEF00170EFD /* ACKDocument.h in Headers */,
+				8042AD3418EC431400320DF4 /* ACXProject.h in Headers */,
+				80AC293317C651F7005D4D54 /* ACKDisabledSplitViewDelegate.h in Headers */,
+				8006D4C917BBD77700453468 /* ACKNavigatorTab.h in Headers */,
+				80AC29E117C6DF50005D4D54 /* ACKSheetController.h in Headers */,
+				8042AD3018EC430A00320DF4 /* ACXFileReference.h in Headers */,
+				80345ABE17BA72A800170EFD /* ACKPlugin.h in Headers */,
+				8006D4CD17BBD78200453468 /* ACKUtilitiesTab.h in Headers */,
+				8006D4B517BA886A00453468 /* ACKNavigator.h in Headers */,
+				8006D4B117BA885900453468 /* ACKUtilities.h in Headers */,
+				8006D4D117BBDE2500453468 /* ACKFileInspector.h in Headers */,
+				80345AC517BA745C00170EFD /* ACKPluginDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8006D4D717BBE69C00453468 /* IDESourceCodeEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8006D4E117BBE69C00453468 /* Build configuration list for PBXNativeTarget "IDESourceCodeEditor" */;
+			buildPhases = (
+				8006D4D417BBE69C00453468 /* Sources */,
+				8006D4D517BBE69C00453468 /* Frameworks */,
+				8006D4D617BBE69C00453468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8006D4E517BBE6A300453468 /* PBXTargetDependency */,
+			);
+			name = IDESourceCodeEditor;
+			productName = IDESourceCodeEditor;
+			productReference = 8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		80345A5D17BA6B8700170EFD /* AndromedaCodeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80345A7C17BA6B8900170EFD /* Build configuration list for PBXNativeTarget "AndromedaCodeKit" */;
+			buildPhases = (
+				80345A5917BA6B8700170EFD /* Sources */,
+				80345A5A17BA6B8700170EFD /* Frameworks */,
+				80345A5B17BA6B8700170EFD /* Headers */,
+				80345A5C17BA6B8700170EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AndromedaCodeKit;
+			productName = SphereKit;
+			productReference = 80345A5E17BA6B8800170EFD /* AndromedaCodeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80345A8B17BA6D1600170EFD /* IDEJavaScriptEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80345A9517BA6D1600170EFD /* Build configuration list for PBXNativeTarget "IDEJavaScriptEditor" */;
+			buildPhases = (
+				80345A8817BA6D1600170EFD /* Sources */,
+				80345A8917BA6D1600170EFD /* Frameworks */,
+				80345A8A17BA6D1600170EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80345AAF17BA6DDA00170EFD /* PBXTargetDependency */,
+			);
+			name = IDEJavaScriptEditor;
+			productName = IDEJavaScriptEditor;
+			productReference = 80345A8C17BA6D1600170EFD /* IDEJavaScriptEditor.ideplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		80345A9B17BA6D2600170EFD /* IDEQuickLookEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80345AA517BA6D2600170EFD /* Build configuration list for PBXNativeTarget "IDEQuickLookEditor" */;
+			buildPhases = (
+				80345A9817BA6D2600170EFD /* Sources */,
+				80345A9917BA6D2600170EFD /* Frameworks */,
+				80345A9A17BA6D2600170EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80345AB117BA6DDD00170EFD /* PBXTargetDependency */,
+			);
+			name = IDEQuickLookEditor;
+			productName = IDEQuickLookEditor;
+			productReference = 80345A9C17BA6D2600170EFD /* IDEQuickLookEditor.ideplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		808058E417B1B6BF004D1D41 /* AndromedaCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8080591917B1B6C0004D1D41 /* Build configuration list for PBXNativeTarget "AndromedaCode" */;
+			buildPhases = (
+				808058E117B1B6BF004D1D41 /* Sources */,
+				808058E217B1B6BF004D1D41 /* Frameworks */,
+				808058E317B1B6BF004D1D41 /* Resources */,
+				80345A8217BA6BDB00170EFD /* Copy Private Frameworks */,
+				80345A8317BA6BDF00170EFD /* Copy PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80345A8617BA6C2400170EFD /* PBXTargetDependency */,
+				8006D4E817BBE6B200453468 /* PBXTargetDependency */,
+				80345AA917BA6D3D00170EFD /* PBXTargetDependency */,
+				80345AAB17BA6D3D00170EFD /* PBXTargetDependency */,
+			);
+			name = AndromedaCode;
+			productName = Sphere;
+			productReference = 808058E517B1B6BF004D1D41 /* AndromedaCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		808058DD17B1B6BF004D1D41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ADE;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Jarvix;
+			};
+			buildConfigurationList = 808058E017B1B6BF004D1D41 /* Build configuration list for PBXProject "AndromedaCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 808058DC17B1B6BF004D1D41;
+			productRefGroup = 808058E617B1B6BF004D1D41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				808058E417B1B6BF004D1D41 /* AndromedaCode */,
+				80345A5D17BA6B8700170EFD /* AndromedaCodeKit */,
+				80345A8B17BA6D1600170EFD /* IDEJavaScriptEditor */,
+				80345A9B17BA6D2600170EFD /* IDEQuickLookEditor */,
+				8006D4D717BBE69C00453468 /* IDESourceCodeEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8006D4D617BBE69C00453468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A5C17BA6B8700170EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345A6517BA6B8800170EFD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A8A17BA6D1600170EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A9A17BA6D2600170EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808058E317B1B6BF004D1D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AC29DE17C6DEAF005D4D54 /* ADENewFileSheet.xib in Resources */,
+				808058FF17B1B6C0004D1D41 /* ADEWorkspaceWindow.xib in Resources */,
+				808058F317B1B6BF004D1D41 /* InfoPlist.strings in Resources */,
+				80345A5417BA27D500170EFD /* Images.xcassets in Resources */,
+				80345A4A17B5B63D00170EFD /* ADEProjectNavigatorView.xib in Resources */,
+				8098F90117BFB5740070BC58 /* ADEWelcomeWindow.xib in Resources */,
+				80AC29D917C6DE9F005D4D54 /* ADENewProjectSheet.xib in Resources */,
+				808058F917B1B6C0004D1D41 /* Credits.rtf in Resources */,
+				802A641417B47D0E00597DB6 /* ADEMainSplitView.xib in Resources */,
+				8080590217B1B6C0004D1D41 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8006D4D417BBE69C00453468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8006D4F017BBE73400453468 /* IDESourceCodePluginDelegate.m in Sources */,
+				8006D4ED17BBE72800453468 /* IDESourceCodeEditor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A5917BA6B8700170EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8006D4D217BBDE2500453468 /* ACKFileInspector.m in Sources */,
+				8098F96417BFE7A10070BC58 /* ACKHoverButton.m in Sources */,
+				8042AD2D18EC42FC00320DF4 /* ACXGroup.m in Sources */,
+				8006D4CA17BBD77700453468 /* ACKNavigatorTab.m in Sources */,
+				8006D4B217BA885900453468 /* ACKUtilities.m in Sources */,
+				8006D4A917BA880A00453468 /* ACKEditor.m in Sources */,
+				8006D4CE17BBD78200453468 /* ACKUtilitiesTab.m in Sources */,
+				80345AB517BA6F4200170EFD /* ACKDocument.m in Sources */,
+				80AC29E217C6DF50005D4D54 /* ACKSheetController.m in Sources */,
+				80AC293417C651F7005D4D54 /* ACKDisabledSplitViewDelegate.m in Sources */,
+				8042AD3518EC431400320DF4 /* ACXProject.m in Sources */,
+				8042AD3118EC430A00320DF4 /* ACXFileReference.m in Sources */,
+				80345ABF17BA72A800170EFD /* ACKPlugin.m in Sources */,
+				8006D4B617BA886A00453468 /* ACKNavigator.m in Sources */,
+				8042AD3918EC432700320DF4 /* ACXReference.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A8817BA6D1600170EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80345AC417BA742B00170EFD /* IDEJavaScriptPluginDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80345A9817BA6D2600170EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8006D4C617BBD5FE00453468 /* IDEQuickLookPluginDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808058E117B1B6BF004D1D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */,
+				8098F90417BFB58E0070BC58 /* ADEWelcomeWindowController.m in Sources */,
+				8098F95917BFCC990070BC58 /* ADEWelcomeMainView.m in Sources */,
+				8006D4F617BBEB9A00453468 /* ADEPluginExtension.m in Sources */,
+				802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */,
+				80345A5017B67C6F00170EFD /* ADEProjectNavigatorRowView.m in Sources */,
+				80345A4917B5B63D00170EFD /* ADEProjectNavigatorViewController.m in Sources */,
+				8006D4C117BBCF5800453468 /* ADEPlugin.m in Sources */,
+				80345A4D17B5BCE700170EFD /* ADEProjectNavigatorItem.m in Sources */,
+				80AC29DD17C6DEAF005D4D54 /* ADENewFileSheetController.m in Sources */,
+				808058FC17B1B6C0004D1D41 /* ADEProjectDocument.m in Sources */,
+				8006D4FC17BBF1A800453468 /* ADEPluginLoadRule.m in Sources */,
+				8098F96717C01B450070BC58 /* ADEWelcomeListRowView.m in Sources */,
+				8006D4BE17BA897900453468 /* ADEApplicationDelegate.m in Sources */,
+				80AC298D17C6D818005D4D54 /* ADEDocumentController.m in Sources */,
+				802F39DB17B46E26005B70C4 /* ADEMainWindowController.m in Sources */,
+				808058F517B1B6C0004D1D41 /* main.m in Sources */,
+				802A641317B47D0E00597DB6 /* ADEMainSplitViewController.m in Sources */,
+				80AC29D817C6DE9F005D4D54 /* ADENewProjectSheetController.m in Sources */,
+				8098F95617BFCA950070BC58 /* ADEWelcomeWindow.m in Sources */,
+				8006D4F917BBEBA900453468 /* ADEPluginExtensionPoint.m in Sources */,
+				8006D4BB17BA88DB00453468 /* ADEPluginManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8006D4E517BBE6A300453468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A5D17BA6B8700170EFD /* AndromedaCodeKit */;
+			targetProxy = 8006D4E417BBE6A300453468 /* PBXContainerItemProxy */;
+		};
+		8006D4E817BBE6B200453468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8006D4D717BBE69C00453468 /* IDESourceCodeEditor */;
+			targetProxy = 8006D4E717BBE6B200453468 /* PBXContainerItemProxy */;
+		};
+		80345A8617BA6C2400170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A5D17BA6B8700170EFD /* AndromedaCodeKit */;
+			targetProxy = 80345A8517BA6C2400170EFD /* PBXContainerItemProxy */;
+		};
+		80345AA917BA6D3D00170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A8B17BA6D1600170EFD /* IDEJavaScriptEditor */;
+			targetProxy = 80345AA817BA6D3D00170EFD /* PBXContainerItemProxy */;
+		};
+		80345AAB17BA6D3D00170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A9B17BA6D2600170EFD /* IDEQuickLookEditor */;
+			targetProxy = 80345AAA17BA6D3D00170EFD /* PBXContainerItemProxy */;
+		};
+		80345AAF17BA6DDA00170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A5D17BA6B8700170EFD /* AndromedaCodeKit */;
+			targetProxy = 80345AAE17BA6DDA00170EFD /* PBXContainerItemProxy */;
+		};
+		80345AB117BA6DDD00170EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80345A5D17BA6B8700170EFD /* AndromedaCodeKit */;
+			targetProxy = 80345AB017BA6DDD00170EFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80345A6317BA6B8800170EFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80345A6417BA6B8800170EFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		808058F117B1B6BF004D1D41 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808058F217B1B6BF004D1D41 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		808058F717B1B6C0004D1D41 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808058F817B1B6C0004D1D41 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		808058FD17B1B6C0004D1D41 /* ADEWorkspaceWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808058FE17B1B6C0004D1D41 /* Base */,
+			);
+			name = ADEWorkspaceWindow.xib;
+			sourceTree = "<group>";
+		};
+		8080590017B1B6C0004D1D41 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8080590117B1B6C0004D1D41 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8006D4E217BBE69C00453468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDEPlugins/IDESourceCodeEditor/IDESourceCodeEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IDEPlugins/IDESourceCodeEditor/IDESourceCodeEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Debug;
+		};
+		8006D4E317BBE69C00453468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDEPlugins/IDESourceCodeEditor/IDESourceCodeEditor-Prefix.pch";
+				INFOPLIST_FILE = "IDEPlugins/IDESourceCodeEditor/IDESourceCodeEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Release;
+		};
+		80345A7D17BA6B8900170EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AndromedaCodeKit/AndromedaCodeKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AndromedaCodeKit/AndromedaCodeKit-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = AndromedaCodeKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		80345A7E17BA6B8900170EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AndromedaCodeKit/AndromedaCodeKit-Prefix.pch";
+				INFOPLIST_FILE = "AndromedaCodeKit/AndromedaCodeKit-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = AndromedaCodeKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		80345A9617BA6D1600170EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDEPlugins/IDEJavaScriptEditor/IDEJavaScriptEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IDEPlugins/IDEJavaScriptEditor/IDEJavaScriptEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Debug;
+		};
+		80345A9717BA6D1600170EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDEPlugins/IDEJavaScriptEditor/IDEJavaScriptEditor-Prefix.pch";
+				INFOPLIST_FILE = "IDEPlugins/IDEJavaScriptEditor/IDEJavaScriptEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Release;
+		};
+		80345AA617BA6D2600170EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDEPlugins/IDEQuickLookEditor/IDEQuickLookEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IDEPlugins/IDEQuickLookEditor/IDEQuickLookEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Debug;
+		};
+		80345AA717BA6D2600170EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDEPlugins/IDEQuickLookEditor/IDEQuickLookEditor-Prefix.pch";
+				INFOPLIST_FILE = "IDEPlugins/IDEQuickLookEditor/IDEQuickLookEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = ideplugin;
+			};
+			name = Release;
+		};
+		8080591717B1B6C0004D1D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fobjc-arc-exceptions";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		8080591817B1B6C0004D1D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "-fobjc-arc-exceptions";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		8080591A17B1B6C0004D1D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AndromedaCode/AndromedaCode-Prefix.pch";
+				INFOPLIST_FILE = "AndromedaCode/AndromedaCode-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				LLVM_LTO = NO;
+				PRODUCT_NAME = AndromedaCode;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8080591B17B1B6C0004D1D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AndromedaCode/AndromedaCode-Prefix.pch";
+				INFOPLIST_FILE = "AndromedaCode/AndromedaCode-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				LLVM_LTO = YES;
+				PRODUCT_NAME = AndromedaCode;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8006D4E117BBE69C00453468 /* Build configuration list for PBXNativeTarget "IDESourceCodeEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8006D4E217BBE69C00453468 /* Debug */,
+				8006D4E317BBE69C00453468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80345A7C17BA6B8900170EFD /* Build configuration list for PBXNativeTarget "AndromedaCodeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80345A7D17BA6B8900170EFD /* Debug */,
+				80345A7E17BA6B8900170EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80345A9517BA6D1600170EFD /* Build configuration list for PBXNativeTarget "IDEJavaScriptEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80345A9617BA6D1600170EFD /* Debug */,
+				80345A9717BA6D1600170EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80345AA517BA6D2600170EFD /* Build configuration list for PBXNativeTarget "IDEQuickLookEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80345AA617BA6D2600170EFD /* Debug */,
+				80345AA717BA6D2600170EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808058E017B1B6BF004D1D41 /* Build configuration list for PBXProject "AndromedaCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8080591717B1B6C0004D1D41 /* Debug */,
+				8080591817B1B6C0004D1D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8080591917B1B6C0004D1D41 /* Build configuration list for PBXNativeTarget "AndromedaCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8080591A17B1B6C0004D1D41 /* Debug */,
+				8080591B17B1B6C0004D1D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 808058DD17B1B6BF004D1D41 /* Project object */;
+}

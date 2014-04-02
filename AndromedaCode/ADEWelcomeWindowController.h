@@ -23,8 +23,11 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@interface ADEWelcomeWindowController : NSWindowController <NSOutlineViewDataSource,NSOutlineViewDelegate>
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@property (weak,nonatomic) IBOutlet NSButton *closeButton;
+@property (weak,nonatomic) IBOutlet NSOutlineView *recentProjectsView;
+
+- (IBAction)closeWindow:(id)sender;
 
 @end

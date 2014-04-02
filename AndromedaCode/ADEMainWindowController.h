@@ -23,8 +23,8 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@interface ADEMainWindowController : NSWindowController <NSWindowDelegate>
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+- (IBAction)newFile:(id)sender;
 
 @end

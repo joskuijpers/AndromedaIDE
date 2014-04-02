@@ -23,8 +23,23 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ADEDocumentController.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@implementation ADEDocumentController
+
+- (void)openDocument:(id)sender
+{
+	[super openDocument:sender];
+	NSLog(@"%@ %@",NSStringFromSelector(_cmd),sender);
+}
+
+- (id)openUntitledDocumentAndDisplay:(BOOL)displayDocument
+							   error:(NSError *__autoreleasing *)outError
+{
+	NSLog(@"%@ %d",NSStringFromSelector(_cmd),displayDocument);
+	id x = [super openUntitledDocumentAndDisplay:displayDocument error:outError];
+	NSLog(@"%@",x);
+	return x;
+}
 
 @end

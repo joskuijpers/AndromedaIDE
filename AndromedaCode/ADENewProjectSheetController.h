@@ -23,8 +23,16 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ACKSheetController.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADENewProjectSheetController : ACKSheetController
+
+@property (strong) NSString *productName;
+@property (strong) NSString *organizationName;
+@property (strong) NSString *productDescription;
+@property (strong) NSNumber *screenWidth;
+@property (strong) NSNumber *screenHeight;
+
+@property (assign) BOOL nextButtonEnabled;
 
 @end

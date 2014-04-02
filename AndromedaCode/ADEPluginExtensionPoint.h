@@ -23,8 +23,10 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@interface ADEPluginExtensionPoint : NSObject
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@property (strong) NSString *identifier;
+
+- (NSArray *)attachedExtensions; // ADEPluginExtension
 
 @end

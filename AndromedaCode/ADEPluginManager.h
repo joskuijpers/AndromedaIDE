@@ -23,8 +23,24 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@class ADEPlugin;
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEPluginManager : NSObject
+
++ (instancetype)sharedPluginManager;
+
+- (void)loadAllPlugins;
+
+- (NSArray *)loadedPlugins;
+- (ADEPlugin *)pluginWithName:(NSString *)name;
+- (ADEPlugin *)pluginWithIdentifier:(NSString *)identifier;
+
+- (NSArray *)extensions;
+- (NSArray *)extensionPoints;
 
 @end
+
+// Sphere.ADE.EditorDocument
+// Sphere.ADE.Command
+// Sphere.ADE.MenuDefinition
+// Sphere.ADE.FileInspector

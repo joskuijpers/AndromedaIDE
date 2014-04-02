@@ -25,6 +25,19 @@
 
 #import <SphereKit/SphereKit.h>
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADEPlugin : ACKPlugin
+
+- (instancetype)initWithBundle:(NSBundle *)bundle
+					  instance:(NSObject<ACKPluginDelegate> *)instance;
+
+- (NSArray *)discoverExtensions;
+
+- (NSObject<ACKPluginDelegate> *)instance;
+
+- (NSDictionary *)extensionDictionary;
+
+- (NSArray *)rules; // ADEPluginLoadRule
+- (NSArray *)extensions; // ADEPluginExtension
+// - (NSArray *)extensionPoints; // ADEPluginExtensionPoint
 
 @end

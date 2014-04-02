@@ -23,8 +23,6 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
-
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ACKEditor : NSObject
 
 @end

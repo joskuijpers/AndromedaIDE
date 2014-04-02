@@ -20,11 +20,27 @@
  * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
  * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
- * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
  */
 
-#import <SphereKit/SphereKit.h>
+@class ACXGroup;
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+extern NSString * const kACXProjectAttributeProductName;
+extern NSString * const kACXProjectAttributeOrganizationName;
+
+@interface ACXProject : NSObject
+
+@property (strong) NSURL *projectDirectory;
+@property (copy) NSString *name;
+@property (strong) NSMutableDictionary *attributes;
+@property (strong) ACXGroup *mainGroup;
+@property (strong) ACXGroup *productGroup;
+@property (strong) NSMutableArray *targets;
+
++ (ACXProject *)projectWithName:(NSString *)name;
++ (ACXProject *)projectWithURL:(NSURL *)url;
++ (BOOL)isProjectWrapperExtension:(NSString *)extension;
+
+- (BOOL)writeToFileSystem;
 
 @end

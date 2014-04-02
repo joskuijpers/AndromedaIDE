@@ -23,8 +23,14 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ACKSheetController.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+@interface ADENewFileSheetController : ACKSheetController
+ <NSOutlineViewDataSource,NSOutlineViewDelegate>
+
+@property (weak,nonatomic) IBOutlet NSOutlineView *templateList;
+
+@property (strong) NSString *fileName;
+@property (assign) BOOL nextButtonEnabled;
 
 @end

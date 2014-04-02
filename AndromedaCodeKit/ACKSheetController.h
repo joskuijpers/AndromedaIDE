@@ -23,8 +23,9 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+@interface ACKSheetController : NSWindowController
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+- (IBAction)dismiss:(id)sender;
+- (IBAction)cancel:(id)sender;
 
 @end

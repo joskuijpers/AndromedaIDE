@@ -23,8 +23,58 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <SphereKit/SphereKit.h>
+#import "ADEApplicationDelegate.h"
+#import "ADEDocumentController.h"
+#import "ADEPluginManager.h"
 
-@interface IDEQuickLookPluginDelegate : NSObject <ACKPluginDelegate>
+#import "ADEWelcomeWindowController.h"
+#import "ADENewProjectSheetController.h"
+
+@interface ADEApplicationDelegate()
+{
+	ADEWelcomeWindowController *_welcomeController;
+	NSWindowController *_currentSheetController;
+}
+@end
+
+@implementation ADEApplicationDelegate
+
+- (void)applicationWillFinishLaunching:(NSNotification *)notification
+{
+	(void)[[ADEDocumentController alloc] init];
+//	_pluginManager = [[ADEPluginManager alloc] init];
+//	[_pluginManager loadAllPlugins];
+}
+
+- (IBAction)showWelcomeWindow:(id)sender
+{
+	if(!_welcomeController)
+		_welcomeController = [[ADEWelcomeWindowController alloc] init];
+	[_welcomeController.window makeKeyAndOrderFront:nil];
+}
+
+- (void)closeWelcomeWindow
+{
+	_welcomeController = nil;
+}
+
+- (IBAction)newProject:(id)sender
+{
+	if(_currentSheetController != nil)
+		return;
+
+	_currentSheetController = [[ADENewProjectSheetController alloc] init];
+	[NSApp beginSheet:_currentSheetController.window
+	   modalForWindow:nil
+		modalDelegate:self
+	   didEndSelector:@selector(didEndSheet:returnCode:contextInfo:)
+		  contextInfo:nil];
+}
+
+- (void)didEndSheet:(NSWindow *)sheet
+		 returnCode:(NSInteger)returnCode
+		contextInfo:(void *)contextInfo {
+	_currentSheetController = nil;
+}
 
 @end
