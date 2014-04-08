@@ -27,9 +27,6 @@
 		8006D4EA17BBE6F600453468 /* IDESourceCodeEditor.ideplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 8006D4D817BBE69C00453468 /* IDESourceCodeEditor.ideplugin */; };
 		8006D4ED17BBE72800453468 /* IDESourceCodeEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */; };
 		8006D4F017BBE73400453468 /* IDESourceCodePluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */; };
-		8006D4F617BBEB9A00453468 /* ADEPluginExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4F517BBEB9A00453468 /* ADEPluginExtension.m */; };
-		8006D4F917BBEBA900453468 /* ADEPluginExtensionPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4F817BBEBA900453468 /* ADEPluginExtensionPoint.m */; };
-		8006D4FC17BBF1A800453468 /* ADEPluginLoadRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006D4FB17BBF1A800453468 /* ADEPluginLoadRule.m */; };
 		8019146F17E7CE9500A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		8019147017E7CEC500A45BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808058E817B1B6BF004D1D41 /* Cocoa.framework */; };
 		802A641317B47D0E00597DB6 /* ADEMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A641117B47D0E00597DB6 /* ADEMainSplitViewController.m */; };
@@ -196,12 +193,6 @@
 		8006D4EC17BBE72800453468 /* IDESourceCodeEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESourceCodeEditor.m; sourceTree = "<group>"; };
 		8006D4EE17BBE73400453468 /* IDESourceCodePluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodePluginDelegate.h; sourceTree = "<group>"; };
 		8006D4EF17BBE73400453468 /* IDESourceCodePluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDESourceCodePluginDelegate.m; sourceTree = "<group>"; };
-		8006D4F417BBEB9A00453468 /* ADEPluginExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEPluginExtension.h; sourceTree = "<group>"; };
-		8006D4F517BBEB9A00453468 /* ADEPluginExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEPluginExtension.m; sourceTree = "<group>"; };
-		8006D4F717BBEBA900453468 /* ADEPluginExtensionPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEPluginExtensionPoint.h; sourceTree = "<group>"; };
-		8006D4F817BBEBA900453468 /* ADEPluginExtensionPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEPluginExtensionPoint.m; sourceTree = "<group>"; };
-		8006D4FA17BBF1A800453468 /* ADEPluginLoadRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADEPluginLoadRule.h; sourceTree = "<group>"; };
-		8006D4FB17BBF1A800453468 /* ADEPluginLoadRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADEPluginLoadRule.m; sourceTree = "<group>"; };
 		8019147B17E8CF1600A45BBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		802A640A17B4758A00597DB6 /* ACKDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKDocument.h; sourceTree = "<group>"; };
 		802A640B17B4758A00597DB6 /* ACKDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKDocument.m; sourceTree = "<group>"; };
@@ -718,12 +709,6 @@
 				8006D4BA17BA88DB00453468 /* ADEPluginManager.m */,
 				8006D4BF17BBCF5800453468 /* ADEPlugin.h */,
 				8006D4C017BBCF5800453468 /* ADEPlugin.m */,
-				8006D4F417BBEB9A00453468 /* ADEPluginExtension.h */,
-				8006D4F517BBEB9A00453468 /* ADEPluginExtension.m */,
-				8006D4F717BBEBA900453468 /* ADEPluginExtensionPoint.h */,
-				8006D4F817BBEBA900453468 /* ADEPluginExtensionPoint.m */,
-				8006D4FA17BBF1A800453468 /* ADEPluginLoadRule.h */,
-				8006D4FB17BBF1A800453468 /* ADEPluginLoadRule.m */,
 			);
 			name = PluginSystem;
 			sourceTree = "<group>";
@@ -1057,7 +1042,6 @@
 				802F39A617B2BF25005B70C4 /* AGNSSplitView.m in Sources */,
 				8098F90417BFB58E0070BC58 /* ADEWelcomeWindowController.m in Sources */,
 				8098F95917BFCC990070BC58 /* ADEWelcomeMainView.m in Sources */,
-				8006D4F617BBEB9A00453468 /* ADEPluginExtension.m in Sources */,
 				802F39A517B2BF25005B70C4 /* AGNSSplitViewDelegate.m in Sources */,
 				80345A5017B67C6F00170EFD /* ADEProjectNavigatorRowView.m in Sources */,
 				80345A4917B5B63D00170EFD /* ADEProjectNavigatorViewController.m in Sources */,
@@ -1065,7 +1049,6 @@
 				80345A4D17B5BCE700170EFD /* ADEProjectNavigatorItem.m in Sources */,
 				80AC29DD17C6DEAF005D4D54 /* ADENewFileSheetController.m in Sources */,
 				808058FC17B1B6C0004D1D41 /* ADEProjectDocument.m in Sources */,
-				8006D4FC17BBF1A800453468 /* ADEPluginLoadRule.m in Sources */,
 				8098F96717C01B450070BC58 /* ADEWelcomeListRowView.m in Sources */,
 				8006D4BE17BA897900453468 /* ADEApplicationDelegate.m in Sources */,
 				80AC298D17C6D818005D4D54 /* ADEDocumentController.m in Sources */,
@@ -1074,7 +1057,6 @@
 				802A641317B47D0E00597DB6 /* ADEMainSplitViewController.m in Sources */,
 				80AC29D817C6DE9F005D4D54 /* ADENewProjectSheetController.m in Sources */,
 				8098F95617BFCA950070BC58 /* ADEWelcomeWindow.m in Sources */,
-				8006D4F917BBEBA900453468 /* ADEPluginExtensionPoint.m in Sources */,
 				8006D4BB17BA88DB00453468 /* ADEPluginManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

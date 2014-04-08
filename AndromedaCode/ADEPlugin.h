@@ -34,10 +34,4 @@
 
 - (NSObject<ACKPluginDelegate> *)instance;
 
-- (NSDictionary *)extensionDictionary;
-
-- (NSArray *)rules; // ADEPluginLoadRule
-- (NSArray *)extensions; // ADEPluginExtension
-// - (NSArray *)extensionPoints; // ADEPluginExtensionPoint
-
 @end

@@ -35,9 +35,6 @@
 - (ADEPlugin *)pluginWithName:(NSString *)name;
 - (ADEPlugin *)pluginWithIdentifier:(NSString *)identifier;
 
-- (NSArray *)extensions;
-- (NSArray *)extensionPoints;
-
 @end
 
 // Sphere.ADE.EditorDocument

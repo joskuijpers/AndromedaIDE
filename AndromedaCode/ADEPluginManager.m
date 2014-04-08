@@ -91,16 +91,6 @@
 	return _loadedPlugins;
 }
 
-- (NSArray *)extensions
-{
-	return nil;
-}
-
-- (NSArray *)extensionPoints
-{
-	return nil;
-}
-
 #pragma mark - Private methods
 
 - (void)loadPluginAtPath:(NSString *)path
